@@ -1,24 +1,19 @@
+
 <!DOCTYPE html><html lang='en'>
 <head><meta charset='UTF-8'><meta name='viewport' content='width=device-width,initial-scale=1.0'>
 <title>Leaderboard</title><link rel='stylesheet' href='style.css'>
-<script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-app.js"></script>
-<script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-firestore.js"></script>
+<script src="https://www.gstatic.com/firebasejs/9.22.2/firebase-app-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/9.22.2/firebase-firestore-compat.js"></script>
 <script>
-firebase.initializeApp({apiKey:"AIzaSyAi9sd4U0BLqvpOM3g5P2HdDzMjJxltrWY",authDomain:"worldcapitalsquiz.firebaseapp.com",projectId:"worldcapitalsquiz"});
-const db=firebase.firestore();
-</script>
-<script>
-document.addEventListener("DOMContentLoaded", async () => {
-  const tbody = document.querySelector("#score-table tbody");
-  const snapshot = await db.collection("users").orderBy("highScore","desc").limit(10).get();
-  snapshot.forEach((doc, idx) => {
-    const data = doc.data();
-    const tr = document.createElement("tr");
-    tr.innerHTML = `<td>${idx+1}</td><td>${doc.id}</td><td>${data.highScore}</td>`;
-    tbody.appendChild(tr);
+  firebase.initializeApp({
+    apiKey: "AIzaSyAi9sd4U0BLqvpOM3g5P2HdDzMjJxltrWY",
+    projectId: "worldcapitalsquiz"
   });
-});
+  const db = firebase.firestore();
 </script>
-</head><body class='no-bg'>
-<nav><a href='index.html'>Home</a><a href='map.html'>World Map</a><a href='leaderboard.html'>Leaderboard</a></nav>
-<main><section class='card'><h2>Top Scores</h2><table id='score-table'><thead><tr><th>#</th><th>User</th><th>Score</th></tr></thead><tbody></tbody></table></section></main></body></html>
+<script src="leaderboard.js" defer></script>
+</head>
+<body>
+<nav><a href="index.html">Home</a><a href="map.html">World Map</a><a href="leaderboard.html">Leaderboard</a></nav>
+<main><section class="card"><h2>Top Scores</h2><table id="score-table"><thead><tr><th>#</th><th>User</th><th>Score</th></tr></thead><tbody></tbody></table></section></main>
+</body></html>

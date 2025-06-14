@@ -1,20 +1,13 @@
 
-function shuffle(array) {
-  for (let i = array.length - 1; i > 0; i--) {
-    const j = Math.floor(Math.random() * (i + 1));
-    [array[i], array[j]] = [array[j], array[i]];
-  }
-}
-
 document.addEventListener("DOMContentLoaded", () => {
   const usernameInput = document.getElementById("username");
   const passwordInput = document.getElementById("password");
   const nameStatus = document.getElementById("name-status");
-  const passwordStatus = document.getElementById("password-status");
   const passwordGroup = document.getElementById("password-group");
   const passwordLabel = document.getElementById("password-label");
-  const showPasswordToggle = document.getElementById("show-password");
+  const passwordStatus = document.getElementById("password-status");
   const guestCheckbox = document.getElementById("guest-mode");
+  const showPasswordToggle = document.getElementById("show-password");
   const startBtn = document.getElementById("start-btn");
 
   let isExistingUser = false;
@@ -26,8 +19,8 @@ document.addEventListener("DOMContentLoaded", () => {
       usernameInput.disabled = true;
       passwordInput.disabled = true;
       passwordGroup.style.display = "none";
-      nameStatus.textContent = "🧳 Playing as Guest";
-      nameStatus.style.color = "#38bdf8";
+      nameStatus.textContent = "🧳 Guest mode enabled";
+      passwordStatus.textContent = "";
       startBtn.disabled = false;
     } else {
       usernameInput.disabled = false;
@@ -44,8 +37,8 @@ document.addEventListener("DOMContentLoaded", () => {
   usernameInput.addEventListener("input", async () => {
     const username = usernameInput.value.trim();
     passwordInput.value = "";
-    startBtn.disabled = true;
     passwordStatus.textContent = "";
+    startBtn.disabled = true;
 
     if (!username) {
       nameStatus.textContent = "";
@@ -53,27 +46,34 @@ document.addEventListener("DOMContentLoaded", () => {
       return;
     }
 
-    const doc = await db.collection("users").doc(username).get();
-    isExistingUser = doc.exists;
+    try {
+      const doc = await db.collection("users").doc(username).get();
+      isExistingUser = doc.exists;
 
-    if (isExistingUser) {
-      nameStatus.textContent = "🔐 Username found, enter your password";
-      nameStatus.style.color = "#facc15";
-      passwordLabel.textContent = "Enter your password:";
-    } else {
-      nameStatus.textContent = "✅ Username available, create a password";
-      nameStatus.style.color = "#4ade80";
-      passwordLabel.textContent = "Create a password:";
+      if (isExistingUser) {
+        nameStatus.textContent = "🔐 Username found, enter your password";
+        nameStatus.style.color = "#facc15";
+        passwordLabel.textContent = "Enter your password:";
+      } else {
+        nameStatus.textContent = "✅ Username available, create a password";
+        nameStatus.style.color = "#4ade80";
+        passwordLabel.textContent = "Create a password:";
+      }
+
+      passwordGroup.style.display = "block";
+    } catch (err) {
+      console.error("Error checking username:", err);
     }
-
-    passwordGroup.style.display = "block";
   });
 
   passwordInput.addEventListener("input", async () => {
     const username = usernameInput.value.trim();
     const password = passwordInput.value;
 
-    if (!username) return;
+    if (!username || !password) {
+      startBtn.disabled = true;
+      return;
+    }
 
     if (isExistingUser) {
       const doc = await db.collection("users").doc(username).get();
@@ -107,39 +107,33 @@ document.addEventListener("DOMContentLoaded", () => {
     const username = usernameInput.value.trim();
     const password = passwordInput.value;
 
-    if (!isGuest && (!username || !password)) return;
+    if (isGuest) {
+      localStorage.setItem("quiz_username", "Guest");
+      localStorage.setItem("quiz_isGuest", "true");
+    } else {
+      if (!username || !password) return;
 
-    if (!isGuest && !isExistingUser) {
-      await db.collection("users").doc(username).set({
-        password: password,
-        highScore: 0
-      });
+      if (!isExistingUser) {
+        await db.collection("users").doc(username).set({
+          password: password,
+          highScore: 0,
+          history: []
+        });
+      }
+
+      localStorage.setItem("quiz_username", username);
+      localStorage.setItem("quiz_isGuest", "false");
     }
 
-    localStorage.setItem("quiz_username", isGuest ? "Guest" : username);
-    localStorage.setItem("quiz_isGuest", isGuest.toString());
-
-    // hide intro, show quiz
     document.getElementById("intro-card").style.display = "none";
     document.getElementById("quiz-section").style.display = "block";
-    // load first question...
-    shuffle(data);
-    loadQuestion();
+    document.getElementById("country-name").textContent = "France";
+    document.getElementById("options").innerHTML = `
+      <button>Paris</button>
+      <button>Lyon</button>
+      <button>Marseille</button>
+      <button>Nice</button>
+      <button>Toulouse</button>
+    `;
   });
 });
-
-// Example data & loadQuestion placeholder
-const data = [
-  { country: "France", capital: "Paris", cities: ["Lyon", "Marseille", "Bordeaux", "Nice"] }
-];
-function loadQuestion() {
-  const item = data.pop();
-  document.getElementById("country-name").textContent = item.country;
-  const opts = document.getElementById("options");
-  opts.innerHTML = "";
-  shuffle(item.cities.concat(item.capital)).forEach(city => {
-    const btn = document.createElement("button");
-    btn.textContent = city;
-    opts.appendChild(btn);
-  });
-}
