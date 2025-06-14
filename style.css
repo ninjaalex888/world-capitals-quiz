@@ -98,3 +98,29 @@ th, td {
   max-width: 700px;
   margin: 2rem auto;
 }
+
+@media (max-width: 768px) {
+  nav {
+    flex-direction: column;
+    gap: 0.5rem;
+    font-size: 1rem;
+    align-items: center;
+  }
+  main {
+    padding: 1rem;
+  }
+  .quiz-card {
+    padding: 1.5rem 1.5rem;
+    font-size: 0.95rem;
+  }
+  .quiz-card button {
+    font-size: 1rem;
+    padding: 0.75rem;
+  }
+  input, select {
+    font-size: 1rem;
+  }
+  #chart {
+    width: 100% !important;
+  }
+}

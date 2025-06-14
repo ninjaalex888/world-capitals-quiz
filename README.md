@@ -1,1 +1,1 @@
-Refreshed layout without animated background. Sleek full-screen layout preserved with Viking color palette.
+Fully responsive version for mobile and tablet. Cleaned UI and username check included.
