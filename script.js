@@ -453,3 +453,39 @@ document.addEventListener("keydown", function(event) {
     }
   }
 });
+
+
+firebase.auth().onAuthStateChanged(function(user) {
+  const loginLink = document.getElementById("loginLogoutLink");
+  const guestCheckbox = document.getElementById("guestCheckbox");
+  const userStatusSpan = document.getElementById("userStatus");
+
+  const isGuest = guestCheckbox && guestCheckbox.checked;
+
+  if (user && !isGuest) {
+    loginLink.textContent = "Logout";
+    loginLink.href = "#";
+    loginLink.onclick = () => {
+      firebase.auth().signOut();
+      location.reload();
+    };
+    if (userStatusSpan) {
+      userStatusSpan.textContent = user.email;
+    }
+  } else {
+    loginLink.textContent = "Login";
+    loginLink.href = "login.html";
+    loginLink.onclick = null;
+    if (userStatusSpan) {
+      userStatusSpan.textContent = "Guest";
+    }
+  }
+});
+
+// Handle guest checkbox toggle
+const guestCheckbox = document.getElementById("guestCheckbox");
+if (guestCheckbox) {
+  guestCheckbox.addEventListener("change", () => {
+    location.reload();
+  });
+}

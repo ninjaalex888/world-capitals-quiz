@@ -81,3 +81,105 @@ body {
 main {
   padding: 20px;
 }
+
+
+/* === Vikings Theme Styling === */
+
+/* === Vikings Theme: Purple and Gold === */
+
+:root {
+  --primary-color: #4f2683; /* Vikings purple */
+  --secondary-color: #ffc62f; /* Vikings gold */
+  --background-color: #f9f9f9;
+  --text-color: #333;
+  --button-hover: #381c5d;
+}
+
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: var(--background-color);
+  color: var(--text-color);
+}
+
+nav#menuBar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--primary-color);
+  color: white;
+  padding: 1rem 2rem;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+nav#menuBar a,
+nav#menuBar span,
+nav#menuBar label {
+  color: white;
+  text-decoration: none;
+  margin: 0 10px;
+  font-weight: bold;
+}
+
+nav#menuBar a:hover {
+  text-decoration: underline;
+}
+
+button, .option-button {
+  padding: 10px 18px;
+  font-size: 16px;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: var(--primary-color);
+  border: none;
+  border-radius: 6px;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin: 6px;
+}
+
+button:hover, .option-button:hover {
+  background-color: var(--button-hover);
+}
+
+.option-button.selected-option,
+.option-button:focus {
+  outline: 3px solid var(--secondary-color);
+  background-color: #efe0ff;
+}
+
+footer {
+  font-family: 'Segoe UI', sans-serif;
+  font-size: 13px;
+  padding: 10px;
+  color: black;
+  text-align: center;
+  background-color: #eeeeee;
+  border-top: 1px solid #ccc;
+}
+
+main {
+  padding: 20px;
+}
+
+h2 {
+  color: var(--primary-color);
+}
+
+.form-container {
+  margin-top: 1rem;
+  display: flex;
+  flex-direction: column;
+  max-width: 400px;
+  gap: 10px;
+}
+
+input[type="email"],
+input[type="password"] {
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #aaa;
+  font-size: 14px;
+}

@@ -275,7 +275,7 @@
   to { opacity: 1; }
 }
 </style>
-<link href="favicon.ico" rel="icon" type="image/x-icon"/></head>
+<link href="favicon.ico" rel="icon" type="image/x-icon"/><script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-app.js"></script><script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-auth.js"></script><script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-firestore.js"></script><script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-analytics.js"></script></head>
 <body style="padding-top: 60px;">
 <nav id="mainNav" style="position:fixed;top:0;left:0;width:100%;background:#343a40;color:white;display:flex;align-items:center;justify-content:space-between;padding:0.6rem 1rem;z-index:1000;">
 <span id="siteTitle" style="font-weight:bold;font-size:1.1rem;">🌍 World Capitals Quiz</span><span id="hamburger" style="display:none;cursor:pointer;font-size:1.4rem;color:white;">☰</span>
@@ -284,20 +284,11 @@
 <label style="font-size:0.85rem;display:flex;align-items:center;gap:0.3rem;color:white;">
 <input id="guestToggle" style="transform:scale(1.1);" type="checkbox"/>Play as Guest
     </label>
-<a href="#" id="loginLogoutLink" onclick="openModal(); return false;" style="color:white;font-weight:bold;text-decoration:none;">Login</a>
+<a href="login.html" id="loginLogoutLink" style="color:white;font-weight:bold;text-decoration:none;">Login</a>
 </span>
 </nav>
 <!-- Login Modal -->
-<div class="modal-overlay" id="loginModal" style="display:none;opacity:1;"><form id="loginForm" onsubmit="event.preventDefault(); logIn();"><input autocomplete="username" id="email" placeholder="Email" type="email"/><input autocomplete="current-password" id="password" placeholder="Password" type="password"/></form>
-<div class="modal-content">
-<h2>🔐 Login to Play</h2>
-<button id="signUpBtn">Sign Up</button>
-<button id="googleBtn">Sign in with Google</button>
-<button id="guestBtn">Play as Guest</button>
-<button id="closeModalBtn">Close</button>
-<div class="result" id="userStatus"></div>
-</div>
-</div>
+
 <div id="quizContainer">
 <div class="quiz-container">
 <h1>🌍 World Capitals Quiz</h1>
