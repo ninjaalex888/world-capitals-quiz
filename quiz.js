@@ -31,43 +31,33 @@ const data = [
   {country: "Ukraine", capital: "Kyiv", cities: ['Kharkiv', 'Odesa', 'Dnipro', 'Lviv']},
 ];
 
-
 document.addEventListener('DOMContentLoaded', () => {
   const usernameInput = document.getElementById('username');
+  const passwordInput = document.getElementById('password');
   const nameStatus = document.getElementById('name-status');
+  const passwordStatus = document.getElementById('password-status');
   const passwordGroup = document.getElementById('password-group');
   const passwordLabel = document.getElementById('password-label');
-  const passwordInput = document.getElementById('password');
-  const passwordStatus = document.getElementById('password-status');
   const startBtn = document.getElementById('start-btn');
 
-  function validateStart() {
+  let isExistingUser = false;
+
+  usernameInput.addEventListener('input', async () => {
     const username = usernameInput.value.trim();
-    const password = passwordInput.value;
-    const passStore = JSON.parse(localStorage.getItem('user_passwords') || "{}");
-
-    if (passStore[username]) {
-      return passStore[username] === password;
-    } else {
-      return password.length >= 3;
-    }
-  }
-
-  usernameInput.addEventListener('input', () => {
-    const name = usernameInput.value.trim();
-    const passStore = JSON.parse(localStorage.getItem('user_passwords') || "{}");
-
     passwordInput.value = "";
-    passwordStatus.textContent = "";
     startBtn.disabled = true;
+    passwordStatus.textContent = "";
 
-    if (!name) {
+    if (!username) {
       nameStatus.textContent = "";
       passwordGroup.style.display = "none";
       return;
     }
 
-    if (passStore[name]) {
+    const doc = await db.collection("users").doc(username).get();
+    isExistingUser = doc.exists;
+
+    if (isExistingUser) {
       nameStatus.textContent = "🔐 Username found, enter your password";
       nameStatus.style.color = "#facc15";
       passwordLabel.textContent = "Enter your password:";
@@ -80,13 +70,15 @@ document.addEventListener('DOMContentLoaded', () => {
     passwordGroup.style.display = "block";
   });
 
-  passwordInput.addEventListener('input', () => {
+  passwordInput.addEventListener('input', async () => {
     const username = usernameInput.value.trim();
     const password = passwordInput.value;
-    const passStore = JSON.parse(localStorage.getItem('user_passwords') || "{}");
 
-    if (passStore[username]) {
-      if (passStore[username] === password) {
+    if (!username) return;
+
+    if (isExistingUser) {
+      const doc = await db.collection("users").doc(username).get();
+      if (doc.exists && doc.data().password === password) {
         passwordStatus.textContent = "✅ Password correct";
         passwordStatus.style.color = "#4ade80";
         startBtn.disabled = false;
@@ -108,24 +100,25 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   });
 
-  startBtn.addEventListener('click', () => {
-    if (!validateStart()) return;
-
+  startBtn.addEventListener('click', async () => {
     const username = usernameInput.value.trim();
     const password = passwordInput.value;
-    let passStore = JSON.parse(localStorage.getItem('user_passwords') || "{}");
 
-    if (!passStore[username]) {
-      passStore[username] = password;
-      localStorage.setItem('user_passwords', JSON.stringify(passStore));
+    if (!username || !password) return;
+
+    if (!isExistingUser) {
+      await db.collection("users").doc(username).set({
+        password: password,
+        highScore: 0
+      });
     }
 
+    localStorage.setItem('quiz_username', username);
     const sel = document.getElementById('quiz-length').value;
     const custom = document.getElementById('custom-amount').value;
     let total = (sel === 'infinite') ? Infinity : parseInt(sel);
     if (custom) total = parseInt(custom);
 
-    localStorage.setItem('quiz_username', username);
     questionOrder = [...Array(data.length).keys()];
     shuffle(questionOrder);
     totalQuestions = Math.min(total, data.length);
