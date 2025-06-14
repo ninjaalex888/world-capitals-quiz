@@ -6,38 +6,6 @@ function shuffle(array) {
     [array[i], array[j]] = [array[j], array[i]];
   }
 }
-const data = [
-  {country: "Japan", capital: "Tokyo", cities: ['Osaka', 'Kyoto', 'Nagoya', 'Sapporo']},
-  {country: "Canada", capital: "Ottawa", cities: ['Toronto', 'Vancouver', 'Montreal', 'Calgary']},
-  {country: "Australia", capital: "Canberra", cities: ['Sydney', 'Melbourne', 'Perth', 'Brisbane']},
-  {country: "Brazil", capital: "Brasília", cities: ['Rio de Janeiro', 'São Paulo', 'Salvador', 'Fortaleza']},
-  {country: "Egypt", capital: "Cairo", cities: ['Alexandria', 'Giza', 'Luxor', 'Aswan']},
-  {country: "Germany", capital: "Berlin", cities: ['Munich', 'Hamburg', 'Frankfurt', 'Cologne']},
-  {country: "Kenya", capital: "Nairobi", cities: ['Mombasa', 'Kisumu', 'Nakuru', 'Eldoret']},
-  {country: "India", capital: "New Delhi", cities: ['Mumbai', 'Bengaluru', 'Kolkata', 'Chennai']},
-  {country: "Mexico", capital: "Mexico City", cities: ['Guadalajara', 'Monterrey', 'Cancún', 'Puebla']},
-  {country: "France", capital: "Paris", cities: ['Lyon', 'Marseille', 'Nice', 'Toulouse']},
-  {country: "Argentina", capital: "Buenos Aires", cities: ['Córdoba', 'Rosario', 'Mendoza', 'La Plata']},
-  {country: "United States", capital: "Washington, D.C.", cities: ['New York', 'Los Angeles', 'Chicago', 'Houston']},
-  {country: "United Kingdom", capital: "London", cities: ['Manchester', 'Birmingham', 'Liverpool', 'Leeds']},
-  {country: "Italy", capital: "Rome", cities: ['Milan', 'Naples', 'Turin', 'Palermo']},
-  {country: "Russia", capital: "Moscow", cities: ['St. Petersburg', 'Novosibirsk', 'Yekaterinburg', 'Kazan']},
-  {country: "China", capital: "Beijing", cities: ['Shanghai', 'Guangzhou', 'Shenzhen', 'Chengdu']},
-  {country: "South Korea", capital: "Seoul", cities: ['Busan', 'Incheon', 'Daegu', 'Daejeon']},
-  {country: "Spain", capital: "Madrid", cities: ['Barcelona', 'Valencia', 'Seville', 'Zaragoza']},
-  {country: "Netherlands", capital: "Amsterdam", cities: ['Rotterdam', 'The Hague', 'Utrecht', 'Eindhoven']},
-  {country: "Nigeria", capital: "Abuja", cities: ['Lagos', 'Kano', 'Ibadan', 'Port Harcourt']},
-  {country: "Thailand", capital: "Bangkok", cities: ['Chiang Mai', 'Phuket', 'Pattaya', 'Nakhon Ratchasima']},
-  {country: "Vietnam", capital: "Hanoi", cities: ['Ho Chi Minh City', 'Da Nang', 'Hai Phong', 'Can Tho']},
-  {country: "Philippines", capital: "Manila", cities: ['Cebu City', 'Davao City', 'Quezon City', 'Zamboanga']},
-  {country: "Turkey", capital: "Ankara", cities: ['Istanbul', 'Izmir', 'Bursa', 'Antalya']},
-  {country: "Iran", capital: "Tehran", cities: ['Mashhad', 'Isfahan', 'Tabriz', 'Shiraz']},
-  {country: "Pakistan", capital: "Islamabad", cities: ['Karachi', 'Lahore', 'Faisalabad', 'Rawalpindi']},
-  {country: "Indonesia", capital: "Jakarta", cities: ['Surabaya', 'Bandung', 'Medan', 'Semarang']},
-  {country: "Malaysia", capital: "Kuala Lumpur", cities: ['George Town', 'Johor Bahru', 'Ipoh', 'Shah Alam']},
-  {country: "Greece", capital: "Athens", cities: ['Thessaloniki', 'Patras', 'Heraklion', 'Larissa']},
-  {country: "Ukraine", capital: "Kyiv", cities: ['Kharkiv', 'Odesa', 'Dnipro', 'Lviv']},
-];
 
 document.addEventListener('DOMContentLoaded', () => {
   const usernameInput = document.getElementById('username');
@@ -46,9 +14,32 @@ document.addEventListener('DOMContentLoaded', () => {
   const passwordStatus = document.getElementById('password-status');
   const passwordGroup = document.getElementById('password-group');
   const passwordLabel = document.getElementById('password-label');
+  const showPasswordToggle = document.getElementById('show-password');
+  const guestCheckbox = document.getElementById('guest-mode');
   const startBtn = document.getElementById('start-btn');
 
   let isExistingUser = false;
+  let isGuest = false;
+
+  guestCheckbox.addEventListener('change', () => {
+    isGuest = guestCheckbox.checked;
+    if (isGuest) {
+      usernameInput.disabled = true;
+      passwordInput.disabled = true;
+      passwordGroup.style.display = "none";
+      nameStatus.textContent = "🧳 Playing as Guest";
+      nameStatus.style.color = "#38bdf8";
+      startBtn.disabled = false;
+    } else {
+      usernameInput.disabled = false;
+      passwordInput.disabled = false;
+      usernameInput.value = "";
+      passwordInput.value = "";
+      nameStatus.textContent = "";
+      passwordStatus.textContent = "";
+      startBtn.disabled = true;
+    }
+  });
 
   usernameInput.addEventListener('input', async () => {
     const username = usernameInput.value.trim();
@@ -108,20 +99,27 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   });
 
+  showPasswordToggle.addEventListener('change', () => {
+    passwordInput.type = showPasswordToggle.checked ? "text" : "password";
+  });
+
   startBtn.addEventListener('click', async () => {
     const username = usernameInput.value.trim();
     const password = passwordInput.value;
 
-    if (!username || !password) return;
+    if (!isGuest && (!username || !password)) return;
 
-    if (!isExistingUser) {
+    if (!isGuest && !isExistingUser) {
       await db.collection("users").doc(username).set({
         password: password,
-        highScore: 0
+        highScore: 0,
+        history: []
       });
     }
 
-    localStorage.setItem('quiz_username', username);
+    localStorage.setItem('quiz_username', isGuest ? "Guest" : username);
+    localStorage.setItem('quiz_isGuest', isGuest ? "true" : "false");
+
     const sel = document.getElementById('quiz-length').value;
     const custom = document.getElementById('custom-amount').value;
     let total = (sel === 'infinite') ? Infinity : parseInt(sel);
