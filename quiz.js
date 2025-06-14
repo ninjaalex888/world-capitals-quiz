@@ -137,3 +137,82 @@ document.addEventListener("DOMContentLoaded", () => {
     `;
   });
 });
+
+
+let data = [
+  {{ country: "France", capital: "Paris", options: ["Paris", "Lyon", "Nice", "Marseille", "Toulouse"] }},
+  {{ country: "Japan", capital: "Tokyo", options: ["Tokyo", "Osaka", "Kyoto", "Nagoya", "Sapporo"] }},
+  {{ country: "Brazil", capital: "Brasília", options: ["São Paulo", "Brasília", "Rio de Janeiro", "Salvador", "Fortaleza"] }},
+  {{ country: "Canada", capital: "Ottawa", options: ["Toronto", "Vancouver", "Montreal", "Ottawa", "Calgary"] }},
+  {{ country: "Australia", capital: "Canberra", options: ["Sydney", "Melbourne", "Canberra", "Brisbane", "Perth"] }}
+];
+
+let currentQuestion = 0;
+let correctAnswers = 0;
+let totalQuestions = 0;
+let questionOrder = [];
+
+function shuffle(array) {
+  for (let i = array.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [array[i], array[j]] = [array[j], array[i]];
+  }
+}
+
+function loadQuestion() {
+  const index = questionOrder[currentQuestion];
+  const q = data[index];
+  document.getElementById("country-name").textContent = q.country;
+  const optionsDiv = document.getElementById("options");
+  optionsDiv.innerHTML = "";
+  q.options.forEach(option => {
+    const btn = document.createElement("button");
+    btn.textContent = option;
+    btn.onclick = () => handleAnswer(option, q.capital);
+    optionsDiv.appendChild(btn);
+  });
+  document.getElementById("result").textContent = "";
+  document.getElementById("next-btn").style.display = "none";
+}
+
+function handleAnswer(selected, correct) {
+  const result = document.getElementById("result");
+  if (selected === correct) {
+    result.textContent = "✅ Correct!";
+    result.style.color = "#4ade80";
+    correctAnswers++;
+  } else {
+    result.textContent = `❌ Wrong. Correct answer: ${correct}`;
+    result.style.color = "#f87171";
+  }
+  document.getElementById("next-btn").style.display = "inline-block";
+  Array.from(document.getElementById("options").children).forEach(btn => {
+    btn.disabled = true;
+  });
+}
+
+document.getElementById("next-btn").addEventListener("click", () => {
+  currentQuestion++;
+  if (currentQuestion < totalQuestions) {
+    loadQuestion();
+  } else {
+    document.getElementById("quiz-section").innerHTML = `<h2>Quiz finished!</h2><p>Your score: ${correctAnswers} / ${totalQuestions}</p>`;
+    const isGuest = localStorage.getItem("quiz_isGuest") === "true";
+    const user = localStorage.getItem("quiz_username");
+    if (!isGuest && user) {
+      const userRef = db.collection("users").doc(user);
+      userRef.get().then(doc => {
+        if (doc.exists) {
+          const data = doc.data();
+          const prevHigh = data.highScore || 0;
+          const history = data.history || [];
+          history.push({ score: correctAnswers, total: totalQuestions, time: new Date().toISOString() });
+          userRef.update({
+            highScore: Math.max(prevHigh, correctAnswers),
+            history: history
+          });
+        }
+      });
+    }
+  }
+});
