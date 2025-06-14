@@ -1,4 +1,14 @@
 
+function showToast(message) {
+  const toast = document.getElementById("toast");
+  toast.textContent = message;
+  toast.style.visibility = "visible";
+  setTimeout(() => {
+    toast.style.visibility = "hidden";
+  }, 3000);
+}
+
+
 import { initializeApp } from "https://www.gstatic.com/firebasejs/9.22.0/firebase-app.js";
 import { getAuth, createUserWithEmailAndPassword, signInWithEmailAndPassword, signOut, onAuthStateChanged, GoogleAuthProvider, signInWithPopup } from "https://www.gstatic.com/firebasejs/9.22.0/firebase-auth.js";
 import { getFirestore, collection, addDoc, serverTimestamp, query, where, getDocs, deleteDoc, doc } from "https://www.gstatic.com/firebasejs/9.22.0/firebase-firestore.js";
@@ -153,11 +163,12 @@ function submitAnswer() {
   if (userAnswer === correctAnswer) {
     score++;
     document.getElementById("resultText").textContent = "Correct!";
-  } else {
     document.getElementById("resultText").textContent =
       `Incorrect. The correct answer is ${selectedQuestions[currentQuestionIndex].capital}.`;
   }
 
+  distractors.length = 4;
+  distractors.push(correctCapital);
   currentQuestionIndex++;
 
   setTimeout(() => {
@@ -168,7 +179,9 @@ function submitAnswer() {
         currentQuestionIndex = 0;
       }
       showQuestion();
-    } else {
+  } else {
+    resultText.textContent = `Incorrect. The correct answer is ${correct}.`;
+  }
       document.getElementById("quizArea").style.display = "none";
       alert(`Quiz finished! Your score: ${score}/${selectedQuestions.length}`);
       if (!window.isGuest) {
@@ -250,18 +263,11 @@ function generateChoices(correctCapital, country) {
     }
   }
 
-  distractors.length = 4; // Ensure exactly 4
-  distractors.push(correctCapital);
 
-  return shuffle(distractors).slice(0, 5);
-}
 
-function submitAnswer(selected, correct) {
-  const resultText = document.getElementById("resultText");
-  if (selected.toLowerCase() === correct.toLowerCase()) {
-    score++;
-    resultText.textContent = "Correct!";
   } else {
+    resultText.textContent = `Incorrect. The correct answer is ${correct}.`;
+  }
     resultText.textContent = `Incorrect. The correct answer is ${correct}.`;
   }
 
@@ -275,7 +281,9 @@ function submitAnswer(selected, correct) {
         currentQuestionIndex = 0;
       }
       showQuestion();
-    } else {
+  } else {
+    resultText.textContent = `Incorrect. The correct answer is ${correct}.`;
+  }
       document.getElementById("quizArea").style.display = "none";
       alert(`Quiz finished! Your score: ${score}/${selectedQuestions.length}`);
       if (!window.isGuest) {
@@ -290,7 +298,8 @@ window.showQuestion = showQuestion;
 
 
 function openModal() {
-  document.getElementById("loginModal").style.display = "flex";
+  const modal = document.getElementById("loginModal");
+  if (modal) modal.style.display = "flex";
 }
 function closeModal() {
   document.getElementById("loginModal").style.display = "none";
@@ -325,6 +334,8 @@ function refreshNav(user) {
   if (isLoggedIn) {
     loginLink.textContent = "Logout";
   } else {
+    resultText.textContent = `Incorrect. The correct answer is ${correct}.`;
+  }
     loginLink.textContent = "Login";
   }
 
@@ -351,7 +362,9 @@ document.addEventListener("DOMContentLoaded", () => {
     e.preventDefault();
     if (auth.currentUser) {
       logOut();
-    } else {
+  } else {
+    resultText.textContent = `Incorrect. The correct answer is ${correct}.`;
+  }
       openModal();
     }
   });

@@ -284,15 +284,13 @@
 <label style="font-size:0.85rem;display:flex;align-items:center;gap:0.3rem;color:white;">
 <input id="guestToggle" style="transform:scale(1.1);" type="checkbox"/>Play as Guest
     </label>
-<a href="#" id="loginLogoutLink" style="color:white;font-weight:bold;text-decoration:none;">Login</a>
+<a href="#" id="loginLogoutLink" onclick="openModal(); return false;" style="color:white;font-weight:bold;text-decoration:none;">Login</a>
 </span>
 </nav>
 <!-- Login Modal -->
-<div class="modal-overlay" id="loginModal" style="display:none;">
+<div class="modal-overlay" id="loginModal" style="display:none;opacity:1;"><form id="loginForm" onsubmit="event.preventDefault(); logIn();"><input autocomplete="username" id="email" placeholder="Email" type="email"/><input autocomplete="current-password" id="password" placeholder="Password" type="password"/></form>
 <div class="modal-content">
 <h2>🔐 Login to Play</h2>
-<input id="email" placeholder="Email" type="email"/>
-<input id="password" placeholder="Password" type="password"/>
 <button id="signUpBtn">Sign Up</button>
 <button id="googleBtn">Sign in with Google</button>
 <button id="guestBtn">Play as Guest</button>
@@ -344,5 +342,5 @@
     }
   });
 </script>
-<footer style="text-align:center;padding:0.5rem;font-size:0.8rem;color:#000;margin-top:3rem;">© June 14, 2025 | alex.sheehan95@gmail.com</footer></body>
+<footer style="text-align:center;padding:0.5rem;font-size:0.8rem;color:#000;margin-top:3rem;">© June 14, 2025 | alex.sheehan95@gmail.com</footer><div id="toast" style="visibility:hidden;min-width:250px;margin-left:-125px;background-color:#e74c3c;color:#fff;text-align:center;border-radius:2px;padding:16px;position:fixed;z-index:1;left:50%;bottom:30px;font-size:17px;">Login failed. Please check your credentials.</div></body>
 </html>
