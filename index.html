@@ -1,10 +1,165 @@
 <!DOCTYPE html>
+
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>World Capitals Quiz</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <style>
+<meta charset="utf-8"/>
+<title>World Capitals Quiz</title>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<style>
+    @keyframes spin {
+      0% { transform: rotate(0deg); }
+      100% { transform: rotate(360deg); }
+    }
+
+    .spinner {
+      border: 4px solid rgba(0, 0, 0, 0.1);
+      border-left-color: #4facfe;
+      border-radius: 50%;
+      width: 24px;
+      height: 24px;
+      animation: spin 1s linear infinite;
+      margin: 0 auto;
+    }
+
+    :root {
+      --primary: #4facfe;
+      --primary-dark: #00c6ff;
+      --danger: #ff5c5c;
+      --bg: #f0f4f8;
+      --card-bg: #ffffff;
+      --font: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: var(--font);
+      background: linear-gradient(to right, var(--primary), var(--primary-dark));
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+    }
+
+    .quiz-container {
+      background: var(--card-bg);
+      padding: 2rem;
+      border-radius: 16px;
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+      width: 100%;
+      max-width: 480px;
+    }
+
+    h1 {
+      text-align: center;
+      color: #333;
+      margin-bottom: 1.5rem;
+    }
+
+    input[type="email"],
+    input[type="password"],
+    input[type="number"],
+    input[type="text"],
+    select {
+      width: 100%;
+      padding: 0.75rem;
+      margin: 0.5rem 0;
+      font-size: 1rem;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      outline: none;
+      transition: 0.3s;
+    }
+
+    input:focus,
+    select:focus {
+      border-color: var(--primary);
+    }
+
+    button {
+      width: 100%;
+      padding: 0.75rem;
+      margin: 0.5rem 0;
+      font-size: 1rem;
+      border: none;
+      border-radius: 8px;
+      font-weight: bold;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+
+    button:hover {
+      opacity: 0.9;
+    }
+
+    button[onclick="signUp()"] {
+      background-color: #28a745;
+      color: white;
+    }
+
+    button[onclick="logIn()"] {
+      background-color: #007bff;
+      color: white;
+    }
+
+    button[onclick="signInWithGoogle()"] {
+      background-color: white;
+      color: #444;
+      border: 1px solid #ccc;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    button[onclick="signInWithGoogle()"]::before {
+      content: '';
+      background: url('https://www.gstatic.com/firebasejs/ui/2.0.0/images/auth/google.svg') no-repeat center;
+      background-size: contain;
+      width: 20px;
+      height: 20px;
+      display: inline-block;
+      margin-right: 10px;
+    }
+
+    button[onclick="logOut()"] {
+      background-color: var(--danger);
+      color: white;
+    }
+
+    .question {
+      margin-top: 1rem;
+    }
+
+    .result {
+      font-weight: bold;
+      text-align: center;
+      margin-top: 1rem;
+      font-size: 1.1rem;
+    }
+
+    ul {
+      list-style: none;
+      padding-left: 0;
+    }
+
+    ul li {
+      background: #f8f9fa;
+      border-radius: 8px;
+      padding: 0.5rem 1rem;
+      margin: 0.5rem 0;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    ul li button {
+      background-color: var(--danger);
+      color: white;
+      width: auto;
+      font-size: 0.85rem;
+      padding: 0.4rem 0.6rem;
+    }
+
     * {
       box-sizing: border-box;
     }
@@ -76,45 +231,49 @@
   </style>
 </head>
 <body>
-  <div id="authArea" class="quiz-container">
-    <h1>🔐 Login to Play</h1>
-    <input type="email" id="email" placeholder="Email">
-    <input type="password" id="password" placeholder="Password">
-    <button onclick="signUp()">Sign Up</button>
-    <button onclick="logIn()">Log In</button>
-    <button onclick="signInWithGoogle()">Sign in with Google</button>
-    <button onclick="logOut()">Log Out</button>
-    <div id="userStatus" class="result"></div>
-    <h1>🔐 Login to Play</h1>
-    <input type="email" id="email" placeholder="Email">
-    <input type="password" id="password" placeholder="Password">
-    <button onclick="signUp()">Sign Up</button>
-    <button onclick="logIn()">Log In</button>
-    <button onclick="logOut()">Log Out</button>
-    <div id="userStatus" class="result"></div>
+  <div id="topBar" style="width: 100%; background: #343a40; color: white; padding: 0.5rem 1rem; font-size: 1rem; display: flex; justify-content: space-between; align-items: center;">
+    <div>🌍 World Capitals Quiz</div>
+    <div id="userDisplay">Checking login...</div>
   </div>
-  <div id="quizContainer" style="display:none;">
-  <div class="quiz-container">
-    <h1>🌍 World Capitals Quiz</h1>
-    <label for="questionCount">Select number of questions:</label>
-    <select id="questionCount">
-      <option value="5">5</option>
-      <option value="10">10</option>
-      <option value="20">20</option>
-      <option value="0">Infinite</option>
-    </select>
-    <label for="customCount">Or enter custom number:</label>
-    <input type="number" id="customCount" placeholder="Enter number of questions" min="1">
-    <button onclick="startQuiz()">Start Quiz</button>
-    <div id="quizArea" class="question" style="display:none;">
-      <div id="questionText"></div>
-      <input type="text" id="answerInput" placeholder="Enter your answer" onkeydown="handleEnter(event)">
-      <button onclick="submitAnswer()">Submit Answer</button>
-      <div id="resultText" class="result"></div>
-    </div>
-  </div>
-  <script src="script.js"></script>
+<div class="quiz-container" id="authArea">
+<h1>🔐 Login to Play</h1>
+<input id="email" placeholder="Email" type="email"/>
+<input id="password" placeholder="Password" type="password"/>
+<button onclick="signUp()">Sign Up</button>
+<button onclick="logIn()">Log In</button>
+<button onclick="signInWithGoogle()">Sign in with Google</button>
+<button onclick="logOut()">Log Out</button>
+<div class="result" id="userStatus"></div>
+<h1>🔐 Login to Play</h1>
+<input id="email" placeholder="Email" type="email"/>
+<input id="password" placeholder="Password" type="password"/>
+
+
+
+<div class="result" id="userStatus"></div>
 </div>
-  <script type="module" src="script.js"></script>
+<div id="quizContainer" style="display:none;">
+<div class="quiz-container">
+<h1>🌍 World Capitals Quiz</h1>
+<label for="questionCount">Select number of questions:</label>
+<select id="questionCount">
+<option value="5">5</option>
+<option value="10">10</option>
+<option value="20">20</option>
+<option value="0">Infinite</option>
+</select>
+<label for="customCount">Or enter custom number:</label>
+<input id="customCount" min="1" placeholder="Enter number of questions" type="number"/>
+<button onclick="startQuiz()">Start Quiz</button>
+<div class="question" id="quizArea" style="display:none;">
+<div id="questionText"></div>
+<input id="answerInput" onkeydown="handleEnter(event)" placeholder="Enter your answer" type="text"/>
+<button onclick="submitAnswer()">Submit Answer</button>
+<div class="result" id="resultText"></div>
+</div>
+</div>
+<script src="script.js"></script>
+</div>
+<script src="script.js" type="module"></script>
 </body>
 </html>
