@@ -59,7 +59,13 @@
     const app = initializeApp(firebaseConfig);
     const db = getFirestore(app);
 
-    async function loadLeaderboard() {
+    function obfuscateEmail(email) {
+          if (!email) return "";
+          const [user, domain] = email.split("@");
+          return user.slice(0, 2) + "*".repeat(Math.max(5, user.length - 2)) + "@";
+        }
+
+        async function loadLeaderboard() {
       const leaderboardRef = collection(db, "quizScores");
       const q = query(leaderboardRef, orderBy("score", "desc"), limit(50));
       const querySnapshot = await getDocs(q);
