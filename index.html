@@ -1,166 +1,100 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
+  <meta charset="UTF-8">
   <title>World Capitals Quiz</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <link rel="stylesheet" href="style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(to right, #4facfe, #00f2fe);
+      color: #333;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+    }
+
+    .quiz-container {
+      background: white;
+      padding: 2rem;
+      border-radius: 16px;
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+      width: 100%;
+      max-width: 500px;
+    }
+
+    h1 {
+      text-align: center;
+      color: #333;
+      margin-bottom: 1.5rem;
+    }
+
+    select, input[type="number"], input[type="text"], button {
+      width: 100%;
+      padding: 0.75rem;
+      margin: 0.5rem 0;
+      font-size: 1rem;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      outline: none;
+      transition: 0.3s;
+    }
+
+    select:focus, input:focus, button:hover {
+      border-color: #00c6ff;
+    }
+
+    button {
+      background-color: #4facfe;
+      color: white;
+      font-weight: bold;
+      cursor: pointer;
+      border: none;
+    }
+
+    button:hover {
+      background-color: #00c6ff;
+    }
+
+    .question {
+      margin-top: 1.5rem;
+    }
+
+    .result {
+      font-weight: bold;
+      text-align: center;
+      margin-top: 1rem;
+      font-size: 1.1rem;
+    }
+  </style>
 </head>
 <body>
-  <header>
-    <nav>
-      <a href="index.html" class="active">Home</a>
-      <a href="map.html">World Map</a>
-      <a href="leaderboard.html">Leaderboard</a>
-      <a href="about.html">About</a>
-    </nav>
-  </header>
-  <main class="container">
-    <section class="card" id="intro-card">
-      <h1>🌍 World Capitals Quiz</h1>
-      <label for="username">Username:</label>
-      <input id="username" placeholder="Enter username" />
-      <span id="nameStatus"></span>
-
-      <label for="password">Password:</label>
-      <div class="password-wrapper">
-        <input type="password" id="password" placeholder="Enter password" />
-        <span class="toggle-password" onclick="togglePassword()">👁️</span>
-      </div>
-      <span id="passwordStatus"></span>
-
-      <label for="quiz-length">Select Quiz Length:</label>
-      <select id="quiz-length">
-        <option value="5">5</option>
-        <option value="10" selected>10</option>
-        <option value="20">20</option>
-        <option value="9999">Infinite</option>
-      </select>
-      <label for="custom-amount">Or enter custom amount:</label>
-      <input type="number" id="custom-amount" min="1" />
-
-      <button id="start-btn" disabled>Start Quiz</button>
-    </section>
-
-    <section id="quiz-section" style="display:none;">
-      <h2 id="country-name"></h2>
-      <div id="options"></div>
-      <p id="result"></p>
-      <button id="next-btn" style="display:none;">Next</button>
-    </section>
-  </main>
-
-  <script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-app-compat.js"></script>
-  <script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-firestore-compat.js"></script>
-  <script>
-    const firebaseConfig = {
-      apiKey: "AIzaSyAi9sd4U0BLqvpOM3g5P2HdDzMjJxltrWY",
-      authDomain: "worldcapitalsquiz.firebaseapp.com",
-      projectId: "worldcapitalsquiz",
-      storageBucket: "worldcapitalsquiz.firebasestorage.app",
-      messagingSenderId: "794094874571",
-      appId: "1:794094874571:web:d292014542616ca553d04e",
-      measurementId: "G-MKS0QNWVS4"
-    };
-    firebase.initializeApp(firebaseConfig);
-    const db = firebase.firestore();
-  </script>
-  <script>
-    function togglePassword() {
-      const pw = document.getElementById("password");
-      pw.type = pw.type === "password" ? "text" : "password";
-    }
-  </script>
-  <script src="quiz.js"></script>
-
-<script>
-document.addEventListener('DOMContentLoaded', () => {
-  const usernameInput = document.getElementById('username');
-  const usernameStatus = document.getElementById('username-status');
-
-  if (!usernameInput || !usernameStatus) return;
-
-  usernameInput.addEventListener('input', async () => {
-    const name = usernameInput.value.trim();
-    if (!name) {
-      usernameStatus.textContent = '';
-      return;
-    }
-
-    try {
-      const docRef = db.collection('users').doc(name);
-      const docSnap = await docRef.get();
-      if (docSnap.exists) {
-        usernameStatus.textContent = '🔒 Username found. Please enter your password.';
-        usernameStatus.style.color = 'goldenrod';
-        document.getElementById('password-label').textContent = 'Password:';
-        document.getElementById('password').placeholder = 'Enter your password';
-      } else {
-        usernameStatus.textContent = '✅ Username available. Set a new password.';
-        usernameStatus.style.color = 'lightgreen';
-        document.getElementById('password-label').textContent = 'Create Password:';
-        document.getElementById('password').placeholder = 'Create a password';
-      }
-    } catch (e) {
-      console.error('Error checking username:', e);
-      usernameStatus.textContent = '⚠️ Error checking username';
-      usernameStatus.style.color = 'red';
-    }
-  });
-
-  document.getElementById('toggle-password').addEventListener('click', () => {
-    const pwField = document.getElementById('password');
-    pwField.type = pwField.type === 'password' ? 'text' : 'password';
-  });
-});
-</script>
-
-
-<script>
-document.addEventListener('DOMContentLoaded', () => {
-  const usernameInput = document.getElementById('username');
-  const usernameStatus = document.getElementById('username-status');
-
-  if (!usernameInput || !usernameStatus) return;
-
-  usernameInput.addEventListener('input', async () => {
-    const name = usernameInput.value.trim();
-    if (!name) {
-      usernameStatus.textContent = '';
-      return;
-    }
-
-    try {
-      const docRef = db.collection('users').doc(name);
-      const docSnap = await docRef.get();
-      if (docSnap.exists) {
-        usernameStatus.textContent = '🔒 Username found. Please enter your password.';
-        usernameStatus.style.color = 'goldenrod';
-        document.getElementById('password-label').textContent = 'Password:';
-        document.getElementById('password').placeholder = 'Enter your password';
-      } else {
-        usernameStatus.textContent = '✅ Username available. Set a new password.';
-        usernameStatus.style.color = 'lightgreen';
-        document.getElementById('password-label').textContent = 'Create Password:';
-        document.getElementById('password').placeholder = 'Create a password';
-      }
-    } catch (e) {
-      console.error('Error checking username:', e);
-      usernameStatus.textContent = '⚠️ Error checking username';
-      usernameStatus.style.color = 'red';
-    }
-  });
-
-  const toggleBtn = document.getElementById('toggle-password');
-  if (toggleBtn) {
-    toggleBtn.addEventListener('click', () => {
-      const pwField = document.getElementById('password');
-      pwField.type = pwField.type === 'password' ? 'text' : 'password';
-    });
-  }
-});
-</script>
-
+  <div class="quiz-container">
+    <h1>🌍 World Capitals Quiz</h1>
+    <label for="questionCount">Select number of questions:</label>
+    <select id="questionCount">
+      <option value="5">5</option>
+      <option value="10">10</option>
+      <option value="20">20</option>
+      <option value="0">Infinite</option>
+    </select>
+    <label for="customCount">Or enter custom number:</label>
+    <input type="number" id="customCount" placeholder="Enter number of questions" min="1">
+    <button onclick="startQuiz()">Start Quiz</button>
+    <div id="quizArea" class="question" style="display:none;">
+      <div id="questionText"></div>
+      <input type="text" id="answerInput" placeholder="Enter your answer" onkeydown="handleEnter(event)">
+      <button onclick="submitAnswer()">Submit Answer</button>
+      <div id="resultText" class="result"></div>
+    </div>
+  </div>
+  <script src="script.js"></script>
 </body>
 </html>
