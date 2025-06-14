@@ -1,30 +1,26 @@
 
 <!DOCTYPE html>
+
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Login - World Capitals Quiz</title>
-  <link rel="stylesheet" href="styles.css">
-  <script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-app.js"></script>
-  <script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-auth.js"></script>
-  <script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-firestore.js"></script>
-  <script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-analytics.js"></script>
-</head>
+<meta charset="utf-8"/>
+<title>Login - World Capitals Quiz</title>
+<link href="styles.css" rel="stylesheet"/>
+<script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-app.js"></script><script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-auth.js"></script><script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-firestore.js"></script><script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-analytics.js"></script></head>
 <body>
-  <nav id="menuBar">
-    <a href="index.html">Home</a>
-    <span>Login</span>
-    <a href="leaderboard.html">Leaderboard</a>
-  </nav>
-  <main>
-    <h2>Login</h2>
-    <div class="form-container">
-      <input id="email" placeholder="Email" type="email" autocomplete="username" />
-      <input id="password" placeholder="Password" type="password" autocomplete="current-password" />
-      <button onclick="logIn()">Log In</button>
-      <button onclick="signUp()">Sign Up</button>
-    </div>
-  </main>
-  <script src="script.js"></script>
-</body>
+<nav id="menuBar">
+<a href="index.html">Home</a>
+<span>Login</span>
+<a href="leaderboard.html">Leaderboard</a>
+</nav>
+<main>
+<h2>Login</h2>
+<div id="authMessage"></div><div class="form-container">
+<input autocomplete="username" id="email" placeholder="Email" type="email"/>
+<input autocomplete="current-password" id="password" placeholder="Password" type="password"/>
+<button onclick="logIn()">Log In</button>
+<button onclick="signUp()">Sign Up</button>
+</div>
+</main>
+<script defer="True" src="script.js"></script></body>
 </html>

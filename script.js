@@ -15,10 +15,6 @@ function showToast(message) {
 }
 
 
-import { initializeApp } from "https://www.gstatic.com/firebasejs/9.22.0/firebase-app.js";
-import { getAuth, createUserWithEmailAndPassword, signInWithEmailAndPassword, signOut, onAuthStateChanged, GoogleAuthProvider, signInWithPopup } from "https://www.gstatic.com/firebasejs/9.22.0/firebase-auth.js";
-import { getFirestore, collection, addDoc, serverTimestamp, query, where, getDocs, deleteDoc, doc } from "https://www.gstatic.com/firebasejs/9.22.0/firebase-firestore.js";
-
 const firebaseConfig = {
   apiKey: "AIzaSyAi9sd4U0BLqvpOM3g5P2HdDzMjJxltrWY",
   authDomain: "worldcapitalsquiz.firebaseapp.com",
@@ -35,6 +31,9 @@ const db = getFirestore(app);
 const provider = new GoogleAuthProvider();
 
 function signUp() {
+  const messageBox = document.getElementById("authMessage");
+  if (messageBox) messageBox.textContent = "";
+
   const email = document.getElementById("email").value;
   const password = document.getElementById("password").value;
   createUserWithEmailAndPassword(auth, email, password)
@@ -193,7 +192,6 @@ function submitAnswer() {
       if (!window.isGuest) {
         saveUserScore(score, selectedQuestions.length);
       }
-    }
   }, 1500);
 
 function handleEnter(event) {
