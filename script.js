@@ -136,7 +136,7 @@ function playAsGuest() {
 
 window.signInWithGoogle = signInWithGoogle;
 window.logOut = logOut;
-window.playAsGuest = playAsGuest;
+
 
 
 function shuffle(array) {
@@ -222,7 +222,7 @@ let score = 0;
 let totalQuestions = 0;
 let selectedQuestions = [];
 
-window.startQuiz = startQuiz;
+
 window.submitAnswer = submitAnswer;
 window.handleEnter = handleEnter;
 
@@ -490,6 +490,10 @@ if (guestCheckbox) {
     location.reload();
   });
 }
+
+
+
+
 
 
 window.logIn = logIn;
