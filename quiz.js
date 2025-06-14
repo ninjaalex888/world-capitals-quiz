@@ -174,3 +174,47 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   });
 });
+
+
+function canStartQuiz() {
+  const usernameInput = document.getElementById('username');
+  const nameStatus = document.getElementById('name-status');
+  const startBtn = document.getElementById('start-btn');
+
+  return (
+    usernameInput.value.trim().length > 0 &&
+    nameStatus.textContent.includes("available") &&
+    !startBtn.disabled
+  );
+}
+
+document.addEventListener('DOMContentLoaded', () => {
+  const startBtn = document.getElementById('start-btn');
+  const usernameInput = document.getElementById('username');
+
+  startBtn.addEventListener('click', () => {
+    if (!canStartQuiz()) return;
+
+    const user = usernameInput.value.trim();
+    const sel = document.getElementById('quiz-length').value;
+    const custom = document.getElementById('custom-amount').value;
+
+    let total = (sel === 'infinite') ? Infinity : parseInt(sel);
+    if (custom) total = parseInt(custom);
+
+    localStorage.setItem('quiz_username', user);
+    questionOrder = [...Array(data.length).keys()];
+    shuffle(questionOrder);
+    totalQuestions = Math.min(total, data.length);
+
+    document.getElementById('intro-card').style.display = 'none';
+    document.getElementById('quiz-section').style.display = 'block';
+    loadQuestion();
+  });
+
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'Enter' && canStartQuiz()) {
+      startBtn.click();
+    }
+  });
+});

@@ -1,1 +1,1 @@
-Fully responsive version for mobile and tablet. Cleaned UI and username check included.
+Fixed Start Quiz button and added Enter key support. Fully responsive and clean.
