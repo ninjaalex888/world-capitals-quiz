@@ -1,128 +1,26 @@
 
-:root {
-  --purple: #4f2683;
-  --purple-light: #7c4fb3;
-  --gold: #ffc62f;
-  --text: #f1f5f9;
-  --card-bg: rgba(0, 0, 0, 0.6);
+:root{
+ --purple:#4f2683;
+ --purple-light:#6b45ba;
+ --gold:#ffc62f;
+ --txt:#f4f4f5;
+ --bg:#1e1e2f;
+ --card:rgba(255,255,255,0.08);
 }
-
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
-
-body {
-  font-family: 'Segoe UI', sans-serif;
-  background-color: #1e1e2f;
-  color: var(--text);
-  min-height: 100vh;
-}
-
-body.no-bg {
-  background-color: #1e1e2f;
-}
-
-nav {
-  background-color: var(--purple);
-  display: flex;
-  gap: 1.5rem;
-  padding: 1rem 2rem;
-  position: sticky;
-  top: 0;
-}
-
-nav a {
-  color: var(--text);
-  text-decoration: none;
-  font-weight: 500;
-}
-
-nav a:hover {
-  color: var(--gold);
-}
-
-main {
-  padding: 4rem 1rem;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  gap: 2rem;
-}
-
-.card {
-  background-color: var(--card-bg);
-  padding: 2rem 3rem;
-  border-radius: 1rem;
-  max-width: 600px;
-  width: 100%;
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
-}
-
-button, input, select {
-  width: 100%;
-  padding: 0.75rem;
-  margin-top: 0.5rem;
-  border: none;
-  border-radius: 0.5rem;
-  font-size: 1rem;
-}
-
-button {
-  background-color: var(--purple);
-  color: white;
-  font-weight: bold;
-  cursor: pointer;
-}
-
-button:hover {
-  background-color: var(--purple-light);
-}
-
-.img-map {
-  max-width: 100%;
-  height: auto;
-  border-radius: 1rem;
-  box-shadow: 0 4px 20px rgba(0,0,0,.4);
-}
-
-input, select, button {
-  margin-top: 0.75rem;
-  margin-bottom: 1.25rem; /* increased spacing */
-}
-
-.small-row {
-  display: flex;
-  align-items: center;
-  justify-content: center; /* center horizontally */
-  gap: 0.5rem;
-}
-
-.small-row input[type="checkbox"] {
-  transform: scale(1.1); /* 10% larger checkbox */
-}
-
-.card {
-  background-color: rgba(255, 255, 255, 0.08); /* lighter for better contrast */
-  position: relative;
-}
-
-.password-wrapper {
-  position: relative;
-  width: 100%;
-}
-.password-wrapper input[type="password"],
-.password-wrapper input[type="text"] {
-  padding-right: 2.5rem; /* space for icon */
-}
-.password-toggle-icon {
-  position: absolute;
-  top: 50%;
-  right: 0.75rem;
-  transform: translateY(-50%);
-  cursor: pointer;
-  color: #ccc;
-  font-size: 1.2rem;
-}
+*{box-sizing:border-box;margin:0;padding:0;font-family:'Inter',sans-serif;}
+body{background:var(--bg);color:var(--txt);min-height:100vh;}
+nav{background:var(--purple);padding:1rem 2rem;display:flex;gap:1.5rem;position:sticky;top:0;}
+nav a{color:var(--txt);text-decoration:none;font-weight:600;}
+nav a:hover{color:var(--gold);}
+main{padding:4rem 1rem;display:flex;flex-direction:column;align-items:center;gap:2rem;}
+.card{background:var(--card);backdrop-filter:blur(8px);padding:2rem 3rem;border-radius:1rem;max-width:600px;width:100%;}
+input,select,button{width:100%;padding:.8rem;margin:.75rem 0;border:none;border-radius:.5rem;font-size:1rem;}
+button{background:var(--purple);color:#fff;font-weight:700;cursor:pointer;transition:background .2s;}
+button:hover{background:var(--purple-light);}
+button:disabled{background:#555;cursor:not-allowed;}
+/* password wrapper for eye icon */
+.pw-wrap{position:relative;width:100%;}
+.pw-wrap input{padding-right:2.5rem;}
+.pw-wrap button{position:absolute;right:.65rem;top:50%;transform:translateY(-50%);background:none;border:none;font-size:1.2rem;color:#bbb;cursor:pointer;}
+.pw-wrap button:hover{color:#fff;}
+.option-btn{margin:.4rem 0;}
