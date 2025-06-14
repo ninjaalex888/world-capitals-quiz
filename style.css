@@ -5,12 +5,13 @@ body {
   color: #f1f5f9;
   margin: 0;
   padding: 0;
+  min-height: 100vh;
 }
 
 body:not(.no-bg) {
   background-image: url("assets/bg.jpg");
   background-size: cover;
-  background-position: center;
-  background-attachment: fixed;
+  background-position: center center;
   background-repeat: no-repeat;
+  background-attachment: fixed;
 }
