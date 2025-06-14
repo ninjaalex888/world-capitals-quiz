@@ -1,26 +1,21 @@
 
 # 🌍 World Capitals Quiz
 
-A lightweight, modern web app for testing—or sharpening—your knowledge of world capitals.
+Test your knowledge of world capitals with a stylish Vikings-themed quiz!
 
-## ✨ Features
+## Features
+- Choose quiz length (5, 10, 20, or infinite)
+- Leaderboard stored locally (top 10)
+- Sound effects: cheer on correct, encouragement on wrong
+- Political world map page
+- Dark mode purple/gold palette
 
-- 🎮 Interactive quiz with a prompt: choose 5, 10, 20, or infinite questions
-- 🗺 World map with capitals highlighted
-- 🏈 Vikings-themed dark mode with bold purple and gold styling
-- ✅ Green for correct answers, ❌ red for wrong ones
-- 🔁 Infinite mode allows questions to repeat endlessly
+## Live site
+https://ninjaalex888.github.io/world-capitals-quiz/
 
-## 🚀 Try It Live
+## Setup
+Clone repo and open `index.html`. Place sound files in `audio/`:
+- `correct.mp3` — cheer sound
+- `wrong.mp3` — prompt sound / boo
 
-[https://ninjaalex888.github.io/world-capitals-quiz/](https://ninjaalex888.github.io/world-capitals-quiz/)
-
-## 📦 Local Use
-
-```bash
-git clone https://github.com/ninjaalex888/world-capitals-quiz.git
-cd world-capitals-quiz
-open index.html
-```
-
-Study hard. Score high. Rule the capitals! 🌐🏆
+Enjoy!
