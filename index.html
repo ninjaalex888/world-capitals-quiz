@@ -1,301 +1,77 @@
 
-<!DOCTYPE html><html lang="en">
-<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>World Capitals Quiz</title>
-<link rel="stylesheet" href="style.css">
-<script src="https://www.gstatic.com/firebasejs/9.22.2/firebase-app-compat.js">
-function togglePassword() {
-  const field = document.getElementById("password");
-  field.type = field.type === "password" ? "text" : "password";
-}
-
-document.getElementById("username").addEventListener("input", async () => {
-  const name = document.getElementById("username").value.trim();
-  const status = document.getElementById("name-status");
-  const passwordGroup = document.getElementById("password-group");
-  const guestBox = document.getElementById("guest-mode");
-  const startBtn = document.getElementById("start-btn");
-  if (!name) {
-    status.textContent = "";
-    passwordGroup.style.display = "none";
-    startBtn.disabled = true;
-    return;
-  }
-  const snapshot = await db.collection("users").doc(name).get();
-  if (snapshot.exists) {
-    status.textContent = "🔐 Name found, please enter password";
-    document.getElementById("password").value = "";
-    passwordGroup.style.display = "flex";
-    localStorage.setItem("quiz_userMode", "existing");
-  } else {
-    status.textContent = "🆕 Name is available — create password";
-    document.getElementById("password").value = "";
-    passwordGroup.style.display = "flex";
-    localStorage.setItem("quiz_userMode", "new");
-  }
-  checkStartReady();
-});
-
-document.getElementById("guest-mode").addEventListener("change", () => {
-  const isGuest = document.getElementById("guest-mode").checked;
-  const passwordGroup = document.getElementById("password-group");
-  if (isGuest) {
-    document.getElementById("name-status").textContent = "";
-    passwordGroup.style.display = "none";
-    document.getElementById("username").value = "";
-  }
-  checkStartReady();
-});
-
-document.getElementById("password").addEventListener("input", checkStartReady);
-
-function checkStartReady() {
-  const isGuest = document.getElementById("guest-mode").checked;
-  const username = document.getElementById("username").value.trim();
-  const password = document.getElementById("password").value;
-  const startBtn = document.getElementById("start-btn");
-  if (isGuest || (username && password)) {
-    startBtn.disabled = false;
-  } else {
-    startBtn.disabled = true;
-  }
-}
-</script>
-
-
-<script src="https://www.gstatic.com/firebasejs/9.22.2/firebase-firestore-compat.js">
-function togglePassword() {
-  const field = document.getElementById("password");
-  field.type = field.type === "password" ? "text" : "password";
-}
-
-document.getElementById("username").addEventListener("input", async () => {
-  const name = document.getElementById("username").value.trim();
-  const status = document.getElementById("name-status");
-  const passwordGroup = document.getElementById("password-group");
-  const guestBox = document.getElementById("guest-mode");
-  const startBtn = document.getElementById("start-btn");
-  if (!name) {
-    status.textContent = "";
-    passwordGroup.style.display = "none";
-    startBtn.disabled = true;
-    return;
-  }
-  const snapshot = await db.collection("users").doc(name).get();
-  if (snapshot.exists) {
-    status.textContent = "🔐 Name found, please enter password";
-    document.getElementById("password").value = "";
-    passwordGroup.style.display = "flex";
-    localStorage.setItem("quiz_userMode", "existing");
-  } else {
-    status.textContent = "🆕 Name is available — create password";
-    document.getElementById("password").value = "";
-    passwordGroup.style.display = "flex";
-    localStorage.setItem("quiz_userMode", "new");
-  }
-  checkStartReady();
-});
-
-document.getElementById("guest-mode").addEventListener("change", () => {
-  const isGuest = document.getElementById("guest-mode").checked;
-  const passwordGroup = document.getElementById("password-group");
-  if (isGuest) {
-    document.getElementById("name-status").textContent = "";
-    passwordGroup.style.display = "none";
-    document.getElementById("username").value = "";
-  }
-  checkStartReady();
-});
-
-document.getElementById("password").addEventListener("input", checkStartReady);
-
-function checkStartReady() {
-  const isGuest = document.getElementById("guest-mode").checked;
-  const username = document.getElementById("username").value.trim();
-  const password = document.getElementById("password").value;
-  const startBtn = document.getElementById("start-btn");
-  if (isGuest || (username && password)) {
-    startBtn.disabled = false;
-  } else {
-    startBtn.disabled = true;
-  }
-}
-</script>
-
-
-<script>
-  const firebaseConfig = {
-    apiKey: "AIzaSyAi9sd4U0BLqvpOM3g5P2HdDzMjJxltrWY",
-    authDomain: "worldcapitalsquiz.firebaseapp.com",
-    projectId: "worldcapitalsquiz",
-    storageBucket: "worldcapitalsquiz.firebasestorage.app",
-    messagingSenderId: "794094874571",
-    appId: "1:794094874571:web:d292014542616ca553d04e",
-    measurementId: "G-MKS0QNWVS4"
-  };
-  firebase.initializeApp(firebaseConfig);
-  const db = firebase.firestore();
-
-function togglePassword() {
-  const field = document.getElementById("password");
-  field.type = field.type === "password" ? "text" : "password";
-}
-
-document.getElementById("username").addEventListener("input", async () => {
-  const name = document.getElementById("username").value.trim();
-  const status = document.getElementById("name-status");
-  const passwordGroup = document.getElementById("password-group");
-  const guestBox = document.getElementById("guest-mode");
-  const startBtn = document.getElementById("start-btn");
-  if (!name) {
-    status.textContent = "";
-    passwordGroup.style.display = "none";
-    startBtn.disabled = true;
-    return;
-  }
-  const snapshot = await db.collection("users").doc(name).get();
-  if (snapshot.exists) {
-    status.textContent = "🔐 Name found, please enter password";
-    document.getElementById("password").value = "";
-    passwordGroup.style.display = "flex";
-    localStorage.setItem("quiz_userMode", "existing");
-  } else {
-    status.textContent = "🆕 Name is available — create password";
-    document.getElementById("password").value = "";
-    passwordGroup.style.display = "flex";
-    localStorage.setItem("quiz_userMode", "new");
-  }
-  checkStartReady();
-});
-
-document.getElementById("guest-mode").addEventListener("change", () => {
-  const isGuest = document.getElementById("guest-mode").checked;
-  const passwordGroup = document.getElementById("password-group");
-  if (isGuest) {
-    document.getElementById("name-status").textContent = "";
-    passwordGroup.style.display = "none";
-    document.getElementById("username").value = "";
-  }
-  checkStartReady();
-});
-
-document.getElementById("password").addEventListener("input", checkStartReady);
-
-function checkStartReady() {
-  const isGuest = document.getElementById("guest-mode").checked;
-  const username = document.getElementById("username").value.trim();
-  const password = document.getElementById("password").value;
-  const startBtn = document.getElementById("start-btn");
-  if (isGuest || (username && password)) {
-    startBtn.disabled = false;
-  } else {
-    startBtn.disabled = true;
-  }
-}
-</script>
-
-
-<script src="quiz.js" defer>
-function togglePassword() {
-  const field = document.getElementById("password");
-  field.type = field.type === "password" ? "text" : "password";
-}
-
-document.getElementById("username").addEventListener("input", async () => {
-  const name = document.getElementById("username").value.trim();
-  const status = document.getElementById("name-status");
-  const passwordGroup = document.getElementById("password-group");
-  const guestBox = document.getElementById("guest-mode");
-  const startBtn = document.getElementById("start-btn");
-  if (!name) {
-    status.textContent = "";
-    passwordGroup.style.display = "none";
-    startBtn.disabled = true;
-    return;
-  }
-  const snapshot = await db.collection("users").doc(name).get();
-  if (snapshot.exists) {
-    status.textContent = "🔐 Name found, please enter password";
-    document.getElementById("password").value = "";
-    passwordGroup.style.display = "flex";
-    localStorage.setItem("quiz_userMode", "existing");
-  } else {
-    status.textContent = "🆕 Name is available — create password";
-    document.getElementById("password").value = "";
-    passwordGroup.style.display = "flex";
-    localStorage.setItem("quiz_userMode", "new");
-  }
-  checkStartReady();
-});
-
-document.getElementById("guest-mode").addEventListener("change", () => {
-  const isGuest = document.getElementById("guest-mode").checked;
-  const passwordGroup = document.getElementById("password-group");
-  if (isGuest) {
-    document.getElementById("name-status").textContent = "";
-    passwordGroup.style.display = "none";
-    document.getElementById("username").value = "";
-  }
-  checkStartReady();
-});
-
-document.getElementById("password").addEventListener("input", checkStartReady);
-
-function checkStartReady() {
-  const isGuest = document.getElementById("guest-mode").checked;
-  const username = document.getElementById("username").value.trim();
-  const password = document.getElementById("password").value;
-  const startBtn = document.getElementById("start-btn");
-  if (isGuest || (username && password)) {
-    startBtn.disabled = false;
-  } else {
-    startBtn.disabled = true;
-  }
-}
-</script>
-
-
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>World Capitals Quiz</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<nav><a href="index.html">Home</a><a href="map.html">World Map</a><a href="leaderboard.html">Leaderboard</a></nav>
-<main>
-  <section class="card" id="intro-card">
-    <h2>🌍 Start Quiz</h2>
-    <label>Username<input id="username" type="text"></label>
-    <small id="name-status"></small>
+  <header>
+    <nav>
+      <a href="index.html" class="active">Home</a>
+      <a href="map.html">World Map</a>
+      <a href="leaderboard.html">Leaderboard</a>
+      <a href="about.html">About</a>
+    </nav>
+  </header>
+  <main class="container">
+    <section class="card" id="intro-card">
+      <h1>🌍 World Capitals Quiz</h1>
+      <label for="username">Username:</label>
+      <input id="username" placeholder="Enter username" />
+      <span id="nameStatus"></span>
 
-    
-<div id="password-group" style="display:none; flex-direction: column; align-items: flex-start;">
+      <label for="password">Password:</label>
+      <div class="password-wrapper">
+        <input type="password" id="password" placeholder="Enter password" />
+        <span class="toggle-password" onclick="togglePassword()">👁️</span>
+      </div>
+      <span id="passwordStatus"></span>
 
-      
-<label id="password-label">Password
-  <div class="password-wrapper">
-    <input id="password" type="password">
-    <span class="password-toggle-icon" onclick="togglePassword()">👁️</span>
-  </div>
-</label>
+      <label for="quiz-length">Select Quiz Length:</label>
+      <select id="quiz-length">
+        <option value="5">5</option>
+        <option value="10" selected>10</option>
+        <option value="20">20</option>
+        <option value="9999">Infinite</option>
+      </select>
+      <label for="custom-amount">Or enter custom amount:</label>
+      <input type="number" id="custom-amount" min="1" />
 
-      <div class="small-row"><input id="show-password" type="checkbox"><small>Show password</small></div>
-      <small id="password-status"></small>
-    </div>
+      <button id="start-btn" disabled>Start Quiz</button>
+    </section>
 
-    <div class="small-row"><input id="guest-mode" type="checkbox"><small>Play as guest</small></div>
+    <section id="quiz-section" style="display:none;">
+      <h2 id="country-name"></h2>
+      <div id="options"></div>
+      <p id="result"></p>
+      <button id="next-btn" style="display:none;">Next</button>
+    </section>
+  </main>
 
-    <label>Questions<select id="quiz-length">
-      <option value="5">5</option>
-      <option value="10" selected>10</option>
-      <option value="20">20</option>
-      <option value="infinite">∞ Infinite</option>
-    </select></label>
-
-    <label>Custom<input id="custom-amount" type="number" min="1" max="100"></label>
-    <button id="start-btn" disabled>Start Quiz</button>
-  </section>
-
-  <section class="card" id="quiz-section" style="display:none;">
-    <h1 id="country-name">Country</h1>
-    <div id="options"></div>
-    <p id="result"></p>
-    <button id="next-btn" style="display:none;">Next</button>
-  </section>
-</main></body></html>
+  <script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-app-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-firestore-compat.js"></script>
+  <script>
+    const firebaseConfig = {
+      apiKey: "AIzaSyAi9sd4U0BLqvpOM3g5P2HdDzMjJxltrWY",
+      authDomain: "worldcapitalsquiz.firebaseapp.com",
+      projectId: "worldcapitalsquiz",
+      storageBucket: "worldcapitalsquiz.firebasestorage.app",
+      messagingSenderId: "794094874571",
+      appId: "1:794094874571:web:d292014542616ca553d04e",
+      measurementId: "G-MKS0QNWVS4"
+    };
+    firebase.initializeApp(firebaseConfig);
+    const db = firebase.firestore();
+  </script>
+  <script>
+    function togglePassword() {
+      const pw = document.getElementById("password");
+      pw.type = pw.type === "password" ? "text" : "password";
+    }
+  </script>
+  <script src="quiz.js"></script>
+</body>
+</html>
