@@ -16,13 +16,19 @@
 </nav>
 <main>
   <div class="quiz-card" id="intro-card">
-    <h2 style="margin-bottom:1rem;">🌍 World Capitals Quiz</h2>
+    <h2>🌍 World Capitals Quiz</h2>
 
-    <label for="username">Enter a username:</label><br>
-    <input type="text" id="username" placeholder="e.g. Alex"><br>
+    <label for="username">Enter a username:</label>
+    <input type="text" id="username" placeholder="e.g. Alex">
     <span id="name-status" style="font-size:0.9rem;"></span><br><br>
 
-    <label for="quiz-length">How many questions?</label><br>
+    <div id="password-group" style="display:none;">
+      <label id="password-label" for="password">Password:</label>
+      <input type="password" id="password">
+      <span id="password-status" style="font-size:0.9rem;"></span><br><br>
+    </div>
+
+    <label for="quiz-length">How many questions?</label>
     <select id="quiz-length">
       <option value="5">5</option>
       <option value="10" selected>10</option>
@@ -30,7 +36,7 @@
       <option value="infinite">Infinite</option>
     </select><br><br>
 
-    <label for="custom-amount">Or custom number:</label><br>
+    <label for="custom-amount">Or custom number:</label>
     <input type="number" id="custom-amount" min="1" max="100"><br><br>
 
     <button id="start-btn" disabled>Start Quiz</button>

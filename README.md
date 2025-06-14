@@ -1,1 +1,1 @@
-Final version: static score, no chart on leaderboard, view leaderboard button after quiz, responsive and full-screen.
+Username now requires password auth. Auto creates account with password for future logins.
