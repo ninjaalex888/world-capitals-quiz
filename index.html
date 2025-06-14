@@ -14,7 +14,19 @@
     <a href="map.html">World Map</a>
   </nav>
   <main>
+    
     <div class="quiz-card">
+      <label for="quiz-length">How many questions?</label>
+      <select id="quiz-length">
+        <option value="5">5</option>
+        <option value="10" selected>10</option>
+        <option value="20">20</option>
+        <option value="infinite">Infinite</option>
+      </select>
+      <button id="start-btn">Start Quiz</button>
+    </div>
+    <div class="quiz-card" id="quiz-section" style="display:none;">
+    
       <h1 id="country-name">Country</h1>
       <div id="options"></div>
       <p id="result"></p>
