@@ -112,56 +112,34 @@ document.addEventListener("DOMContentLoaded", () => {
     if (!isGuest && !isExistingUser) {
       await db.collection("users").doc(username).set({
         password: password,
-        highScore: 0,
-        history: []
+        highScore: 0
       });
     }
 
     localStorage.setItem("quiz_username", isGuest ? "Guest" : username);
-    localStorage.setItem("quiz_isGuest", isGuest ? "true" : "false");
+    localStorage.setItem("quiz_isGuest", isGuest.toString());
 
-    // Proceed to show quiz
+    // hide intro, show quiz
     document.getElementById("intro-card").style.display = "none";
     document.getElementById("quiz-section").style.display = "block";
-    document.getElementById("country-name").textContent = "France";
-    document.getElementById("options").innerHTML = `
-      <button>Paris</button>
-      <button>Lyon</button>
-      <button>Marseille</button>
-      <button>Bordeaux</button>
-      <button>Nantes</button>
-    `;
-  });
-
-  document.addEventListener("keydown", (e) => {
-    if (e.key === "Enter" && !startBtn.disabled) {
-      startBtn.click();
-    }
+    // load first question...
+    shuffle(data);
+    loadQuestion();
   });
 });
 
-// Simulate quiz score and save it to Firestore after quiz ends
-function saveScore(score) {
-  const username = localStorage.getItem("quiz_username");
-  const isGuest = localStorage.getItem("quiz_isGuest") === "true";
-  if (isGuest || !username) return;
-
-  const userRef = db.collection("users").doc(username);
-  userRef.get().then(doc => {
-    if (doc.exists) {
-      const data = doc.data();
-      const prevHigh = data.highScore || 0;
-      const newHigh = Math.max(score, prevHigh);
-      const history = data.history || [];
-      history.push({ score: score, time: new Date().toISOString() });
-
-      userRef.update({
-        highScore: newHigh,
-        history: history
-      });
-    }
+// Example data & loadQuestion placeholder
+const data = [
+  { country: "France", capital: "Paris", cities: ["Lyon", "Marseille", "Bordeaux", "Nice"] }
+];
+function loadQuestion() {
+  const item = data.pop();
+  document.getElementById("country-name").textContent = item.country;
+  const opts = document.getElementById("options");
+  opts.innerHTML = "";
+  shuffle(item.cities.concat(item.capital)).forEach(city => {
+    const btn = document.createElement("button");
+    btn.textContent = city;
+    opts.appendChild(btn);
   });
 }
-
-// Call this when the quiz ends with a score
-// Example: saveScore(8); // if user got 8 questions right
