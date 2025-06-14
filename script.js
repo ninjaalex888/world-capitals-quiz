@@ -1,4 +1,3 @@
-
 function openModal() {
   const modal = document.getElementById("loginModal");
   if (modal) modal.style.display = "flex";
@@ -31,6 +30,7 @@ const db = getFirestore(app);
 const provider = new GoogleAuthProvider();
 
 function signUp() {
+  
   const messageBox = document.getElementById("authMessage");
   if (messageBox) messageBox.textContent = "";
 
@@ -41,13 +41,16 @@ function signUp() {
     .catch(error => alert(error.message));
 }
 
+
 function logIn() {
+  
   const email = document.getElementById("email").value;
   const password = document.getElementById("password").value;
   signInWithEmailAndPassword(auth, email, password)
     .then(() => alert("Logged in!"))
     .catch(error => alert(error.message));
 }
+
 
 function signInWithGoogle() {
   signInWithPopup(auth, provider)
@@ -129,8 +132,8 @@ function playAsGuest() {
 
 
 // Make functions available globally for inline onclick handlers
-window.signUp = signUp;
-window.logIn = logIn;
+
+
 window.signInWithGoogle = signInWithGoogle;
 window.logOut = logOut;
 window.playAsGuest = playAsGuest;
@@ -487,3 +490,9 @@ if (guestCheckbox) {
     location.reload();
   });
 }
+
+
+window.logIn = logIn;
+window.signUp = signUp;
+window.startQuiz = startQuiz;
+window.playAsGuest = playAsGuest;
