@@ -9,8 +9,8 @@ body {
 }
 
 body:not(.no-bg) {
-  background-image: url("assets/bg.jpg");
-  background-size: cover;
+  background-image: url("assets/world-map-bg.jpg");
+  background-size: contain;
   background-position: center center;
   background-repeat: no-repeat;
   background-attachment: fixed;

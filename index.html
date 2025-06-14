@@ -26,7 +26,41 @@
   </script>
 </head>
 
+
 <body>
+  <style>
+    .center-wrapper {
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      gap: 1rem;
+    }
+    .intro-card input[type="text"],
+    .intro-card input[type="password"],
+    .intro-card input[type="number"] {
+      padding: 0.5rem;
+      width: 100%;
+      max-width: 300px;
+    }
+    .intro-card label {
+      font-weight: 500;
+    }
+    .intro-card {
+      background-color: rgba(15, 23, 42, 0.85);
+      padding: 2rem;
+      border-radius: 1rem;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    }
+    .toggle-line {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+  </style>
+  <div class="center-wrapper">
+
 <nav>
   <a href="index.html">Quiz</a>
   <a href="map.html">World Map</a>
@@ -67,5 +101,5 @@
     <button id="next-btn" style="display:none;">Next</button>
   </div>
 </main>
-</body>
+</div></body>
 </html>
