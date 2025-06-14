@@ -52,7 +52,29 @@ const data = [
   }
 ];
 
+
 let current = 0;
+let totalQuestions = Infinity;
+let questionOrder = [];
+let currentIndex = 0;
+
+function askQuizLength() {
+  let choice = prompt("How many questions would you like? (5, 10, 20, or type 'infinite')", "10");
+  if (!choice) choice = "10";
+  choice = choice.toLowerCase();
+  if (choice === "infinite") {
+    totalQuestions = Infinity;
+  } else {
+    const n = parseInt(choice);
+    if (!isNaN(n) && n > 0) {
+      totalQuestions = Math.min(n, data.length);
+    }
+  }
+  questionOrder = [...Array(data.length).keys()];
+  shuffle(questionOrder);
+  loadQuestion();
+}
+
 const countryEl = document.getElementById('country-name');
 const optionsEl = document.getElementById('options');
 const resultEl = document.getElementById('result');
@@ -68,7 +90,7 @@ function shuffle(arr) {
 function loadQuestion() {
   resultEl.textContent = "";
   nextBtn.style.display = "none";
-  const item = data[current];
+  const item = data[questionOrder[currentIndex]];
   countryEl.textContent = item.country;
   const choices = [...item.cities, item.capital];
   shuffle(choices);
@@ -95,8 +117,17 @@ function selectAnswer(selected, correct) {
 }
 
 nextBtn.onclick = () => {
-  current = (current + 1) % data.length;
-  loadQuestion();
+  
+  currentIndex++;
+  if (currentIndex >= totalQuestions) {
+    countryEl.textContent = "Quiz Complete!";
+    optionsEl.innerHTML = "";
+    resultEl.textContent = "";
+    nextBtn.style.display = "none";
+  } else {
+    loadQuestion();
+  }
+
 };
 
-document.addEventListener('DOMContentLoaded', loadQuestion);
+document.addEventListener('DOMContentLoaded', askQuizLength);

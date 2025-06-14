@@ -1,9 +1,9 @@
 
 :root {
-  --bg-color: #121212;
+  --bg-color: #1e0033;
   --text-color: #eee;
-  --accent: #34d399;
-  --card-bg: rgba(30,30,30,0.8);
+  --accent: #a69cce;
+  --card-bg: rgba(60,0,90,0.8);
 }
 
 /* Global resets */
