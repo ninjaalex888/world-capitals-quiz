@@ -116,5 +116,51 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 </script>
 
+
+<script>
+document.addEventListener('DOMContentLoaded', () => {
+  const usernameInput = document.getElementById('username');
+  const usernameStatus = document.getElementById('username-status');
+
+  if (!usernameInput || !usernameStatus) return;
+
+  usernameInput.addEventListener('input', async () => {
+    const name = usernameInput.value.trim();
+    if (!name) {
+      usernameStatus.textContent = '';
+      return;
+    }
+
+    try {
+      const docRef = db.collection('users').doc(name);
+      const docSnap = await docRef.get();
+      if (docSnap.exists) {
+        usernameStatus.textContent = '🔒 Username found. Please enter your password.';
+        usernameStatus.style.color = 'goldenrod';
+        document.getElementById('password-label').textContent = 'Password:';
+        document.getElementById('password').placeholder = 'Enter your password';
+      } else {
+        usernameStatus.textContent = '✅ Username available. Set a new password.';
+        usernameStatus.style.color = 'lightgreen';
+        document.getElementById('password-label').textContent = 'Create Password:';
+        document.getElementById('password').placeholder = 'Create a password';
+      }
+    } catch (e) {
+      console.error('Error checking username:', e);
+      usernameStatus.textContent = '⚠️ Error checking username';
+      usernameStatus.style.color = 'red';
+    }
+  });
+
+  const toggleBtn = document.getElementById('toggle-password');
+  if (toggleBtn) {
+    toggleBtn.addEventListener('click', () => {
+      const pwField = document.getElementById('password');
+      pwField.type = pwField.type === 'password' ? 'text' : 'password';
+    });
+  }
+});
+</script>
+
 </body>
 </html>
