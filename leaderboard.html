@@ -1,19 +1,83 @@
+<!DOCTYPE html>
 
-<!DOCTYPE html><html lang='en'>
-<head><meta charset='UTF-8'><meta name='viewport' content='width=device-width,initial-scale=1.0'>
-<title>Leaderboard</title><link rel='stylesheet' href='style.css'>
-<script src="https://www.gstatic.com/firebasejs/9.22.2/firebase-app-compat.js"></script>
-<script src="https://www.gstatic.com/firebasejs/9.22.2/firebase-firestore-compat.js"></script>
-<script>
-  firebase.initializeApp({
-    apiKey: "AIzaSyAi9sd4U0BLqvpOM3g5P2HdDzMjJxltrWY",
-    projectId: "worldcapitalsquiz"
-  });
-  const db = firebase.firestore();
-</script>
-<script src="leaderboard.js" defer></script>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<title>Leaderboard - World Capitals Quiz</title>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f2f2f2;
+      margin: 0;
+      padding: 20px;
+    }
+    h1 {
+      text-align: center;
+    }
+    table {
+      width: 100%;
+      max-width: 600px;
+      margin: auto;
+      border-collapse: collapse;
+      background: white;
+    }
+    th, td {
+      padding: 10px;
+      text-align: left;
+      border-bottom: 1px solid #ccc;
+    }
+    th {
+      background: #4facfe;
+      color: white;
+    }
+  </style>
 </head>
-<body>
-<nav><a href="index.html">Home</a><a href="map.html">World Map</a><a href="leaderboard.html">Leaderboard</a></nav>
-<main><section class="card"><h2>Top Scores</h2><table id="score-table"><thead><tr><th>#</th><th>User</th><th>Score</th></tr></thead><tbody></tbody></table></section></main>
-</body></html>
+<body style="padding-top: 60px;"><nav id="mainNav" style="width: 100%; background: #343a40; color: white; padding: 0.75rem 1rem; font-size: 1rem; display: flex; justify-content: center; align-items: center; gap: 2rem; position: fixed; top: 0; left: 0; z-index: 1000;"><a href="index.html" style="color: white; text-decoration: none; font-weight: bold;">Login</a><a href="index.html#quizContainer" style="color: white; text-decoration: none; font-weight: bold;">Quiz</a><a href="leaderboard.html" style="color: white; text-decoration: none; font-weight: bold;">Leaderboard</a></nav>
+
+<table id="leaderboardTable">
+<thead>
+<tr>
+<th>User</th>
+<th>Score</th>
+<th>Date</th>
+</tr>
+</thead>
+<tbody>
+</tbody>
+</table>
+<script type="module">
+    import { initializeApp } from "https://www.gstatic.com/firebasejs/9.22.0/firebase-app.js";
+    import { getFirestore, collection, getDocs, query, orderBy, limit } from "https://www.gstatic.com/firebasejs/9.22.0/firebase-firestore.js";
+
+    const firebaseConfig = {
+      apiKey: "AIzaSyAi9sd4U0BLqvpOM3g5P2HdDzMjJxltrWY",
+      authDomain: "worldcapitalsquiz.firebaseapp.com",
+      projectId: "worldcapitalsquiz",
+    };
+
+    const app = initializeApp(firebaseConfig);
+    const db = getFirestore(app);
+
+    async function loadLeaderboard() {
+      const leaderboardRef = collection(db, "quizScores");
+      const q = query(leaderboardRef, orderBy("score", "desc"), limit(50));
+      const querySnapshot = await getDocs(q);
+      const tbody = document.querySelector("#leaderboardTable tbody");
+
+      querySnapshot.forEach(doc => {
+        const data = doc.data();
+        const row = document.createElement("tr");
+        row.innerHTML = `
+          <td>${data.email}</td>
+          <td>${data.score}/${data.total}</td>
+          <td>${new Date(data.timestamp?.seconds * 1000).toLocaleDateString()}</td>
+        `;
+        tbody.appendChild(row);
+      });
+    }
+
+    loadLeaderboard();
+  </script>
+</body>
+</html>

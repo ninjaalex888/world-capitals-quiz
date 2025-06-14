@@ -6,6 +6,13 @@
 <title>World Capitals Quiz</title>
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
 <style>
+    body {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+
     @keyframes spin {
       0% { transform: rotate(0deg); }
       100% { transform: rotate(360deg); }
@@ -230,11 +237,8 @@
     }
   </style>
 </head>
-<body>
-  <div id="topBar" style="width: 100%; background: #343a40; color: white; padding: 0.5rem 1rem; font-size: 1rem; display: flex; justify-content: space-between; align-items: center;">
-    <div>🌍 World Capitals Quiz</div>
-    <div id="userDisplay">Checking login...</div>
-  </div>
+<body style="padding-top: 60px;"><nav id="mainNav" style="width: 100%; background: #343a40; color: white; padding: 0.75rem 1rem; font-size: 1rem; display: flex; justify-content: center; align-items: center; gap: 2rem; position: fixed; top: 0; left: 0; z-index: 1000;"><a href="index.html" style="color: white; text-decoration: none; font-weight: bold;">Login</a><a href="index.html#quizContainer" style="color: white; text-decoration: none; font-weight: bold;">Quiz</a><a href="leaderboard.html" style="color: white; text-decoration: none; font-weight: bold;">Leaderboard</a></nav>
+
 <div class="quiz-container" id="authArea">
 <h1>🔐 Login to Play</h1>
 <input id="email" placeholder="Email" type="email"/>
@@ -243,15 +247,11 @@
 <button onclick="logIn()">Log In</button>
 <button onclick="signInWithGoogle()">Sign in with Google</button>
 <button onclick="logOut()">Log Out</button>
-<div class="result" id="userStatus"></div>
 <h1>🔐 Login to Play</h1>
 <input id="email" placeholder="Email" type="email"/>
 <input id="password" placeholder="Password" type="password"/>
-
-
-
 <div class="result" id="userStatus"></div>
-</div>
+<button onclick="playAsGuest()">Play as Guest</button><div class="result" id="userStatus"></div></div>
 <div id="quizContainer" style="display:none;">
 <div class="quiz-container">
 <h1>🌍 World Capitals Quiz</h1>
@@ -273,7 +273,7 @@
 </div>
 </div>
 <script src="script.js"></script>
-</div>
+<a href="leaderboard.html" style="display:block;text-align:center;margin-top:1rem;font-weight:bold;">📈 View Leaderboard</a></div>
 <script src="script.js" type="module"></script>
 </body>
 </html>

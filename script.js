@@ -57,7 +57,7 @@ onAuthStateChanged(auth, user => {
 });
 
 async function saveUserScore(score, total) {
-  if (!auth.currentUser) return;
+  if (!auth.currentUser || window.isGuest) return;
   try {
     await addDoc(collection(db, "quizScores"), {
       uid: auth.currentUser.uid,
@@ -72,7 +72,7 @@ async function saveUserScore(score, total) {
 }
 
 async function loadUserScores() {
-  if (!auth.currentUser) return;
+  if (!auth.currentUser || window.isGuest) return;
 
   const q = query(
     collection(db, "quizScores"),
@@ -93,11 +93,21 @@ async function loadUserScores() {
 }
 
 async function deleteUserScore(docId) {
-  if (!auth.currentUser) return;
+  if (!auth.currentUser || window.isGuest) return;
   try {
     await deleteDoc(doc(db, "quizScores", docId));
     loadUserScores();
   } catch (e) {
     console.error("Failed to delete score:", e);
   }
+}
+
+function playAsGuest() {
+  const quizContainer = document.getElementById("quizContainer");
+  const authArea = document.getElementById("authArea");
+  const userDisplay = document.getElementById("userDisplay");
+  if (quizContainer) quizContainer.style.display = "block";
+  if (authArea) authArea.style.display = "none";
+  if (userDisplay) userDisplay.textContent = "Playing as Guest";
+  window.isGuest = true;
 }
