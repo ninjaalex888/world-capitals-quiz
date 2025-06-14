@@ -78,16 +78,7 @@ function endQuiz(username){
   localStorage.setItem(key, JSON.stringify(lb.slice(0, 10)));
   const rank = lb.findIndex(entry => entry.user === username && entry.score === score) + 1;
 
-  let current = 0;
-  const interval = setInterval(() => {
-    if (current <= score) {
-      countryEl.textContent = `🎉 Score: ${current}%`;
-      current++;
-    } else {
-      clearInterval(interval);
-      countryEl.textContent += ` (Rank: #${rank})`;
-    }
-  }, 25);
+  countryEl.textContent = `🎉 Score: ${score}% (Rank: #${rank})`;
 
   optionsEl.innerHTML = "";
   nextBtn.style.display = "none";

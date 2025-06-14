@@ -1,1 +1,1 @@
-Fixed Start Quiz button and added Enter key support. Fully responsive and clean.
+Final version: static score, no chart on leaderboard, view leaderboard button after quiz, responsive and full-screen.
