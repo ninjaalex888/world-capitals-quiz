@@ -500,3 +500,11 @@ window.logIn = logIn;
 window.signUp = signUp;
 window.startQuiz = startQuiz;
 window.playAsGuest = playAsGuest;
+
+document.addEventListener('DOMContentLoaded', () => {
+  const $ = id => document.getElementById(id);
+  $('logInBtn')?.addEventListener('click', logIn);
+  $('signUpBtn')?.addEventListener('click', signUp);
+  $('startQuizBtn')?.addEventListener('click', startQuiz);
+});
+
