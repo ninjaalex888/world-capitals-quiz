@@ -3,9 +3,11 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<title>World Map</title>
+<title>Leaderboard - Capitals Quiz</title>
 <meta name="viewport" content="width=device-width,initial-scale=1.0">
 <link rel="stylesheet" href="style.css">
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script src="leaderboard.js" defer></script>
 </head>
 <body>
 <nav>
@@ -13,9 +15,13 @@
  <a href="map.html">World Map</a>
  <a href="leaderboard.html">Leaderboard</a>
 </nav>
-<main class="map-container">
- <h2 style="margin-bottom:1rem;">Political World Map - Capitals Highlighted</h2>
- <img src="https://upload.wikimedia.org/wikipedia/commons/1/19/Political_World_Map_with_Capitals_and_Countries.png" alt="World Map" />
+<main>
+ <h2>🏆 Leaderboard</h2>
+ <table id="score-table">
+  <thead><tr><th>#</th><th>User</th><th>Score (%)</th></tr></thead>
+  <tbody></tbody>
+ </table>
+ <canvas id="chart"></canvas>
 </main>
 </body>
 </html>

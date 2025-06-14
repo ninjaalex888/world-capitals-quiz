@@ -2,36 +2,41 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>World Capitals Quiz</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="style.css">
-  <script src="quiz.js" defer></script>
+<meta charset="UTF-8">
+<title>World Capitals Quiz</title>
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<link rel="stylesheet" href="style.css">
+<script src="quiz.js" defer></script>
 </head>
 <body>
-  <nav>
-    <a href="index.html">Quiz</a>
-    <a href="map.html">World Map</a>
-  </nav>
-  <main>
-    
-    <div class="quiz-card">
-      <label for="quiz-length">How many questions?</label>
-      <select id="quiz-length">
-        <option value="5">5</option>
-        <option value="10" selected>10</option>
-        <option value="20">20</option>
-        <option value="infinite">Infinite</option>
-      </select>
-      <button id="start-btn">Start Quiz</button>
-    </div>
-    <div class="quiz-card" id="quiz-section" style="display:none;">
-    
-      <h1 id="country-name">Country</h1>
-      <div id="options"></div>
-      <p id="result"></p>
-      <button id="next-btn" style="display:none;">Next</button>
-    </div>
-  </main>
+<nav>
+ <a href="index.html">Quiz</a>
+ <a href="map.html">World Map</a>
+ <a href="leaderboard.html">Leaderboard</a>
+</nav>
+<main>
+ <div class="quiz-card" id="intro-card">
+  <h2 style="margin-bottom:1rem;">🌍 World Capitals Quiz</h2>
+  <label for="username">Enter your name:</label><br>
+  <input type="text" id="username" placeholder="e.g. Alex"><br><br>
+  <label for="quiz-length">How many questions?</label><br>
+  <select id="quiz-length">
+    <option value="5">5</option>
+    <option value="10" selected>10</option>
+    <option value="20">20</option>
+    <option value="infinite">Infinite</option>
+  </select><br><br>
+  <label for="custom-amount">Or custom number:</label><br>
+  <input type="number" id="custom-amount" min="1" max="100"><br><br>
+  <button id="start-btn">Start Quiz</button>
+ </div>
+
+ <div class="quiz-card" id="quiz-section" style="display:none;">
+  <h1 id="country-name">Country</h1>
+  <div id="options"></div>
+  <p id="result"></p>
+  <button id="next-btn" style="display:none;">Next</button>
+ </div>
+</main>
 </body>
 </html>
