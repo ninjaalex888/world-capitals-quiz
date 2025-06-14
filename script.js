@@ -18,7 +18,7 @@ let selectedQuestions = [];
 
 function shuffle(array) {
     for (let i = array.length - 1; i > 0; i--) {
-        const j = Math.floor(Math.random() * (i + 1)];
+        const j = Math.floor(Math.random() * (i + 1));
         [array[i], array[j]] = [array[j], array[i]];
     }
     return array;
@@ -43,8 +43,8 @@ function startQuiz() {
 
 function showQuestion() {
     const question = selectedQuestions[currentQuestionIndex];
-    document.getElementById("questionText").textContent = 
-        \`What is the capital of \${question.country}?\`;
+    document.getElementById("questionText").textContent =
+        `What is the capital of ${question.country}?`;
     document.getElementById("answerInput").value = "";
     document.getElementById("answerInput").focus();
 }
@@ -57,8 +57,8 @@ function submitAnswer() {
         score++;
         document.getElementById("resultText").textContent = "Correct!";
     } else {
-        document.getElementById("resultText").textContent = 
-            \`Incorrect. The correct answer is \${selectedQuestions[currentQuestionIndex].capital}.\`;
+        document.getElementById("resultText").textContent =
+            `Incorrect. The correct answer is ${selectedQuestions[currentQuestionIndex].capital}.`;
     }
 
     currentQuestionIndex++;
@@ -73,7 +73,7 @@ function submitAnswer() {
             showQuestion();
         } else {
             document.getElementById("quizArea").style.display = "none";
-            alert(\`Quiz finished! Your score: \${score}/\${selectedQuestions.length}\`);
+            alert(`Quiz finished! Your score: ${score}/${selectedQuestions.length}`);
         }
     }, 1500);
 }
