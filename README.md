@@ -1,2 +1,1 @@
-Username must be unique. Added availability check.
-Score is animated. Rank is shown. Audio stops on Next.
+Refreshed layout without animated background. Sleek full-screen layout preserved with Viking color palette.
