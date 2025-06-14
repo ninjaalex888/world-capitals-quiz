@@ -209,8 +209,17 @@ window.handleEnter = handleEnter;
 
 
 function showQuestion() {
+  const imgEl = document.getElementById('capitalImage');
+  const loader = document.getElementById('imageLoader');
+
   const question = selectedQuestions[currentQuestionIndex];
   document.getElementById("questionText").textContent =
+  if (imgEl) {
+    if (loader) loader.style.display = 'block';
+    imgEl.onload = () => { if (loader) loader.style.display = 'none'; };
+    imgEl.onerror = () => { if (loader) loader.textContent = '⚠️ Failed to load image'; };
+    imgEl.src = `https://source.unsplash.com/600x400/?${encodeURIComponent(question.capital + ' skyline')}`;
+  }
     `What is the capital of ${question.country}?`;
 
   const choices = generateChoices(question.capital, question.country);
@@ -299,3 +308,90 @@ document.addEventListener("DOMContentLoaded", () => {
   document.getElementById("guestBtn")?.addEventListener("click", playAsGuest);
 });
 
+
+
+function refreshNav(user) {
+  const loginLink = document.getElementById("loginLogoutLink");
+  const userDisplay = document.getElementById("userDisplay");
+  const guestToggle = document.getElementById("guestToggle");
+
+  const isLoggedIn = !!user;
+  const isGuestMode = window.isGuest || !isLoggedIn;
+
+  // Update user display
+  userDisplay.textContent = isLoggedIn ? (user.displayName || user.email) : "Guest";
+
+  // Update login/logout link
+  if (isLoggedIn) {
+    loginLink.textContent = "Logout";
+  } else {
+    loginLink.textContent = "Login";
+  }
+
+  // Guest toggle reflects state
+  if (guestToggle) {
+    guestToggle.checked = isGuestMode;
+  }
+}
+
+document.addEventListener("DOMContentLoaded", () => {
+  const $ = (id) => document.getElementById(id);
+
+  // Button bindings
+  $("startQuizBtn")?.addEventListener("click", startQuiz);
+  $("signUpBtn")?.addEventListener("click", signUp);
+  $("logInBtn")?.addEventListener("click", logIn);
+  $("googleBtn")?.addEventListener("click", signInWithGoogle);
+  $("guestBtn")?.addEventListener("click", playAsGuest);
+  $("closeModalBtn")?.addEventListener("click", closeModal);
+
+  // New nav bindings
+  const loginLink = $("loginLogoutLink");
+  loginLink?.addEventListener("click", (e) => {
+    e.preventDefault();
+    if (auth.currentUser) {
+      logOut();
+    } else {
+      openModal();
+    }
+  });
+
+  $("guestToggle")?.addEventListener("change", (e) => {
+    window.isGuest = e.target.checked;
+    refreshNav(auth.currentUser);
+    if (window.isGuest) {
+      // Ensure quiz visible
+      const quizContainer = document.getElementById("quizContainer");
+      if (quizContainer) quizContainer.style.display = "block";
+    }
+  });
+});
+
+// Listen to Firebase auth changes
+if (typeof auth !== "undefined") {
+  auth.onAuthStateChanged((user) => {
+    if (user) {
+      window.isGuest = false;
+    }
+    refreshNav(user);
+  });
+}
+
+// Ensure global guest default if no auth
+if (typeof window.isGuest === "undefined") {
+  window.isGuest = true;
+}
+
+document.addEventListener("DOMContentLoaded", () => {
+  const hamburger = document.getElementById("hamburger");
+  const navRight = document.getElementById("navRight");
+  hamburger?.addEventListener("click", () => {
+    navRight.classList.toggle("show");
+  });
+});
+
+document.addEventListener("keydown", (e) => {
+  if (e.key === "Escape") {
+    closeModal();
+  }
+});
