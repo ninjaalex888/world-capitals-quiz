@@ -278,3 +278,24 @@ function submitAnswer(selected, correct) {
 
 window.submitAnswer = submitAnswer;
 window.showQuestion = showQuestion;
+
+
+function openModal() {
+  document.getElementById("loginModal").style.display = "flex";
+}
+function closeModal() {
+  document.getElementById("loginModal").style.display = "none";
+}
+
+
+document.addEventListener("DOMContentLoaded", () => {
+  if (!auth.currentUser) {
+    playAsGuest();
+  }
+
+  document.getElementById("signUpBtn")?.addEventListener("click", signUp);
+  document.getElementById("logInBtn")?.addEventListener("click", logIn);
+  document.getElementById("googleBtn")?.addEventListener("click", signInWithGoogle);
+  document.getElementById("guestBtn")?.addEventListener("click", playAsGuest);
+});
+
