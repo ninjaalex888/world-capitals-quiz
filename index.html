@@ -82,6 +82,14 @@
     <input type="password" id="password" placeholder="Password">
     <button onclick="signUp()">Sign Up</button>
     <button onclick="logIn()">Log In</button>
+    <button onclick="signInWithGoogle()">Sign in with Google</button>
+    <button onclick="logOut()">Log Out</button>
+    <div id="userStatus" class="result"></div>
+    <h1>🔐 Login to Play</h1>
+    <input type="email" id="email" placeholder="Email">
+    <input type="password" id="password" placeholder="Password">
+    <button onclick="signUp()">Sign Up</button>
+    <button onclick="logIn()">Log In</button>
     <button onclick="logOut()">Log Out</button>
     <div id="userStatus" class="result"></div>
   </div>
@@ -98,10 +106,6 @@
     <label for="customCount">Or enter custom number:</label>
     <input type="number" id="customCount" placeholder="Enter number of questions" min="1">
     <button onclick="startQuiz()">Start Quiz</button>
-    
-    <button onclick="loadUserScores()">📊 View My Past Scores</button>
-    <div id="scoreHistory" class="question"></div>
-
     <div id="quizArea" class="question" style="display:none;">
       <div id="questionText"></div>
       <input type="text" id="answerInput" placeholder="Enter your answer" onkeydown="handleEnter(event)">
