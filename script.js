@@ -1,4 +1,10 @@
 
+function openModal() {
+  const modal = document.getElementById("loginModal");
+  if (modal) modal.style.display = "flex";
+}
+
+
 function showToast(message) {
   const toast = document.getElementById("toast");
   toast.textContent = message;
@@ -179,9 +185,9 @@ function submitAnswer() {
         currentQuestionIndex = 0;
       }
       showQuestion();
-  } else {
-    resultText.textContent = `Incorrect. The correct answer is ${correct}.`;
-  }
+    } else {
+      resultText.textContent = `Incorrect. The correct answer is ${correct}.`;
+    }
       document.getElementById("quizArea").style.display = "none";
       alert(`Quiz finished! Your score: ${score}/${selectedQuestions.length}`);
       if (!window.isGuest) {
@@ -189,7 +195,6 @@ function submitAnswer() {
       }
     }
   }, 1500);
-}
 
 function handleEnter(event) {
   if (event.key === "Enter") {
@@ -269,7 +274,6 @@ function generateChoices(correctCapital, country) {
     resultText.textContent = `Incorrect. The correct answer is ${correct}.`;
   }
     resultText.textContent = `Incorrect. The correct answer is ${correct}.`;
-  }
 
   currentQuestionIndex++;
 
@@ -290,17 +294,12 @@ function generateChoices(correctCapital, country) {
         saveUserScore(score, selectedQuestions.length);
       }
     }
-  }, 1500);
-}
 
 window.submitAnswer = submitAnswer;
 window.showQuestion = showQuestion;
 
 
-function openModal() {
-  const modal = document.getElementById("loginModal");
-  if (modal) modal.style.display = "flex";
-}
+
 function closeModal() {
   document.getElementById("loginModal").style.display = "none";
 }
@@ -343,7 +342,6 @@ function refreshNav(user) {
   if (guestToggle) {
     guestToggle.checked = isGuestMode;
   }
-}
 
 document.addEventListener("DOMContentLoaded", () => {
   const $ = (id) => document.getElementById(id);
@@ -378,7 +376,6 @@ document.addEventListener("DOMContentLoaded", () => {
       if (quizContainer) quizContainer.style.display = "block";
     }
   });
-});
 
 // Listen to Firebase auth changes
 if (typeof auth !== "undefined") {
@@ -406,5 +403,53 @@ document.addEventListener("DOMContentLoaded", () => {
 document.addEventListener("keydown", (e) => {
   if (e.key === "Escape") {
     closeModal();
+  }
+});
+
+
+// Keyboard navigation
+document.addEventListener("keydown", function (event) {
+  if (event.key === "Enter") {
+    const activeModal = document.getElementById("loginModal");
+    if (activeModal && activeModal.style.display === "flex") {
+      logIn(); // Trigger login on Enter
+    } else if (document.getElementById("startQuizBtn")) {
+      document.getElementById("startQuizBtn").click();
+    }
+  } else if (event.key === "Escape") {
+    const modal = document.getElementById("loginModal");
+    if (modal && modal.style.display === "flex") {
+      modal.style.display = "none";
+    }
+  }
+});
+
+
+let selectedOptionIndex = 0;
+
+// Update focus and selection
+function highlightOption(index) {
+  const options = document.querySelectorAll('.option-button');
+  options.forEach((btn, i) => {
+    btn.classList.remove('selected-option');
+    if (i === index) {
+      btn.classList.add('selected-option');
+      btn.focus();
+    }
+  });
+}
+
+document.addEventListener("keydown", function(event) {
+  const options = document.querySelectorAll('.option-button');
+  if (options.length > 0) {
+    if (event.key === "ArrowDown" || event.key === "ArrowRight") {
+      selectedOptionIndex = (selectedOptionIndex + 1) % options.length;
+      highlightOption(selectedOptionIndex);
+    } else if (event.key === "ArrowUp" || event.key === "ArrowLeft") {
+      selectedOptionIndex = (selectedOptionIndex - 1 + options.length) % options.length;
+      highlightOption(selectedOptionIndex);
+    } else if (event.key === "Enter") {
+      options[selectedOptionIndex].click();
+    }
   }
 });

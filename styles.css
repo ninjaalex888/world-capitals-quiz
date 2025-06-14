@@ -1,0 +1,7 @@
+
+
+.option-button:focus,
+.selected-option {
+  outline: 3px solid #007bff;
+  background-color: #e0f0ff;
+}
