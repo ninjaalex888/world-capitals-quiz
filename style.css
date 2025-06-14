@@ -103,3 +103,26 @@ input, select, button {
 .small-row input[type="checkbox"] {
   transform: scale(1.1); /* 10% larger checkbox */
 }
+
+.card {
+  background-color: rgba(255, 255, 255, 0.08); /* lighter for better contrast */
+  position: relative;
+}
+
+.password-wrapper {
+  position: relative;
+  width: 100%;
+}
+.password-wrapper input[type="password"],
+.password-wrapper input[type="text"] {
+  padding-right: 2.5rem; /* space for icon */
+}
+.password-toggle-icon {
+  position: absolute;
+  top: 50%;
+  right: 0.75rem;
+  transform: translateY(-50%);
+  cursor: pointer;
+  color: #ccc;
+  font-size: 1.2rem;
+}

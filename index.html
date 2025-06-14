@@ -3,8 +3,20 @@
 <head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>World Capitals Quiz</title>
 <link rel="stylesheet" href="style.css">
-<script src="https://www.gstatic.com/firebasejs/9.22.2/firebase-app-compat.js"></script>
-<script src="https://www.gstatic.com/firebasejs/9.22.2/firebase-firestore-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/9.22.2/firebase-app-compat.js">
+function togglePassword() {
+  const field = document.getElementById("password");
+  field.type = field.type === "password" ? "text" : "password";
+}
+</script>
+
+<script src="https://www.gstatic.com/firebasejs/9.22.2/firebase-firestore-compat.js">
+function togglePassword() {
+  const field = document.getElementById("password");
+  field.type = field.type === "password" ? "text" : "password";
+}
+</script>
+
 <script>
   const firebaseConfig = {
     apiKey: "AIzaSyAi9sd4U0BLqvpOM3g5P2HdDzMjJxltrWY",
@@ -17,8 +29,20 @@
   };
   firebase.initializeApp(firebaseConfig);
   const db = firebase.firestore();
+
+function togglePassword() {
+  const field = document.getElementById("password");
+  field.type = field.type === "password" ? "text" : "password";
+}
 </script>
-<script src="quiz.js" defer></script>
+
+<script src="quiz.js" defer>
+function togglePassword() {
+  const field = document.getElementById("password");
+  field.type = field.type === "password" ? "text" : "password";
+}
+</script>
+
 </head>
 <body>
 <nav><a href="index.html">Home</a><a href="map.html">World Map</a><a href="leaderboard.html">Leaderboard</a></nav>
@@ -29,7 +53,14 @@
     <small id="name-status"></small>
 
     <div id="password-group" style="display:none;">
-      <label id="password-label">Password<input id="password" type="password"></label>
+      
+<label id="password-label">Password
+  <div class="password-wrapper">
+    <input id="password" type="password">
+    <span class="password-toggle-icon" onclick="togglePassword()">👁️</span>
+  </div>
+</label>
+
       <div class="small-row"><input id="show-password" type="checkbox"><small>Show password</small></div>
       <small id="password-status"></small>
     </div>
