@@ -213,7 +213,7 @@ function showQuestion() {
   const loader = document.getElementById('imageLoader');
 
   const question = selectedQuestions[currentQuestionIndex];
-  document.getElementById("questionText").textContent =
+  document.getElementById("questionText").textContent = `Which of the following is the capital of ${question.country}?`;
   if (imgEl) {
     if (loader) loader.style.display = 'block';
     imgEl.onload = () => { if (loader) loader.style.display = 'none'; };
