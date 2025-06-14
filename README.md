@@ -1,14 +1,38 @@
-# World Capitals Quiz 🌍
+# 🌍 World Capitals Quiz
 
-Test your global geography knowledge with this interactive world capitals quiz!
+Welcome to the **World Capitals Quiz** — a fun and challenging way to test your knowledge of countries and their capital cities!
 
-Features:
-- 30+ countries and hundreds of cities
-- Password-protected login for score tracking
-- Instant feedback and responsive mobile design
-- Track high scores on the built-in leaderboard
-- Clean Viking-style theme with a high-res world map backdrop
+### ✨ Features
+- 🧠 Randomized quizzes with 45+ countries and growing
+- 🟣 Sleek Vikings-inspired color theme
+- 🧑 Guest and named-user support
+- 🔐 Password-protected user scoring
+- 📊 Leaderboard with stored historical scores
+- 🌐 High-resolution political-style world map
+- 📱 Fully mobile responsive
 
-🚀 [Play now on GitHub Pages](https://ninjaalex888.github.io/world-capitals-quiz)
+### 🚀 Get Started
+1. Clone or download the repo.
+2. Open `index.html` in your browser — or deploy via GitHub Pages.
+3. Enter a username (new or returning), password, and quiz length.
+4. Compete to rise to the top of the leaderboard!
 
-Have fun and see how well you know your capitals!
+### 🛠 Firebase Setup (Optional)
+To enable persistent user score storage:
+- Set up a Firebase project
+- Enable Firestore
+- Paste your config into the `index.html` Firebase block
+- Set temporary test rules in Firestore:
+```js
+service cloud.firestore {
+  match /databases/{database}/documents {
+    match /users/{username} {
+      allow read, write: if request.resource.data.password == resource.data.password;
+    }
+  }
+}
+```
+
+---
+
+Made with ❤️ by **ninjaalex888**  
