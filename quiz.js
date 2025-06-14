@@ -145,3 +145,32 @@ document.addEventListener('DOMContentLoaded',()=>{
     loadQuestion();
   };
 });
+
+
+document.addEventListener('DOMContentLoaded', () => {
+  const usernameInput = document.getElementById('username');
+  const nameStatus = document.getElementById('name-status');
+  const startBtn = document.getElementById('start-btn');
+
+  if (!usernameInput) return;
+
+  usernameInput.addEventListener('input', () => {
+    const name = usernameInput.value.trim();
+    const key = "capitals_leaderboard";
+    const lb = JSON.parse(localStorage.getItem(key) || "[]");
+    const exists = lb.some(entry => entry.user.toLowerCase() === name.toLowerCase());
+
+    if (!name) {
+      nameStatus.textContent = "";
+      startBtn.disabled = true;
+    } else if (exists) {
+      nameStatus.textContent = "⚠️ Name not available";
+      nameStatus.style.color = "#f87171";
+      startBtn.disabled = true;
+    } else {
+      nameStatus.textContent = "✅ Name is available";
+      nameStatus.style.color = "#34d399";
+      startBtn.disabled = false;
+    }
+  });
+});
