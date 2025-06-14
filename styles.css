@@ -183,3 +183,18 @@ input[type="password"] {
   border: 1px solid #aaa;
   font-size: 14px;
 }
+
+
+#quizContainer {
+  display:flex;
+  flex-wrap:wrap;
+  gap:20px;
+}
+#optionsContainer {
+  display:flex;
+  flex-direction:column;
+  gap:10px;
+}
+@media(max-width:600px){
+  #quizContainer{flex-direction:column;}
+}

@@ -147,22 +147,28 @@ function shuffle(array) {
   return array;
 }
 
+
 function startQuiz() {
-  const dropdownValue = parseInt(document.getElementById("questionCount").value);
-  const customValue = parseInt(document.getElementById("customCount").value);
-  totalQuestions = customValue || dropdownValue;
+  try {
+    const guest = window.isGuest || !firebase.auth().currentUser;
+    const quizLength = parseInt(document.getElementById("numQuestions").value || "5");
+    if (!quizLength || quizLength < 1) {
+      showToast("Please enter a valid number of questions.");
+      return;
+    }
 
-  selectedQuestions = shuffle([...questions]);
-  if (totalQuestions > 0 && totalQuestions <= selectedQuestions.length) {
-    selectedQuestions = selectedQuestions.slice(0, totalQuestions);
+    document.getElementById("quizContainer").style.display = "block";
+    document.getElementById("setupContainer").style.display = "none";
+
+    // Start the quiz (placeholder logic)
+    currentQuestionIndex = 0;
+    loadQuestions(quizLength, guest);
+  } catch (error) {
+    console.error("Error starting quiz:", error);
+    showToast("⚠️ Failed to start quiz. Check console for details.");
   }
-
-  currentQuestionIndex = 0;
-  score = 0;
-  document.getElementById("quizArea").style.display = "block";
-  document.getElementById("resultText").textContent = "";
-  showQuestion();
 }
+
 
 function submitAnswer() {
   const userAnswer = document.getElementById("answerInput").value.trim().toLowerCase();
@@ -187,94 +193,7 @@ function submitAnswer() {
         currentQuestionIndex = 0;
       }
       showQuestion();
-    } else {
-      resultText.textContent = `Incorrect. The correct answer is ${correct}.`;
-    }
-      document.getElementById("quizArea").style.display = "none";
-      alert(`Quiz finished! Your score: ${score}/${selectedQuestions.length}`);
-      if (!window.isGuest) {
-        saveUserScore(score, selectedQuestions.length);
-      }
-  }, 1500);
-
-function handleEnter(event) {
-  if (event.key === "Enter") {
-    submitAnswer();
-  }
-}
-
-// Sample question data
-const questions = [
-  { country: "France", capital: "Paris" },
-  { country: "Japan", capital: "Tokyo" },
-  { country: "Brazil", capital: "Brasilia" },
-  { country: "Canada", capital: "Ottawa" },
-  { country: "Australia", capital: "Canberra" },
-  { country: "Ghana", capital: "Accra" },
-  { country: "Norway", capital: "Oslo" },
-  { country: "South Africa", capital: "Pretoria" },
-  { country: "Thailand", capital: "Bangkok" },
-  { country: "Argentina", capital: "Buenos Aires" }
-];
-
-let currentQuestionIndex = 0;
-let score = 0;
-let totalQuestions = 0;
-let selectedQuestions = [];
-
-
-window.submitAnswer = submitAnswer;
-window.handleEnter = handleEnter;
-
-
-function showQuestion() {
-  const imgEl = document.getElementById('capitalImage');
-  const loader = document.getElementById('imageLoader');
-
-  const question = selectedQuestions[currentQuestionIndex];
-  document.getElementById("questionText").textContent = `Which of the following is the capital of ${question.country}?`;
-  if (imgEl) {
-    if (loader) loader.style.display = 'block';
-    imgEl.onload = () => { if (loader) loader.style.display = 'none'; };
-    imgEl.onerror = () => { if (loader) loader.textContent = '⚠️ Failed to load image'; };
-    imgEl.src = `https://source.unsplash.com/600x400/?${encodeURIComponent(question.capital + ' skyline')}`;
-  }
-    `What is the capital of ${question.country}?`;
-
-  const choices = generateChoices(question.capital, question.country);
-  const choiceContainer = document.getElementById("choiceContainer");
-  choiceContainer.innerHTML = "";
-
-  choices.forEach(choice => {
-    const btn = document.createElement("button");
-    btn.textContent = choice;
-    btn.className = "choice-btn";
-    btn.onclick = () => submitAnswer(choice, question.capital);
-    choiceContainer.appendChild(btn);
-  });
-}
-
-function generateChoices(correctCapital, country) {
-  const distractors = questions
-    .filter(q => q.capital !== correctCapital && q.country === country)
-    .map(q => q.capital);
-
-  while (distractors.length < 4) {
-    const random = questions[Math.floor(Math.random() * questions.length)];
-    if (
-      random.capital !== correctCapital &&
-      !distractors.includes(random.capital)
-    ) {
-      distractors.push(random.capital);
-    }
-  }
-
-
-
-  } else {
-    resultText.textContent = `Incorrect. The correct answer is ${correct}.`;
-  }
-    resultText.textContent = `Incorrect. The correct answer is ${correct}.`;
+  resultText.textContent = `Incorrect. The correct answer is ${correct}.`;
 
   currentQuestionIndex++;
 
@@ -295,6 +214,7 @@ function generateChoices(correctCapital, country) {
         saveUserScore(score, selectedQuestions.length);
       }
     }
+}
 
 window.submitAnswer = submitAnswer;
 window.showQuestion = showQuestion;
@@ -507,4 +427,56 @@ document.addEventListener('DOMContentLoaded', () => {
   $('signUpBtn')?.addEventListener('click', signUp);
   $('startQuizBtn')?.addEventListener('click', startQuiz);
 });
+
+
+
+function saveScore(score, total) {
+  const user = firebase.auth().currentUser;
+  const quizData = {
+    score: score,
+    total: total,
+    timestamp: new Date().toISOString()
+  };
+
+  if (user) {
+    // Store in Firestore under this user
+    const db = firebase.firestore();
+    db.collection("users").doc(user.uid).collection("quizHistory").add(quizData)
+      .then(() => console.log("Score saved to Firestore"))
+      .catch((error) => console.error("Error saving score:", error));
+  } else {
+    // Store in localStorage
+    let guestScores = JSON.parse(localStorage.getItem("guestScores")) || [];
+    guestScores.push(quizData);
+    localStorage.setItem("guestScores", JSON.stringify(guestScores));
+    console.log("Score saved locally for guest");
+  }
+}
+
+
+function showQuestion(questionObj) {
+  const questionEl = document.getElementById("questionText");
+  const optionsEl = document.getElementById("optionsContainer");
+  const imgEl = document.getElementById("capitalImg");
+
+  // Clear previous
+  optionsEl.innerHTML = "";
+  questionEl.textContent = `Which of the following is the capital of ${questionObj.country}?`;
+
+  // Prepare 5 options (capital + 4 distractors)
+  const options = shuffle([questionObj.capital, ...questionObj.distractors]).slice(0, 5);
+
+  options.forEach(city => {
+    const btn = document.createElement("button");
+    btn.className = "option-button";
+    btn.textContent = city;
+    btn.addEventListener("click", () => submitAnswer(city, questionObj.capital, questionObj));
+    optionsEl.appendChild(btn);
+  });
+
+  // Set capital city image
+  if (imgEl) {
+    imgEl.src = `https://source.unsplash.com/400x250/?${encodeURIComponent(questionObj.capital + " skyline")}`;
+  }
+}
 
