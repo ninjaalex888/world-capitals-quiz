@@ -1,105 +1,36 @@
 
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>World Capitals Quiz</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="style.css">
-  <script src="quiz.js" defer></script>
-
-  <!-- Firebase SDK -->
-  <script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-app.js"></script>
-  <script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-firestore.js"></script>
-  <script>
-    const firebaseConfig = {
-      apiKey: "AIzaSyAi9sd4U0BLqvpOM3g5P2HdDzMjJxltrWY",
-      authDomain: "worldcapitalsquiz.firebaseapp.com",
-      projectId: "worldcapitalsquiz",
-      storageBucket: "worldcapitalsquiz.firebasestorage.app",
-      messagingSenderId: "794094874571",
-      appId: "1:794094874571:web:d292014542616ca553d04e",
-      measurementId: "G-MKS0QNWVS4"
-    };
-    firebase.initializeApp(firebaseConfig);
-    const db = firebase.firestore();
-  </script>
-</head>
-
-
+<!DOCTYPE html><html lang='en'>
+<head><meta charset='UTF-8'><meta name='viewport' content='width=device-width,initial-scale=1.0'>
+<title>World Capitals Quiz</title><link rel='stylesheet' href='style.css'>
+<!-- Firebase SDK -->
+<script src='https://www.gstatic.com/firebasejs/10.12.2/firebase-app.js'></script>
+<script src='https://www.gstatic.com/firebasejs/10.12.2/firebase-firestore.js'></script>
+<script>
+firebase.initializeApp({apiKey:"AIzaSyAi9sd4U0BLqvpOM3g5P2HdDzMjJxltrWY",authDomain:"worldcapitalsquiz.firebaseapp.com",projectId:"worldcapitalsquiz"});
+const db=firebase.firestore();
+</script><script src='quiz.js' defer></script></head>
 <body>
-  <style>
-    .center-wrapper {
-      min-height: 100vh;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      flex-direction: column;
-      gap: 1rem;
-    }
-    .intro-card input[type="text"],
-    .intro-card input[type="password"],
-    .intro-card input[type="number"] {
-      padding: 0.5rem;
-      width: 100%;
-      max-width: 300px;
-    }
-    .intro-card label {
-      font-weight: 500;
-    }
-    .intro-card {
-      background-color: rgba(15, 23, 42, 0.85);
-      padding: 2rem;
-      border-radius: 1rem;
-      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
-    }
-    .toggle-line {
-      display: flex;
-      align-items: center;
-      gap: 0.5rem;
-    }
-  </style>
-  <div class="center-wrapper">
-
-<nav>
-  <a href="index.html">Quiz</a>
-  <a href="map.html">World Map</a>
-  <a href="leaderboard.html">Leaderboard</a>
-</nav>
+<nav><a href='index.html'>Home</a><a href='map.html'>World Map</a><a href='leaderboard.html'>Leaderboard</a></nav>
 <main>
-  <div class="quiz-card" id="intro-card">
-    <h2>🌍 World Capitals Quiz</h2>
+<section class='card' id='intro-card'>
+<h2>Start Quiz</h2>
+<label>Username <input id='username' type='text'></label>
+<div class='toggle-line'><input id='guest-mode' type='checkbox'> <small>Play as Guest</small></div>
+<div id='password-group' style='display:none;'>
+<label id='password-label'>Password <input id='password' type='password'></label>
+<div class='toggle-line'><input type='checkbox' id='show-password'><small>Show Password</small></div>
+<small id='password-status'></small>
+</div>
+<small id='name-status'></small>
+<label>Questions<select id='quiz-length'><option value='5'>5</option><option value='10' selected>10</option><option value='20'>20</option><option value='infinite'>Infinite</option></select></label>
+<label>Custom <input type='number' id='custom-amount' min='1' max='100'></label>
+<button id='start-btn' disabled>Start Quiz</button>
+</section>
 
-    <label for="username">Enter a username:</label>
-    <input type="text" id="username" placeholder="e.g. Alex">
-    <span id="name-status" style="font-size:0.9rem;"></span><br><br>
-
-    <div id="password-group" style="display:none;">
-      <label id="password-label" for="password">Password:</label>
-      <input type="password" id="password">
-      <span id="password-status" style="font-size:0.9rem;"></span><br><br>
-    </div>
-
-    <label for="quiz-length">How many questions?</label>
-    <select id="quiz-length">
-      <option value="5">5</option>
-      <option value="10" selected>10</option>
-      <option value="20">20</option>
-      <option value="infinite">Infinite</option>
-    </select><br><br>
-
-    <label for="custom-amount">Or custom number:</label>
-    <input type="number" id="custom-amount" min="1" max="100"><br><br>
-
-    <button id="start-btn" disabled>Start Quiz</button>
-  </div>
-
-  <div class="quiz-card" id="quiz-section" style="display:none;">
-    <h1 id="country-name">Country</h1>
-    <div id="options"></div>
-    <p id="result"></p>
-    <button id="next-btn" style="display:none;">Next</button>
-  </div>
-</main>
-</div></body>
-</html>
+<section class='card' id='quiz-section' style='display:none;'>
+<h1 id='country-name'>Country</h1>
+<div id='options'></div>
+<p id='result'></p>
+<button id='next-btn' style='display:none;'>Next</button>
+</section>
+</main></body></html>

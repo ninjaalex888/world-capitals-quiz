@@ -1,5 +1,4 @@
 
-// --- Utility: Shuffle array in place ---
 function shuffle(array) {
   for (let i = array.length - 1; i > 0; i--) {
     const j = Math.floor(Math.random() * (i + 1));
@@ -7,21 +6,21 @@ function shuffle(array) {
   }
 }
 
-document.addEventListener('DOMContentLoaded', () => {
-  const usernameInput = document.getElementById('username');
-  const passwordInput = document.getElementById('password');
-  const nameStatus = document.getElementById('name-status');
-  const passwordStatus = document.getElementById('password-status');
-  const passwordGroup = document.getElementById('password-group');
-  const passwordLabel = document.getElementById('password-label');
-  const showPasswordToggle = document.getElementById('show-password');
-  const guestCheckbox = document.getElementById('guest-mode');
-  const startBtn = document.getElementById('start-btn');
+document.addEventListener("DOMContentLoaded", () => {
+  const usernameInput = document.getElementById("username");
+  const passwordInput = document.getElementById("password");
+  const nameStatus = document.getElementById("name-status");
+  const passwordStatus = document.getElementById("password-status");
+  const passwordGroup = document.getElementById("password-group");
+  const passwordLabel = document.getElementById("password-label");
+  const showPasswordToggle = document.getElementById("show-password");
+  const guestCheckbox = document.getElementById("guest-mode");
+  const startBtn = document.getElementById("start-btn");
 
   let isExistingUser = false;
   let isGuest = false;
 
-  guestCheckbox.addEventListener('change', () => {
+  guestCheckbox.addEventListener("change", () => {
     isGuest = guestCheckbox.checked;
     if (isGuest) {
       usernameInput.disabled = true;
@@ -37,11 +36,12 @@ document.addEventListener('DOMContentLoaded', () => {
       passwordInput.value = "";
       nameStatus.textContent = "";
       passwordStatus.textContent = "";
+      passwordGroup.style.display = "none";
       startBtn.disabled = true;
     }
   });
 
-  usernameInput.addEventListener('input', async () => {
+  usernameInput.addEventListener("input", async () => {
     const username = usernameInput.value.trim();
     passwordInput.value = "";
     startBtn.disabled = true;
@@ -69,7 +69,7 @@ document.addEventListener('DOMContentLoaded', () => {
     passwordGroup.style.display = "block";
   });
 
-  passwordInput.addEventListener('input', async () => {
+  passwordInput.addEventListener("input", async () => {
     const username = usernameInput.value.trim();
     const password = passwordInput.value;
 
@@ -99,11 +99,11 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   });
 
-  showPasswordToggle.addEventListener('change', () => {
+  showPasswordToggle.addEventListener("change", () => {
     passwordInput.type = showPasswordToggle.checked ? "text" : "password";
   });
 
-  startBtn.addEventListener('click', async () => {
+  startBtn.addEventListener("click", async () => {
     const username = usernameInput.value.trim();
     const password = passwordInput.value;
 
@@ -117,26 +117,51 @@ document.addEventListener('DOMContentLoaded', () => {
       });
     }
 
-    localStorage.setItem('quiz_username', isGuest ? "Guest" : username);
-    localStorage.setItem('quiz_isGuest', isGuest ? "true" : "false");
+    localStorage.setItem("quiz_username", isGuest ? "Guest" : username);
+    localStorage.setItem("quiz_isGuest", isGuest ? "true" : "false");
 
-    const sel = document.getElementById('quiz-length').value;
-    const custom = document.getElementById('custom-amount').value;
-    let total = (sel === 'infinite') ? Infinity : parseInt(sel);
-    if (custom) total = parseInt(custom);
-
-    questionOrder = [...Array(data.length).keys()];
-    shuffle(questionOrder);
-    totalQuestions = Math.min(total, data.length);
-
-    document.getElementById('intro-card').style.display = 'none';
-    document.getElementById('quiz-section').style.display = 'block';
-    loadQuestion();
+    // Proceed to show quiz
+    document.getElementById("intro-card").style.display = "none";
+    document.getElementById("quiz-section").style.display = "block";
+    document.getElementById("country-name").textContent = "France";
+    document.getElementById("options").innerHTML = `
+      <button>Paris</button>
+      <button>Lyon</button>
+      <button>Marseille</button>
+      <button>Bordeaux</button>
+      <button>Nantes</button>
+    `;
   });
 
-  document.addEventListener('keydown', (e) => {
-    if (e.key === 'Enter' && !startBtn.disabled) {
+  document.addEventListener("keydown", (e) => {
+    if (e.key === "Enter" && !startBtn.disabled) {
       startBtn.click();
     }
   });
 });
+
+// Simulate quiz score and save it to Firestore after quiz ends
+function saveScore(score) {
+  const username = localStorage.getItem("quiz_username");
+  const isGuest = localStorage.getItem("quiz_isGuest") === "true";
+  if (isGuest || !username) return;
+
+  const userRef = db.collection("users").doc(username);
+  userRef.get().then(doc => {
+    if (doc.exists) {
+      const data = doc.data();
+      const prevHigh = data.highScore || 0;
+      const newHigh = Math.max(score, prevHigh);
+      const history = data.history || [];
+      history.push({ score: score, time: new Date().toISOString() });
+
+      userRef.update({
+        highScore: newHigh,
+        history: history
+      });
+    }
+  });
+}
+
+// Call this when the quiz ends with a score
+// Example: saveScore(8); // if user got 8 questions right
