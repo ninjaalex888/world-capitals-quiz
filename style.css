@@ -124,3 +124,10 @@ th, td {
     width: 100% !important;
   }
 }
+
+body {
+  background-image: url('assets/bg.jpg');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}

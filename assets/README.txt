@@ -1,0 +1,1 @@
+Add bg.jpg (world map background) to this folder.
