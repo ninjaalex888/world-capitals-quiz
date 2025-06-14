@@ -79,6 +79,8 @@ document.addEventListener('DOMContentLoaded', () => {
   const usernameInput = document.getElementById('username');
   const usernameStatus = document.getElementById('username-status');
 
+  if (!usernameInput || !usernameStatus) return;
+
   usernameInput.addEventListener('input', async () => {
     const name = usernameInput.value.trim();
     if (!name) {
