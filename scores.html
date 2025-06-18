@@ -1,44 +1,16 @@
 
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Score History</title>
-  <link rel="stylesheet" href="style.css" />
-</head>
-<body>
-  <header onclick="location.href='index.html'" style="cursor:pointer;">
-    <nav class="menu">
-      <a href="index.html">🏆 Daily Challenge</a>
-      <a href="practice.html">🎯 Practice</a>
-      <a href="scores.html">📊 Score History</a>
-    </nav>
-  </header>
-  <main>
-    <h2>Score History</h2>
-    <div id="scoreTable"></div>
-  </main>
-  <script>
-    document.addEventListener("DOMContentLoaded", () => {
-      const scores = JSON.parse(localStorage.getItem("guestScores") || "[]");
-      const container = document.getElementById("scoreTable");
-      if (scores.length === 0) {
-        container.innerHTML = "<p>No scores recorded yet.</p>";
-        return;
-      }
-      const table = document.createElement("table");
-      const header = document.createElement("tr");
-      header.innerHTML = "<th>Date</th><th>Mode</th><th>Score</th>";
-      table.appendChild(header);
-      scores.reverse().forEach(s => {
-        const row = document.createElement("tr");
-        const d = new Date(s.timestamp).toLocaleDateString();
-        row.innerHTML = `<td>${d}</td><td>${s.mode}</td><td>${s.score}/${s.total}</td>`;
-        table.appendChild(row);
-      });
-      container.appendChild(table);
-    });
-  </script>
-</body>
-</html>
+<!DOCTYPE html><html lang="en"><head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>Score History</title><link rel="stylesheet" href="style.css"></head><body>
+<header class="topbar" onclick="location.href='index.html'">
+  <nav class="menu">
+    <a href="index.html">🏆 Daily Challenge</a>
+    <a href="practice.html">🎯 Practice</a>
+    <a href="scores.html">📊 Score History</a>
+  </nav>
+</header>
+<main><h2>Score History</h2><table id="scoreTable"></table></main>
+<script src="script.js"></script>
+<script>document.addEventListener('DOMContentLoaded',buildScores);</script>
+</body></html>

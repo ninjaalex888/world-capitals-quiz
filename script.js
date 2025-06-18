@@ -1,64 +1,109 @@
-let fullDB=[];
-let selectedQuestions=[];
-let currentQuestionIndex=0;
-let score=0;
 
-async function loadData(){
-  const res=await fetch("countries_200.json");
-  fullDB=await res.json();
-  shuffle(fullDB);
-}
-function shuffle(arr){return arr.sort(()=>Math.random()-0.5);}
+let fullDB=[], mode='', score=0, total=0;
+let dailyAnswered=false;
+let practiceOrder=[], pIndex=0;
 
-function startQuiz(isDaily=false){
-  const sel=document.getElementById("numQuestions").value;
-  const infinite=sel==="infinite";
-  const num=infinite?fullDB.length:parseInt(sel,10);
-  selectedQuestions=shuffle([...fullDB]).slice(0,num);
-  currentQuestionIndex=0;score=0;
-  document.getElementById("setupContainer").style.display="none";
-  document.getElementById("quizContainer").style.display="block";
-  document.getElementById("resultText").textContent="";
-  showQuestion(selectedQuestions[currentQuestionIndex],infinite);
+const $ = id => document.getElementById(id);
+const shuffle = a => a.sort(()=>Math.random()-.5);
+
+async function loadDB(){
+  if(fullDB.length) return;
+  fullDB = await fetch('countries_200.json').then(r=>r.json());
 }
-function showQuestion(q,infinite){
-  document.getElementById("questionText").textContent=`What is the capital of ${q.country}?`;
-  const c=document.getElementById("choicesContainer");c.innerHTML="";
-  const options=[...q.distractors,q.capital];shuffle(options);
-  options.forEach(city=>{
-    const b=document.createElement("button");b.textContent=city;
-    b.onclick=()=>handleAnswer(city===q.capital,q.capital,infinite);c.appendChild(b);
+
+// Build element if absent
+function need(id){
+  let el=$(id);
+  if(!el){
+    el=document.createElement('div');
+    el.id=id;
+    document.querySelector('main').appendChild(el);
+  }
+  return el;
+}
+
+function showQuestion(q){
+  need('quizBox'); const box=$('quizBox'); box.innerHTML='';
+  const qText=document.createElement('h3');qText.id='questionText';
+  qText.textContent=`What is the capital of ${q.country}?`;
+  box.appendChild(qText);
+
+  const choices=document.createElement('div');choices.id='choicesContainer';box.appendChild(choices);
+
+  shuffle([q.capital,...q.distractors]).forEach(city=>{
+    const btn=document.createElement('button');btn.textContent=city;
+    btn.onclick=()=>answer(btn,city===q.capital,q);
+    choices.appendChild(btn);
   });
-  document.getElementById("capitalImage").innerHTML=`<img src="${q.image}" alt="${q.capital}" style="max-width:100%;margin-top:10px;" onerror="this.style.display='none'">`;`<img src="${q.image}" alt="${q.capital}" style="max-width:100%;margin-top:10px;">`;
-  document.getElementById("countryFact").textContent="";
-}
-function handleAnswer(correct,answer,infinite){
-  const fact=document.getElementById("countryFact");
-  if(correct){score++;fact.textContent="✅ Correct!";}else{fact.textContent="❌ Incorrect, try again!";return;}
-  setTimeout(()=>{currentQuestionIndex++;if(currentQuestionIndex>=selectedQuestions.length){if(infinite){showQuestion(shuffle([...fullDB])[0],true);}else endQuiz();}else showQuestion(selectedQuestions[currentQuestionIndex],infinite);},1200);
+
+  const img=document.createElement('img');
+  img.id='img';img.src=q.image;img.style.maxWidth='100%';img.onerror=()=>img.style.display='none';
+  box.appendChild(img);
+
+  const fact=need('fact');
+  fact.textContent='';
 }
 
-function endQuiz(){
-  document.getElementById("quizContainer").style.display="none";
-  const total = selectedQuestions.length;
-  const res = document.getElementById("resultText");
-  res.textContent = `You scored ${score} out of ${total}`;
-  res.style.textAlign = "center";
-  document.getElementById("resultButtons").style.display = "block";
-  const scores = JSON.parse(localStorage.getItem("guestScores")||"[]");
-  scores.push({timestamp:Date.now(),score,total});
-  localStorage.setItem("guestScores",JSON.stringify(scores));
-}
-;
+function answer(btn,correct,q){
+  const fact=$('fact');
+  document.querySelectorAll('#choicesContainer button').forEach(b=>b.disabled=true);
+  if(correct){
+    btn.classList.add('success');score++;
+    fact.textContent=`✅ Correct! ${q.capital} is the capital of ${q.country}.`;
+  }else{
+    btn.classList.add('fail');
+    fact.textContent=`❌ Incorrect. ${q.capital} is the capital of ${q.country}.`;
+  }
 
-// Updated startQuiz function
-function startQuiz(isDaily = false) {
-  document.getElementById("quizContainer").style.display = "block";
-  document.getElementById("resultText").textContent = "";
-  document.getElementById("resultButtons").style.display = "none";
-  score = 0;
-  currentIndex = 0;
-  shuffle(fullDB);
-  selectedQuestions = isDaily ? [fullDB[0]] : fullDB.slice(0, 10); // Default 10 for practice
-  showQuestion(selectedQuestions[0]);
+  if(mode==='Daily'){
+    if(dailyAnswered) return;
+    dailyAnswered=true;total=1;
+    saveScore();
+    setTimeout(()=>{location.href='scores.html';},1800);
+  }else{
+    total++;saveScore();
+    setTimeout(nextPractice,1200);
+  }
+}
+
+function saveScore(){
+  const arr=JSON.parse(localStorage.getItem('guestScores')||'[]');
+  arr.push({timestamp:Date.now(),mode,score,total});
+  localStorage.setItem('guestScores',JSON.stringify(arr));
+}
+
+// ---------------- DAILY ----------------
+async function startDaily(){
+  await loadDB();
+  const today=new Date().toDateString();
+  if(localStorage.dailyPlayed===today){$('info').textContent='✅ Come back tomorrow!';return;}
+  mode='Daily';score=0;total=0;
+  const q=fullDB[Math.floor(Math.random()*fullDB.length)];
+  showQuestion(q);
+  localStorage.dailyPlayed=today; // mark attempt regardless right/wrong
+}
+
+// ---------------- PRACTICE -------------
+async function startPractice(){
+  await loadDB();
+  mode='Practice';score=0;total=0;
+  practiceOrder=shuffle([...fullDB]);
+  pIndex=0;
+  nextPractice();
+}
+function nextPractice(){
+  if(pIndex>=practiceOrder.length){practiceOrder=shuffle([...fullDB]);pIndex=0;}
+  showQuestion(practiceOrder[pIndex]);pIndex++;
+}
+
+// ---------------- SCORE PAGE ----------
+function buildScores(){
+  const arr=JSON.parse(localStorage.getItem('guestScores')||'[]').reverse();
+  const table=$('scoreTable');table.innerHTML='<tr><th>Date</th><th>Mode</th><th>Score</th></tr>';
+  if(!arr.length){table.innerHTML+='<tr><td colspan=3>No scores yet</td></tr>';return;}
+  arr.forEach(r=>{
+    const tr=document.createElement('tr');
+    tr.innerHTML=`<td>${new Date(r.timestamp).toLocaleDateString()}</td><td>${r.mode}</td><td>${r.score}/${r.total}</td>`;
+    table.appendChild(tr);
+  });
 }

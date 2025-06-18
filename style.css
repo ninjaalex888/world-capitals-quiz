@@ -1,12 +1,19 @@
-body{font-family:Arial, sans-serif;margin:0;padding:0;background:#f8f9fa;color:#333;}
-header{background:#4b0082;color:#fff;padding:1rem;display:flex;justify-content:space-between;align-items:center;}
-header h1{margin:0;}
-header a{color:#fff;font-size:0.9rem;text-decoration:none;}
-main{padding:1rem;}
-#setupContainer{display:flex;flex-direction:column;align-items:center;gap:1rem;margin-top:2rem;}
-button{margin:0.5rem;padding:0.75rem 1.25rem;background:#6a0dad;color:#fff;border:none;border-radius:5px;cursor:pointer;}
-button:hover{background:#580e8f;}
-table{width:100%;border-collapse:collapse;margin-top:1rem;}
-table,th,td{border:1px solid #ccc;}
-th,td{padding:0.5rem;text-align:center;}
-footer{text-align:center;padding:1rem;font-size:0.85rem;color:#222;background:#eee;position:fixed;bottom:0;width:100%;}
+
+:root{
+  --purple:#5b2dff;
+  --purple-dark:#3d1eb4;
+  --bg:#f5f7fb;
+  --text:#141414;
+}
+*{box-sizing:border-box;font-family:Inter,Arial,sans-serif;}
+body{margin:0;background:var(--bg);color:var(--text);}
+.topbar{background:var(--purple);padding:1rem;text-align:center;}
+.menu a{color:#fff;margin:0 1rem;text-decoration:none;font-weight:bold}
+main{max-width:900px;margin:auto;padding:2rem;text-align:center}
+button{padding:.65rem 1.2rem;margin:.35rem;border:none;border-radius:6px;background:var(--purple);color:#fff;cursor:pointer;transition:.2s}
+button:hover{background:var(--purple-dark)}
+#choicesContainer button{display:block;width:100%;max-width:260px;margin:.4rem auto}
+table{width:100%;border-collapse:collapse;margin-top:1rem}
+th,td{border:1px solid #ddd;padding:.5rem}
+.success{background:#4caf50!important}
+.fail{background:#f44336!important}
