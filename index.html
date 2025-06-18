@@ -1,41 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>World Capitals Quiz</title>
-  <link rel="stylesheet" href="style.css" />
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>World Capitals Quiz</title>
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header>
-    <h1>🌍 World Capitals Quiz</h1>
-  </header>
-  <main>
-    <div id="setupContainer">
-      <label for="numQuestions">How many questions?</label>
-      <select id="numQuestions">
-        <option value="5">5</option>
-        <option value="10">10</option>
-        <option value="20">20</option>
-      </select>
-      <button id="startQuizBtn">Start Quiz</button>
-    </div>
+<header onclick="location.href='index.html'" style="cursor:pointer;">
+  <h1>🌍 World Capitals Quiz</h1>
+  <a id="historyLink" href="scores.html">Score History</a>
+</header>
+<main>
+  <div id="setupContainer">
+    <label for="numQuestions">How many questions?</label>
+    <select id="numQuestions">
+      <option value="5">5</option>
+      <option value="10">10</option>
+      <option value="20">20</option>
+      <option value="infinite">Never ending</option>
+    </select>
+    <button id="startQuizBtn">Start Quiz</button>
+  </div>
 
-    <div id="quizContainer" style="display:none;">
-      <div id="questionText"></div>
-      <div id="choicesContainer"></div>
-      <div id="capitalImage"></div>
-      <button id="nextBtn">Next</button>
-    </div>
+  <div id="quizContainer" style="display:none;">
+    <div id="questionText"></div>
+    <div id="choicesContainer"></div>
+    <div id="capitalImage"></div>
+  </div>
 
-    <div id="resultText"></div>
-    <div id="countryFact"></div>
-  </main>
-
-  <footer>
-    <small>&copy; 2025 World Capitals Quiz</small>
-  </footer>
-
-  <script src="script.js"></script>
+  <div id="resultText"></div>
+  <div id="countryFact" style="margin-top:1rem;font-weight:bold;"></div>
+</main>
+<footer><small>&copy; 2025 World Capitals Quiz</small></footer>
+<script src="script.js"></script>
 </body>
 </html>

@@ -1,75 +1,53 @@
-let selectedQuestions = [];
-let currentQuestionIndex = 0;
-let score = 0;
+let fullDB=[];
+let selectedQuestions=[];
+let currentQuestionIndex=0;
+let score=0;
 
-const countryDB = [
-  {
-    country: "France",
-    capital: "Paris",
-    cities: ["Lyon", "Marseille", "Nice", "Bordeaux", "Paris"],
-    image: "https://upload.wikimedia.org/wikipedia/commons/e/e6/Paris_Night.jpg"
-  },
-  {
-    country: "Japan",
-    capital: "Tokyo",
-    cities: ["Osaka", "Nagoya", "Kyoto", "Sapporo", "Tokyo"],
-    image: "https://upload.wikimedia.org/wikipedia/commons/1/12/Tokyo_Tower_and_around_Skyscrapers.jpg"
-  }
-];
-
-function shuffle(array) {
-  return array.sort(() => Math.random() - 0.5);
+async function loadData(){
+  const res=await fetch("countries_200.json");
+  fullDB=await res.json();
+  shuffle(fullDB);
 }
+function shuffle(arr){return arr.sort(()=>Math.random()-0.5);}
 
-function startQuiz() {
-  const num = parseInt(document.getElementById("numQuestions").value, 10);
-  selectedQuestions = shuffle(countryDB).slice(0, num);
-  currentQuestionIndex = 0;
-  score = 0;
-
-  document.getElementById("setupContainer").style.display = "none";
-  document.getElementById("quizContainer").style.display = "block";
-  showQuestion(selectedQuestions[currentQuestionIndex]);
+function startQuiz(){
+  const sel=document.getElementById("numQuestions").value;
+  const infinite=sel==="infinite";
+  const num=infinite?fullDB.length:parseInt(sel,10);
+  selectedQuestions=shuffle([...fullDB]).slice(0,num);
+  currentQuestionIndex=0;score=0;
+  document.getElementById("setupContainer").style.display="none";
+  document.getElementById("quizContainer").style.display="block";
+  document.getElementById("resultText").textContent="";
+  showQuestion(selectedQuestions[currentQuestionIndex],infinite);
 }
-
-function showQuestion(q) {
-  document.getElementById("questionText").textContent = `What is the capital of ${q.country}?`;
-  const choicesContainer = document.getElementById("choicesContainer");
-  choicesContainer.innerHTML = "";
-  shuffle(q.cities).forEach(city => {
-    const btn = document.createElement("button");
-    btn.textContent = city;
-    btn.onclick = () => submitAnswer(city === q.capital, q.capital);
-    choicesContainer.appendChild(btn);
+function showQuestion(q,infinite){
+  document.getElementById("questionText").textContent=`What is the capital of ${q.country}?`;
+  const c=document.getElementById("choicesContainer");c.innerHTML="";
+  const options=[...q.distractors,q.capital];shuffle(options);
+  options.forEach(city=>{
+    const b=document.createElement("button");b.textContent=city;
+    b.onclick=()=>handleAnswer(city===q.capital,q.capital,infinite);c.appendChild(b);
   });
-
-  document.getElementById("capitalImage").innerHTML =
-    `<img src="${q.image}" alt="${q.capital}" style="max-width:100%; margin-top:10px;" />`;
+  document.getElementById("capitalImage").innerHTML=`<img src="${q.image}" alt="${q.capital}" style="max-width:100%;margin-top:10px;">`;
+  document.getElementById("countryFact").textContent="";
+}
+function handleAnswer(correct,answer,infinite){
+  const fact=document.getElementById("countryFact");
+  if(correct){score++;fact.textContent="✅ Correct!";}else{fact.textContent="❌ Incorrect, try again!";return;}
+  setTimeout(()=>{currentQuestionIndex++;if(currentQuestionIndex>=selectedQuestions.length){if(infinite){showQuestion(shuffle([...fullDB])[0],true);}else endQuiz();}else showQuestion(selectedQuestions[currentQuestionIndex],infinite);},1200);
+}
+function endQuiz(){
+  document.getElementById("quizContainer").style.display="none";
+  const total=selectedQuestions.length;
+  document.getElementById("resultText").textContent=`You scored ${score} out of ${total}`;
+  // Save to history
+  const scores=JSON.parse(localStorage.getItem("guestScores")||"[]");
+  scores.push({timestamp:Date.now(),score,total});
+  localStorage.setItem("guestScores",JSON.stringify(scores));
 }
 
-function submitAnswer(correct, answer) {
-  if (correct) score++;
-  document.getElementById("countryFact").textContent = `Correct answer: ${answer}`;
-  document.getElementById("nextBtn").style.display = "inline";
-}
-
-function nextQuestion() {
-  currentQuestionIndex++;
-  document.getElementById("nextBtn").style.display = "none";
-  document.getElementById("countryFact").textContent = "";
-  if (currentQuestionIndex < selectedQuestions.length) {
-    showQuestion(selectedQuestions[currentQuestionIndex]);
-  } else {
-    endQuiz();
-  }
-}
-
-function endQuiz() {
-  document.getElementById("quizContainer").style.display = "none";
-  document.getElementById("resultText").textContent = `You scored ${score} out of ${selectedQuestions.length}`;
-}
-
-document.addEventListener("DOMContentLoaded", () => {
-  document.getElementById("startQuizBtn").onclick = startQuiz;
-  document.getElementById("nextBtn").onclick = nextQuestion;
+document.addEventListener("DOMContentLoaded",async()=>{
+  await loadData();
+  document.getElementById("startQuizBtn").onclick=startQuiz;
 });
