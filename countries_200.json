@@ -3,10 +3,10 @@
     "country": "Italy_0",
     "capital": "Rome",
     "distractors": [
-      "RomexZ",
-      "RomexH",
-      "RomexY",
-      "RomexE"
+      "Rometown",
+      "Romeville",
+      "Romeport",
+      "Romeburg"
     ],
     "image": "https://source.unsplash.com/400x250/?Rome+skyline"
   },
@@ -14,10 +14,10 @@
     "country": "Japan_1",
     "capital": "Tokyo",
     "distractors": [
-      "TokyoxZ",
-      "TokyoxC",
-      "TokyoxP",
-      "TokyoxG"
+      "Tokyotown",
+      "Tokyoville",
+      "Tokyoport",
+      "Tokyoburg"
     ],
     "image": "https://source.unsplash.com/400x250/?Tokyo+skyline"
   },
@@ -25,10 +25,10 @@
     "country": "Australia_2",
     "capital": "Canberra",
     "distractors": [
-      "CanberraxO",
-      "CanberraxW",
-      "CanberraxJ",
-      "CanberraxM"
+      "Canberratown",
+      "Canberraville",
+      "Canberraport",
+      "Canberraburg"
     ],
     "image": "https://source.unsplash.com/400x250/?Canberra+skyline"
   },
@@ -36,21 +36,21 @@
     "country": "India_3",
     "capital": "New Delhi",
     "distractors": [
-      "New DelhixR",
-      "New DelhixO",
-      "New DelhixK",
-      "New DelhixX"
+      "New Delhitown",
+      "New Delhiville",
+      "New Delhiport",
+      "New Delhiburg"
     ],
-    "image": "https://source.unsplash.com/400x250/?New Delhi+skyline"
+    "image": "https://source.unsplash.com/400x250/?New+Delhi+skyline"
   },
   {
     "country": "Germany_4",
     "capital": "Berlin",
     "distractors": [
-      "BerlinxW",
-      "BerlinxZ",
-      "BerlinxG",
-      "BerlinxL"
+      "Berlintown",
+      "Berlinville",
+      "Berlinport",
+      "Berlinburg"
     ],
     "image": "https://source.unsplash.com/400x250/?Berlin+skyline"
   },
@@ -58,10 +58,10 @@
     "country": "Brazil_5",
     "capital": "Bras\u00edlia",
     "distractors": [
-      "Bras\u00edliaxN",
-      "Bras\u00edliaxJ",
-      "Bras\u00edliaxV",
-      "Bras\u00edliaxA"
+      "Bras\u00edliatown",
+      "Bras\u00edliaville",
+      "Bras\u00edliaport",
+      "Bras\u00edliaburg"
     ],
     "image": "https://source.unsplash.com/400x250/?Bras\u00edlia+skyline"
   },
@@ -69,10 +69,10 @@
     "country": "France_6",
     "capital": "Paris",
     "distractors": [
-      "ParisxP",
-      "ParisxT",
-      "ParisxN",
-      "ParisxK"
+      "Paristown",
+      "Parisville",
+      "Parisport",
+      "Parisburg"
     ],
     "image": "https://source.unsplash.com/400x250/?Paris+skyline"
   },
@@ -80,10 +80,10 @@
     "country": "Canada_7",
     "capital": "Ottawa",
     "distractors": [
-      "OttawaxW",
-      "OttawaxC",
-      "OttawaxY",
-      "OttawaxK"
+      "Ottawatown",
+      "Ottawaville",
+      "Ottawaport",
+      "Ottawaburg"
     ],
     "image": "https://source.unsplash.com/400x250/?Ottawa+skyline"
   },
@@ -91,10 +91,10 @@
     "country": "China_8",
     "capital": "Beijing",
     "distractors": [
-      "BeijingxD",
-      "BeijingxS",
-      "BeijingxJ",
-      "BeijingxT"
+      "Beijingtown",
+      "Beijingville",
+      "Beijingport",
+      "Beijingburg"
     ],
     "image": "https://source.unsplash.com/400x250/?Beijing+skyline"
   },
@@ -102,10 +102,10 @@
     "country": "France_9",
     "capital": "Paris",
     "distractors": [
-      "ParisxQ",
-      "ParisxP",
-      "ParisxK",
-      "ParisxN"
+      "Paristown",
+      "Parisville",
+      "Parisport",
+      "Parisburg"
     ],
     "image": "https://source.unsplash.com/400x250/?Paris+skyline"
   },
@@ -113,10 +113,10 @@
     "country": "Japan_10",
     "capital": "Tokyo",
     "distractors": [
-      "TokyoxL",
-      "TokyoxS",
-      "TokyoxU",
-      "TokyoxZ"
+      "Tokyotown",
+      "Tokyoville",
+      "Tokyoport",
+      "Tokyoburg"
     ],
     "image": "https://source.unsplash.com/400x250/?Tokyo+skyline"
   },
@@ -124,10 +124,10 @@
     "country": "China_11",
     "capital": "Beijing",
     "distractors": [
-      "BeijingxC",
-      "BeijingxU",
-      "BeijingxJ",
-      "BeijingxA"
+      "Beijingtown",
+      "Beijingville",
+      "Beijingport",
+      "Beijingburg"
     ],
     "image": "https://source.unsplash.com/400x250/?Beijing+skyline"
   },
@@ -135,10 +135,10 @@
     "country": "Spain_12",
     "capital": "Madrid",
     "distractors": [
-      "MadridxF",
-      "MadridxE",
-      "MadridxL",
-      "MadridxM"
+      "Madridtown",
+      "Madridville",
+      "Madridport",
+      "Madridburg"
     ],
     "image": "https://source.unsplash.com/400x250/?Madrid+skyline"
   },
@@ -146,21 +146,21 @@
     "country": "India_13",
     "capital": "New Delhi",
     "distractors": [
-      "New DelhixD",
-      "New DelhixL",
-      "New DelhixI",
-      "New DelhixX"
+      "New Delhitown",
+      "New Delhiville",
+      "New Delhiport",
+      "New Delhiburg"
     ],
-    "image": "https://source.unsplash.com/400x250/?New Delhi+skyline"
+    "image": "https://source.unsplash.com/400x250/?New+Delhi+skyline"
   },
   {
     "country": "China_14",
     "capital": "Beijing",
     "distractors": [
-      "BeijingxI",
-      "BeijingxD",
-      "BeijingxZ",
-      "BeijingxX"
+      "Beijingtown",
+      "Beijingville",
+      "Beijingport",
+      "Beijingburg"
     ],
     "image": "https://source.unsplash.com/400x250/?Beijing+skyline"
   },
@@ -168,10 +168,10 @@
     "country": "Brazil_15",
     "capital": "Bras\u00edlia",
     "distractors": [
-      "Bras\u00edliaxJ",
-      "Bras\u00edliaxW",
-      "Bras\u00edliaxV",
-      "Bras\u00edliaxI"
+      "Bras\u00edliatown",
+      "Bras\u00edliaville",
+      "Bras\u00edliaport",
+      "Bras\u00edliaburg"
     ],
     "image": "https://source.unsplash.com/400x250/?Bras\u00edlia+skyline"
   },
@@ -179,10 +179,10 @@
     "country": "Canada_16",
     "capital": "Ottawa",
     "distractors": [
-      "OttawaxO",
-      "OttawaxM",
-      "OttawaxJ",
-      "OttawaxK"
+      "Ottawatown",
+      "Ottawaville",
+      "Ottawaport",
+      "Ottawaburg"
     ],
     "image": "https://source.unsplash.com/400x250/?Ottawa+skyline"
   },
@@ -190,10 +190,10 @@
     "country": "Germany_17",
     "capital": "Berlin",
     "distractors": [
-      "BerlinxX",
-      "BerlinxG",
-      "BerlinxR",
-      "BerlinxT"
+      "Berlintown",
+      "Berlinville",
+      "Berlinport",
+      "Berlinburg"
     ],
     "image": "https://source.unsplash.com/400x250/?Berlin+skyline"
   },
@@ -201,32 +201,32 @@
     "country": "India_18",
     "capital": "New Delhi",
     "distractors": [
-      "New DelhixS",
-      "New DelhixX",
-      "New DelhixD",
-      "New DelhixW"
+      "New Delhitown",
+      "New Delhiville",
+      "New Delhiport",
+      "New Delhiburg"
     ],
-    "image": "https://source.unsplash.com/400x250/?New Delhi+skyline"
+    "image": "https://source.unsplash.com/400x250/?New+Delhi+skyline"
   },
   {
     "country": "India_19",
     "capital": "New Delhi",
     "distractors": [
-      "New DelhixD",
-      "New DelhixG",
-      "New DelhixC",
-      "New DelhixV"
+      "New Delhitown",
+      "New Delhiville",
+      "New Delhiport",
+      "New Delhiburg"
     ],
-    "image": "https://source.unsplash.com/400x250/?New Delhi+skyline"
+    "image": "https://source.unsplash.com/400x250/?New+Delhi+skyline"
   },
   {
     "country": "Italy_20",
     "capital": "Rome",
     "distractors": [
-      "RomexP",
-      "RomexG",
-      "RomexR",
-      "RomexB"
+      "Rometown",
+      "Romeville",
+      "Romeport",
+      "Romeburg"
     ],
     "image": "https://source.unsplash.com/400x250/?Rome+skyline"
   },
@@ -234,10 +234,10 @@
     "country": "Germany_21",
     "capital": "Berlin",
     "distractors": [
-      "BerlinxI",
-      "BerlinxB",
-      "BerlinxA",
-      "BerlinxV"
+      "Berlintown",
+      "Berlinville",
+      "Berlinport",
+      "Berlinburg"
     ],
     "image": "https://source.unsplash.com/400x250/?Berlin+skyline"
   },
@@ -245,10 +245,10 @@
     "country": "Brazil_22",
     "capital": "Bras\u00edlia",
     "distractors": [
-      "Bras\u00edliaxS",
-      "Bras\u00edliaxB",
-      "Bras\u00edliaxE",
-      "Bras\u00edliaxP"
+      "Bras\u00edliatown",
+      "Bras\u00edliaville",
+      "Bras\u00edliaport",
+      "Bras\u00edliaburg"
     ],
     "image": "https://source.unsplash.com/400x250/?Bras\u00edlia+skyline"
   },
@@ -256,10 +256,10 @@
     "country": "Italy_23",
     "capital": "Rome",
     "distractors": [
-      "RomexQ",
-      "RomexY",
-      "RomexL",
-      "RomexP"
+      "Rometown",
+      "Romeville",
+      "Romeport",
+      "Romeburg"
     ],
     "image": "https://source.unsplash.com/400x250/?Rome+skyline"
   },
@@ -267,10 +267,10 @@
     "country": "Australia_24",
     "capital": "Canberra",
     "distractors": [
-      "CanberraxE",
-      "CanberraxY",
-      "CanberraxA",
-      "CanberraxP"
+      "Canberratown",
+      "Canberraville",
+      "Canberraport",
+      "Canberraburg"
     ],
     "image": "https://source.unsplash.com/400x250/?Canberra+skyline"
   },
@@ -278,10 +278,10 @@
     "country": "Brazil_25",
     "capital": "Bras\u00edlia",
     "distractors": [
-      "Bras\u00edliaxA",
-      "Bras\u00edliaxB",
-      "Bras\u00edliaxV",
-      "Bras\u00edliaxZ"
+      "Bras\u00edliatown",
+      "Bras\u00edliaville",
+      "Bras\u00edliaport",
+      "Bras\u00edliaburg"
     ],
     "image": "https://source.unsplash.com/400x250/?Bras\u00edlia+skyline"
   },
@@ -289,10 +289,10 @@
     "country": "Canada_26",
     "capital": "Ottawa",
     "distractors": [
-      "OttawaxN",
-      "OttawaxB",
-      "OttawaxC",
-      "OttawaxM"
+      "Ottawatown",
+      "Ottawaville",
+      "Ottawaport",
+      "Ottawaburg"
     ],
     "image": "https://source.unsplash.com/400x250/?Ottawa+skyline"
   },
@@ -300,10 +300,10 @@
     "country": "Spain_27",
     "capital": "Madrid",
     "distractors": [
-      "MadridxK",
-      "MadridxD",
-      "MadridxG",
-      "MadridxO"
+      "Madridtown",
+      "Madridville",
+      "Madridport",
+      "Madridburg"
     ],
     "image": "https://source.unsplash.com/400x250/?Madrid+skyline"
   },
@@ -311,10 +311,10 @@
     "country": "Spain_28",
     "capital": "Madrid",
     "distractors": [
-      "MadridxV",
-      "MadridxW",
-      "MadridxJ",
-      "MadridxQ"
+      "Madridtown",
+      "Madridville",
+      "Madridport",
+      "Madridburg"
     ],
     "image": "https://source.unsplash.com/400x250/?Madrid+skyline"
   },
@@ -322,10 +322,10 @@
     "country": "France_29",
     "capital": "Paris",
     "distractors": [
-      "ParisxO",
-      "ParisxA",
-      "ParisxI",
-      "ParisxW"
+      "Paristown",
+      "Parisville",
+      "Parisport",
+      "Parisburg"
     ],
     "image": "https://source.unsplash.com/400x250/?Paris+skyline"
   },
@@ -333,10 +333,10 @@
     "country": "Japan_30",
     "capital": "Tokyo",
     "distractors": [
-      "TokyoxM",
-      "TokyoxH",
-      "TokyoxP",
-      "TokyoxS"
+      "Tokyotown",
+      "Tokyoville",
+      "Tokyoport",
+      "Tokyoburg"
     ],
     "image": "https://source.unsplash.com/400x250/?Tokyo+skyline"
   },
@@ -344,21 +344,21 @@
     "country": "India_31",
     "capital": "New Delhi",
     "distractors": [
-      "New DelhixQ",
-      "New DelhixU",
-      "New DelhixX",
-      "New DelhixK"
+      "New Delhitown",
+      "New Delhiville",
+      "New Delhiport",
+      "New Delhiburg"
     ],
-    "image": "https://source.unsplash.com/400x250/?New Delhi+skyline"
+    "image": "https://source.unsplash.com/400x250/?New+Delhi+skyline"
   },
   {
     "country": "Italy_32",
     "capital": "Rome",
     "distractors": [
-      "RomexV",
-      "RomexL",
-      "RomexJ",
-      "RomexM"
+      "Rometown",
+      "Romeville",
+      "Romeport",
+      "Romeburg"
     ],
     "image": "https://source.unsplash.com/400x250/?Rome+skyline"
   },
@@ -366,10 +366,10 @@
     "country": "Spain_33",
     "capital": "Madrid",
     "distractors": [
-      "MadridxJ",
-      "MadridxX",
-      "MadridxO",
-      "MadridxS"
+      "Madridtown",
+      "Madridville",
+      "Madridport",
+      "Madridburg"
     ],
     "image": "https://source.unsplash.com/400x250/?Madrid+skyline"
   },
@@ -377,10 +377,10 @@
     "country": "Germany_34",
     "capital": "Berlin",
     "distractors": [
-      "BerlinxK",
-      "BerlinxM",
-      "BerlinxA",
-      "BerlinxH"
+      "Berlintown",
+      "Berlinville",
+      "Berlinport",
+      "Berlinburg"
     ],
     "image": "https://source.unsplash.com/400x250/?Berlin+skyline"
   },
@@ -388,10 +388,10 @@
     "country": "Japan_35",
     "capital": "Tokyo",
     "distractors": [
-      "TokyoxJ",
-      "TokyoxG",
-      "TokyoxT",
-      "TokyoxR"
+      "Tokyotown",
+      "Tokyoville",
+      "Tokyoport",
+      "Tokyoburg"
     ],
     "image": "https://source.unsplash.com/400x250/?Tokyo+skyline"
   },
@@ -399,10 +399,10 @@
     "country": "Germany_36",
     "capital": "Berlin",
     "distractors": [
-      "BerlinxS",
-      "BerlinxO",
-      "BerlinxL",
-      "BerlinxJ"
+      "Berlintown",
+      "Berlinville",
+      "Berlinport",
+      "Berlinburg"
     ],
     "image": "https://source.unsplash.com/400x250/?Berlin+skyline"
   },
@@ -410,10 +410,10 @@
     "country": "Japan_37",
     "capital": "Tokyo",
     "distractors": [
-      "TokyoxF",
-      "TokyoxD",
-      "TokyoxJ",
-      "TokyoxS"
+      "Tokyotown",
+      "Tokyoville",
+      "Tokyoport",
+      "Tokyoburg"
     ],
     "image": "https://source.unsplash.com/400x250/?Tokyo+skyline"
   },
@@ -421,10 +421,10 @@
     "country": "Italy_38",
     "capital": "Rome",
     "distractors": [
-      "RomexL",
-      "RomexJ",
-      "RomexS",
-      "RomexD"
+      "Rometown",
+      "Romeville",
+      "Romeport",
+      "Romeburg"
     ],
     "image": "https://source.unsplash.com/400x250/?Rome+skyline"
   },
@@ -432,10 +432,10 @@
     "country": "Australia_39",
     "capital": "Canberra",
     "distractors": [
-      "CanberraxD",
-      "CanberraxU",
-      "CanberraxB",
-      "CanberraxX"
+      "Canberratown",
+      "Canberraville",
+      "Canberraport",
+      "Canberraburg"
     ],
     "image": "https://source.unsplash.com/400x250/?Canberra+skyline"
   },
@@ -443,10 +443,10 @@
     "country": "China_40",
     "capital": "Beijing",
     "distractors": [
-      "BeijingxE",
-      "BeijingxO",
-      "BeijingxW",
-      "BeijingxZ"
+      "Beijingtown",
+      "Beijingville",
+      "Beijingport",
+      "Beijingburg"
     ],
     "image": "https://source.unsplash.com/400x250/?Beijing+skyline"
   },
@@ -454,10 +454,10 @@
     "country": "France_41",
     "capital": "Paris",
     "distractors": [
-      "ParisxS",
-      "ParisxG",
-      "ParisxO",
-      "ParisxU"
+      "Paristown",
+      "Parisville",
+      "Parisport",
+      "Parisburg"
     ],
     "image": "https://source.unsplash.com/400x250/?Paris+skyline"
   },
@@ -465,21 +465,21 @@
     "country": "India_42",
     "capital": "New Delhi",
     "distractors": [
-      "New DelhixK",
-      "New DelhixU",
-      "New DelhixJ",
-      "New DelhixI"
+      "New Delhitown",
+      "New Delhiville",
+      "New Delhiport",
+      "New Delhiburg"
     ],
-    "image": "https://source.unsplash.com/400x250/?New Delhi+skyline"
+    "image": "https://source.unsplash.com/400x250/?New+Delhi+skyline"
   },
   {
     "country": "Italy_43",
     "capital": "Rome",
     "distractors": [
-      "RomexZ",
-      "RomexX",
-      "RomexN",
-      "RomexD"
+      "Rometown",
+      "Romeville",
+      "Romeport",
+      "Romeburg"
     ],
     "image": "https://source.unsplash.com/400x250/?Rome+skyline"
   },
@@ -487,10 +487,10 @@
     "country": "Spain_44",
     "capital": "Madrid",
     "distractors": [
-      "MadridxN",
-      "MadridxW",
-      "MadridxX",
-      "MadridxE"
+      "Madridtown",
+      "Madridville",
+      "Madridport",
+      "Madridburg"
     ],
     "image": "https://source.unsplash.com/400x250/?Madrid+skyline"
   },
@@ -498,10 +498,10 @@
     "country": "Brazil_45",
     "capital": "Bras\u00edlia",
     "distractors": [
-      "Bras\u00edliaxD",
-      "Bras\u00edliaxM",
-      "Bras\u00edliaxA",
-      "Bras\u00edliaxT"
+      "Bras\u00edliatown",
+      "Bras\u00edliaville",
+      "Bras\u00edliaport",
+      "Bras\u00edliaburg"
     ],
     "image": "https://source.unsplash.com/400x250/?Bras\u00edlia+skyline"
   },
@@ -509,10 +509,10 @@
     "country": "China_46",
     "capital": "Beijing",
     "distractors": [
-      "BeijingxO",
-      "BeijingxD",
-      "BeijingxX",
-      "BeijingxT"
+      "Beijingtown",
+      "Beijingville",
+      "Beijingport",
+      "Beijingburg"
     ],
     "image": "https://source.unsplash.com/400x250/?Beijing+skyline"
   },
@@ -520,10 +520,10 @@
     "country": "Australia_47",
     "capital": "Canberra",
     "distractors": [
-      "CanberraxO",
-      "CanberraxQ",
-      "CanberraxM",
-      "CanberraxG"
+      "Canberratown",
+      "Canberraville",
+      "Canberraport",
+      "Canberraburg"
     ],
     "image": "https://source.unsplash.com/400x250/?Canberra+skyline"
   },
@@ -531,10 +531,10 @@
     "country": "Canada_48",
     "capital": "Ottawa",
     "distractors": [
-      "OttawaxG",
-      "OttawaxM",
-      "OttawaxA",
-      "OttawaxL"
+      "Ottawatown",
+      "Ottawaville",
+      "Ottawaport",
+      "Ottawaburg"
     ],
     "image": "https://source.unsplash.com/400x250/?Ottawa+skyline"
   },
@@ -542,10 +542,10 @@
     "country": "Italy_49",
     "capital": "Rome",
     "distractors": [
-      "RomexG",
-      "RomexC",
-      "RomexD",
-      "RomexN"
+      "Rometown",
+      "Romeville",
+      "Romeport",
+      "Romeburg"
     ],
     "image": "https://source.unsplash.com/400x250/?Rome+skyline"
   },
@@ -553,10 +553,10 @@
     "country": "China_50",
     "capital": "Beijing",
     "distractors": [
-      "BeijingxL",
-      "BeijingxZ",
-      "BeijingxB",
-      "BeijingxD"
+      "Beijingtown",
+      "Beijingville",
+      "Beijingport",
+      "Beijingburg"
     ],
     "image": "https://source.unsplash.com/400x250/?Beijing+skyline"
   },
@@ -564,21 +564,21 @@
     "country": "India_51",
     "capital": "New Delhi",
     "distractors": [
-      "New DelhixG",
-      "New DelhixQ",
-      "New DelhixO",
-      "New DelhixK"
+      "New Delhitown",
+      "New Delhiville",
+      "New Delhiport",
+      "New Delhiburg"
     ],
-    "image": "https://source.unsplash.com/400x250/?New Delhi+skyline"
+    "image": "https://source.unsplash.com/400x250/?New+Delhi+skyline"
   },
   {
     "country": "Brazil_52",
     "capital": "Bras\u00edlia",
     "distractors": [
-      "Bras\u00edliaxF",
-      "Bras\u00edliaxE",
-      "Bras\u00edliaxR",
-      "Bras\u00edliaxH"
+      "Bras\u00edliatown",
+      "Bras\u00edliaville",
+      "Bras\u00edliaport",
+      "Bras\u00edliaburg"
     ],
     "image": "https://source.unsplash.com/400x250/?Bras\u00edlia+skyline"
   },
@@ -586,10 +586,10 @@
     "country": "Brazil_53",
     "capital": "Bras\u00edlia",
     "distractors": [
-      "Bras\u00edliaxX",
-      "Bras\u00edliaxI",
-      "Bras\u00edliaxW",
-      "Bras\u00edliaxQ"
+      "Bras\u00edliatown",
+      "Bras\u00edliaville",
+      "Bras\u00edliaport",
+      "Bras\u00edliaburg"
     ],
     "image": "https://source.unsplash.com/400x250/?Bras\u00edlia+skyline"
   },
@@ -597,10 +597,10 @@
     "country": "Japan_54",
     "capital": "Tokyo",
     "distractors": [
-      "TokyoxS",
-      "TokyoxW",
-      "TokyoxV",
-      "TokyoxT"
+      "Tokyotown",
+      "Tokyoville",
+      "Tokyoport",
+      "Tokyoburg"
     ],
     "image": "https://source.unsplash.com/400x250/?Tokyo+skyline"
   },
@@ -608,10 +608,10 @@
     "country": "Canada_55",
     "capital": "Ottawa",
     "distractors": [
-      "OttawaxM",
-      "OttawaxT",
-      "OttawaxN",
-      "OttawaxK"
+      "Ottawatown",
+      "Ottawaville",
+      "Ottawaport",
+      "Ottawaburg"
     ],
     "image": "https://source.unsplash.com/400x250/?Ottawa+skyline"
   },
@@ -619,10 +619,10 @@
     "country": "Australia_56",
     "capital": "Canberra",
     "distractors": [
-      "CanberraxG",
-      "CanberraxL",
-      "CanberraxQ",
-      "CanberraxS"
+      "Canberratown",
+      "Canberraville",
+      "Canberraport",
+      "Canberraburg"
     ],
     "image": "https://source.unsplash.com/400x250/?Canberra+skyline"
   },
@@ -630,10 +630,10 @@
     "country": "France_57",
     "capital": "Paris",
     "distractors": [
-      "ParisxL",
-      "ParisxG",
-      "ParisxW",
-      "ParisxN"
+      "Paristown",
+      "Parisville",
+      "Parisport",
+      "Parisburg"
     ],
     "image": "https://source.unsplash.com/400x250/?Paris+skyline"
   },
@@ -641,10 +641,10 @@
     "country": "Canada_58",
     "capital": "Ottawa",
     "distractors": [
-      "OttawaxL",
-      "OttawaxC",
-      "OttawaxH",
-      "OttawaxB"
+      "Ottawatown",
+      "Ottawaville",
+      "Ottawaport",
+      "Ottawaburg"
     ],
     "image": "https://source.unsplash.com/400x250/?Ottawa+skyline"
   },
@@ -652,10 +652,10 @@
     "country": "Japan_59",
     "capital": "Tokyo",
     "distractors": [
-      "TokyoxT",
-      "TokyoxS",
-      "TokyoxV",
-      "TokyoxW"
+      "Tokyotown",
+      "Tokyoville",
+      "Tokyoport",
+      "Tokyoburg"
     ],
     "image": "https://source.unsplash.com/400x250/?Tokyo+skyline"
   },
@@ -663,10 +663,10 @@
     "country": "Canada_60",
     "capital": "Ottawa",
     "distractors": [
-      "OttawaxF",
-      "OttawaxT",
-      "OttawaxS",
-      "OttawaxG"
+      "Ottawatown",
+      "Ottawaville",
+      "Ottawaport",
+      "Ottawaburg"
     ],
     "image": "https://source.unsplash.com/400x250/?Ottawa+skyline"
   },
@@ -674,10 +674,10 @@
     "country": "Canada_61",
     "capital": "Ottawa",
     "distractors": [
-      "OttawaxB",
-      "OttawaxA",
-      "OttawaxE",
-      "OttawaxW"
+      "Ottawatown",
+      "Ottawaville",
+      "Ottawaport",
+      "Ottawaburg"
     ],
     "image": "https://source.unsplash.com/400x250/?Ottawa+skyline"
   },
@@ -685,10 +685,10 @@
     "country": "Germany_62",
     "capital": "Berlin",
     "distractors": [
-      "BerlinxD",
-      "BerlinxA",
-      "BerlinxO",
-      "BerlinxH"
+      "Berlintown",
+      "Berlinville",
+      "Berlinport",
+      "Berlinburg"
     ],
     "image": "https://source.unsplash.com/400x250/?Berlin+skyline"
   },
@@ -696,10 +696,10 @@
     "country": "Germany_63",
     "capital": "Berlin",
     "distractors": [
-      "BerlinxS",
-      "BerlinxX",
-      "BerlinxJ",
-      "BerlinxI"
+      "Berlintown",
+      "Berlinville",
+      "Berlinport",
+      "Berlinburg"
     ],
     "image": "https://source.unsplash.com/400x250/?Berlin+skyline"
   },
@@ -707,10 +707,10 @@
     "country": "Italy_64",
     "capital": "Rome",
     "distractors": [
-      "RomexV",
-      "RomexU",
-      "RomexW",
-      "RomexT"
+      "Rometown",
+      "Romeville",
+      "Romeport",
+      "Romeburg"
     ],
     "image": "https://source.unsplash.com/400x250/?Rome+skyline"
   },
@@ -718,10 +718,10 @@
     "country": "Spain_65",
     "capital": "Madrid",
     "distractors": [
-      "MadridxR",
-      "MadridxM",
-      "MadridxG",
-      "MadridxX"
+      "Madridtown",
+      "Madridville",
+      "Madridport",
+      "Madridburg"
     ],
     "image": "https://source.unsplash.com/400x250/?Madrid+skyline"
   },
@@ -729,10 +729,10 @@
     "country": "Japan_66",
     "capital": "Tokyo",
     "distractors": [
-      "TokyoxJ",
-      "TokyoxP",
-      "TokyoxN",
-      "TokyoxX"
+      "Tokyotown",
+      "Tokyoville",
+      "Tokyoport",
+      "Tokyoburg"
     ],
     "image": "https://source.unsplash.com/400x250/?Tokyo+skyline"
   },
@@ -740,21 +740,21 @@
     "country": "India_67",
     "capital": "New Delhi",
     "distractors": [
-      "New DelhixG",
-      "New DelhixX",
-      "New DelhixN",
-      "New DelhixK"
+      "New Delhitown",
+      "New Delhiville",
+      "New Delhiport",
+      "New Delhiburg"
     ],
-    "image": "https://source.unsplash.com/400x250/?New Delhi+skyline"
+    "image": "https://source.unsplash.com/400x250/?New+Delhi+skyline"
   },
   {
     "country": "France_68",
     "capital": "Paris",
     "distractors": [
-      "ParisxO",
-      "ParisxF",
-      "ParisxP",
-      "ParisxD"
+      "Paristown",
+      "Parisville",
+      "Parisport",
+      "Parisburg"
     ],
     "image": "https://source.unsplash.com/400x250/?Paris+skyline"
   },
@@ -762,10 +762,10 @@
     "country": "Spain_69",
     "capital": "Madrid",
     "distractors": [
-      "MadridxS",
-      "MadridxG",
-      "MadridxK",
-      "MadridxN"
+      "Madridtown",
+      "Madridville",
+      "Madridport",
+      "Madridburg"
     ],
     "image": "https://source.unsplash.com/400x250/?Madrid+skyline"
   },
@@ -773,10 +773,10 @@
     "country": "Canada_70",
     "capital": "Ottawa",
     "distractors": [
-      "OttawaxE",
-      "OttawaxR",
-      "OttawaxG",
-      "OttawaxX"
+      "Ottawatown",
+      "Ottawaville",
+      "Ottawaport",
+      "Ottawaburg"
     ],
     "image": "https://source.unsplash.com/400x250/?Ottawa+skyline"
   },
@@ -784,10 +784,10 @@
     "country": "Canada_71",
     "capital": "Ottawa",
     "distractors": [
-      "OttawaxN",
-      "OttawaxW",
-      "OttawaxC",
-      "OttawaxH"
+      "Ottawatown",
+      "Ottawaville",
+      "Ottawaport",
+      "Ottawaburg"
     ],
     "image": "https://source.unsplash.com/400x250/?Ottawa+skyline"
   },
@@ -795,10 +795,10 @@
     "country": "Brazil_72",
     "capital": "Bras\u00edlia",
     "distractors": [
-      "Bras\u00edliaxX",
-      "Bras\u00edliaxY",
-      "Bras\u00edliaxU",
-      "Bras\u00edliaxK"
+      "Bras\u00edliatown",
+      "Bras\u00edliaville",
+      "Bras\u00edliaport",
+      "Bras\u00edliaburg"
     ],
     "image": "https://source.unsplash.com/400x250/?Bras\u00edlia+skyline"
   },
@@ -806,10 +806,10 @@
     "country": "Japan_73",
     "capital": "Tokyo",
     "distractors": [
-      "TokyoxH",
-      "TokyoxS",
-      "TokyoxE",
-      "TokyoxB"
+      "Tokyotown",
+      "Tokyoville",
+      "Tokyoport",
+      "Tokyoburg"
     ],
     "image": "https://source.unsplash.com/400x250/?Tokyo+skyline"
   },
@@ -817,10 +817,10 @@
     "country": "France_74",
     "capital": "Paris",
     "distractors": [
-      "ParisxV",
-      "ParisxR",
-      "ParisxX",
-      "ParisxU"
+      "Paristown",
+      "Parisville",
+      "Parisport",
+      "Parisburg"
     ],
     "image": "https://source.unsplash.com/400x250/?Paris+skyline"
   },
@@ -828,10 +828,10 @@
     "country": "Italy_75",
     "capital": "Rome",
     "distractors": [
-      "RomexE",
-      "RomexM",
-      "RomexG",
-      "RomexP"
+      "Rometown",
+      "Romeville",
+      "Romeport",
+      "Romeburg"
     ],
     "image": "https://source.unsplash.com/400x250/?Rome+skyline"
   },
@@ -839,10 +839,10 @@
     "country": "France_76",
     "capital": "Paris",
     "distractors": [
-      "ParisxV",
-      "ParisxS",
-      "ParisxI",
-      "ParisxG"
+      "Paristown",
+      "Parisville",
+      "Parisport",
+      "Parisburg"
     ],
     "image": "https://source.unsplash.com/400x250/?Paris+skyline"
   },
@@ -850,10 +850,10 @@
     "country": "China_77",
     "capital": "Beijing",
     "distractors": [
-      "BeijingxK",
-      "BeijingxH",
-      "BeijingxJ",
-      "BeijingxM"
+      "Beijingtown",
+      "Beijingville",
+      "Beijingport",
+      "Beijingburg"
     ],
     "image": "https://source.unsplash.com/400x250/?Beijing+skyline"
   },
@@ -861,10 +861,10 @@
     "country": "Germany_78",
     "capital": "Berlin",
     "distractors": [
-      "BerlinxI",
-      "BerlinxO",
-      "BerlinxU",
-      "BerlinxH"
+      "Berlintown",
+      "Berlinville",
+      "Berlinport",
+      "Berlinburg"
     ],
     "image": "https://source.unsplash.com/400x250/?Berlin+skyline"
   },
@@ -872,10 +872,10 @@
     "country": "Japan_79",
     "capital": "Tokyo",
     "distractors": [
-      "TokyoxS",
-      "TokyoxC",
-      "TokyoxV",
-      "TokyoxZ"
+      "Tokyotown",
+      "Tokyoville",
+      "Tokyoport",
+      "Tokyoburg"
     ],
     "image": "https://source.unsplash.com/400x250/?Tokyo+skyline"
   },
@@ -883,10 +883,10 @@
     "country": "Italy_80",
     "capital": "Rome",
     "distractors": [
-      "RomexO",
-      "RomexN",
-      "RomexH",
-      "RomexW"
+      "Rometown",
+      "Romeville",
+      "Romeport",
+      "Romeburg"
     ],
     "image": "https://source.unsplash.com/400x250/?Rome+skyline"
   },
@@ -894,10 +894,10 @@
     "country": "Italy_81",
     "capital": "Rome",
     "distractors": [
-      "RomexM",
-      "RomexE",
-      "RomexT",
-      "RomexP"
+      "Rometown",
+      "Romeville",
+      "Romeport",
+      "Romeburg"
     ],
     "image": "https://source.unsplash.com/400x250/?Rome+skyline"
   },
@@ -905,10 +905,10 @@
     "country": "Canada_82",
     "capital": "Ottawa",
     "distractors": [
-      "OttawaxQ",
-      "OttawaxE",
-      "OttawaxH",
-      "OttawaxU"
+      "Ottawatown",
+      "Ottawaville",
+      "Ottawaport",
+      "Ottawaburg"
     ],
     "image": "https://source.unsplash.com/400x250/?Ottawa+skyline"
   },
@@ -916,10 +916,10 @@
     "country": "Spain_83",
     "capital": "Madrid",
     "distractors": [
-      "MadridxY",
-      "MadridxS",
-      "MadridxV",
-      "MadridxI"
+      "Madridtown",
+      "Madridville",
+      "Madridport",
+      "Madridburg"
     ],
     "image": "https://source.unsplash.com/400x250/?Madrid+skyline"
   },
@@ -927,10 +927,10 @@
     "country": "Spain_84",
     "capital": "Madrid",
     "distractors": [
-      "MadridxS",
-      "MadridxB",
-      "MadridxO",
-      "MadridxZ"
+      "Madridtown",
+      "Madridville",
+      "Madridport",
+      "Madridburg"
     ],
     "image": "https://source.unsplash.com/400x250/?Madrid+skyline"
   },
@@ -938,10 +938,10 @@
     "country": "Germany_85",
     "capital": "Berlin",
     "distractors": [
-      "BerlinxS",
-      "BerlinxD",
-      "BerlinxV",
-      "BerlinxU"
+      "Berlintown",
+      "Berlinville",
+      "Berlinport",
+      "Berlinburg"
     ],
     "image": "https://source.unsplash.com/400x250/?Berlin+skyline"
   },
@@ -949,10 +949,10 @@
     "country": "Australia_86",
     "capital": "Canberra",
     "distractors": [
-      "CanberraxH",
-      "CanberraxA",
-      "CanberraxU",
-      "CanberraxN"
+      "Canberratown",
+      "Canberraville",
+      "Canberraport",
+      "Canberraburg"
     ],
     "image": "https://source.unsplash.com/400x250/?Canberra+skyline"
   },
@@ -960,10 +960,10 @@
     "country": "Spain_87",
     "capital": "Madrid",
     "distractors": [
-      "MadridxP",
-      "MadridxA",
-      "MadridxF",
-      "MadridxO"
+      "Madridtown",
+      "Madridville",
+      "Madridport",
+      "Madridburg"
     ],
     "image": "https://source.unsplash.com/400x250/?Madrid+skyline"
   },
@@ -971,10 +971,10 @@
     "country": "France_88",
     "capital": "Paris",
     "distractors": [
-      "ParisxH",
-      "ParisxZ",
-      "ParisxN",
-      "ParisxW"
+      "Paristown",
+      "Parisville",
+      "Parisport",
+      "Parisburg"
     ],
     "image": "https://source.unsplash.com/400x250/?Paris+skyline"
   },
@@ -982,10 +982,10 @@
     "country": "Australia_89",
     "capital": "Canberra",
     "distractors": [
-      "CanberraxD",
-      "CanberraxS",
-      "CanberraxL",
-      "CanberraxT"
+      "Canberratown",
+      "Canberraville",
+      "Canberraport",
+      "Canberraburg"
     ],
     "image": "https://source.unsplash.com/400x250/?Canberra+skyline"
   },
@@ -993,10 +993,10 @@
     "country": "China_90",
     "capital": "Beijing",
     "distractors": [
-      "BeijingxQ",
-      "BeijingxK",
-      "BeijingxE",
-      "BeijingxB"
+      "Beijingtown",
+      "Beijingville",
+      "Beijingport",
+      "Beijingburg"
     ],
     "image": "https://source.unsplash.com/400x250/?Beijing+skyline"
   },
@@ -1004,10 +1004,10 @@
     "country": "France_91",
     "capital": "Paris",
     "distractors": [
-      "ParisxF",
-      "ParisxW",
-      "ParisxE",
-      "ParisxZ"
+      "Paristown",
+      "Parisville",
+      "Parisport",
+      "Parisburg"
     ],
     "image": "https://source.unsplash.com/400x250/?Paris+skyline"
   },
@@ -1015,10 +1015,10 @@
     "country": "Spain_92",
     "capital": "Madrid",
     "distractors": [
-      "MadridxC",
-      "MadridxQ",
-      "MadridxN",
-      "MadridxM"
+      "Madridtown",
+      "Madridville",
+      "Madridport",
+      "Madridburg"
     ],
     "image": "https://source.unsplash.com/400x250/?Madrid+skyline"
   },
@@ -1026,10 +1026,10 @@
     "country": "Brazil_93",
     "capital": "Bras\u00edlia",
     "distractors": [
-      "Bras\u00edliaxS",
-      "Bras\u00edliaxM",
-      "Bras\u00edliaxC",
-      "Bras\u00edliaxY"
+      "Bras\u00edliatown",
+      "Bras\u00edliaville",
+      "Bras\u00edliaport",
+      "Bras\u00edliaburg"
     ],
     "image": "https://source.unsplash.com/400x250/?Bras\u00edlia+skyline"
   },
@@ -1037,10 +1037,10 @@
     "country": "Spain_94",
     "capital": "Madrid",
     "distractors": [
-      "MadridxP",
-      "MadridxW",
-      "MadridxX",
-      "MadridxT"
+      "Madridtown",
+      "Madridville",
+      "Madridport",
+      "Madridburg"
     ],
     "image": "https://source.unsplash.com/400x250/?Madrid+skyline"
   },
@@ -1048,10 +1048,10 @@
     "country": "France_95",
     "capital": "Paris",
     "distractors": [
-      "ParisxA",
-      "ParisxV",
-      "ParisxB",
-      "ParisxC"
+      "Paristown",
+      "Parisville",
+      "Parisport",
+      "Parisburg"
     ],
     "image": "https://source.unsplash.com/400x250/?Paris+skyline"
   },
@@ -1059,10 +1059,10 @@
     "country": "France_96",
     "capital": "Paris",
     "distractors": [
-      "ParisxI",
-      "ParisxS",
-      "ParisxM",
-      "ParisxW"
+      "Paristown",
+      "Parisville",
+      "Parisport",
+      "Parisburg"
     ],
     "image": "https://source.unsplash.com/400x250/?Paris+skyline"
   },
@@ -1070,10 +1070,10 @@
     "country": "Canada_97",
     "capital": "Ottawa",
     "distractors": [
-      "OttawaxK",
-      "OttawaxU",
-      "OttawaxC",
-      "OttawaxW"
+      "Ottawatown",
+      "Ottawaville",
+      "Ottawaport",
+      "Ottawaburg"
     ],
     "image": "https://source.unsplash.com/400x250/?Ottawa+skyline"
   },
@@ -1081,10 +1081,10 @@
     "country": "Spain_98",
     "capital": "Madrid",
     "distractors": [
-      "MadridxI",
-      "MadridxM",
-      "MadridxY",
-      "MadridxN"
+      "Madridtown",
+      "Madridville",
+      "Madridport",
+      "Madridburg"
     ],
     "image": "https://source.unsplash.com/400x250/?Madrid+skyline"
   },
@@ -1092,10 +1092,10 @@
     "country": "Germany_99",
     "capital": "Berlin",
     "distractors": [
-      "BerlinxL",
-      "BerlinxR",
-      "BerlinxO",
-      "BerlinxD"
+      "Berlintown",
+      "Berlinville",
+      "Berlinport",
+      "Berlinburg"
     ],
     "image": "https://source.unsplash.com/400x250/?Berlin+skyline"
   },
@@ -1103,10 +1103,10 @@
     "country": "Brazil_100",
     "capital": "Bras\u00edlia",
     "distractors": [
-      "Bras\u00edliaxK",
-      "Bras\u00edliaxN",
-      "Bras\u00edliaxF",
-      "Bras\u00edliaxC"
+      "Bras\u00edliatown",
+      "Bras\u00edliaville",
+      "Bras\u00edliaport",
+      "Bras\u00edliaburg"
     ],
     "image": "https://source.unsplash.com/400x250/?Bras\u00edlia+skyline"
   },
@@ -1114,10 +1114,10 @@
     "country": "Canada_101",
     "capital": "Ottawa",
     "distractors": [
-      "OttawaxJ",
-      "OttawaxN",
-      "OttawaxY",
-      "OttawaxB"
+      "Ottawatown",
+      "Ottawaville",
+      "Ottawaport",
+      "Ottawaburg"
     ],
     "image": "https://source.unsplash.com/400x250/?Ottawa+skyline"
   },
@@ -1125,10 +1125,10 @@
     "country": "France_102",
     "capital": "Paris",
     "distractors": [
-      "ParisxL",
-      "ParisxV",
-      "ParisxW",
-      "ParisxR"
+      "Paristown",
+      "Parisville",
+      "Parisport",
+      "Parisburg"
     ],
     "image": "https://source.unsplash.com/400x250/?Paris+skyline"
   },
@@ -1136,10 +1136,10 @@
     "country": "Canada_103",
     "capital": "Ottawa",
     "distractors": [
-      "OttawaxY",
-      "OttawaxF",
-      "OttawaxV",
-      "OttawaxG"
+      "Ottawatown",
+      "Ottawaville",
+      "Ottawaport",
+      "Ottawaburg"
     ],
     "image": "https://source.unsplash.com/400x250/?Ottawa+skyline"
   },
@@ -1147,10 +1147,10 @@
     "country": "Spain_104",
     "capital": "Madrid",
     "distractors": [
-      "MadridxY",
-      "MadridxE",
-      "MadridxX",
-      "MadridxP"
+      "Madridtown",
+      "Madridville",
+      "Madridport",
+      "Madridburg"
     ],
     "image": "https://source.unsplash.com/400x250/?Madrid+skyline"
   },
@@ -1158,21 +1158,21 @@
     "country": "India_105",
     "capital": "New Delhi",
     "distractors": [
-      "New DelhixO",
-      "New DelhixP",
-      "New DelhixN",
-      "New DelhixR"
+      "New Delhitown",
+      "New Delhiville",
+      "New Delhiport",
+      "New Delhiburg"
     ],
-    "image": "https://source.unsplash.com/400x250/?New Delhi+skyline"
+    "image": "https://source.unsplash.com/400x250/?New+Delhi+skyline"
   },
   {
     "country": "Japan_106",
     "capital": "Tokyo",
     "distractors": [
-      "TokyoxQ",
-      "TokyoxL",
-      "TokyoxH",
-      "TokyoxI"
+      "Tokyotown",
+      "Tokyoville",
+      "Tokyoport",
+      "Tokyoburg"
     ],
     "image": "https://source.unsplash.com/400x250/?Tokyo+skyline"
   },
@@ -1180,10 +1180,10 @@
     "country": "Australia_107",
     "capital": "Canberra",
     "distractors": [
-      "CanberraxI",
-      "CanberraxQ",
-      "CanberraxY",
-      "CanberraxB"
+      "Canberratown",
+      "Canberraville",
+      "Canberraport",
+      "Canberraburg"
     ],
     "image": "https://source.unsplash.com/400x250/?Canberra+skyline"
   },
@@ -1191,10 +1191,10 @@
     "country": "France_108",
     "capital": "Paris",
     "distractors": [
-      "ParisxF",
-      "ParisxS",
-      "ParisxT",
-      "ParisxQ"
+      "Paristown",
+      "Parisville",
+      "Parisport",
+      "Parisburg"
     ],
     "image": "https://source.unsplash.com/400x250/?Paris+skyline"
   },
@@ -1202,10 +1202,10 @@
     "country": "Brazil_109",
     "capital": "Bras\u00edlia",
     "distractors": [
-      "Bras\u00edliaxR",
-      "Bras\u00edliaxD",
-      "Bras\u00edliaxG",
-      "Bras\u00edliaxO"
+      "Bras\u00edliatown",
+      "Bras\u00edliaville",
+      "Bras\u00edliaport",
+      "Bras\u00edliaburg"
     ],
     "image": "https://source.unsplash.com/400x250/?Bras\u00edlia+skyline"
   },
@@ -1213,10 +1213,10 @@
     "country": "Spain_110",
     "capital": "Madrid",
     "distractors": [
-      "MadridxU",
-      "MadridxZ",
-      "MadridxF",
-      "MadridxC"
+      "Madridtown",
+      "Madridville",
+      "Madridport",
+      "Madridburg"
     ],
     "image": "https://source.unsplash.com/400x250/?Madrid+skyline"
   },
@@ -1224,10 +1224,10 @@
     "country": "Australia_111",
     "capital": "Canberra",
     "distractors": [
-      "CanberraxT",
-      "CanberraxE",
-      "CanberraxI",
-      "CanberraxX"
+      "Canberratown",
+      "Canberraville",
+      "Canberraport",
+      "Canberraburg"
     ],
     "image": "https://source.unsplash.com/400x250/?Canberra+skyline"
   },
@@ -1235,10 +1235,10 @@
     "country": "Italy_112",
     "capital": "Rome",
     "distractors": [
-      "RomexK",
-      "RomexB",
-      "RomexD",
-      "RomexZ"
+      "Rometown",
+      "Romeville",
+      "Romeport",
+      "Romeburg"
     ],
     "image": "https://source.unsplash.com/400x250/?Rome+skyline"
   },
@@ -1246,10 +1246,10 @@
     "country": "Brazil_113",
     "capital": "Bras\u00edlia",
     "distractors": [
-      "Bras\u00edliaxA",
-      "Bras\u00edliaxK",
-      "Bras\u00edliaxB",
-      "Bras\u00edliaxU"
+      "Bras\u00edliatown",
+      "Bras\u00edliaville",
+      "Bras\u00edliaport",
+      "Bras\u00edliaburg"
     ],
     "image": "https://source.unsplash.com/400x250/?Bras\u00edlia+skyline"
   },
@@ -1257,10 +1257,10 @@
     "country": "Italy_114",
     "capital": "Rome",
     "distractors": [
-      "RomexH",
-      "RomexB",
-      "RomexY",
-      "RomexZ"
+      "Rometown",
+      "Romeville",
+      "Romeport",
+      "Romeburg"
     ],
     "image": "https://source.unsplash.com/400x250/?Rome+skyline"
   },
@@ -1268,10 +1268,10 @@
     "country": "Spain_115",
     "capital": "Madrid",
     "distractors": [
-      "MadridxF",
-      "MadridxL",
-      "MadridxS",
-      "MadridxC"
+      "Madridtown",
+      "Madridville",
+      "Madridport",
+      "Madridburg"
     ],
     "image": "https://source.unsplash.com/400x250/?Madrid+skyline"
   },
@@ -1279,10 +1279,10 @@
     "country": "Germany_116",
     "capital": "Berlin",
     "distractors": [
-      "BerlinxS",
-      "BerlinxH",
-      "BerlinxN",
-      "BerlinxW"
+      "Berlintown",
+      "Berlinville",
+      "Berlinport",
+      "Berlinburg"
     ],
     "image": "https://source.unsplash.com/400x250/?Berlin+skyline"
   },
@@ -1290,10 +1290,10 @@
     "country": "Japan_117",
     "capital": "Tokyo",
     "distractors": [
-      "TokyoxR",
-      "TokyoxX",
-      "TokyoxY",
-      "TokyoxZ"
+      "Tokyotown",
+      "Tokyoville",
+      "Tokyoport",
+      "Tokyoburg"
     ],
     "image": "https://source.unsplash.com/400x250/?Tokyo+skyline"
   },
@@ -1301,32 +1301,32 @@
     "country": "India_118",
     "capital": "New Delhi",
     "distractors": [
-      "New DelhixT",
-      "New DelhixB",
-      "New DelhixZ",
-      "New DelhixO"
+      "New Delhitown",
+      "New Delhiville",
+      "New Delhiport",
+      "New Delhiburg"
     ],
-    "image": "https://source.unsplash.com/400x250/?New Delhi+skyline"
+    "image": "https://source.unsplash.com/400x250/?New+Delhi+skyline"
   },
   {
     "country": "India_119",
     "capital": "New Delhi",
     "distractors": [
-      "New DelhixE",
-      "New DelhixT",
-      "New DelhixB",
-      "New DelhixF"
+      "New Delhitown",
+      "New Delhiville",
+      "New Delhiport",
+      "New Delhiburg"
     ],
-    "image": "https://source.unsplash.com/400x250/?New Delhi+skyline"
+    "image": "https://source.unsplash.com/400x250/?New+Delhi+skyline"
   },
   {
     "country": "Japan_120",
     "capital": "Tokyo",
     "distractors": [
-      "TokyoxQ",
-      "TokyoxB",
-      "TokyoxP",
-      "TokyoxK"
+      "Tokyotown",
+      "Tokyoville",
+      "Tokyoport",
+      "Tokyoburg"
     ],
     "image": "https://source.unsplash.com/400x250/?Tokyo+skyline"
   },
@@ -1334,10 +1334,10 @@
     "country": "China_121",
     "capital": "Beijing",
     "distractors": [
-      "BeijingxV",
-      "BeijingxA",
-      "BeijingxE",
-      "BeijingxT"
+      "Beijingtown",
+      "Beijingville",
+      "Beijingport",
+      "Beijingburg"
     ],
     "image": "https://source.unsplash.com/400x250/?Beijing+skyline"
   },
@@ -1345,10 +1345,10 @@
     "country": "Australia_122",
     "capital": "Canberra",
     "distractors": [
-      "CanberraxF",
-      "CanberraxC",
-      "CanberraxX",
-      "CanberraxZ"
+      "Canberratown",
+      "Canberraville",
+      "Canberraport",
+      "Canberraburg"
     ],
     "image": "https://source.unsplash.com/400x250/?Canberra+skyline"
   },
@@ -1356,10 +1356,10 @@
     "country": "Italy_123",
     "capital": "Rome",
     "distractors": [
-      "RomexA",
-      "RomexD",
-      "RomexH",
-      "RomexZ"
+      "Rometown",
+      "Romeville",
+      "Romeport",
+      "Romeburg"
     ],
     "image": "https://source.unsplash.com/400x250/?Rome+skyline"
   },
@@ -1367,10 +1367,10 @@
     "country": "France_124",
     "capital": "Paris",
     "distractors": [
-      "ParisxH",
-      "ParisxX",
-      "ParisxN",
-      "ParisxJ"
+      "Paristown",
+      "Parisville",
+      "Parisport",
+      "Parisburg"
     ],
     "image": "https://source.unsplash.com/400x250/?Paris+skyline"
   },
@@ -1378,10 +1378,10 @@
     "country": "Germany_125",
     "capital": "Berlin",
     "distractors": [
-      "BerlinxI",
-      "BerlinxD",
-      "BerlinxG",
-      "BerlinxY"
+      "Berlintown",
+      "Berlinville",
+      "Berlinport",
+      "Berlinburg"
     ],
     "image": "https://source.unsplash.com/400x250/?Berlin+skyline"
   },
@@ -1389,10 +1389,10 @@
     "country": "Japan_126",
     "capital": "Tokyo",
     "distractors": [
-      "TokyoxT",
-      "TokyoxW",
-      "TokyoxZ",
-      "TokyoxQ"
+      "Tokyotown",
+      "Tokyoville",
+      "Tokyoport",
+      "Tokyoburg"
     ],
     "image": "https://source.unsplash.com/400x250/?Tokyo+skyline"
   },
@@ -1400,10 +1400,10 @@
     "country": "Germany_127",
     "capital": "Berlin",
     "distractors": [
-      "BerlinxP",
-      "BerlinxV",
-      "BerlinxH",
-      "BerlinxN"
+      "Berlintown",
+      "Berlinville",
+      "Berlinport",
+      "Berlinburg"
     ],
     "image": "https://source.unsplash.com/400x250/?Berlin+skyline"
   },
@@ -1411,10 +1411,10 @@
     "country": "Germany_128",
     "capital": "Berlin",
     "distractors": [
-      "BerlinxW",
-      "BerlinxE",
-      "BerlinxA",
-      "BerlinxM"
+      "Berlintown",
+      "Berlinville",
+      "Berlinport",
+      "Berlinburg"
     ],
     "image": "https://source.unsplash.com/400x250/?Berlin+skyline"
   },
@@ -1422,10 +1422,10 @@
     "country": "Germany_129",
     "capital": "Berlin",
     "distractors": [
-      "BerlinxC",
-      "BerlinxR",
-      "BerlinxD",
-      "BerlinxQ"
+      "Berlintown",
+      "Berlinville",
+      "Berlinport",
+      "Berlinburg"
     ],
     "image": "https://source.unsplash.com/400x250/?Berlin+skyline"
   },
@@ -1433,10 +1433,10 @@
     "country": "Italy_130",
     "capital": "Rome",
     "distractors": [
-      "RomexD",
-      "RomexA",
-      "RomexK",
-      "RomexM"
+      "Rometown",
+      "Romeville",
+      "Romeport",
+      "Romeburg"
     ],
     "image": "https://source.unsplash.com/400x250/?Rome+skyline"
   },
@@ -1444,10 +1444,10 @@
     "country": "Italy_131",
     "capital": "Rome",
     "distractors": [
-      "RomexL",
-      "RomexX",
-      "RomexC",
-      "RomexF"
+      "Rometown",
+      "Romeville",
+      "Romeport",
+      "Romeburg"
     ],
     "image": "https://source.unsplash.com/400x250/?Rome+skyline"
   },
@@ -1455,10 +1455,10 @@
     "country": "Canada_132",
     "capital": "Ottawa",
     "distractors": [
-      "OttawaxF",
-      "OttawaxG",
-      "OttawaxQ",
-      "OttawaxD"
+      "Ottawatown",
+      "Ottawaville",
+      "Ottawaport",
+      "Ottawaburg"
     ],
     "image": "https://source.unsplash.com/400x250/?Ottawa+skyline"
   },
@@ -1466,10 +1466,10 @@
     "country": "Canada_133",
     "capital": "Ottawa",
     "distractors": [
-      "OttawaxM",
-      "OttawaxZ",
-      "OttawaxX",
-      "OttawaxF"
+      "Ottawatown",
+      "Ottawaville",
+      "Ottawaport",
+      "Ottawaburg"
     ],
     "image": "https://source.unsplash.com/400x250/?Ottawa+skyline"
   },
@@ -1477,10 +1477,10 @@
     "country": "China_134",
     "capital": "Beijing",
     "distractors": [
-      "BeijingxV",
-      "BeijingxS",
-      "BeijingxD",
-      "BeijingxF"
+      "Beijingtown",
+      "Beijingville",
+      "Beijingport",
+      "Beijingburg"
     ],
     "image": "https://source.unsplash.com/400x250/?Beijing+skyline"
   },
@@ -1488,10 +1488,10 @@
     "country": "China_135",
     "capital": "Beijing",
     "distractors": [
-      "BeijingxS",
-      "BeijingxE",
-      "BeijingxF",
-      "BeijingxA"
+      "Beijingtown",
+      "Beijingville",
+      "Beijingport",
+      "Beijingburg"
     ],
     "image": "https://source.unsplash.com/400x250/?Beijing+skyline"
   },
@@ -1499,10 +1499,10 @@
     "country": "Japan_136",
     "capital": "Tokyo",
     "distractors": [
-      "TokyoxH",
-      "TokyoxO",
-      "TokyoxJ",
-      "TokyoxR"
+      "Tokyotown",
+      "Tokyoville",
+      "Tokyoport",
+      "Tokyoburg"
     ],
     "image": "https://source.unsplash.com/400x250/?Tokyo+skyline"
   },
@@ -1510,10 +1510,10 @@
     "country": "Japan_137",
     "capital": "Tokyo",
     "distractors": [
-      "TokyoxW",
-      "TokyoxU",
-      "TokyoxF",
-      "TokyoxO"
+      "Tokyotown",
+      "Tokyoville",
+      "Tokyoport",
+      "Tokyoburg"
     ],
     "image": "https://source.unsplash.com/400x250/?Tokyo+skyline"
   },
@@ -1521,10 +1521,10 @@
     "country": "Australia_138",
     "capital": "Canberra",
     "distractors": [
-      "CanberraxD",
-      "CanberraxO",
-      "CanberraxL",
-      "CanberraxP"
+      "Canberratown",
+      "Canberraville",
+      "Canberraport",
+      "Canberraburg"
     ],
     "image": "https://source.unsplash.com/400x250/?Canberra+skyline"
   },
@@ -1532,10 +1532,10 @@
     "country": "Australia_139",
     "capital": "Canberra",
     "distractors": [
-      "CanberraxG",
-      "CanberraxT",
-      "CanberraxN",
-      "CanberraxF"
+      "Canberratown",
+      "Canberraville",
+      "Canberraport",
+      "Canberraburg"
     ],
     "image": "https://source.unsplash.com/400x250/?Canberra+skyline"
   },
@@ -1543,10 +1543,10 @@
     "country": "Germany_140",
     "capital": "Berlin",
     "distractors": [
-      "BerlinxU",
-      "BerlinxM",
-      "BerlinxY",
-      "BerlinxT"
+      "Berlintown",
+      "Berlinville",
+      "Berlinport",
+      "Berlinburg"
     ],
     "image": "https://source.unsplash.com/400x250/?Berlin+skyline"
   },
@@ -1554,32 +1554,32 @@
     "country": "India_141",
     "capital": "New Delhi",
     "distractors": [
-      "New DelhixH",
-      "New DelhixB",
-      "New DelhixW",
-      "New DelhixO"
+      "New Delhitown",
+      "New Delhiville",
+      "New Delhiport",
+      "New Delhiburg"
     ],
-    "image": "https://source.unsplash.com/400x250/?New Delhi+skyline"
+    "image": "https://source.unsplash.com/400x250/?New+Delhi+skyline"
   },
   {
     "country": "India_142",
     "capital": "New Delhi",
     "distractors": [
-      "New DelhixZ",
-      "New DelhixV",
-      "New DelhixG",
-      "New DelhixL"
+      "New Delhitown",
+      "New Delhiville",
+      "New Delhiport",
+      "New Delhiburg"
     ],
-    "image": "https://source.unsplash.com/400x250/?New Delhi+skyline"
+    "image": "https://source.unsplash.com/400x250/?New+Delhi+skyline"
   },
   {
     "country": "Brazil_143",
     "capital": "Bras\u00edlia",
     "distractors": [
-      "Bras\u00edliaxH",
-      "Bras\u00edliaxX",
-      "Bras\u00edliaxO",
-      "Bras\u00edliaxY"
+      "Bras\u00edliatown",
+      "Bras\u00edliaville",
+      "Bras\u00edliaport",
+      "Bras\u00edliaburg"
     ],
     "image": "https://source.unsplash.com/400x250/?Bras\u00edlia+skyline"
   },
@@ -1587,10 +1587,10 @@
     "country": "Japan_144",
     "capital": "Tokyo",
     "distractors": [
-      "TokyoxH",
-      "TokyoxD",
-      "TokyoxK",
-      "TokyoxL"
+      "Tokyotown",
+      "Tokyoville",
+      "Tokyoport",
+      "Tokyoburg"
     ],
     "image": "https://source.unsplash.com/400x250/?Tokyo+skyline"
   },
@@ -1598,10 +1598,10 @@
     "country": "France_145",
     "capital": "Paris",
     "distractors": [
-      "ParisxB",
-      "ParisxT",
-      "ParisxN",
-      "ParisxV"
+      "Paristown",
+      "Parisville",
+      "Parisport",
+      "Parisburg"
     ],
     "image": "https://source.unsplash.com/400x250/?Paris+skyline"
   },
@@ -1609,10 +1609,10 @@
     "country": "Japan_146",
     "capital": "Tokyo",
     "distractors": [
-      "TokyoxY",
-      "TokyoxV",
-      "TokyoxS",
-      "TokyoxH"
+      "Tokyotown",
+      "Tokyoville",
+      "Tokyoport",
+      "Tokyoburg"
     ],
     "image": "https://source.unsplash.com/400x250/?Tokyo+skyline"
   },
@@ -1620,10 +1620,10 @@
     "country": "China_147",
     "capital": "Beijing",
     "distractors": [
-      "BeijingxD",
-      "BeijingxU",
-      "BeijingxJ",
-      "BeijingxQ"
+      "Beijingtown",
+      "Beijingville",
+      "Beijingport",
+      "Beijingburg"
     ],
     "image": "https://source.unsplash.com/400x250/?Beijing+skyline"
   },
@@ -1631,10 +1631,10 @@
     "country": "Italy_148",
     "capital": "Rome",
     "distractors": [
-      "RomexE",
-      "RomexM",
-      "RomexB",
-      "RomexF"
+      "Rometown",
+      "Romeville",
+      "Romeport",
+      "Romeburg"
     ],
     "image": "https://source.unsplash.com/400x250/?Rome+skyline"
   },
@@ -1642,10 +1642,10 @@
     "country": "Germany_149",
     "capital": "Berlin",
     "distractors": [
-      "BerlinxS",
-      "BerlinxN",
-      "BerlinxL",
-      "BerlinxO"
+      "Berlintown",
+      "Berlinville",
+      "Berlinport",
+      "Berlinburg"
     ],
     "image": "https://source.unsplash.com/400x250/?Berlin+skyline"
   },
@@ -1653,10 +1653,10 @@
     "country": "Brazil_150",
     "capital": "Bras\u00edlia",
     "distractors": [
-      "Bras\u00edliaxE",
-      "Bras\u00edliaxO",
-      "Bras\u00edliaxN",
-      "Bras\u00edliaxQ"
+      "Bras\u00edliatown",
+      "Bras\u00edliaville",
+      "Bras\u00edliaport",
+      "Bras\u00edliaburg"
     ],
     "image": "https://source.unsplash.com/400x250/?Bras\u00edlia+skyline"
   },
@@ -1664,10 +1664,10 @@
     "country": "Spain_151",
     "capital": "Madrid",
     "distractors": [
-      "MadridxB",
-      "MadridxN",
-      "MadridxF",
-      "MadridxZ"
+      "Madridtown",
+      "Madridville",
+      "Madridport",
+      "Madridburg"
     ],
     "image": "https://source.unsplash.com/400x250/?Madrid+skyline"
   },
@@ -1675,10 +1675,10 @@
     "country": "Canada_152",
     "capital": "Ottawa",
     "distractors": [
-      "OttawaxK",
-      "OttawaxF",
-      "OttawaxX",
-      "OttawaxJ"
+      "Ottawatown",
+      "Ottawaville",
+      "Ottawaport",
+      "Ottawaburg"
     ],
     "image": "https://source.unsplash.com/400x250/?Ottawa+skyline"
   },
@@ -1686,10 +1686,10 @@
     "country": "Canada_153",
     "capital": "Ottawa",
     "distractors": [
-      "OttawaxD",
-      "OttawaxV",
-      "OttawaxB",
-      "OttawaxP"
+      "Ottawatown",
+      "Ottawaville",
+      "Ottawaport",
+      "Ottawaburg"
     ],
     "image": "https://source.unsplash.com/400x250/?Ottawa+skyline"
   },
@@ -1697,10 +1697,10 @@
     "country": "Australia_154",
     "capital": "Canberra",
     "distractors": [
-      "CanberraxO",
-      "CanberraxG",
-      "CanberraxY",
-      "CanberraxD"
+      "Canberratown",
+      "Canberraville",
+      "Canberraport",
+      "Canberraburg"
     ],
     "image": "https://source.unsplash.com/400x250/?Canberra+skyline"
   },
@@ -1708,10 +1708,10 @@
     "country": "China_155",
     "capital": "Beijing",
     "distractors": [
-      "BeijingxF",
-      "BeijingxP",
-      "BeijingxU",
-      "BeijingxG"
+      "Beijingtown",
+      "Beijingville",
+      "Beijingport",
+      "Beijingburg"
     ],
     "image": "https://source.unsplash.com/400x250/?Beijing+skyline"
   },
@@ -1719,10 +1719,10 @@
     "country": "Canada_156",
     "capital": "Ottawa",
     "distractors": [
-      "OttawaxL",
-      "OttawaxN",
-      "OttawaxG",
-      "OttawaxI"
+      "Ottawatown",
+      "Ottawaville",
+      "Ottawaport",
+      "Ottawaburg"
     ],
     "image": "https://source.unsplash.com/400x250/?Ottawa+skyline"
   },
@@ -1730,10 +1730,10 @@
     "country": "Italy_157",
     "capital": "Rome",
     "distractors": [
-      "RomexA",
-      "RomexN",
-      "RomexK",
-      "RomexT"
+      "Rometown",
+      "Romeville",
+      "Romeport",
+      "Romeburg"
     ],
     "image": "https://source.unsplash.com/400x250/?Rome+skyline"
   },
@@ -1741,10 +1741,10 @@
     "country": "Australia_158",
     "capital": "Canberra",
     "distractors": [
-      "CanberraxZ",
-      "CanberraxV",
-      "CanberraxH",
-      "CanberraxL"
+      "Canberratown",
+      "Canberraville",
+      "Canberraport",
+      "Canberraburg"
     ],
     "image": "https://source.unsplash.com/400x250/?Canberra+skyline"
   },
@@ -1752,21 +1752,21 @@
     "country": "India_159",
     "capital": "New Delhi",
     "distractors": [
-      "New DelhixX",
-      "New DelhixP",
-      "New DelhixD",
-      "New DelhixI"
+      "New Delhitown",
+      "New Delhiville",
+      "New Delhiport",
+      "New Delhiburg"
     ],
-    "image": "https://source.unsplash.com/400x250/?New Delhi+skyline"
+    "image": "https://source.unsplash.com/400x250/?New+Delhi+skyline"
   },
   {
     "country": "Australia_160",
     "capital": "Canberra",
     "distractors": [
-      "CanberraxH",
-      "CanberraxO",
-      "CanberraxZ",
-      "CanberraxR"
+      "Canberratown",
+      "Canberraville",
+      "Canberraport",
+      "Canberraburg"
     ],
     "image": "https://source.unsplash.com/400x250/?Canberra+skyline"
   },
@@ -1774,10 +1774,10 @@
     "country": "France_161",
     "capital": "Paris",
     "distractors": [
-      "ParisxS",
-      "ParisxD",
-      "ParisxT",
-      "ParisxX"
+      "Paristown",
+      "Parisville",
+      "Parisport",
+      "Parisburg"
     ],
     "image": "https://source.unsplash.com/400x250/?Paris+skyline"
   },
@@ -1785,10 +1785,10 @@
     "country": "France_162",
     "capital": "Paris",
     "distractors": [
-      "ParisxV",
-      "ParisxT",
-      "ParisxK",
-      "ParisxA"
+      "Paristown",
+      "Parisville",
+      "Parisport",
+      "Parisburg"
     ],
     "image": "https://source.unsplash.com/400x250/?Paris+skyline"
   },
@@ -1796,10 +1796,10 @@
     "country": "Italy_163",
     "capital": "Rome",
     "distractors": [
-      "RomexA",
-      "RomexV",
-      "RomexE",
-      "RomexJ"
+      "Rometown",
+      "Romeville",
+      "Romeport",
+      "Romeburg"
     ],
     "image": "https://source.unsplash.com/400x250/?Rome+skyline"
   },
@@ -1807,10 +1807,10 @@
     "country": "China_164",
     "capital": "Beijing",
     "distractors": [
-      "BeijingxE",
-      "BeijingxJ",
-      "BeijingxR",
-      "BeijingxF"
+      "Beijingtown",
+      "Beijingville",
+      "Beijingport",
+      "Beijingburg"
     ],
     "image": "https://source.unsplash.com/400x250/?Beijing+skyline"
   },
@@ -1818,10 +1818,10 @@
     "country": "Spain_165",
     "capital": "Madrid",
     "distractors": [
-      "MadridxS",
-      "MadridxM",
-      "MadridxV",
-      "MadridxN"
+      "Madridtown",
+      "Madridville",
+      "Madridport",
+      "Madridburg"
     ],
     "image": "https://source.unsplash.com/400x250/?Madrid+skyline"
   },
@@ -1829,10 +1829,10 @@
     "country": "Japan_166",
     "capital": "Tokyo",
     "distractors": [
-      "TokyoxC",
-      "TokyoxY",
-      "TokyoxI",
-      "TokyoxB"
+      "Tokyotown",
+      "Tokyoville",
+      "Tokyoport",
+      "Tokyoburg"
     ],
     "image": "https://source.unsplash.com/400x250/?Tokyo+skyline"
   },
@@ -1840,10 +1840,10 @@
     "country": "Australia_167",
     "capital": "Canberra",
     "distractors": [
-      "CanberraxS",
-      "CanberraxA",
-      "CanberraxW",
-      "CanberraxM"
+      "Canberratown",
+      "Canberraville",
+      "Canberraport",
+      "Canberraburg"
     ],
     "image": "https://source.unsplash.com/400x250/?Canberra+skyline"
   },
@@ -1851,10 +1851,10 @@
     "country": "Italy_168",
     "capital": "Rome",
     "distractors": [
-      "RomexF",
-      "RomexK",
-      "RomexS",
-      "RomexC"
+      "Rometown",
+      "Romeville",
+      "Romeport",
+      "Romeburg"
     ],
     "image": "https://source.unsplash.com/400x250/?Rome+skyline"
   },
@@ -1862,10 +1862,10 @@
     "country": "Australia_169",
     "capital": "Canberra",
     "distractors": [
-      "CanberraxP",
-      "CanberraxN",
-      "CanberraxJ",
-      "CanberraxV"
+      "Canberratown",
+      "Canberraville",
+      "Canberraport",
+      "Canberraburg"
     ],
     "image": "https://source.unsplash.com/400x250/?Canberra+skyline"
   },
@@ -1873,10 +1873,10 @@
     "country": "Spain_170",
     "capital": "Madrid",
     "distractors": [
-      "MadridxZ",
-      "MadridxV",
-      "MadridxO",
-      "MadridxM"
+      "Madridtown",
+      "Madridville",
+      "Madridport",
+      "Madridburg"
     ],
     "image": "https://source.unsplash.com/400x250/?Madrid+skyline"
   },
@@ -1884,10 +1884,10 @@
     "country": "Germany_171",
     "capital": "Berlin",
     "distractors": [
-      "BerlinxH",
-      "BerlinxU",
-      "BerlinxD",
-      "BerlinxG"
+      "Berlintown",
+      "Berlinville",
+      "Berlinport",
+      "Berlinburg"
     ],
     "image": "https://source.unsplash.com/400x250/?Berlin+skyline"
   },
@@ -1895,10 +1895,10 @@
     "country": "France_172",
     "capital": "Paris",
     "distractors": [
-      "ParisxO",
-      "ParisxK",
-      "ParisxG",
-      "ParisxY"
+      "Paristown",
+      "Parisville",
+      "Parisport",
+      "Parisburg"
     ],
     "image": "https://source.unsplash.com/400x250/?Paris+skyline"
   },
@@ -1906,10 +1906,10 @@
     "country": "Germany_173",
     "capital": "Berlin",
     "distractors": [
-      "BerlinxI",
-      "BerlinxQ",
-      "BerlinxK",
-      "BerlinxR"
+      "Berlintown",
+      "Berlinville",
+      "Berlinport",
+      "Berlinburg"
     ],
     "image": "https://source.unsplash.com/400x250/?Berlin+skyline"
   },
@@ -1917,10 +1917,10 @@
     "country": "Germany_174",
     "capital": "Berlin",
     "distractors": [
-      "BerlinxU",
-      "BerlinxG",
-      "BerlinxT",
-      "BerlinxN"
+      "Berlintown",
+      "Berlinville",
+      "Berlinport",
+      "Berlinburg"
     ],
     "image": "https://source.unsplash.com/400x250/?Berlin+skyline"
   },
@@ -1928,10 +1928,10 @@
     "country": "Brazil_175",
     "capital": "Bras\u00edlia",
     "distractors": [
-      "Bras\u00edliaxE",
-      "Bras\u00edliaxQ",
-      "Bras\u00edliaxU",
-      "Bras\u00edliaxH"
+      "Bras\u00edliatown",
+      "Bras\u00edliaville",
+      "Bras\u00edliaport",
+      "Bras\u00edliaburg"
     ],
     "image": "https://source.unsplash.com/400x250/?Bras\u00edlia+skyline"
   },
@@ -1939,10 +1939,10 @@
     "country": "Japan_176",
     "capital": "Tokyo",
     "distractors": [
-      "TokyoxQ",
-      "TokyoxK",
-      "TokyoxU",
-      "TokyoxY"
+      "Tokyotown",
+      "Tokyoville",
+      "Tokyoport",
+      "Tokyoburg"
     ],
     "image": "https://source.unsplash.com/400x250/?Tokyo+skyline"
   },
@@ -1950,10 +1950,10 @@
     "country": "Japan_177",
     "capital": "Tokyo",
     "distractors": [
-      "TokyoxG",
-      "TokyoxW",
-      "TokyoxO",
-      "TokyoxA"
+      "Tokyotown",
+      "Tokyoville",
+      "Tokyoport",
+      "Tokyoburg"
     ],
     "image": "https://source.unsplash.com/400x250/?Tokyo+skyline"
   },
@@ -1961,10 +1961,10 @@
     "country": "Spain_178",
     "capital": "Madrid",
     "distractors": [
-      "MadridxO",
-      "MadridxJ",
-      "MadridxB",
-      "MadridxA"
+      "Madridtown",
+      "Madridville",
+      "Madridport",
+      "Madridburg"
     ],
     "image": "https://source.unsplash.com/400x250/?Madrid+skyline"
   },
@@ -1972,10 +1972,10 @@
     "country": "Italy_179",
     "capital": "Rome",
     "distractors": [
-      "RomexC",
-      "RomexY",
-      "RomexS",
-      "RomexN"
+      "Rometown",
+      "Romeville",
+      "Romeport",
+      "Romeburg"
     ],
     "image": "https://source.unsplash.com/400x250/?Rome+skyline"
   },
@@ -1983,10 +1983,10 @@
     "country": "Canada_180",
     "capital": "Ottawa",
     "distractors": [
-      "OttawaxR",
-      "OttawaxG",
-      "OttawaxE",
-      "OttawaxT"
+      "Ottawatown",
+      "Ottawaville",
+      "Ottawaport",
+      "Ottawaburg"
     ],
     "image": "https://source.unsplash.com/400x250/?Ottawa+skyline"
   },
@@ -1994,10 +1994,10 @@
     "country": "Brazil_181",
     "capital": "Bras\u00edlia",
     "distractors": [
-      "Bras\u00edliaxH",
-      "Bras\u00edliaxG",
-      "Bras\u00edliaxA",
-      "Bras\u00edliaxB"
+      "Bras\u00edliatown",
+      "Bras\u00edliaville",
+      "Bras\u00edliaport",
+      "Bras\u00edliaburg"
     ],
     "image": "https://source.unsplash.com/400x250/?Bras\u00edlia+skyline"
   },
@@ -2005,10 +2005,10 @@
     "country": "Germany_182",
     "capital": "Berlin",
     "distractors": [
-      "BerlinxF",
-      "BerlinxQ",
-      "BerlinxZ",
-      "BerlinxA"
+      "Berlintown",
+      "Berlinville",
+      "Berlinport",
+      "Berlinburg"
     ],
     "image": "https://source.unsplash.com/400x250/?Berlin+skyline"
   },
@@ -2016,10 +2016,10 @@
     "country": "France_183",
     "capital": "Paris",
     "distractors": [
-      "ParisxD",
-      "ParisxW",
-      "ParisxY",
-      "ParisxJ"
+      "Paristown",
+      "Parisville",
+      "Parisport",
+      "Parisburg"
     ],
     "image": "https://source.unsplash.com/400x250/?Paris+skyline"
   },
@@ -2027,10 +2027,10 @@
     "country": "Spain_184",
     "capital": "Madrid",
     "distractors": [
-      "MadridxT",
-      "MadridxD",
-      "MadridxE",
-      "MadridxL"
+      "Madridtown",
+      "Madridville",
+      "Madridport",
+      "Madridburg"
     ],
     "image": "https://source.unsplash.com/400x250/?Madrid+skyline"
   },
@@ -2038,10 +2038,10 @@
     "country": "Australia_185",
     "capital": "Canberra",
     "distractors": [
-      "CanberraxT",
-      "CanberraxD",
-      "CanberraxW",
-      "CanberraxL"
+      "Canberratown",
+      "Canberraville",
+      "Canberraport",
+      "Canberraburg"
     ],
     "image": "https://source.unsplash.com/400x250/?Canberra+skyline"
   },
@@ -2049,10 +2049,10 @@
     "country": "Australia_186",
     "capital": "Canberra",
     "distractors": [
-      "CanberraxD",
-      "CanberraxW",
-      "CanberraxV",
-      "CanberraxI"
+      "Canberratown",
+      "Canberraville",
+      "Canberraport",
+      "Canberraburg"
     ],
     "image": "https://source.unsplash.com/400x250/?Canberra+skyline"
   },
@@ -2060,10 +2060,10 @@
     "country": "Brazil_187",
     "capital": "Bras\u00edlia",
     "distractors": [
-      "Bras\u00edliaxP",
-      "Bras\u00edliaxI",
-      "Bras\u00edliaxX",
-      "Bras\u00edliaxH"
+      "Bras\u00edliatown",
+      "Bras\u00edliaville",
+      "Bras\u00edliaport",
+      "Bras\u00edliaburg"
     ],
     "image": "https://source.unsplash.com/400x250/?Bras\u00edlia+skyline"
   },
@@ -2071,10 +2071,10 @@
     "country": "France_188",
     "capital": "Paris",
     "distractors": [
-      "ParisxV",
-      "ParisxF",
-      "ParisxL",
-      "ParisxX"
+      "Paristown",
+      "Parisville",
+      "Parisport",
+      "Parisburg"
     ],
     "image": "https://source.unsplash.com/400x250/?Paris+skyline"
   },
@@ -2082,10 +2082,10 @@
     "country": "Spain_189",
     "capital": "Madrid",
     "distractors": [
-      "MadridxX",
-      "MadridxF",
-      "MadridxC",
-      "MadridxM"
+      "Madridtown",
+      "Madridville",
+      "Madridport",
+      "Madridburg"
     ],
     "image": "https://source.unsplash.com/400x250/?Madrid+skyline"
   },
@@ -2093,10 +2093,10 @@
     "country": "Australia_190",
     "capital": "Canberra",
     "distractors": [
-      "CanberraxH",
-      "CanberraxQ",
-      "CanberraxL",
-      "CanberraxN"
+      "Canberratown",
+      "Canberraville",
+      "Canberraport",
+      "Canberraburg"
     ],
     "image": "https://source.unsplash.com/400x250/?Canberra+skyline"
   },
@@ -2104,10 +2104,10 @@
     "country": "Germany_191",
     "capital": "Berlin",
     "distractors": [
-      "BerlinxY",
-      "BerlinxV",
-      "BerlinxC",
-      "BerlinxJ"
+      "Berlintown",
+      "Berlinville",
+      "Berlinport",
+      "Berlinburg"
     ],
     "image": "https://source.unsplash.com/400x250/?Berlin+skyline"
   },
@@ -2115,10 +2115,10 @@
     "country": "Japan_192",
     "capital": "Tokyo",
     "distractors": [
-      "TokyoxR",
-      "TokyoxN",
-      "TokyoxD",
-      "TokyoxC"
+      "Tokyotown",
+      "Tokyoville",
+      "Tokyoport",
+      "Tokyoburg"
     ],
     "image": "https://source.unsplash.com/400x250/?Tokyo+skyline"
   },
@@ -2126,10 +2126,10 @@
     "country": "Italy_193",
     "capital": "Rome",
     "distractors": [
-      "RomexU",
-      "RomexJ",
-      "RomexB",
-      "RomexX"
+      "Rometown",
+      "Romeville",
+      "Romeport",
+      "Romeburg"
     ],
     "image": "https://source.unsplash.com/400x250/?Rome+skyline"
   },
@@ -2137,10 +2137,10 @@
     "country": "Brazil_194",
     "capital": "Bras\u00edlia",
     "distractors": [
-      "Bras\u00edliaxQ",
-      "Bras\u00edliaxA",
-      "Bras\u00edliaxN",
-      "Bras\u00edliaxR"
+      "Bras\u00edliatown",
+      "Bras\u00edliaville",
+      "Bras\u00edliaport",
+      "Bras\u00edliaburg"
     ],
     "image": "https://source.unsplash.com/400x250/?Bras\u00edlia+skyline"
   },
@@ -2148,10 +2148,10 @@
     "country": "Canada_195",
     "capital": "Ottawa",
     "distractors": [
-      "OttawaxT",
-      "OttawaxH",
-      "OttawaxK",
-      "OttawaxR"
+      "Ottawatown",
+      "Ottawaville",
+      "Ottawaport",
+      "Ottawaburg"
     ],
     "image": "https://source.unsplash.com/400x250/?Ottawa+skyline"
   },
@@ -2159,10 +2159,10 @@
     "country": "Spain_196",
     "capital": "Madrid",
     "distractors": [
-      "MadridxM",
-      "MadridxA",
-      "MadridxC",
-      "MadridxH"
+      "Madridtown",
+      "Madridville",
+      "Madridport",
+      "Madridburg"
     ],
     "image": "https://source.unsplash.com/400x250/?Madrid+skyline"
   },
@@ -2170,10 +2170,10 @@
     "country": "Spain_197",
     "capital": "Madrid",
     "distractors": [
-      "MadridxR",
-      "MadridxV",
-      "MadridxL",
-      "MadridxM"
+      "Madridtown",
+      "Madridville",
+      "Madridport",
+      "Madridburg"
     ],
     "image": "https://source.unsplash.com/400x250/?Madrid+skyline"
   },
@@ -2181,10 +2181,10 @@
     "country": "Spain_198",
     "capital": "Madrid",
     "distractors": [
-      "MadridxX",
-      "MadridxU",
-      "MadridxB",
-      "MadridxF"
+      "Madridtown",
+      "Madridville",
+      "Madridport",
+      "Madridburg"
     ],
     "image": "https://source.unsplash.com/400x250/?Madrid+skyline"
   },
@@ -2192,10 +2192,10 @@
     "country": "Canada_199",
     "capital": "Ottawa",
     "distractors": [
-      "OttawaxG",
-      "OttawaxX",
-      "OttawaxS",
-      "OttawaxJ"
+      "Ottawatown",
+      "Ottawaville",
+      "Ottawaport",
+      "Ottawaburg"
     ],
     "image": "https://source.unsplash.com/400x250/?Ottawa+skyline"
   }

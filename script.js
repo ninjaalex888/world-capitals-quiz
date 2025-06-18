@@ -29,7 +29,7 @@ function showQuestion(q,infinite){
     const b=document.createElement("button");b.textContent=city;
     b.onclick=()=>handleAnswer(city===q.capital,q.capital,infinite);c.appendChild(b);
   });
-  document.getElementById("capitalImage").innerHTML=`<img src="${q.image}" alt="${q.capital}" style="max-width:100%;margin-top:10px;">`;
+  document.getElementById("capitalImage").innerHTML=`<img src="${q.image}" alt="${q.capital}" style="max-width:100%;margin-top:10px;" onerror="this.style.display='none'">`;`<img src="${q.image}" alt="${q.capital}" style="max-width:100%;margin-top:10px;">`;
   document.getElementById("countryFact").textContent="";
 }
 function handleAnswer(correct,answer,infinite){
