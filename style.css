@@ -1,26 +1,37 @@
-
-:root{
- --purple:#4f2683;
- --purple-light:#6b45ba;
- --gold:#ffc62f;
- --txt:#f4f4f5;
- --bg:#1e1e2f;
- --card:rgba(255,255,255,0.08);
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #f8f9fa;
+  color: #333;
 }
-*{box-sizing:border-box;margin:0;padding:0;font-family:'Inter',sans-serif;}
-body{background:var(--bg);color:var(--txt);min-height:100vh;}
-nav{background:var(--purple);padding:1rem 2rem;display:flex;gap:1.5rem;position:sticky;top:0;}
-nav a{color:var(--txt);text-decoration:none;font-weight:600;}
-nav a:hover{color:var(--gold);}
-main{padding:4rem 1rem;display:flex;flex-direction:column;align-items:center;gap:2rem;}
-.card{background:var(--card);backdrop-filter:blur(8px);padding:2rem 3rem;border-radius:1rem;max-width:600px;width:100%;}
-input,select,button{width:100%;padding:.8rem;margin:.75rem 0;border:none;border-radius:.5rem;font-size:1rem;}
-button{background:var(--purple);color:#fff;font-weight:700;cursor:pointer;transition:background .2s;}
-button:hover{background:var(--purple-light);}
-button:disabled{background:#555;cursor:not-allowed;}
-/* password wrapper for eye icon */
-.pw-wrap{position:relative;width:100%;}
-.pw-wrap input{padding-right:2.5rem;}
-.pw-wrap button{position:absolute;right:.65rem;top:50%;transform:translateY(-50%);background:none;border:none;font-size:1.2rem;color:#bbb;cursor:pointer;}
-.pw-wrap button:hover{color:#fff;}
-.option-btn{margin:.4rem 0;}
+header {
+  background: #4b0082;
+  color: white;
+  padding: 1rem;
+  text-align: center;
+}
+main {
+  padding: 1rem;
+}
+button {
+  margin: 0.5rem;
+  padding: 0.75rem 1.25rem;
+  background: #6a0dad;
+  color: white;
+  border: none;
+  border-radius: 5px;
+}
+button:hover {
+  background: #580e8f;
+}
+footer {
+  text-align: center;
+  padding: 1rem;
+  font-size: 0.85rem;
+  color: #222;
+  background: #eee;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}

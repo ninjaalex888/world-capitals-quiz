@@ -1,334 +1,41 @@
 <!DOCTYPE html>
-
 <html lang="en">
 <head>
-<meta charset="utf-8"/>
-<title>World Capitals Quiz</title>
-<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<style>
-.modal-overlay {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(0,0,0,0.7);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  z-index: 10000;
-}
-.modal-content {
-  background: white;
-  padding: 2rem;
-  border-radius: 10px;
-  text-align: center;
-  width: 90%;
-  max-width: 400px;
-  box-shadow: 0 0 20px rgba(0,0,0,0.2);
-}
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>World Capitals Quiz</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>🌍 World Capitals Quiz</h1>
+  </header>
+  <main>
+    <div id="setupContainer">
+      <label for="numQuestions">How many questions?</label>
+      <select id="numQuestions">
+        <option value="5">5</option>
+        <option value="10">10</option>
+        <option value="20">20</option>
+      </select>
+      <button id="startQuizBtn">Start Quiz</button>
+    </div>
 
-    body {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-    }
+    <div id="quizContainer" style="display:none;">
+      <div id="questionText"></div>
+      <div id="choicesContainer"></div>
+      <div id="capitalImage"></div>
+      <button id="nextBtn">Next</button>
+    </div>
 
-    @keyframes spin {
-      0% { transform: rotate(0deg); }
-      100% { transform: rotate(360deg); }
-    }
+    <div id="resultText"></div>
+    <div id="countryFact"></div>
+  </main>
 
-    .spinner {
-      border: 4px solid rgba(0, 0, 0, 0.1);
-      border-left-color: #4facfe;
-      border-radius: 50%;
-      width: 24px;
-      height: 24px;
-      animation: spin 1s linear infinite;
-      margin: 0 auto;
-    }
+  <footer>
+    <small>&copy; 2025 World Capitals Quiz</small>
+  </footer>
 
-    :root {
-      --primary: #4facfe;
-      --primary-dark: #00c6ff;
-      --danger: #ff5c5c;
-      --bg: #f0f4f8;
-      --card-bg: #ffffff;
-      --font: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    }
-
-    body {
-      margin: 0;
-      padding: 0;
-      font-family: var(--font);
-      background: linear-gradient(to right, var(--primary), var(--primary-dark));
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      min-height: 100vh;
-    }
-
-    .quiz-container {
-      background: var(--card-bg);
-      padding: 2rem;
-      border-radius: 16px;
-      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
-      width: 100%;
-      max-width: 480px;
-    }
-
-    h1 {
-      text-align: center;
-      color: #333;
-      margin-bottom: 1.5rem;
-    }
-
-    input[type="email"],
-    input[type="password"],
-    input[type="number"],
-    input[type="text"],
-    select {
-      width: 100%;
-      padding: 0.75rem;
-      margin: 0.5rem 0;
-      font-size: 1rem;
-      border: 1px solid #ccc;
-      border-radius: 8px;
-      outline: none;
-      transition: 0.3s;
-    }
-
-    input:focus,
-    select:focus {
-      border-color: var(--primary);
-    }
-
-    button {
-      width: 100%;
-      padding: 0.75rem;
-      margin: 0.5rem 0;
-      font-size: 1rem;
-      border: none;
-      border-radius: 8px;
-      font-weight: bold;
-      cursor: pointer;
-      transition: background 0.3s;
-    }
-
-    button:hover {
-      opacity: 0.9;
-    }
-
-    button[onclick="signUp()"] {
-      background-color: #28a745;
-      color: white;
-    }
-
-    button[onclick="logIn()"] {
-      background-color: #007bff;
-      color: white;
-    }
-
-    button[onclick="signInWithGoogle()"] {
-      background-color: white;
-      color: #444;
-      border: 1px solid #ccc;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-    }
-
-    button[onclick="signInWithGoogle()"]::before {
-      content: '';
-      background: url('https://www.gstatic.com/firebasejs/ui/2.0.0/images/auth/google.svg') no-repeat center;
-      background-size: contain;
-      width: 20px;
-      height: 20px;
-      display: inline-block;
-      margin-right: 10px;
-    }
-
-    button[onclick="logOut()"] {
-      background-color: var(--danger);
-      color: white;
-    }
-
-    .question {
-      margin-top: 1rem;
-    }
-
-    .result {
-      font-weight: bold;
-      text-align: center;
-      margin-top: 1rem;
-      font-size: 1.1rem;
-    }
-
-    ul {
-      list-style: none;
-      padding-left: 0;
-    }
-
-    ul li {
-      background: #f8f9fa;
-      border-radius: 8px;
-      padding: 0.5rem 1rem;
-      margin: 0.5rem 0;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-    }
-
-    ul li button {
-      background-color: var(--danger);
-      color: white;
-      width: auto;
-      font-size: 0.85rem;
-      padding: 0.4rem 0.6rem;
-    }
-
-    * {
-      box-sizing: border-box;
-    }
-
-    body {
-      margin: 0;
-      padding: 0;
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      background: linear-gradient(to right, #4facfe, #00f2fe);
-      color: #333;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      min-height: 100vh;
-    }
-
-    .quiz-container {
-      background: white;
-      padding: 2rem;
-      border-radius: 16px;
-      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
-      width: 100%;
-      max-width: 500px;
-    }
-
-    h1 {
-      text-align: center;
-      color: #333;
-      margin-bottom: 1.5rem;
-    }
-
-    select, input[type="number"], input[type="text"], button {
-      width: 100%;
-      padding: 0.75rem;
-      margin: 0.5rem 0;
-      font-size: 1rem;
-      border: 1px solid #ccc;
-      border-radius: 8px;
-      outline: none;
-      transition: 0.3s;
-    }
-
-    select:focus, input:focus, button:hover {
-      border-color: #00c6ff;
-    }
-
-    button {
-      background-color: #4facfe;
-      color: white;
-      font-weight: bold;
-      cursor: pointer;
-      border: none;
-    }
-
-    button:hover {
-      background-color: #00c6ff;
-    }
-
-    .question {
-      margin-top: 1.5rem;
-    }
-
-    .result {
-      font-weight: bold;
-      text-align: center;
-      margin-top: 1rem;
-      font-size: 1.1rem;
-    }
-  
-#hamburger { display:none; }
-@media (max-width:600px){
-  #hamburger{display:block;}
-  #navRight{display:none;position:absolute;top:60px;right:0;background:#343a40;padding:1rem;flex-direction:column;gap:0.7rem;border-bottom-left-radius:8px;}
-  #navRight.show{display:flex;}
-  #navRight a, #navRight label{color:white;}
-}
-.capital-img{width:100%;max-height:260px;object-fit:cover;border-radius:8px;margin-top:0.5rem;}
-
-#loginModal {
-  animation: fadeIn 0.3s ease-in-out;
-}
-@keyframes fadeIn {
-  from { opacity: 0; }
-  to { opacity: 1; }
-}
-</style>
-<link href="favicon.ico" rel="icon" type="image/x-icon"/><script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-app.js"></script><script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-auth.js"></script><script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-firestore.js"></script><script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-analytics.js"></script></head>
-<body style="padding-top: 60px;">
-<nav id="mainNav" style="position:fixed;top:0;left:0;width:100%;background:#343a40;color:white;display:flex;align-items:center;justify-content:space-between;padding:0.6rem 1rem;z-index:1000;">
-<span id="siteTitle" style="font-weight:bold;font-size:1.1rem;">🌍 World Capitals Quiz</span><span id="hamburger" style="display:none;cursor:pointer;font-size:1.4rem;color:white;">☰</span>
-<span id="userDisplay" style="font-size:0.95rem;">Guest</span>
-<span id="navRight" style="display:flex;align-items:center;gap:1rem;">
-<label style="font-size:0.85rem;display:flex;align-items:center;gap:0.3rem;color:white;">
-<input id="guestToggle" style="transform:scale(1.1);" type="checkbox"/>Play as Guest
-    </label>
-<a href="login.html" id="loginLogoutLink" style="color:white;font-weight:bold;text-decoration:none;">Login</a>
-</span>
-</nav>
-<!-- Login Modal -->
-<div id="quizContainer">
-<div class="quiz-container">
-<h1>🌍 World Capitals Quiz</h1>
-<label for="questionCount">Select number of questions:</label>
-<select id="questionCount">
-<option value="5">5</option>
-<option value="10">10</option>
-<option value="20">20</option>
-<option value="0">Infinite</option>
-</select>
-<label for="customCount">Or enter custom number:</label>
-<input id="customCount" min="1" placeholder="Enter number of questions" type="number"/>
-<button id="startQuizBtn">Start Quiz</button>
-<div class="question" id="quizArea" style="display:none;">
-<div id="questionText"></div><img alt="" class="capital-img" id="capitalImage" style="display:block;margin-top:0.5rem;width:100%;max-height:260px;object-fit:cover;border-radius:8px;"/><div id="imageLoader" style="display:none;text-align:center;margin-top:0.5rem;">⏳ Loading image...</div>
-<input id="answerInput" onkeydown="handleEnter(event)" placeholder="Enter your answer" type="text"/>
-<button onclick="submitAnswer()">Submit Answer</button>
-<div class="result" id="resultText"></div>
-</div>
-</div>
-<a href="leaderboard.html" style="display:block;text-align:center;margin-top:1rem;font-weight:bold;">📈 View Leaderboard</a><div id="countryFact" style="margin-top:1rem;font-style:italic;color:#444;text-align:center;"></div><div id="optionsContainer"></div><img id="capitalImg" style="max-width:400px;border-radius:6px;margin-top:10px;"/></div>
-<script>
-  function updateNavAuthLinks(user) {
-    const navItem = document.getElementById("authNavItem");
-    if (!navItem) return;
-
-    if (user) {
-      navItem.innerHTML = '<a href="#" onclick="logOut()" style="color: white; text-decoration: none; font-weight: bold;">Logout</a>';
-    } else {
-      navItem.innerHTML = '<a href="#" onclick="openModal()" style="color: white; text-decoration: none; font-weight: bold;">Login</a>';
-    }
-  }
-
-  // Monitor Firebase auth state and update nav
-  document.addEventListener("DOMContentLoaded", () => {
-    if (typeof auth !== "undefined") {
-      auth.onAuthStateChanged(user => {
-        updateNavAuthLinks(user);
-      });
-    }
-  });
-</script>
-<footer style="text-align:center;padding:0.5rem;font-size:0.8rem;color:#000;margin-top:3rem;">© June 14, 2025 | alex.sheehan95@gmail.com</footer><div id="toast" style="visibility:hidden;min-width:250px;margin-left:-125px;background-color:#e74c3c;color:#fff;text-align:center;border-radius:2px;padding:16px;position:fixed;z-index:1;left:50%;bottom:30px;font-size:17px;">Login failed. Please check your credentials.</div><script defer="True" src="script.js"></script></body>
+  <script src="script.js"></script>
+</body>
 </html>

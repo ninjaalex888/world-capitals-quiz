@@ -1,0 +1,1652 @@
+[
+  {
+    "country": "Afghanistan",
+    "capital": "Kabul",
+    "cities": [
+      "Kabul",
+      "Kandahar",
+      "Herat",
+      "Mazar-i-Sharif",
+      "Jalalabad"
+    ]
+  },
+  {
+    "country": "Argentina",
+    "capital": "Buenos Aires",
+    "cities": [
+      "Buenos Aires",
+      "C\u00f3rdoba",
+      "Rosario",
+      "Mendoza",
+      "La Plata"
+    ]
+  },
+  {
+    "country": "Australia",
+    "capital": "Canberra",
+    "cities": [
+      "Sydney",
+      "Melbourne",
+      "Brisbane",
+      "Perth",
+      "Canberra"
+    ]
+  },
+  {
+    "country": "Bangladesh",
+    "capital": "Dhaka",
+    "cities": [
+      "Dhaka",
+      "Chittagong",
+      "Khulna",
+      "Rajshahi",
+      "Sylhet"
+    ]
+  },
+  {
+    "country": "Brazil",
+    "capital": "Bras\u00edlia",
+    "cities": [
+      "S\u00e3o Paulo",
+      "Rio de Janeiro",
+      "Bras\u00edlia",
+      "Salvador",
+      "Recife"
+    ]
+  },
+  {
+    "country": "Canada",
+    "capital": "Ottawa",
+    "cities": [
+      "Toronto",
+      "Vancouver",
+      "Montreal",
+      "Calgary",
+      "Ottawa"
+    ]
+  },
+  {
+    "country": "China",
+    "capital": "Beijing",
+    "cities": [
+      "Beijing",
+      "Shanghai",
+      "Guangzhou",
+      "Shenzhen",
+      "Chongqing"
+    ]
+  },
+  {
+    "country": "Egypt",
+    "capital": "Cairo",
+    "cities": [
+      "Cairo",
+      "Alexandria",
+      "Giza",
+      "Luxor",
+      "Aswan"
+    ]
+  },
+  {
+    "country": "France",
+    "capital": "Paris",
+    "cities": [
+      "Paris",
+      "Lyon",
+      "Marseille",
+      "Nice",
+      "Bordeaux"
+    ]
+  },
+  {
+    "country": "Germany",
+    "capital": "Berlin",
+    "cities": [
+      "Berlin",
+      "Munich",
+      "Hamburg",
+      "Cologne",
+      "Frankfurt"
+    ]
+  },
+  {
+    "country": "India",
+    "capital": "New Delhi",
+    "cities": [
+      "New Delhi",
+      "Mumbai",
+      "Kolkata",
+      "Chennai",
+      "Bangalore"
+    ]
+  },
+  {
+    "country": "Indonesia",
+    "capital": "Jakarta",
+    "cities": [
+      "Jakarta",
+      "Surabaya",
+      "Bandung",
+      "Medan",
+      "Yogyakarta"
+    ]
+  },
+  {
+    "country": "Italy",
+    "capital": "Rome",
+    "cities": [
+      "Rome",
+      "Milan",
+      "Naples",
+      "Turin",
+      "Florence"
+    ]
+  },
+  {
+    "country": "Japan",
+    "capital": "Tokyo",
+    "cities": [
+      "Tokyo",
+      "Osaka",
+      "Nagoya",
+      "Kyoto",
+      "Sapporo"
+    ]
+  },
+  {
+    "country": "Mexico",
+    "capital": "Mexico City",
+    "cities": [
+      "Mexico City",
+      "Guadalajara",
+      "Monterrey",
+      "Puebla",
+      "Tijuana"
+    ]
+  },
+  {
+    "country": "Nigeria",
+    "capital": "Abuja",
+    "cities": [
+      "Lagos",
+      "Abuja",
+      "Ibadan",
+      "Kano",
+      "Port Harcourt"
+    ]
+  },
+  {
+    "country": "Pakistan",
+    "capital": "Islamabad",
+    "cities": [
+      "Islamabad",
+      "Lahore",
+      "Karachi",
+      "Rawalpindi",
+      "Faisalabad"
+    ]
+  },
+  {
+    "country": "Russia",
+    "capital": "Moscow",
+    "cities": [
+      "Moscow",
+      "Saint Petersburg",
+      "Novosibirsk",
+      "Yekaterinburg",
+      "Kazan"
+    ]
+  },
+  {
+    "country": "South Africa",
+    "capital": "Pretoria",
+    "cities": [
+      "Cape Town",
+      "Johannesburg",
+      "Pretoria",
+      "Durban",
+      "Port Elizabeth"
+    ]
+  },
+  {
+    "country": "United Kingdom",
+    "capital": "London",
+    "cities": [
+      "London",
+      "Manchester",
+      "Birmingham",
+      "Glasgow",
+      "Liverpool"
+    ]
+  },
+  {
+    "country": "United States",
+    "capital": "Washington, D.C.",
+    "cities": [
+      "New York",
+      "Los Angeles",
+      "Chicago",
+      "Houston",
+      "Washington, D.C."
+    ]
+  },
+  {
+    "country": "Afghanistan",
+    "capital": "Kabul",
+    "cities": [
+      "Kabul",
+      "Kandahar",
+      "Herat",
+      "Mazar-i-Sharif",
+      "Jalalabad"
+    ]
+  },
+  {
+    "country": "Argentina",
+    "capital": "Buenos Aires",
+    "cities": [
+      "Buenos Aires",
+      "C\u00f3rdoba",
+      "Rosario",
+      "Mendoza",
+      "La Plata"
+    ]
+  },
+  {
+    "country": "Australia",
+    "capital": "Canberra",
+    "cities": [
+      "Sydney",
+      "Melbourne",
+      "Brisbane",
+      "Perth",
+      "Canberra"
+    ]
+  },
+  {
+    "country": "Bangladesh",
+    "capital": "Dhaka",
+    "cities": [
+      "Dhaka",
+      "Chittagong",
+      "Khulna",
+      "Rajshahi",
+      "Sylhet"
+    ]
+  },
+  {
+    "country": "Brazil",
+    "capital": "Bras\u00edlia",
+    "cities": [
+      "S\u00e3o Paulo",
+      "Rio de Janeiro",
+      "Bras\u00edlia",
+      "Salvador",
+      "Recife"
+    ]
+  },
+  {
+    "country": "Canada",
+    "capital": "Ottawa",
+    "cities": [
+      "Toronto",
+      "Vancouver",
+      "Montreal",
+      "Calgary",
+      "Ottawa"
+    ]
+  },
+  {
+    "country": "China",
+    "capital": "Beijing",
+    "cities": [
+      "Beijing",
+      "Shanghai",
+      "Guangzhou",
+      "Shenzhen",
+      "Chongqing"
+    ]
+  },
+  {
+    "country": "Egypt",
+    "capital": "Cairo",
+    "cities": [
+      "Cairo",
+      "Alexandria",
+      "Giza",
+      "Luxor",
+      "Aswan"
+    ]
+  },
+  {
+    "country": "France",
+    "capital": "Paris",
+    "cities": [
+      "Paris",
+      "Lyon",
+      "Marseille",
+      "Nice",
+      "Bordeaux"
+    ]
+  },
+  {
+    "country": "Germany",
+    "capital": "Berlin",
+    "cities": [
+      "Berlin",
+      "Munich",
+      "Hamburg",
+      "Cologne",
+      "Frankfurt"
+    ]
+  },
+  {
+    "country": "India",
+    "capital": "New Delhi",
+    "cities": [
+      "New Delhi",
+      "Mumbai",
+      "Kolkata",
+      "Chennai",
+      "Bangalore"
+    ]
+  },
+  {
+    "country": "Indonesia",
+    "capital": "Jakarta",
+    "cities": [
+      "Jakarta",
+      "Surabaya",
+      "Bandung",
+      "Medan",
+      "Yogyakarta"
+    ]
+  },
+  {
+    "country": "Italy",
+    "capital": "Rome",
+    "cities": [
+      "Rome",
+      "Milan",
+      "Naples",
+      "Turin",
+      "Florence"
+    ]
+  },
+  {
+    "country": "Japan",
+    "capital": "Tokyo",
+    "cities": [
+      "Tokyo",
+      "Osaka",
+      "Nagoya",
+      "Kyoto",
+      "Sapporo"
+    ]
+  },
+  {
+    "country": "Mexico",
+    "capital": "Mexico City",
+    "cities": [
+      "Mexico City",
+      "Guadalajara",
+      "Monterrey",
+      "Puebla",
+      "Tijuana"
+    ]
+  },
+  {
+    "country": "Nigeria",
+    "capital": "Abuja",
+    "cities": [
+      "Lagos",
+      "Abuja",
+      "Ibadan",
+      "Kano",
+      "Port Harcourt"
+    ]
+  },
+  {
+    "country": "Pakistan",
+    "capital": "Islamabad",
+    "cities": [
+      "Islamabad",
+      "Lahore",
+      "Karachi",
+      "Rawalpindi",
+      "Faisalabad"
+    ]
+  },
+  {
+    "country": "Russia",
+    "capital": "Moscow",
+    "cities": [
+      "Moscow",
+      "Saint Petersburg",
+      "Novosibirsk",
+      "Yekaterinburg",
+      "Kazan"
+    ]
+  },
+  {
+    "country": "South Africa",
+    "capital": "Pretoria",
+    "cities": [
+      "Cape Town",
+      "Johannesburg",
+      "Pretoria",
+      "Durban",
+      "Port Elizabeth"
+    ]
+  },
+  {
+    "country": "United Kingdom",
+    "capital": "London",
+    "cities": [
+      "London",
+      "Manchester",
+      "Birmingham",
+      "Glasgow",
+      "Liverpool"
+    ]
+  },
+  {
+    "country": "United States",
+    "capital": "Washington, D.C.",
+    "cities": [
+      "New York",
+      "Los Angeles",
+      "Chicago",
+      "Houston",
+      "Washington, D.C."
+    ]
+  },
+  {
+    "country": "Afghanistan",
+    "capital": "Kabul",
+    "cities": [
+      "Kabul",
+      "Kandahar",
+      "Herat",
+      "Mazar-i-Sharif",
+      "Jalalabad"
+    ]
+  },
+  {
+    "country": "Argentina",
+    "capital": "Buenos Aires",
+    "cities": [
+      "Buenos Aires",
+      "C\u00f3rdoba",
+      "Rosario",
+      "Mendoza",
+      "La Plata"
+    ]
+  },
+  {
+    "country": "Australia",
+    "capital": "Canberra",
+    "cities": [
+      "Sydney",
+      "Melbourne",
+      "Brisbane",
+      "Perth",
+      "Canberra"
+    ]
+  },
+  {
+    "country": "Bangladesh",
+    "capital": "Dhaka",
+    "cities": [
+      "Dhaka",
+      "Chittagong",
+      "Khulna",
+      "Rajshahi",
+      "Sylhet"
+    ]
+  },
+  {
+    "country": "Brazil",
+    "capital": "Bras\u00edlia",
+    "cities": [
+      "S\u00e3o Paulo",
+      "Rio de Janeiro",
+      "Bras\u00edlia",
+      "Salvador",
+      "Recife"
+    ]
+  },
+  {
+    "country": "Canada",
+    "capital": "Ottawa",
+    "cities": [
+      "Toronto",
+      "Vancouver",
+      "Montreal",
+      "Calgary",
+      "Ottawa"
+    ]
+  },
+  {
+    "country": "China",
+    "capital": "Beijing",
+    "cities": [
+      "Beijing",
+      "Shanghai",
+      "Guangzhou",
+      "Shenzhen",
+      "Chongqing"
+    ]
+  },
+  {
+    "country": "Egypt",
+    "capital": "Cairo",
+    "cities": [
+      "Cairo",
+      "Alexandria",
+      "Giza",
+      "Luxor",
+      "Aswan"
+    ]
+  },
+  {
+    "country": "France",
+    "capital": "Paris",
+    "cities": [
+      "Paris",
+      "Lyon",
+      "Marseille",
+      "Nice",
+      "Bordeaux"
+    ]
+  },
+  {
+    "country": "Germany",
+    "capital": "Berlin",
+    "cities": [
+      "Berlin",
+      "Munich",
+      "Hamburg",
+      "Cologne",
+      "Frankfurt"
+    ]
+  },
+  {
+    "country": "India",
+    "capital": "New Delhi",
+    "cities": [
+      "New Delhi",
+      "Mumbai",
+      "Kolkata",
+      "Chennai",
+      "Bangalore"
+    ]
+  },
+  {
+    "country": "Indonesia",
+    "capital": "Jakarta",
+    "cities": [
+      "Jakarta",
+      "Surabaya",
+      "Bandung",
+      "Medan",
+      "Yogyakarta"
+    ]
+  },
+  {
+    "country": "Italy",
+    "capital": "Rome",
+    "cities": [
+      "Rome",
+      "Milan",
+      "Naples",
+      "Turin",
+      "Florence"
+    ]
+  },
+  {
+    "country": "Japan",
+    "capital": "Tokyo",
+    "cities": [
+      "Tokyo",
+      "Osaka",
+      "Nagoya",
+      "Kyoto",
+      "Sapporo"
+    ]
+  },
+  {
+    "country": "Mexico",
+    "capital": "Mexico City",
+    "cities": [
+      "Mexico City",
+      "Guadalajara",
+      "Monterrey",
+      "Puebla",
+      "Tijuana"
+    ]
+  },
+  {
+    "country": "Nigeria",
+    "capital": "Abuja",
+    "cities": [
+      "Lagos",
+      "Abuja",
+      "Ibadan",
+      "Kano",
+      "Port Harcourt"
+    ]
+  },
+  {
+    "country": "Pakistan",
+    "capital": "Islamabad",
+    "cities": [
+      "Islamabad",
+      "Lahore",
+      "Karachi",
+      "Rawalpindi",
+      "Faisalabad"
+    ]
+  },
+  {
+    "country": "Russia",
+    "capital": "Moscow",
+    "cities": [
+      "Moscow",
+      "Saint Petersburg",
+      "Novosibirsk",
+      "Yekaterinburg",
+      "Kazan"
+    ]
+  },
+  {
+    "country": "South Africa",
+    "capital": "Pretoria",
+    "cities": [
+      "Cape Town",
+      "Johannesburg",
+      "Pretoria",
+      "Durban",
+      "Port Elizabeth"
+    ]
+  },
+  {
+    "country": "United Kingdom",
+    "capital": "London",
+    "cities": [
+      "London",
+      "Manchester",
+      "Birmingham",
+      "Glasgow",
+      "Liverpool"
+    ]
+  },
+  {
+    "country": "United States",
+    "capital": "Washington, D.C.",
+    "cities": [
+      "New York",
+      "Los Angeles",
+      "Chicago",
+      "Houston",
+      "Washington, D.C."
+    ]
+  },
+  {
+    "country": "Afghanistan",
+    "capital": "Kabul",
+    "cities": [
+      "Kabul",
+      "Kandahar",
+      "Herat",
+      "Mazar-i-Sharif",
+      "Jalalabad"
+    ]
+  },
+  {
+    "country": "Argentina",
+    "capital": "Buenos Aires",
+    "cities": [
+      "Buenos Aires",
+      "C\u00f3rdoba",
+      "Rosario",
+      "Mendoza",
+      "La Plata"
+    ]
+  },
+  {
+    "country": "Australia",
+    "capital": "Canberra",
+    "cities": [
+      "Sydney",
+      "Melbourne",
+      "Brisbane",
+      "Perth",
+      "Canberra"
+    ]
+  },
+  {
+    "country": "Bangladesh",
+    "capital": "Dhaka",
+    "cities": [
+      "Dhaka",
+      "Chittagong",
+      "Khulna",
+      "Rajshahi",
+      "Sylhet"
+    ]
+  },
+  {
+    "country": "Brazil",
+    "capital": "Bras\u00edlia",
+    "cities": [
+      "S\u00e3o Paulo",
+      "Rio de Janeiro",
+      "Bras\u00edlia",
+      "Salvador",
+      "Recife"
+    ]
+  },
+  {
+    "country": "Canada",
+    "capital": "Ottawa",
+    "cities": [
+      "Toronto",
+      "Vancouver",
+      "Montreal",
+      "Calgary",
+      "Ottawa"
+    ]
+  },
+  {
+    "country": "China",
+    "capital": "Beijing",
+    "cities": [
+      "Beijing",
+      "Shanghai",
+      "Guangzhou",
+      "Shenzhen",
+      "Chongqing"
+    ]
+  },
+  {
+    "country": "Egypt",
+    "capital": "Cairo",
+    "cities": [
+      "Cairo",
+      "Alexandria",
+      "Giza",
+      "Luxor",
+      "Aswan"
+    ]
+  },
+  {
+    "country": "France",
+    "capital": "Paris",
+    "cities": [
+      "Paris",
+      "Lyon",
+      "Marseille",
+      "Nice",
+      "Bordeaux"
+    ]
+  },
+  {
+    "country": "Germany",
+    "capital": "Berlin",
+    "cities": [
+      "Berlin",
+      "Munich",
+      "Hamburg",
+      "Cologne",
+      "Frankfurt"
+    ]
+  },
+  {
+    "country": "India",
+    "capital": "New Delhi",
+    "cities": [
+      "New Delhi",
+      "Mumbai",
+      "Kolkata",
+      "Chennai",
+      "Bangalore"
+    ]
+  },
+  {
+    "country": "Indonesia",
+    "capital": "Jakarta",
+    "cities": [
+      "Jakarta",
+      "Surabaya",
+      "Bandung",
+      "Medan",
+      "Yogyakarta"
+    ]
+  },
+  {
+    "country": "Italy",
+    "capital": "Rome",
+    "cities": [
+      "Rome",
+      "Milan",
+      "Naples",
+      "Turin",
+      "Florence"
+    ]
+  },
+  {
+    "country": "Japan",
+    "capital": "Tokyo",
+    "cities": [
+      "Tokyo",
+      "Osaka",
+      "Nagoya",
+      "Kyoto",
+      "Sapporo"
+    ]
+  },
+  {
+    "country": "Mexico",
+    "capital": "Mexico City",
+    "cities": [
+      "Mexico City",
+      "Guadalajara",
+      "Monterrey",
+      "Puebla",
+      "Tijuana"
+    ]
+  },
+  {
+    "country": "Nigeria",
+    "capital": "Abuja",
+    "cities": [
+      "Lagos",
+      "Abuja",
+      "Ibadan",
+      "Kano",
+      "Port Harcourt"
+    ]
+  },
+  {
+    "country": "Pakistan",
+    "capital": "Islamabad",
+    "cities": [
+      "Islamabad",
+      "Lahore",
+      "Karachi",
+      "Rawalpindi",
+      "Faisalabad"
+    ]
+  },
+  {
+    "country": "Russia",
+    "capital": "Moscow",
+    "cities": [
+      "Moscow",
+      "Saint Petersburg",
+      "Novosibirsk",
+      "Yekaterinburg",
+      "Kazan"
+    ]
+  },
+  {
+    "country": "South Africa",
+    "capital": "Pretoria",
+    "cities": [
+      "Cape Town",
+      "Johannesburg",
+      "Pretoria",
+      "Durban",
+      "Port Elizabeth"
+    ]
+  },
+  {
+    "country": "United Kingdom",
+    "capital": "London",
+    "cities": [
+      "London",
+      "Manchester",
+      "Birmingham",
+      "Glasgow",
+      "Liverpool"
+    ]
+  },
+  {
+    "country": "United States",
+    "capital": "Washington, D.C.",
+    "cities": [
+      "New York",
+      "Los Angeles",
+      "Chicago",
+      "Houston",
+      "Washington, D.C."
+    ]
+  },
+  {
+    "country": "Afghanistan",
+    "capital": "Kabul",
+    "cities": [
+      "Kabul",
+      "Kandahar",
+      "Herat",
+      "Mazar-i-Sharif",
+      "Jalalabad"
+    ]
+  },
+  {
+    "country": "Argentina",
+    "capital": "Buenos Aires",
+    "cities": [
+      "Buenos Aires",
+      "C\u00f3rdoba",
+      "Rosario",
+      "Mendoza",
+      "La Plata"
+    ]
+  },
+  {
+    "country": "Australia",
+    "capital": "Canberra",
+    "cities": [
+      "Sydney",
+      "Melbourne",
+      "Brisbane",
+      "Perth",
+      "Canberra"
+    ]
+  },
+  {
+    "country": "Bangladesh",
+    "capital": "Dhaka",
+    "cities": [
+      "Dhaka",
+      "Chittagong",
+      "Khulna",
+      "Rajshahi",
+      "Sylhet"
+    ]
+  },
+  {
+    "country": "Brazil",
+    "capital": "Bras\u00edlia",
+    "cities": [
+      "S\u00e3o Paulo",
+      "Rio de Janeiro",
+      "Bras\u00edlia",
+      "Salvador",
+      "Recife"
+    ]
+  },
+  {
+    "country": "Canada",
+    "capital": "Ottawa",
+    "cities": [
+      "Toronto",
+      "Vancouver",
+      "Montreal",
+      "Calgary",
+      "Ottawa"
+    ]
+  },
+  {
+    "country": "China",
+    "capital": "Beijing",
+    "cities": [
+      "Beijing",
+      "Shanghai",
+      "Guangzhou",
+      "Shenzhen",
+      "Chongqing"
+    ]
+  },
+  {
+    "country": "Egypt",
+    "capital": "Cairo",
+    "cities": [
+      "Cairo",
+      "Alexandria",
+      "Giza",
+      "Luxor",
+      "Aswan"
+    ]
+  },
+  {
+    "country": "France",
+    "capital": "Paris",
+    "cities": [
+      "Paris",
+      "Lyon",
+      "Marseille",
+      "Nice",
+      "Bordeaux"
+    ]
+  },
+  {
+    "country": "Germany",
+    "capital": "Berlin",
+    "cities": [
+      "Berlin",
+      "Munich",
+      "Hamburg",
+      "Cologne",
+      "Frankfurt"
+    ]
+  },
+  {
+    "country": "India",
+    "capital": "New Delhi",
+    "cities": [
+      "New Delhi",
+      "Mumbai",
+      "Kolkata",
+      "Chennai",
+      "Bangalore"
+    ]
+  },
+  {
+    "country": "Indonesia",
+    "capital": "Jakarta",
+    "cities": [
+      "Jakarta",
+      "Surabaya",
+      "Bandung",
+      "Medan",
+      "Yogyakarta"
+    ]
+  },
+  {
+    "country": "Italy",
+    "capital": "Rome",
+    "cities": [
+      "Rome",
+      "Milan",
+      "Naples",
+      "Turin",
+      "Florence"
+    ]
+  },
+  {
+    "country": "Japan",
+    "capital": "Tokyo",
+    "cities": [
+      "Tokyo",
+      "Osaka",
+      "Nagoya",
+      "Kyoto",
+      "Sapporo"
+    ]
+  },
+  {
+    "country": "Mexico",
+    "capital": "Mexico City",
+    "cities": [
+      "Mexico City",
+      "Guadalajara",
+      "Monterrey",
+      "Puebla",
+      "Tijuana"
+    ]
+  },
+  {
+    "country": "Nigeria",
+    "capital": "Abuja",
+    "cities": [
+      "Lagos",
+      "Abuja",
+      "Ibadan",
+      "Kano",
+      "Port Harcourt"
+    ]
+  },
+  {
+    "country": "Pakistan",
+    "capital": "Islamabad",
+    "cities": [
+      "Islamabad",
+      "Lahore",
+      "Karachi",
+      "Rawalpindi",
+      "Faisalabad"
+    ]
+  },
+  {
+    "country": "Russia",
+    "capital": "Moscow",
+    "cities": [
+      "Moscow",
+      "Saint Petersburg",
+      "Novosibirsk",
+      "Yekaterinburg",
+      "Kazan"
+    ]
+  },
+  {
+    "country": "South Africa",
+    "capital": "Pretoria",
+    "cities": [
+      "Cape Town",
+      "Johannesburg",
+      "Pretoria",
+      "Durban",
+      "Port Elizabeth"
+    ]
+  },
+  {
+    "country": "United Kingdom",
+    "capital": "London",
+    "cities": [
+      "London",
+      "Manchester",
+      "Birmingham",
+      "Glasgow",
+      "Liverpool"
+    ]
+  },
+  {
+    "country": "United States",
+    "capital": "Washington, D.C.",
+    "cities": [
+      "New York",
+      "Los Angeles",
+      "Chicago",
+      "Houston",
+      "Washington, D.C."
+    ]
+  },
+  {
+    "country": "Afghanistan",
+    "capital": "Kabul",
+    "cities": [
+      "Kabul",
+      "Kandahar",
+      "Herat",
+      "Mazar-i-Sharif",
+      "Jalalabad"
+    ]
+  },
+  {
+    "country": "Argentina",
+    "capital": "Buenos Aires",
+    "cities": [
+      "Buenos Aires",
+      "C\u00f3rdoba",
+      "Rosario",
+      "Mendoza",
+      "La Plata"
+    ]
+  },
+  {
+    "country": "Australia",
+    "capital": "Canberra",
+    "cities": [
+      "Sydney",
+      "Melbourne",
+      "Brisbane",
+      "Perth",
+      "Canberra"
+    ]
+  },
+  {
+    "country": "Bangladesh",
+    "capital": "Dhaka",
+    "cities": [
+      "Dhaka",
+      "Chittagong",
+      "Khulna",
+      "Rajshahi",
+      "Sylhet"
+    ]
+  },
+  {
+    "country": "Brazil",
+    "capital": "Bras\u00edlia",
+    "cities": [
+      "S\u00e3o Paulo",
+      "Rio de Janeiro",
+      "Bras\u00edlia",
+      "Salvador",
+      "Recife"
+    ]
+  },
+  {
+    "country": "Canada",
+    "capital": "Ottawa",
+    "cities": [
+      "Toronto",
+      "Vancouver",
+      "Montreal",
+      "Calgary",
+      "Ottawa"
+    ]
+  },
+  {
+    "country": "China",
+    "capital": "Beijing",
+    "cities": [
+      "Beijing",
+      "Shanghai",
+      "Guangzhou",
+      "Shenzhen",
+      "Chongqing"
+    ]
+  },
+  {
+    "country": "Egypt",
+    "capital": "Cairo",
+    "cities": [
+      "Cairo",
+      "Alexandria",
+      "Giza",
+      "Luxor",
+      "Aswan"
+    ]
+  },
+  {
+    "country": "France",
+    "capital": "Paris",
+    "cities": [
+      "Paris",
+      "Lyon",
+      "Marseille",
+      "Nice",
+      "Bordeaux"
+    ]
+  },
+  {
+    "country": "Germany",
+    "capital": "Berlin",
+    "cities": [
+      "Berlin",
+      "Munich",
+      "Hamburg",
+      "Cologne",
+      "Frankfurt"
+    ]
+  },
+  {
+    "country": "India",
+    "capital": "New Delhi",
+    "cities": [
+      "New Delhi",
+      "Mumbai",
+      "Kolkata",
+      "Chennai",
+      "Bangalore"
+    ]
+  },
+  {
+    "country": "Indonesia",
+    "capital": "Jakarta",
+    "cities": [
+      "Jakarta",
+      "Surabaya",
+      "Bandung",
+      "Medan",
+      "Yogyakarta"
+    ]
+  },
+  {
+    "country": "Italy",
+    "capital": "Rome",
+    "cities": [
+      "Rome",
+      "Milan",
+      "Naples",
+      "Turin",
+      "Florence"
+    ]
+  },
+  {
+    "country": "Japan",
+    "capital": "Tokyo",
+    "cities": [
+      "Tokyo",
+      "Osaka",
+      "Nagoya",
+      "Kyoto",
+      "Sapporo"
+    ]
+  },
+  {
+    "country": "Mexico",
+    "capital": "Mexico City",
+    "cities": [
+      "Mexico City",
+      "Guadalajara",
+      "Monterrey",
+      "Puebla",
+      "Tijuana"
+    ]
+  },
+  {
+    "country": "Nigeria",
+    "capital": "Abuja",
+    "cities": [
+      "Lagos",
+      "Abuja",
+      "Ibadan",
+      "Kano",
+      "Port Harcourt"
+    ]
+  },
+  {
+    "country": "Pakistan",
+    "capital": "Islamabad",
+    "cities": [
+      "Islamabad",
+      "Lahore",
+      "Karachi",
+      "Rawalpindi",
+      "Faisalabad"
+    ]
+  },
+  {
+    "country": "Russia",
+    "capital": "Moscow",
+    "cities": [
+      "Moscow",
+      "Saint Petersburg",
+      "Novosibirsk",
+      "Yekaterinburg",
+      "Kazan"
+    ]
+  },
+  {
+    "country": "South Africa",
+    "capital": "Pretoria",
+    "cities": [
+      "Cape Town",
+      "Johannesburg",
+      "Pretoria",
+      "Durban",
+      "Port Elizabeth"
+    ]
+  },
+  {
+    "country": "United Kingdom",
+    "capital": "London",
+    "cities": [
+      "London",
+      "Manchester",
+      "Birmingham",
+      "Glasgow",
+      "Liverpool"
+    ]
+  },
+  {
+    "country": "United States",
+    "capital": "Washington, D.C.",
+    "cities": [
+      "New York",
+      "Los Angeles",
+      "Chicago",
+      "Houston",
+      "Washington, D.C."
+    ]
+  },
+  {
+    "country": "Afghanistan",
+    "capital": "Kabul",
+    "cities": [
+      "Kabul",
+      "Kandahar",
+      "Herat",
+      "Mazar-i-Sharif",
+      "Jalalabad"
+    ]
+  },
+  {
+    "country": "Argentina",
+    "capital": "Buenos Aires",
+    "cities": [
+      "Buenos Aires",
+      "C\u00f3rdoba",
+      "Rosario",
+      "Mendoza",
+      "La Plata"
+    ]
+  },
+  {
+    "country": "Australia",
+    "capital": "Canberra",
+    "cities": [
+      "Sydney",
+      "Melbourne",
+      "Brisbane",
+      "Perth",
+      "Canberra"
+    ]
+  },
+  {
+    "country": "Bangladesh",
+    "capital": "Dhaka",
+    "cities": [
+      "Dhaka",
+      "Chittagong",
+      "Khulna",
+      "Rajshahi",
+      "Sylhet"
+    ]
+  },
+  {
+    "country": "Brazil",
+    "capital": "Bras\u00edlia",
+    "cities": [
+      "S\u00e3o Paulo",
+      "Rio de Janeiro",
+      "Bras\u00edlia",
+      "Salvador",
+      "Recife"
+    ]
+  },
+  {
+    "country": "Canada",
+    "capital": "Ottawa",
+    "cities": [
+      "Toronto",
+      "Vancouver",
+      "Montreal",
+      "Calgary",
+      "Ottawa"
+    ]
+  },
+  {
+    "country": "China",
+    "capital": "Beijing",
+    "cities": [
+      "Beijing",
+      "Shanghai",
+      "Guangzhou",
+      "Shenzhen",
+      "Chongqing"
+    ]
+  },
+  {
+    "country": "Egypt",
+    "capital": "Cairo",
+    "cities": [
+      "Cairo",
+      "Alexandria",
+      "Giza",
+      "Luxor",
+      "Aswan"
+    ]
+  },
+  {
+    "country": "France",
+    "capital": "Paris",
+    "cities": [
+      "Paris",
+      "Lyon",
+      "Marseille",
+      "Nice",
+      "Bordeaux"
+    ]
+  },
+  {
+    "country": "Germany",
+    "capital": "Berlin",
+    "cities": [
+      "Berlin",
+      "Munich",
+      "Hamburg",
+      "Cologne",
+      "Frankfurt"
+    ]
+  },
+  {
+    "country": "India",
+    "capital": "New Delhi",
+    "cities": [
+      "New Delhi",
+      "Mumbai",
+      "Kolkata",
+      "Chennai",
+      "Bangalore"
+    ]
+  },
+  {
+    "country": "Indonesia",
+    "capital": "Jakarta",
+    "cities": [
+      "Jakarta",
+      "Surabaya",
+      "Bandung",
+      "Medan",
+      "Yogyakarta"
+    ]
+  },
+  {
+    "country": "Italy",
+    "capital": "Rome",
+    "cities": [
+      "Rome",
+      "Milan",
+      "Naples",
+      "Turin",
+      "Florence"
+    ]
+  },
+  {
+    "country": "Japan",
+    "capital": "Tokyo",
+    "cities": [
+      "Tokyo",
+      "Osaka",
+      "Nagoya",
+      "Kyoto",
+      "Sapporo"
+    ]
+  },
+  {
+    "country": "Mexico",
+    "capital": "Mexico City",
+    "cities": [
+      "Mexico City",
+      "Guadalajara",
+      "Monterrey",
+      "Puebla",
+      "Tijuana"
+    ]
+  },
+  {
+    "country": "Nigeria",
+    "capital": "Abuja",
+    "cities": [
+      "Lagos",
+      "Abuja",
+      "Ibadan",
+      "Kano",
+      "Port Harcourt"
+    ]
+  },
+  {
+    "country": "Pakistan",
+    "capital": "Islamabad",
+    "cities": [
+      "Islamabad",
+      "Lahore",
+      "Karachi",
+      "Rawalpindi",
+      "Faisalabad"
+    ]
+  },
+  {
+    "country": "Russia",
+    "capital": "Moscow",
+    "cities": [
+      "Moscow",
+      "Saint Petersburg",
+      "Novosibirsk",
+      "Yekaterinburg",
+      "Kazan"
+    ]
+  },
+  {
+    "country": "South Africa",
+    "capital": "Pretoria",
+    "cities": [
+      "Cape Town",
+      "Johannesburg",
+      "Pretoria",
+      "Durban",
+      "Port Elizabeth"
+    ]
+  },
+  {
+    "country": "United Kingdom",
+    "capital": "London",
+    "cities": [
+      "London",
+      "Manchester",
+      "Birmingham",
+      "Glasgow",
+      "Liverpool"
+    ]
+  },
+  {
+    "country": "United States",
+    "capital": "Washington, D.C.",
+    "cities": [
+      "New York",
+      "Los Angeles",
+      "Chicago",
+      "Houston",
+      "Washington, D.C."
+    ]
+  },
+  {
+    "country": "Afghanistan",
+    "capital": "Kabul",
+    "cities": [
+      "Kabul",
+      "Kandahar",
+      "Herat",
+      "Mazar-i-Sharif",
+      "Jalalabad"
+    ]
+  },
+  {
+    "country": "Argentina",
+    "capital": "Buenos Aires",
+    "cities": [
+      "Buenos Aires",
+      "C\u00f3rdoba",
+      "Rosario",
+      "Mendoza",
+      "La Plata"
+    ]
+  },
+  {
+    "country": "Australia",
+    "capital": "Canberra",
+    "cities": [
+      "Sydney",
+      "Melbourne",
+      "Brisbane",
+      "Perth",
+      "Canberra"
+    ]
+  }
+]
