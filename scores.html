@@ -1,38 +1,44 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width,initial-scale=1.0">
-<title>Score History</title>
-<link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Score History</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-<header onclick="location.href='index.html'" style="cursor:pointer;">
-  <h1>🌍 World Capitals Quiz</h1>
-  <a id="historyLink" href="scores.html">Score History</a>
-</header>
-<main>
-  <h2>Your Score History</h2>
-  <table id="scoreTable">
-    <thead><tr><th>Date</th><th>Score</th><th>Total</th></tr></thead>
-    <tbody></tbody>
-  </table>
-</main>
-<footer><small>&copy; 2025 World Capitals Quiz</small></footer>
-<script>
-document.addEventListener("DOMContentLoaded",()=>{
-  const data = JSON.parse(localStorage.getItem("guestScores")||"[]");
-  const tbody = document.querySelector("#scoreTable tbody");
-  if(data.length===0){
-    tbody.innerHTML="<tr><td colspan='3'>No scores yet</td></tr>";
-  } else {
-    data.reverse().forEach(row=>{
-      const tr=document.createElement("tr");
-      tr.innerHTML=`<td>${new Date(row.timestamp).toLocaleString()}</td><td>${row.score}</td><td>${row.total}</td>`;
-      tbody.appendChild(tr);
+  <header onclick="location.href='index.html'" style="cursor:pointer;">
+    <nav class="menu">
+      <a href="index.html">🏆 Daily Challenge</a>
+      <a href="practice.html">🎯 Practice</a>
+      <a href="scores.html">📊 Score History</a>
+    </nav>
+  </header>
+  <main>
+    <h2>Score History</h2>
+    <div id="scoreTable"></div>
+  </main>
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      const scores = JSON.parse(localStorage.getItem("guestScores") || "[]");
+      const container = document.getElementById("scoreTable");
+      if (scores.length === 0) {
+        container.innerHTML = "<p>No scores recorded yet.</p>";
+        return;
+      }
+      const table = document.createElement("table");
+      const header = document.createElement("tr");
+      header.innerHTML = "<th>Date</th><th>Mode</th><th>Score</th>";
+      table.appendChild(header);
+      scores.reverse().forEach(s => {
+        const row = document.createElement("tr");
+        const d = new Date(s.timestamp).toLocaleDateString();
+        row.innerHTML = `<td>${d}</td><td>${s.mode}</td><td>${s.score}/${s.total}</td>`;
+        table.appendChild(row);
+      });
+      container.appendChild(table);
     });
-  }
-});
-</script>
+  </script>
 </body>
 </html>
