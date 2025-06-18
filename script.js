@@ -10,7 +10,7 @@ async function loadData(){
 }
 function shuffle(arr){return arr.sort(()=>Math.random()-0.5);}
 
-function startQuiz(){
+function startQuiz(isDaily=false){
   const sel=document.getElementById("numQuestions").value;
   const infinite=sel==="infinite";
   const num=infinite?fullDB.length:parseInt(sel,10);
@@ -37,17 +37,28 @@ function handleAnswer(correct,answer,infinite){
   if(correct){score++;fact.textContent="✅ Correct!";}else{fact.textContent="❌ Incorrect, try again!";return;}
   setTimeout(()=>{currentQuestionIndex++;if(currentQuestionIndex>=selectedQuestions.length){if(infinite){showQuestion(shuffle([...fullDB])[0],true);}else endQuiz();}else showQuestion(selectedQuestions[currentQuestionIndex],infinite);},1200);
 }
+
 function endQuiz(){
   document.getElementById("quizContainer").style.display="none";
-  const total=selectedQuestions.length;
-  document.getElementById("resultText").textContent=`You scored ${score} out of ${total}`;
-  // Save to history
-  const scores=JSON.parse(localStorage.getItem("guestScores")||"[]");
+  const total = selectedQuestions.length;
+  const res = document.getElementById("resultText");
+  res.textContent = `You scored ${score} out of ${total}`;
+  res.style.textAlign = "center";
+  document.getElementById("resultButtons").style.display = "block";
+  const scores = JSON.parse(localStorage.getItem("guestScores")||"[]");
   scores.push({timestamp:Date.now(),score,total});
   localStorage.setItem("guestScores",JSON.stringify(scores));
 }
+;
 
-document.addEventListener("DOMContentLoaded",async()=>{
-  await loadData();
-  document.getElementById("startQuizBtn").onclick=startQuiz;
-});
+// Updated startQuiz function
+function startQuiz(isDaily = false) {
+  document.getElementById("quizContainer").style.display = "block";
+  document.getElementById("resultText").textContent = "";
+  document.getElementById("resultButtons").style.display = "none";
+  score = 0;
+  currentIndex = 0;
+  shuffle(fullDB);
+  selectedQuestions = isDaily ? [fullDB[0]] : fullDB.slice(0, 10); // Default 10 for practice
+  showQuestion(selectedQuestions[0]);
+}

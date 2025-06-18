@@ -1,0 +1,34 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>World Capitals Daily Challenge</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+  <header onclick="location.href='daily.html'">
+    <div class="menu">
+      <a href="daily.html">🏆 Daily Challenge</a>
+      <a href="index.html">🎯 Practice</a>
+      <a href="scores.html">📊 Score History</a>
+    </div>
+  </header>
+  <main id="quizMain">
+    <div id="quizContainer" style="display:block;"></div>
+    <div id="capitalImage"></div>
+    <div id="feedback"></div>
+    <div id="resultText"></div>
+    <div id="resultButtons" style="display:none;text-align:center;margin-top:1.5rem;">
+      <button onclick="location.href='daily.html'">🏠 Daily</button>
+      <button onclick="location.href='scores.html'">📊 Score History</button>
+    </div>
+  </main>
+  <script src="script.js" defer></script>
+  <script>
+    const isDaily = true;
+    window.onload = () => startQuiz(true);
+  </script>
+</body>
+</html>
