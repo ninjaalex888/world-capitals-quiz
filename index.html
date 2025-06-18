@@ -1,61 +1,33 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width,initial-scale=1.0">
-<title>World Capitals Quiz</title>
+
+<!DOCTYPE html><html lang="en"><head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>Daily Challenge - World Capitals Quiz</title>
 <link rel="stylesheet" href="style.css">
-</head>
-<body>
+</head><body>
 <header onclick="location.href='index.html'" style="cursor:pointer;">
-  <h1>🌍 World Capitals Quiz</h1>
-  <a id="historyLink" href="scores.html">Score History</a>
+  <nav class="menu">
+    <a href="index.html">🏆 Daily Challenge</a>
+    <a href="practice.html">🎯 Practice</a>
+    <a href="scores.html">📊 Score History</a>
+  </nav>
 </header>
 <main>
-  <div id="setupContainer">
-    
-    <select id="numQuestions">
-      <option value="1">1</option>
-<option value="2">2</option>
-<option value="3">3</option>
-<option value="4">4</option>
-<option value="5">5</option>
-<option value="6">6</option>
-<option value="7">7</option>
-<option value="8">8</option>
-<option value="9">9</option>
-<option value="10">10</option>
-<option value="11">11</option>
-<option value="12">12</option>
-<option value="13">13</option>
-<option value="14">14</option>
-<option value="15">15</option>
-<option value="16">16</option>
-<option value="17">17</option>
-<option value="18">18</option>
-<option value="19">19</option>
-<option value="20">20</option>
-
-    </select>
-    <button id="startQuizBtn">Start Quiz</button>
-  </div>
-
+  <h2>Daily Challenge</h2>
+  <div id="message" style="margin-bottom:1rem;"></div>
   <div id="quizContainer" style="display:none;">
-    <div id="questionText"></div>
-    <div id="choicesContainer"></div>
-    <div id="capitalImage"></div>
+      <div id="questionText"></div>
+      <div id="choicesContainer" style="margin-top:10px;"></div>
+      <div id="capitalImage"></div>
+      <div id="countryFact" style="margin-top:1rem;font-weight:bold;"></div>
+      <div id="resultText"></div>
+      <div id="resultButtons" style="display:none;">
+        <button onclick="location.href='index.html'">🏠 Home</button>
+        <button onclick="location.href='scores.html'">📊 Score History</button>
+      </div>
   </div>
-
-  <div id="resultText"></div>
-  <div id="countryFact" style="margin-top:1rem;font-weight:bold;"></div>
-
-  <div id="resultButtons" style="display:none;text-align:center;margin-top:1.5rem;">
-    <button onclick="location.href='index.html'">🏠 Home</button>
-    <button onclick="location.href='scores.html'">📊 Score History</button>
-  </div>
-    
 </main>
-<footer><small>&copy; 2025 World Capitals Quiz</small></footer>
-<script src="script.js"></script>
-</body>
-</html>
+<script src="script.js" defer></script>
+<script>
+document.addEventListener('DOMContentLoaded', function() { startDailyChallenge(); });
+</script>
+</body></html>
