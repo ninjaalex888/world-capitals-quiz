@@ -135,6 +135,12 @@ main > .card + .card{margin-top:1rem}
 .feedback.good{color:var(--good)}
 .feedback.bad{color:var(--bad)}
 .photo{margin:1.25rem 0 0}
+.photo.before{margin:0 0 1.1rem}
+.photo-frame{position:relative}
+.photo-frame .flag{
+  position:absolute;left:.75rem;bottom:.75rem;height:52px;width:auto;aspect-ratio:auto;margin:0;
+  border:2px solid #fff;border-radius:5px;box-shadow:0 2px 8px rgba(0,0,0,.35);
+}
 .photo img{
   display:block;width:100%;aspect-ratio:16/10;object-fit:cover;
   border-radius:10px;background:var(--surface-2);
@@ -165,6 +171,8 @@ td.num,th.num{text-align:right;font-variant-numeric:tabular-nums}
   display:flex;align-items:center;justify-content:space-between;gap:1rem;
   padding:.9rem 0;border-bottom:1px solid var(--border);cursor:pointer;
 }
+.setting.stacked{flex-direction:column;align-items:stretch;gap:.6rem;cursor:default}
+.setting.stacked .segmented{align-self:flex-start;margin-top:0}
 .setting > span{font-weight:500}
 .setting small{display:block;font-size:.875rem;font-weight:400;color:var(--muted)}
 .switch{
@@ -181,7 +189,7 @@ td.num,th.num{text-align:right;font-variant-numeric:tabular-nums}
 .segmented{display:inline-flex;gap:4px;margin-top:.75rem;padding:4px;border-radius:10px;background:var(--surface-2)}
 .segmented label{position:relative}
 .segmented input{position:absolute;inset:0;margin:0;opacity:0;cursor:pointer}
-.segmented span{display:block;padding:.45rem .95rem;border-radius:7px;color:var(--muted);font-weight:500}
+.segmented span{display:block;padding:.45rem .95rem;white-space:nowrap;border-radius:7px;color:var(--muted);font-weight:500}
 .segmented input:checked + span{background:var(--surface);color:var(--text);box-shadow:var(--shadow)}
 .segmented input:focus-visible + span{outline:3px solid var(--accent);outline-offset:1px}
 .saved{min-height:1.4em;margin:1.25rem 0 0;font-size:.9rem}
@@ -190,10 +198,12 @@ td.num,th.num{text-align:right;font-variant-numeric:tabular-nums}
 @media (max-width:520px){
   body{font-size:16px}
   .site-header{justify-content:center}
+  .nav a{padding:.4rem .55rem}
   main{padding-top:1.25rem}
   .card{padding:1.15rem}
   .question{font-size:1.2rem}
   .flag{height:80px}
+  .photo-frame .flag{height:40px;left:.5rem;bottom:.5rem}
   .stats{gap:.5rem}
   .stat{padding:.75rem .5rem}
   th,td{padding:.6rem .75rem}

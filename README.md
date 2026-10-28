@@ -9,9 +9,9 @@ A lightweight quiz for learning the capital of every country: all 195 of them (t
 | **Daily Challenge** | One country a day, the same one for everyone. You get one try. |
 | **Practice** | Endless questions covering every country, with a running score. |
 | **Score History** | Your results, saved in your browser. |
-| **Settings** | Turn the country flag and the capital city photo on or off, and pick a light, dark or system theme. |
+| **Settings** | Turn the country flag on or off, show the capital city photo before or after you answer (or not at all), and pick a light, dark or system theme. |
 
-Each question shows the country's flag. After you answer, a photo of the capital appears. It only appears afterwards because a famous view such as the Eiffel Tower would give the answer away.
+Each question shows the country's flag and a photo of its capital. A famous view such as the Eiffel Tower can give the answer away, so in Settings you can move the photo to after you answer, or turn it off.
 
 ---
 

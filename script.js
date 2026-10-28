@@ -13,8 +13,16 @@ function writeJSON(key, value){
 }
 
 // ---------------- SETTINGS ----------------
-const DEFAULT_SETTINGS = {showFlag:true, showPhoto:true, theme:'system'};
-const getSettings = () => ({...DEFAULT_SETTINGS, ...readJSON('settings', {})});
+// photo: 'before' | 'after' | 'off' – when to show the capital city photo
+const DEFAULT_SETTINGS = {showFlag:true, photo:'before', theme:'system'};
+
+function getSettings(){
+  const saved = readJSON('settings', {});
+  // Older versions stored an on/off switch (showPhoto); keep an explicit "off".
+  if(saved.showPhoto === false && !saved.photo) saved.photo = 'off';
+  delete saved.showPhoto;
+  return {...DEFAULT_SETTINGS, ...saved};
+}
 
 function applyTheme(theme){
   const root = document.documentElement;
@@ -79,7 +87,7 @@ const QUIZ_HTML = `
   <div id="choices" class="choices"></div>
   <p id="feedback" class="feedback" role="status"></p>
   <figure id="photo" class="photo" hidden>
-    <img id="photoImg" alt="">
+    <div id="photoFrame" class="photo-frame"><img id="photoImg" alt=""></div>
     <figcaption><span id="photoCaption"></span> · <a id="photoCredit" target="_blank" rel="noopener">Photo: Wikimedia Commons</a></figcaption>
   </figure>
   <div id="actions" class="actions"></div>`;
@@ -90,8 +98,8 @@ function showQuestion(q, onAnswer){
   box.innerHTML = QUIZ_HTML;
   box.hidden = false;
 
+  const flag = $('flag');
   if(settings.showFlag){
-    const flag = $('flag');
     flag.onerror = () => flag.hidden = true;
     flag.src = `flags/${q.code}.png`;
     flag.alt = `Flag of ${q.country}`;
@@ -110,9 +118,29 @@ function showQuestion(q, onAnswer){
     $('choices').appendChild(btn);
   });
 
-  // Photo is shown only after answering (it could give the answer away),
-  // so warm the cache now to make the reveal instant.
-  if(settings.showPhoto && q.photo) new Image().src = q.photo;
+  if(q.photo && settings.photo === 'before'){
+    // Above the question with the flag tucked into its corner; the caption
+    // mustn't name the capital until the player has answered.
+    showPhoto(q, `Capital of ${q.country}`);
+    $('photo').classList.add('before');
+    box.insertBefore($('photo'), $('question'));
+    if(settings.showFlag) $('photoFrame').appendChild(flag);
+  }else if(q.photo && settings.photo === 'after'){
+    new Image().src = q.photo; // warm the cache so the reveal is instant
+  }
+}
+
+function showPhoto(q, caption){
+  const fig = $('photo'), img = $('photoImg');
+  img.onerror = () => {
+    fig.hidden = true;
+    if($('photoFrame').contains($('flag'))) $('quiz').insertBefore($('flag'), fig);
+  };
+  img.src = q.photo;
+  img.alt = caption;
+  $('photoCaption').textContent = caption;
+  $('photoCredit').href = q.photoSource;
+  fig.hidden = false;
 }
 
 function reveal(q, chosen){
@@ -129,14 +157,13 @@ function reveal(q, chosen){
     ? `✅ Correct! ${q.capital} is the capital of ${q.country}.`
     : `❌ Not quite. The capital of ${q.country} is ${q.capital}.`;
 
-  if(getSettings().showPhoto && q.photo){
-    const fig = $('photo'), img = $('photoImg');
-    img.onerror = () => fig.hidden = true;
-    img.src = q.photo;
-    img.alt = `${q.capital}, ${q.country}`;
-    $('photoCaption').textContent = `${q.capital}, ${q.country}`;
-    $('photoCredit').href = q.photoSource;
-    fig.hidden = false;
+  if(!q.photo) return;
+  const caption = `${q.capital}, ${q.country}`;
+  if(!$('photo').hidden){
+    $('photoCaption').textContent = caption;
+    $('photoImg').alt = caption;
+  }else if(getSettings().photo === 'after'){
+    showPhoto(q, caption);
   }
 }
 
@@ -249,15 +276,16 @@ function buildScores(){
 function initSettings(){
   const s = getSettings();
   $('showFlag').checked = s.showFlag;
-  $('showPhoto').checked = s.showPhoto;
-  const theme = document.querySelector(`input[name="theme"][value="${s.theme}"]`)
-    || document.querySelector('input[name="theme"][value="system"]');
-  theme.checked = true;
+  for(const name of ['photo', 'theme']){
+    const input = document.querySelector(`input[name="${name}"][value="${s[name]}"]`)
+      || document.querySelector(`input[name="${name}"][value="${DEFAULT_SETTINGS[name]}"]`);
+    input.checked = true;
+  }
 
   document.querySelectorAll('#settingsForm input').forEach(input => input.addEventListener('change', () => {
     const next = {
       showFlag:$('showFlag').checked,
-      showPhoto:$('showPhoto').checked,
+      photo:document.querySelector('input[name="photo"]:checked').value,
       theme:document.querySelector('input[name="theme"]:checked').value,
     };
     writeJSON('settings', next);
