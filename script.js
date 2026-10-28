@@ -204,6 +204,37 @@ function reveal(q, chosen){
   }
 }
 
+// ---------------- SHARE ----------------
+const siteURL = () => location.origin + location.pathname.replace(/[^/]*$/, '');
+
+function dailyShareText(correct){
+  const date = new Date().toLocaleDateString(undefined, {month:'short', day:'numeric', year:'numeric'});
+  return `🌍 World Capitals Daily · ${date}\n${correct ? '✅ Got it' : '❌ Missed it'} on ${getDifficulty().label}\n${siteURL()}`;
+}
+const practiceShareText = () => `🌍 World Capitals Practice · ${getDifficulty().label}\n${score}/${total} correct\n${siteURL()}`;
+
+// Phones get the native share sheet; everything else copies to the clipboard.
+async function share(btn, text){
+  const label = btn.textContent;
+  try{
+    if(navigator.share && /Android|iPhone|iPad/i.test(navigator.userAgent)){
+      await navigator.share({text});
+      return;
+    }
+    await navigator.clipboard.writeText(text);
+  }catch(err){
+    if(err.name === 'AbortError') return; // closed the share sheet
+    const ta = document.createElement('textarea');
+    ta.value = text; ta.style.position = 'fixed'; ta.style.opacity = '0';
+    document.body.appendChild(ta); ta.select();
+    const ok = document.execCommand('copy');
+    ta.remove();
+    if(!ok){ btn.textContent = "Couldn't copy"; setTimeout(() => btn.textContent = label, 2000); return; }
+  }
+  btn.textContent = 'Copied ✓';
+  setTimeout(() => btn.textContent = label, 2000);
+}
+
 // target is a URL (link) or a function (button)
 function addAction(label, target, secondary = false){
   const el = document.createElement(typeof target === 'string' ? 'a' : 'button');
@@ -236,9 +267,10 @@ async function startDaily(){
   const options = (playedToday && played.options) || pickOptions(q, pool, diff.sameRegion, seededRandom(day));
   $('info').textContent = `Same country for everyone on ${diff.label} today. You get one try.`;
 
-  const finish = () => {
+  const finish = correct => {
     $('info').textContent = 'Come back tomorrow for a new country.';
-    addAction('Keep practising', 'practice.html');
+    const btn = addAction('Share result', () => share(btn, dailyShareText(correct)));
+    addAction('Keep practising', 'practice.html', true);
     addAction('Score history', 'scores.html', true);
   };
 
@@ -246,13 +278,13 @@ async function startDaily(){
     mode = 'Daily'; difficulty = difficultyKey(); sessionId = Date.now(); score = correct ? 1 : 0; total = 1;
     writeJSON('dailyResult', {date:today, country:q.country, choice:city, options});
     saveScore();
-    finish();
+    finish(correct);
   });
   $('label').textContent = new Date().toLocaleDateString(undefined, {weekday:'long', month:'long', day:'numeric'});
 
   if(playedToday){
     reveal(q, played.choice);
-    finish();
+    finish(played.choice === q.capital);
   }
 }
 
@@ -275,6 +307,7 @@ async function startPractice(){
       saveScore();
       updatePracticeMeta(number);
       addAction('Next question →', next).focus();
+      const btn = addAction('Share score', () => share(btn, practiceShareText()), true);
     });
     updatePracticeMeta(number);
     if(total) window.scrollTo(0, 0);
