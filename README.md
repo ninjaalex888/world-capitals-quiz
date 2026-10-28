@@ -4,9 +4,11 @@ A lightweight quiz for learning the capital of every country: all 195 of them (t
 
 **Play it here: https://ninjaalex888.github.io/world-capitals-quiz/**
 
+<p align="center"><img src="docs/screenshot.png" alt="Practice mode: a photo of San Salvador with the flag of El Salvador, and five capitals to choose from" width="520"></p>
+
 | Page | What it does |
 |------|--------------|
-| **Daily Challenge** | One country a day, the same for everyone on the same difficulty. You get one try. |
+| **Daily Challenge** | One country a day, the same for everyone on the same difficulty. You get one try, then a **Share result** button copies a spoiler-free summary to send to friends. |
 | **Practice** | Endless questions at your chosen difficulty, with a running score. |
 | **Score History** | Your results, saved in your browser. |
 | **Settings** | Pick a difficulty, turn the country flag on or off, show the capital city photo before or after you answer (or not at all), and pick a light, dark or system theme. |
@@ -60,6 +62,8 @@ To set it up on a fork: **Settings → Pages → Source: Deploy from a branch �
 ├─ countries.json      # 195 countries: capital, ISO code, region, difficulty level, photo link
 ├─ flags/              # Flag images (xx.png, by ISO country code)
 ├─ favicon.ico
+├─ social-preview.png  # Image shown when the link is posted on social media / chat
+├─ robots.txt, sitemap.xml
 └─ start_dev_server.bat
 ```
 
@@ -71,6 +75,7 @@ Everything is stored in the browser's `localStorage` (scores, today's daily resu
 
 | Enhancement | Description |
 |-------------|-------------|
+| 🌐 Online leaderboards & duels | Pick a username (no login) to post scores from a 10-question timed Challenge round to weekly and all-time leaderboards. Duel anyone: send a link they play later, post to an "Open challenges" list, or race live. Could run on Firebase's free Spark plan (no payment method needed). |
 | ⏱ Timed mode | Countdown per question for extra pressure. |
 | 🔥 Streaks | Track consecutive daily wins. |
 | 🗺 Regions | Practise one continent at a time (each country already has a `region`). |
