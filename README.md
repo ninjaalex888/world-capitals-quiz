@@ -6,10 +6,21 @@ A lightweight quiz for learning the capital of every country: all 195 of them (t
 
 | Page | What it does |
 |------|--------------|
-| **Daily Challenge** | One country a day, the same one for everyone. You get one try. |
-| **Practice** | Endless questions covering every country, with a running score. |
+| **Daily Challenge** | One country a day, the same for everyone on the same difficulty. You get one try. |
+| **Practice** | Endless questions at your chosen difficulty, with a running score. |
 | **Score History** | Your results, saved in your browser. |
-| **Settings** | Turn the country flag on or off, show the capital city photo before or after you answer (or not at all), and pick a light, dark or system theme. |
+| **Settings** | Pick a difficulty, turn the country flag on or off, show the capital city photo before or after you answer (or not at all), and pick a light, dark or system theme. |
+
+### Difficulty
+
+| Level | Countries | Wrong answers |
+|-------|-----------|---------------|
+| Easy | 50 well-known countries | Any capital from the Easy list |
+| Medium (default) | 106, including classic trick questions like Australia and Turkey | Any capital from the Medium list |
+| Hard | 153 | Mostly capitals from the same region |
+| Very hard | All 195 | Mostly capitals from the same region |
+
+Each country in `countries.json` has a `level` from 1 to 4. A difficulty includes every level up to its own, so moving a country to a different level is a one-line edit.
 
 Each question shows the country's flag and a photo of its capital. A famous view such as the Eiffel Tower can give the answer away, so in Settings you can move the photo to after you answer, or turn it off.
 
@@ -46,7 +57,7 @@ To set it up on a fork: **Settings → Pages → Source: Deploy from a branch �
 ├─ settings.html       # Flag / photo / theme settings
 ├─ script.js           # All quiz logic
 ├─ style.css           # Styling (light + dark themes)
-├─ countries.json      # 195 countries: capital, 4 wrong answers, ISO code, photo link
+├─ countries.json      # 195 countries: capital, ISO code, region, difficulty level, photo link
 ├─ flags/              # Flag images (xx.png, by ISO country code)
 ├─ favicon.ico
 └─ start_dev_server.bat
@@ -62,7 +73,7 @@ Everything is stored in the browser's `localStorage` (scores, today's daily resu
 |-------------|-------------|
 | ⏱ Timed mode | Countdown per question for extra pressure. |
 | 🔥 Streaks | Track consecutive daily wins. |
-| 🗺 Regions | Practise one continent at a time. |
+| 🗺 Regions | Practise one continent at a time (each country already has a `region`). |
 | 🎉 Confetti | Animation on a correct daily answer. |
 | 📈 Charts | Visualize progress over time. |
 

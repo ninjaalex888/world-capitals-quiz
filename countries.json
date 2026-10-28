@@ -3,12 +3,8 @@
     "country": "Afghanistan",
     "capital": "Kabul",
     "code": "af",
-    "distractors": [
-      "Brussels",
-      "Tashkent",
-      "Tbilisi",
-      "Windhoek"
-    ],
+    "region": "Asia",
+    "level": 1,
     "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d3/Kabul_TV_Hill_view.jpg/500px-Kabul_TV_Hill_view.jpg",
     "photoSource": "https://commons.wikimedia.org/wiki/File:Kabul_TV_Hill_view.jpg"
   },
@@ -16,12 +12,8 @@
     "country": "Albania",
     "capital": "Tirana",
     "code": "al",
-    "distractors": [
-      "Vatican City",
-      "Kingston",
-      "Brazzaville",
-      "Thimphu"
-    ],
+    "region": "Europe",
+    "level": 3,
     "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/06/Tirana_from_South.jpg/500px-Tirana_from_South.jpg",
     "photoSource": "https://commons.wikimedia.org/wiki/File:Tirana_from_South.jpg"
   },
@@ -29,12 +21,8 @@
     "country": "Algeria",
     "capital": "Algiers",
     "code": "dz",
-    "distractors": [
-      "Muscat",
-      "Accra",
-      "Dili",
-      "Gaborone"
-    ],
+    "region": "Africa",
+    "level": 2,
     "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8c/Argel_3.jpg/500px-Argel_3.jpg",
     "photoSource": "https://commons.wikimedia.org/wiki/File:Argel_3.jpg"
   },
@@ -42,12 +30,8 @@
     "country": "Andorra",
     "capital": "Andorra la Vella",
     "code": "ad",
-    "distractors": [
-      "Islamabad",
-      "Belmopan",
-      "Bishkek",
-      "Bern"
-    ],
+    "region": "Europe",
+    "level": 3,
     "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5b/Andorra_la_Vella_-_view2.jpg/500px-Andorra_la_Vella_-_view2.jpg",
     "photoSource": "https://commons.wikimedia.org/wiki/File:Andorra_la_Vella_-_view2.jpg"
   },
@@ -55,12 +39,8 @@
     "country": "Angola",
     "capital": "Luanda",
     "code": "ao",
-    "distractors": [
-      "Kingstown",
-      "Bucharest",
-      "Damascus",
-      "Asunci\u00f3n"
-    ],
+    "region": "Africa",
+    "level": 3,
     "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b7/Luanda_feb09_ost01.jpg/500px-Luanda_feb09_ost01.jpg",
     "photoSource": "https://commons.wikimedia.org/wiki/File:Luanda_feb09_ost01.jpg"
   },
@@ -68,12 +48,8 @@
     "country": "Antigua and Barbuda",
     "capital": "St. John's",
     "code": "ag",
-    "distractors": [
-      "Bishkek",
-      "Kuala Lumpur",
-      "Paris",
-      "Port Louis"
-    ],
+    "region": "North America",
+    "level": 4,
     "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/71/St_Johns_Antigua_2012.jpg/500px-St_Johns_Antigua_2012.jpg",
     "photoSource": "https://commons.wikimedia.org/wiki/File:St_Johns_Antigua_2012.jpg"
   },
@@ -81,12 +57,8 @@
     "country": "Argentina",
     "capital": "Buenos Aires",
     "code": "ar",
-    "distractors": [
-      "Tashkent",
-      "Antananarivo",
-      "Dushanbe",
-      "Monaco"
-    ],
+    "region": "South America",
+    "level": 1,
     "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b7/Vista_a%C3%A9rea_de_la_Plaza_del_Congreso_10.jpg/500px-Vista_a%C3%A9rea_de_la_Plaza_del_Congreso_10.jpg",
     "photoSource": "https://commons.wikimedia.org/wiki/File:Vista_a%C3%A9rea_de_la_Plaza_del_Congreso_10.jpg"
   },
@@ -94,12 +66,8 @@
     "country": "Armenia",
     "capital": "Yerevan",
     "code": "am",
-    "distractors": [
-      "Baku",
-      "Caracas",
-      "Lilongwe",
-      "Mbabane"
-    ],
+    "region": "Asia",
+    "level": 3,
     "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fe/Mount_Ararat_and_the_Yerevan_skyline_in_spring_%2828mm%29.jpg/500px-Mount_Ararat_and_the_Yerevan_skyline_in_spring_%2828mm%29.jpg",
     "photoSource": "https://commons.wikimedia.org/wiki/File:Mount_Ararat_and_the_Yerevan_skyline_in_spring_%2828mm%29.jpg"
   },
@@ -107,12 +75,8 @@
     "country": "Australia",
     "capital": "Canberra",
     "code": "au",
-    "distractors": [
-      "Tripoli",
-      "Prague",
-      "Bratislava",
-      "Stockholm"
-    ],
+    "region": "Oceania",
+    "level": 2,
     "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a2/Canberra_from_Mt_Ainslie_%285642431515%29.jpg/500px-Canberra_from_Mt_Ainslie_%285642431515%29.jpg",
     "photoSource": "https://commons.wikimedia.org/wiki/File:Canberra_from_Mt_Ainslie_%285642431515%29.jpg"
   },
@@ -120,12 +84,8 @@
     "country": "Austria",
     "capital": "Vienna",
     "code": "at",
-    "distractors": [
-      "Bogot\u00e1",
-      "Nassau",
-      "Ankara",
-      "Victoria"
-    ],
+    "region": "Europe",
+    "level": 1,
     "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1f/Wien_katedra_sw_Szczepana_widok_z_wiezy_6.jpg/500px-Wien_katedra_sw_Szczepana_widok_z_wiezy_6.jpg",
     "photoSource": "https://commons.wikimedia.org/wiki/File:Wien_katedra_sw_Szczepana_widok_z_wiezy_6.jpg"
   },
@@ -133,12 +93,8 @@
     "country": "Azerbaijan",
     "capital": "Baku",
     "code": "az",
-    "distractors": [
-      "Castries",
-      "Kuwait City",
-      "Roseau",
-      "Nouakchott"
-    ],
+    "region": "Asia",
+    "level": 2,
     "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e4/Baku_004_1953c.jpg/500px-Baku_004_1953c.jpg",
     "photoSource": "https://commons.wikimedia.org/wiki/File:Baku_004_1953c.jpg"
   },
@@ -146,12 +102,8 @@
     "country": "Bahamas",
     "capital": "Nassau",
     "code": "bs",
-    "distractors": [
-      "Zagreb",
-      "Seoul",
-      "Kathmandu",
-      "Dhaka"
-    ],
+    "region": "North America",
+    "level": 2,
     "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a1/BHA_Nassau%2C_Paradise_Island%2C_Atlantis_Bridge_001.jpg/500px-BHA_Nassau%2C_Paradise_Island%2C_Atlantis_Bridge_001.jpg",
     "photoSource": "https://commons.wikimedia.org/wiki/File:BHA_Nassau%2C_Paradise_Island%2C_Atlantis_Bridge_001.jpg"
   },
@@ -159,12 +111,8 @@
     "country": "Bahrain",
     "capital": "Manama",
     "code": "bh",
-    "distractors": [
-      "Valletta",
-      "Muscat",
-      "Hanoi",
-      "Buenos Aires"
-    ],
+    "region": "Asia",
+    "level": 3,
     "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f2/Bahrain_World_trade_Center_.jpg/500px-Bahrain_World_trade_Center_.jpg",
     "photoSource": "https://commons.wikimedia.org/wiki/File:Bahrain_World_trade_Center_.jpg"
   },
@@ -172,12 +120,8 @@
     "country": "Bangladesh",
     "capital": "Dhaka",
     "code": "bd",
-    "distractors": [
-      "Freetown",
-      "Mogadishu",
-      "Niamey",
-      "Kyiv"
-    ],
+    "region": "Asia",
+    "level": 2,
     "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/89/Dhaka_skyline1.jpg/500px-Dhaka_skyline1.jpg",
     "photoSource": "https://commons.wikimedia.org/wiki/File:Dhaka_skyline1.jpg"
   },
@@ -185,12 +129,8 @@
     "country": "Barbados",
     "capital": "Bridgetown",
     "code": "bb",
-    "distractors": [
-      "Muscat",
-      "Astana",
-      "Bras\u00edlia",
-      "Belmopan"
-    ],
+    "region": "North America",
+    "level": 3,
     "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/Bridgetown_aerial.JPG/500px-Bridgetown_aerial.JPG",
     "photoSource": "https://commons.wikimedia.org/wiki/File:Bridgetown_aerial.JPG"
   },
@@ -198,12 +138,8 @@
     "country": "Belarus",
     "capital": "Minsk",
     "code": "by",
-    "distractors": [
-      "Seoul",
-      "Khartoum",
-      "Zagreb",
-      "Maputo"
-    ],
+    "region": "Europe",
+    "level": 2,
     "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/%D0%9C%D1%96%D0%BD%D1%81%D0%BA._%D0%A1%D0%BA%D0%B2%D0%B5%D1%80_%D0%BF%D0%B0_%D0%BF%D0%BB%D0%BE%D1%88%D1%87%D1%8B_%D0%9D%D0%B5%D0%B7%D0%B0%D0%BB%D0%B5%D0%B6%D0%BD%D0%B0%D1%81%D1%86%D1%96.jpg/500px-%D0%9C%D1%96%D0%BD%D1%81%D0%BA._%D0%A1%D0%BA%D0%B2%D0%B5%D1%80_%D0%BF%D0%B0_%D0%BF%D0%BB%D0%BE%D1%88%D1%87%D1%8B_%D0%9D%D0%B5%D0%B7%D0%B0%D0%BB%D0%B5%D0%B6%D0%BD%D0%B0%D1%81%D1%86%D1%96.jpg",
     "photoSource": "https://commons.wikimedia.org/wiki/File:%D0%9C%D1%96%D0%BD%D1%81%D0%BA._%D0%A1%D0%BA%D0%B2%D0%B5%D1%80_%D0%BF%D0%B0_%D0%BF%D0%BB%D0%BE%D1%88%D1%87%D1%8B_%D0%9D%D0%B5%D0%B7%D0%B0%D0%BB%D0%B5%D0%B6%D0%BD%D0%B0%D1%81%D1%86%D1%96.jpg"
   },
@@ -211,12 +147,8 @@
     "country": "Belgium",
     "capital": "Brussels",
     "code": "be",
-    "distractors": [
-      "Sofia",
-      "Nairobi",
-      "Tripoli",
-      "Riyadh"
-    ],
+    "region": "Europe",
+    "level": 1,
     "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b4/Brussels_view_from_Mont_des_Arts%2C_Brussels%2C_Belgium_%28cropped%29.jpg/500px-Brussels_view_from_Mont_des_Arts%2C_Brussels%2C_Belgium_%28cropped%29.jpg",
     "photoSource": "https://commons.wikimedia.org/wiki/File:Brussels_view_from_Mont_des_Arts%2C_Brussels%2C_Belgium_%28cropped%29.jpg"
   },
@@ -224,12 +156,8 @@
     "country": "Belize",
     "capital": "Belmopan",
     "code": "bz",
-    "distractors": [
-      "Reykjav\u00edk",
-      "N'Djamena",
-      "Riga",
-      "Manila"
-    ],
+    "region": "North America",
+    "level": 4,
     "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c9/Belmopan_Parliament.jpg/500px-Belmopan_Parliament.jpg",
     "photoSource": "https://commons.wikimedia.org/wiki/File:Belmopan_Parliament.jpg"
   },
@@ -237,12 +165,8 @@
     "country": "Benin",
     "capital": "Porto-Novo",
     "code": "bj",
-    "distractors": [
-      "Riyadh",
-      "Guatemala City",
-      "Windhoek",
-      "Paris"
-    ],
+    "region": "Africa",
+    "level": 4,
     "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/08/Porto-Novo_vue.jpg/500px-Porto-Novo_vue.jpg",
     "photoSource": "https://commons.wikimedia.org/wiki/File:Porto-Novo_vue.jpg"
   },
@@ -250,12 +174,8 @@
     "country": "Bhutan",
     "capital": "Thimphu",
     "code": "bt",
-    "distractors": [
-      "Belgrade",
-      "Juba",
-      "Podgorica",
-      "Kigali"
-    ],
+    "region": "Asia",
+    "level": 4,
     "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/47/Thimphu-12-vom_Buddha_Dordenma-2015-gje.jpg/500px-Thimphu-12-vom_Buddha_Dordenma-2015-gje.jpg",
     "photoSource": "https://commons.wikimedia.org/wiki/File:Thimphu-12-vom_Buddha_Dordenma-2015-gje.jpg"
   },
@@ -263,12 +183,8 @@
     "country": "Bolivia",
     "capital": "Sucre",
     "code": "bo",
-    "distractors": [
-      "St. George's",
-      "Gitega",
-      "Baku",
-      "Bras\u00edlia"
-    ],
+    "region": "South America",
+    "level": 3,
     "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/43/Sucre_Square.jpg/500px-Sucre_Square.jpg",
     "photoSource": "https://commons.wikimedia.org/wiki/File:Sucre_Square.jpg"
   },
@@ -276,12 +192,8 @@
     "country": "Bosnia and Herzegovina",
     "capital": "Sarajevo",
     "code": "ba",
-    "distractors": [
-      "Nouakchott",
-      "Copenhagen",
-      "Lom\u00e9",
-      "Port-au-Prince"
-    ],
+    "region": "Europe",
+    "level": 2,
     "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e3/Sarajevo_City_Panorama.JPG/500px-Sarajevo_City_Panorama.JPG",
     "photoSource": "https://commons.wikimedia.org/wiki/File:Sarajevo_City_Panorama.JPG"
   },
@@ -289,12 +201,8 @@
     "country": "Botswana",
     "capital": "Gaborone",
     "code": "bw",
-    "distractors": [
-      "Kuwait City",
-      "Monrovia",
-      "Ljubljana",
-      "Ngerulmud"
-    ],
+    "region": "Africa",
+    "level": 3,
     "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/54/Gaborone_skyline.JPG/500px-Gaborone_skyline.JPG",
     "photoSource": "https://commons.wikimedia.org/wiki/File:Gaborone_skyline.JPG"
   },
@@ -302,12 +210,8 @@
     "country": "Brazil",
     "capital": "Bras\u00edlia",
     "code": "br",
-    "distractors": [
-      "Abu Dhabi",
-      "Dhaka",
-      "Riyadh",
-      "Ashgabat"
-    ],
+    "region": "South America",
+    "level": 2,
     "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2d/Planalto_Central_%28cropped%29.jpg/500px-Planalto_Central_%28cropped%29.jpg",
     "photoSource": "https://commons.wikimedia.org/wiki/File:Planalto_Central_%28cropped%29.jpg"
   },
@@ -315,12 +219,8 @@
     "country": "Brunei",
     "capital": "Bandar Seri Begawan",
     "code": "bn",
-    "distractors": [
-      "Dodoma",
-      "Islamabad",
-      "Jakarta",
-      "Vilnius"
-    ],
+    "region": "Asia",
+    "level": 4,
     "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/59/Sultan_Omar_Ali_Saifuddin_Mosque_02.jpg/500px-Sultan_Omar_Ali_Saifuddin_Mosque_02.jpg",
     "photoSource": "https://commons.wikimedia.org/wiki/File:Sultan_Omar_Ali_Saifuddin_Mosque_02.jpg"
   },
@@ -328,12 +228,8 @@
     "country": "Bulgaria",
     "capital": "Sofia",
     "code": "bg",
-    "distractors": [
-      "Bern",
-      "Berlin",
-      "Moroni",
-      "Ngerulmud"
-    ],
+    "region": "Europe",
+    "level": 2,
     "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/Panoramic_view_over_central_Sofia_and_the_Vitosha_Mountain_2017-10-08.jpg/500px-Panoramic_view_over_central_Sofia_and_the_Vitosha_Mountain_2017-10-08.jpg",
     "photoSource": "https://commons.wikimedia.org/wiki/File:Panoramic_view_over_central_Sofia_and_the_Vitosha_Mountain_2017-10-08.jpg"
   },
@@ -341,12 +237,8 @@
     "country": "Burkina Faso",
     "capital": "Ouagadougou",
     "code": "bf",
-    "distractors": [
-      "Sucre",
-      "Abu Dhabi",
-      "Canberra",
-      "Caracas"
-    ],
+    "region": "Africa",
+    "level": 3,
     "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/Monument_aux_h%C3%A9ros_nationaux_-_Ouagadougou_-_2024.jpg/500px-Monument_aux_h%C3%A9ros_nationaux_-_Ouagadougou_-_2024.jpg",
     "photoSource": "https://commons.wikimedia.org/wiki/File:Monument_aux_h%C3%A9ros_nationaux_-_Ouagadougou_-_2024.jpg"
   },
@@ -354,12 +246,8 @@
     "country": "Burundi",
     "capital": "Gitega",
     "code": "bi",
-    "distractors": [
-      "Guatemala City",
-      "Kabul",
-      "Kingston",
-      "Monrovia"
-    ],
+    "region": "Africa",
+    "level": 4,
     "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9c/Gitega.JPG/500px-Gitega.JPG",
     "photoSource": "https://commons.wikimedia.org/wiki/File:Gitega.JPG"
   },
@@ -367,12 +255,8 @@
     "country": "Cabo Verde",
     "capital": "Praia",
     "code": "cv",
-    "distractors": [
-      "Taipei",
-      "Belgrade",
-      "Dushanbe",
-      "Sarajevo"
-    ],
+    "region": "Africa",
+    "level": 4,
     "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fb/Praia_Harbor.jpg/500px-Praia_Harbor.jpg",
     "photoSource": "https://commons.wikimedia.org/wiki/File:Praia_Harbor.jpg"
   },
@@ -380,12 +264,8 @@
     "country": "Cambodia",
     "capital": "Phnom Penh",
     "code": "kh",
-    "distractors": [
-      "Athens",
-      "Manila",
-      "Mal\u00e9",
-      "Tashkent"
-    ],
+    "region": "Asia",
+    "level": 2,
     "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b8/Phnom_Penh_aerial.jpg/500px-Phnom_Penh_aerial.jpg",
     "photoSource": "https://commons.wikimedia.org/wiki/File:Phnom_Penh_aerial.jpg"
   },
@@ -393,12 +273,8 @@
     "country": "Cameroon",
     "capital": "Yaound\u00e9",
     "code": "cm",
-    "distractors": [
-      "Monrovia",
-      "Vaduz",
-      "Tashkent",
-      "Monaco"
-    ],
+    "region": "Africa",
+    "level": 3,
     "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/80/Yaound%C3%A9_view_from_central_market_%282014%29.JPG/500px-Yaound%C3%A9_view_from_central_market_%282014%29.JPG",
     "photoSource": "https://commons.wikimedia.org/wiki/File:Yaound%C3%A9_view_from_central_market_%282014%29.JPG"
   },
@@ -406,12 +282,8 @@
     "country": "Canada",
     "capital": "Ottawa",
     "code": "ca",
-    "distractors": [
-      "Taipei",
-      "Paramaribo",
-      "Abu Dhabi",
-      "Lusaka"
-    ],
+    "region": "North America",
+    "level": 1,
     "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0f/Ottawa_Montage_2020.jpg/500px-Ottawa_Montage_2020.jpg",
     "photoSource": "https://commons.wikimedia.org/wiki/File:Ottawa_Montage_2020.jpg"
   },
@@ -419,12 +291,8 @@
     "country": "Central African Republic",
     "capital": "Bangui",
     "code": "cf",
-    "distractors": [
-      "St. George's",
-      "Reykjav\u00edk",
-      "Montevideo",
-      "Roseau"
-    ],
+    "region": "Africa",
+    "level": 4,
     "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/58/Bangui_City_Centre.jpg/500px-Bangui_City_Centre.jpg",
     "photoSource": "https://commons.wikimedia.org/wiki/File:Bangui_City_Centre.jpg"
   },
@@ -432,12 +300,8 @@
     "country": "Chad",
     "capital": "N'Djamena",
     "code": "td",
-    "distractors": [
-      "Monrovia",
-      "Bamako",
-      "Zagreb",
-      "Lusaka"
-    ],
+    "region": "Africa",
+    "level": 3,
     "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/36/Place_de_la_nation4_%28Tchad%29.jpg/500px-Place_de_la_nation4_%28Tchad%29.jpg",
     "photoSource": "https://commons.wikimedia.org/wiki/File:Place_de_la_nation4_%28Tchad%29.jpg"
   },
@@ -445,12 +309,8 @@
     "country": "Chile",
     "capital": "Santiago",
     "code": "cl",
-    "distractors": [
-      "Baghdad",
-      "Manila",
-      "Ulaanbaatar",
-      "St. George's"
-    ],
+    "region": "South America",
+    "level": 1,
     "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/Santiago_de_Chile%2C_Desde_Cerro_San_Crist%C3%B3bal_%28cropped%29.jpg/500px-Santiago_de_Chile%2C_Desde_Cerro_San_Crist%C3%B3bal_%28cropped%29.jpg",
     "photoSource": "https://commons.wikimedia.org/wiki/File:Santiago_de_Chile%2C_Desde_Cerro_San_Crist%C3%B3bal_%28cropped%29.jpg"
   },
@@ -458,12 +318,8 @@
     "country": "China",
     "capital": "Beijing",
     "code": "cn",
-    "distractors": [
-      "Asmara",
-      "Georgetown",
-      "Kigali",
-      "Santiago"
-    ],
+    "region": "Asia",
+    "level": 1,
     "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/06/Skyline_of_Beijing_CBD_with_B-5906_approaching_%2820211016171955%29.jpg/500px-Skyline_of_Beijing_CBD_with_B-5906_approaching_%2820211016171955%29.jpg",
     "photoSource": "https://commons.wikimedia.org/wiki/File:Skyline_of_Beijing_CBD_with_B-5906_approaching_%2820211016171955%29.jpg"
   },
@@ -471,12 +327,8 @@
     "country": "Colombia",
     "capital": "Bogot\u00e1",
     "code": "co",
-    "distractors": [
-      "Roseau",
-      "Port Moresby",
-      "Abuja",
-      "Funafuti"
-    ],
+    "region": "South America",
+    "level": 1,
     "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/Centro_internacional.JPG/500px-Centro_internacional.JPG",
     "photoSource": "https://commons.wikimedia.org/wiki/File:Centro_internacional.JPG"
   },
@@ -484,12 +336,8 @@
     "country": "Comoros",
     "capital": "Moroni",
     "code": "km",
-    "distractors": [
-      "Chi\u0219in\u0103u",
-      "Buenos Aires",
-      "Pyongyang",
-      "Sri Jayawardenepura Kotte"
-    ],
+    "region": "Africa",
+    "level": 4,
     "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/Moroni_harbour_%282%29.jpg/500px-Moroni_harbour_%282%29.jpg",
     "photoSource": "https://commons.wikimedia.org/wiki/File:Moroni_harbour_%282%29.jpg"
   },
@@ -497,12 +345,8 @@
     "country": "Costa Rica",
     "capital": "San Jos\u00e9",
     "code": "cr",
-    "distractors": [
-      "Tegucigalpa",
-      "Juba",
-      "Khartoum",
-      "Djibouti"
-    ],
+    "region": "North America",
+    "level": 2,
     "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/24/Cityscape_of_San_Jos%C3%A9%2C_Costa_Rica_%28253552473%29.jpg/500px-Cityscape_of_San_Jos%C3%A9%2C_Costa_Rica_%28253552473%29.jpg",
     "photoSource": "https://commons.wikimedia.org/wiki/File:Cityscape_of_San_Jos%C3%A9%2C_Costa_Rica_%28253552473%29.jpg"
   },
@@ -510,12 +354,8 @@
     "country": "C\u00f4te d'Ivoire",
     "capital": "Yamoussoukro",
     "code": "ci",
-    "distractors": [
-      "Pyongyang",
-      "Washington, D.C.",
-      "Palikir",
-      "Yerevan"
-    ],
+    "region": "Africa",
+    "level": 4,
     "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9f/Inphb_de_Yamoussoukro_%28Bosson%29.jpg/500px-Inphb_de_Yamoussoukro_%28Bosson%29.jpg",
     "photoSource": "https://commons.wikimedia.org/wiki/File:Inphb_de_Yamoussoukro_%28Bosson%29.jpg"
   },
@@ -523,12 +363,8 @@
     "country": "Croatia",
     "capital": "Zagreb",
     "code": "hr",
-    "distractors": [
-      "Port of Spain",
-      "Bras\u00edlia",
-      "Lima",
-      "Buenos Aires"
-    ],
+    "region": "Europe",
+    "level": 2,
     "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cd/Zagreb_%2829255640143%29.jpg/500px-Zagreb_%2829255640143%29.jpg",
     "photoSource": "https://commons.wikimedia.org/wiki/File:Zagreb_%2829255640143%29.jpg"
   },
@@ -536,12 +372,8 @@
     "country": "Cuba",
     "capital": "Havana",
     "code": "cu",
-    "distractors": [
-      "Brazzaville",
-      "Seoul",
-      "Chi\u0219in\u0103u",
-      "Bamako"
-    ],
+    "region": "North America",
+    "level": 1,
     "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3b/Cuba_libre_%286941395159%29.jpg/500px-Cuba_libre_%286941395159%29.jpg",
     "photoSource": "https://commons.wikimedia.org/wiki/File:Cuba_libre_%286941395159%29.jpg"
   },
@@ -549,12 +381,8 @@
     "country": "Cyprus",
     "capital": "Nicosia",
     "code": "cy",
-    "distractors": [
-      "Asmara",
-      "Lisbon",
-      "Addis Ababa",
-      "Abu Dhabi"
-    ],
+    "region": "Europe",
+    "level": 2,
     "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2c/Nicosia_01-2017_img23_View_from_Shacolas_Tower.jpg/500px-Nicosia_01-2017_img23_View_from_Shacolas_Tower.jpg",
     "photoSource": "https://commons.wikimedia.org/wiki/File:Nicosia_01-2017_img23_View_from_Shacolas_Tower.jpg"
   },
@@ -562,12 +390,8 @@
     "country": "Czech Republic",
     "capital": "Prague",
     "code": "cz",
-    "distractors": [
-      "Sofia",
-      "Bogot\u00e1",
-      "Bandar Seri Begawan",
-      "Vaduz"
-    ],
+    "region": "Europe",
+    "level": 1,
     "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1f/Pet%C5%99%C3%ADn_Tower_View_IMG_3020.JPG/500px-Pet%C5%99%C3%ADn_Tower_View_IMG_3020.JPG",
     "photoSource": "https://commons.wikimedia.org/wiki/File:Pet%C5%99%C3%ADn_Tower_View_IMG_3020.JPG"
   },
@@ -575,12 +399,8 @@
     "country": "Democratic Republic of the Congo",
     "capital": "Kinshasa",
     "code": "cd",
-    "distractors": [
-      "Sana'a",
-      "Nairobi",
-      "Georgetown",
-      "Abu Dhabi"
-    ],
+    "region": "Africa",
+    "level": 2,
     "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3c/Vue_Kinshasa.jpg/500px-Vue_Kinshasa.jpg",
     "photoSource": "https://commons.wikimedia.org/wiki/File:Vue_Kinshasa.jpg"
   },
@@ -588,12 +408,8 @@
     "country": "Denmark",
     "capital": "Copenhagen",
     "code": "dk",
-    "distractors": [
-      "Mogadishu",
-      "Tokyo",
-      "Bridgetown",
-      "Kyiv"
-    ],
+    "region": "Europe",
+    "level": 1,
     "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fd/Copenhagen_-_view_from_Christiansborg_castle.jpg/500px-Copenhagen_-_view_from_Christiansborg_castle.jpg",
     "photoSource": "https://commons.wikimedia.org/wiki/File:Copenhagen_-_view_from_Christiansborg_castle.jpg"
   },
@@ -601,12 +417,8 @@
     "country": "Djibouti",
     "capital": "Djibouti",
     "code": "dj",
-    "distractors": [
-      "Addis Ababa",
-      "Bangkok",
-      "Juba",
-      "Astana"
-    ],
+    "region": "Africa",
+    "level": 3,
     "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2a/Djibouti_City.jpg/500px-Djibouti_City.jpg",
     "photoSource": "https://commons.wikimedia.org/wiki/File:Djibouti_City.jpg"
   },
@@ -614,12 +426,8 @@
     "country": "Dominica",
     "capital": "Roseau",
     "code": "dm",
-    "distractors": [
-      "Jerusalem",
-      "Chi\u0219in\u0103u",
-      "Tallinn",
-      "Minsk"
-    ],
+    "region": "North America",
+    "level": 4,
     "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8d/RoseauWide..jpg/500px-RoseauWide..jpg",
     "photoSource": "https://commons.wikimedia.org/wiki/File:RoseauWide..jpg"
   },
@@ -627,12 +435,8 @@
     "country": "Dominican Republic",
     "capital": "Santo Domingo",
     "code": "do",
-    "distractors": [
-      "Moscow",
-      "Muscat",
-      "Djibouti",
-      "Bridgetown"
-    ],
+    "region": "North America",
+    "level": 2,
     "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9d/Santo_Domingo_%28Dominican_Republic%29_taken_atop_Novocentro_tower_viewing_the_city_to_the_southwest_2010.jpg/500px-Santo_Domingo_%28Dominican_Republic%29_taken_atop_Novocentro_tower_viewing_the_city_to_the_southwest_2010.jpg",
     "photoSource": "https://commons.wikimedia.org/wiki/File:Santo_Domingo_%28Dominican_Republic%29_taken_atop_Novocentro_tower_viewing_the_city_to_the_southwest_2010.jpg"
   },
@@ -640,12 +444,8 @@
     "country": "Ecuador",
     "capital": "Quito",
     "code": "ec",
-    "distractors": [
-      "Monaco",
-      "Baku",
-      "Bucharest",
-      "New Delhi"
-    ],
+    "region": "South America",
+    "level": 2,
     "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5b/FACHADA_ASAMBLEA_NACIONAL._QUITO%2C_20_DE_FEBRERO_2020._01.jpg/500px-FACHADA_ASAMBLEA_NACIONAL._QUITO%2C_20_DE_FEBRERO_2020._01.jpg",
     "photoSource": "https://commons.wikimedia.org/wiki/File:FACHADA_ASAMBLEA_NACIONAL._QUITO%2C_20_DE_FEBRERO_2020._01.jpg"
   },
@@ -653,12 +453,8 @@
     "country": "Egypt",
     "capital": "Cairo",
     "code": "eg",
-    "distractors": [
-      "Tallinn",
-      "Brazzaville",
-      "Riga",
-      "Castries"
-    ],
+    "region": "Africa",
+    "level": 1,
     "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/Cairo_Skyline_%282020%29.jpg/500px-Cairo_Skyline_%282020%29.jpg",
     "photoSource": "https://commons.wikimedia.org/wiki/File:Cairo_Skyline_%282020%29.jpg"
   },
@@ -666,12 +462,8 @@
     "country": "El Salvador",
     "capital": "San Salvador",
     "code": "sv",
-    "distractors": [
-      "Yaound\u00e9",
-      "Andorra la Vella",
-      "Minsk",
-      "Sarajevo"
-    ],
+    "region": "North America",
+    "level": 2,
     "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/37/Monumento_al_Salvador_del_Mundo_1.jpg/500px-Monumento_al_Salvador_del_Mundo_1.jpg",
     "photoSource": "https://commons.wikimedia.org/wiki/File:Monumento_al_Salvador_del_Mundo_1.jpg"
   },
@@ -679,12 +471,8 @@
     "country": "Equatorial Guinea",
     "capital": "Ciudad de la Paz",
     "code": "gq",
-    "distractors": [
-      "Santo Domingo",
-      "Monrovia",
-      "Damascus",
-      "Tashkent"
-    ],
+    "region": "Africa",
+    "level": 4,
     "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/36/Autobahnbau_in_Oyala.JPG/500px-Autobahnbau_in_Oyala.JPG",
     "photoSource": "https://commons.wikimedia.org/wiki/File:Autobahnbau_in_Oyala.JPG"
   },
@@ -692,12 +480,8 @@
     "country": "Eritrea",
     "capital": "Asmara",
     "code": "er",
-    "distractors": [
-      "Lima",
-      "Stockholm",
-      "Mogadishu",
-      "Luxembourg"
-    ],
+    "region": "Africa",
+    "level": 4,
     "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b0/Fiat_tagliero%2C_09.JPG/500px-Fiat_tagliero%2C_09.JPG",
     "photoSource": "https://commons.wikimedia.org/wiki/File:Fiat_tagliero%2C_09.JPG"
   },
@@ -705,12 +489,8 @@
     "country": "Estonia",
     "capital": "Tallinn",
     "code": "ee",
-    "distractors": [
-      "Vientiane",
-      "Prague",
-      "Lusaka",
-      "Khartoum"
-    ],
+    "region": "Europe",
+    "level": 2,
     "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/92/Tallinna_vanalinn_2015.jpg/500px-Tallinna_vanalinn_2015.jpg",
     "photoSource": "https://commons.wikimedia.org/wiki/File:Tallinna_vanalinn_2015.jpg"
   },
@@ -718,12 +498,8 @@
     "country": "Eswatini",
     "capital": "Mbabane",
     "code": "sz",
-    "distractors": [
-      "Quito",
-      "Podgorica",
-      "Basseterre",
-      "Sri Jayawardenepura Kotte"
-    ],
+    "region": "Africa",
+    "level": 4,
     "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/74/Mbabane_%286035476964%29.jpg/500px-Mbabane_%286035476964%29.jpg",
     "photoSource": "https://commons.wikimedia.org/wiki/File:Mbabane_%286035476964%29.jpg"
   },
@@ -731,12 +507,8 @@
     "country": "Ethiopia",
     "capital": "Addis Ababa",
     "code": "et",
-    "distractors": [
-      "Tashkent",
-      "Georgetown",
-      "Libreville",
-      "Sarajevo"
-    ],
+    "region": "Africa",
+    "level": 1,
     "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6e/AddisView.jpg/500px-AddisView.jpg",
     "photoSource": "https://commons.wikimedia.org/wiki/File:AddisView.jpg"
   },
@@ -744,12 +516,8 @@
     "country": "Fiji",
     "capital": "Suva",
     "code": "fj",
-    "distractors": [
-      "Bangkok",
-      "Paris",
-      "Tashkent",
-      "Bras\u00edlia"
-    ],
+    "region": "Oceania",
+    "level": 3,
     "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/85/Suva%2C_Fiji_52.jpg/500px-Suva%2C_Fiji_52.jpg",
     "photoSource": "https://commons.wikimedia.org/wiki/File:Suva%2C_Fiji_52.jpg"
   },
@@ -757,12 +525,8 @@
     "country": "Finland",
     "capital": "Helsinki",
     "code": "fi",
-    "distractors": [
-      "Asunci\u00f3n",
-      "Andorra la Vella",
-      "Dodoma",
-      "Conakry"
-    ],
+    "region": "Europe",
+    "level": 1,
     "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9b/Helsinki_Lutheran_Cathedral_%28panoraaman%C3%A4k%C3%B6ala%29-2_%28s%C3%A4%C3%A4t%C3%B6%29.jpg/500px-Helsinki_Lutheran_Cathedral_%28panoraaman%C3%A4k%C3%B6ala%29-2_%28s%C3%A4%C3%A4t%C3%B6%29.jpg",
     "photoSource": "https://commons.wikimedia.org/wiki/File:Helsinki_Lutheran_Cathedral_%28panoraaman%C3%A4k%C3%B6ala%29-2_%28s%C3%A4%C3%A4t%C3%B6%29.jpg"
   },
@@ -770,12 +534,8 @@
     "country": "France",
     "capital": "Paris",
     "code": "fr",
-    "distractors": [
-      "Freetown",
-      "Luanda",
-      "Oslo",
-      "Prague"
-    ],
+    "region": "Europe",
+    "level": 1,
     "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4b/La_Tour_Eiffel_vue_de_la_Tour_Saint-Jacques%2C_Paris_ao%C3%BBt_2014_%282%29.jpg/500px-La_Tour_Eiffel_vue_de_la_Tour_Saint-Jacques%2C_Paris_ao%C3%BBt_2014_%282%29.jpg",
     "photoSource": "https://commons.wikimedia.org/wiki/File:La_Tour_Eiffel_vue_de_la_Tour_Saint-Jacques%2C_Paris_ao%C3%BBt_2014_%282%29.jpg"
   },
@@ -783,12 +543,8 @@
     "country": "Gabon",
     "capital": "Libreville",
     "code": "ga",
-    "distractors": [
-      "Muscat",
-      "Canberra",
-      "Suva",
-      "Tbilisi"
-    ],
+    "region": "Africa",
+    "level": 4,
     "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/54/Libreville1.jpg/500px-Libreville1.jpg",
     "photoSource": "https://commons.wikimedia.org/wiki/File:Libreville1.jpg"
   },
@@ -796,12 +552,8 @@
     "country": "Gambia",
     "capital": "Banjul",
     "code": "gm",
-    "distractors": [
-      "Tokyo",
-      "Riga",
-      "Asunci\u00f3n",
-      "Kuala Lumpur"
-    ],
+    "region": "Africa",
+    "level": 4,
     "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/35/Banjul_Gambia_skyline.jpg/500px-Banjul_Gambia_skyline.jpg",
     "photoSource": "https://commons.wikimedia.org/wiki/File:Banjul_Gambia_skyline.jpg"
   },
@@ -809,12 +561,8 @@
     "country": "Georgia",
     "capital": "Tbilisi",
     "code": "ge",
-    "distractors": [
-      "Belgrade",
-      "Addis Ababa",
-      "Naypyidaw",
-      "New Delhi"
-    ],
+    "region": "Asia",
+    "level": 2,
     "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/45/View_of_Tbilisi_from_Tabori_Church_2023-10-08-2.jpg/500px-View_of_Tbilisi_from_Tabori_Church_2023-10-08-2.jpg",
     "photoSource": "https://commons.wikimedia.org/wiki/File:View_of_Tbilisi_from_Tabori_Church_2023-10-08-2.jpg"
   },
@@ -822,12 +570,8 @@
     "country": "Germany",
     "capital": "Berlin",
     "code": "de",
-    "distractors": [
-      "Nicosia",
-      "Harare",
-      "Kingston",
-      "Panama City"
-    ],
+    "region": "Europe",
+    "level": 1,
     "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/83/Cityscape_Berlin.jpg/500px-Cityscape_Berlin.jpg",
     "photoSource": "https://commons.wikimedia.org/wiki/File:Cityscape_Berlin.jpg"
   },
@@ -835,12 +579,8 @@
     "country": "Ghana",
     "capital": "Accra",
     "code": "gh",
-    "distractors": [
-      "Dushanbe",
-      "Minsk",
-      "Dublin",
-      "Riga"
-    ],
+    "region": "Africa",
+    "level": 2,
     "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a6/Accra_town.jpg/500px-Accra_town.jpg",
     "photoSource": "https://commons.wikimedia.org/wiki/File:Accra_town.jpg"
   },
@@ -848,12 +588,8 @@
     "country": "Greece",
     "capital": "Athens",
     "code": "gr",
-    "distractors": [
-      "Bern",
-      "Rome",
-      "Freetown",
-      "Vaduz"
-    ],
+    "region": "Europe",
+    "level": 1,
     "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/65/Akropolis_2015.jpg/500px-Akropolis_2015.jpg",
     "photoSource": "https://commons.wikimedia.org/wiki/File:Akropolis_2015.jpg"
   },
@@ -861,12 +597,8 @@
     "country": "Grenada",
     "capital": "St. George's",
     "code": "gd",
-    "distractors": [
-      "Luxembourg",
-      "Santiago",
-      "Bucharest",
-      "Ottawa"
-    ],
+    "region": "North America",
+    "level": 4,
     "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f4/Grenada_-_St._George.jpg/500px-Grenada_-_St._George.jpg",
     "photoSource": "https://commons.wikimedia.org/wiki/File:Grenada_-_St._George.jpg"
   },
@@ -874,12 +606,8 @@
     "country": "Guatemala",
     "capital": "Guatemala City",
     "code": "gt",
-    "distractors": [
-      "Asmara",
-      "Port-au-Prince",
-      "Berlin",
-      "Luxembourg"
-    ],
+    "region": "North America",
+    "level": 2,
     "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/49/Buildings_in_Guatemala_City.jpg/500px-Buildings_in_Guatemala_City.jpg",
     "photoSource": "https://commons.wikimedia.org/wiki/File:Buildings_in_Guatemala_City.jpg"
   },
@@ -887,12 +615,8 @@
     "country": "Guinea",
     "capital": "Conakry",
     "code": "gn",
-    "distractors": [
-      "Mbabane",
-      "Nouakchott",
-      "Kuwait City",
-      "Thimphu"
-    ],
+    "region": "Africa",
+    "level": 4,
     "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/42/Un_aper%C3%A7u_de_la_ville_de_conakry.jpg/500px-Un_aper%C3%A7u_de_la_ville_de_conakry.jpg",
     "photoSource": "https://commons.wikimedia.org/wiki/File:Un_aper%C3%A7u_de_la_ville_de_conakry.jpg"
   },
@@ -900,12 +624,8 @@
     "country": "Guinea-Bissau",
     "capital": "Bissau",
     "code": "gw",
-    "distractors": [
-      "Sofia",
-      "Bangkok",
-      "Berlin",
-      "Kampala"
-    ],
+    "region": "Africa",
+    "level": 3,
     "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/65/20130610_-_Monumento_aos_Her%C3%B3is_da_Independ%C3%AAncia.jpg/500px-20130610_-_Monumento_aos_Her%C3%B3is_da_Independ%C3%AAncia.jpg",
     "photoSource": "https://commons.wikimedia.org/wiki/File:20130610_-_Monumento_aos_Her%C3%B3is_da_Independ%C3%AAncia.jpg"
   },
@@ -913,12 +633,8 @@
     "country": "Guyana",
     "capital": "Georgetown",
     "code": "gy",
-    "distractors": [
-      "Montevideo",
-      "Port-au-Prince",
-      "Tashkent",
-      "Thimphu"
-    ],
+    "region": "South America",
+    "level": 3,
     "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/85/St_George%27s_Cathedral.jpg/500px-St_George%27s_Cathedral.jpg",
     "photoSource": "https://commons.wikimedia.org/wiki/File:St_George%27s_Cathedral.jpg"
   },
@@ -926,12 +642,8 @@
     "country": "Haiti",
     "capital": "Port-au-Prince",
     "code": "ht",
-    "distractors": [
-      "Mbabane",
-      "Maseru",
-      "Bogot\u00e1",
-      "Lima"
-    ],
+    "region": "North America",
+    "level": 2,
     "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3a/US_Navy_100221-N-5787K-002_An_aerial_view_of_the_logistical_area_near_the_port_in_Port-au-Prince_%28cropped%29.jpg/500px-US_Navy_100221-N-5787K-002_An_aerial_view_of_the_logistical_area_near_the_port_in_Port-au-Prince_%28cropped%29.jpg",
     "photoSource": "https://commons.wikimedia.org/wiki/File:US_Navy_100221-N-5787K-002_An_aerial_view_of_the_logistical_area_near_the_port_in_Port-au-Prince_%28cropped%29.jpg"
   },
@@ -939,12 +651,8 @@
     "country": "Honduras",
     "capital": "Tegucigalpa",
     "code": "hn",
-    "distractors": [
-      "Pretoria",
-      "Madrid",
-      "Jerusalem",
-      "Funafuti"
-    ],
+    "region": "North America",
+    "level": 3,
     "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2c/Centro_historico_de_Tegucigalpa_y_Comayag%C3%BCela.jpg/500px-Centro_historico_de_Tegucigalpa_y_Comayag%C3%BCela.jpg",
     "photoSource": "https://commons.wikimedia.org/wiki/File:Centro_historico_de_Tegucigalpa_y_Comayag%C3%BCela.jpg"
   },
@@ -952,12 +660,8 @@
     "country": "Hungary",
     "capital": "Budapest",
     "code": "hu",
-    "distractors": [
-      "Gaborone",
-      "Dublin",
-      "Islamabad",
-      "Manama"
-    ],
+    "region": "Europe",
+    "level": 1,
     "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9d/Budapest%2C_Hungary_%28explored%29_%2814995308504%29.jpg/500px-Budapest%2C_Hungary_%28explored%29_%2814995308504%29.jpg",
     "photoSource": "https://commons.wikimedia.org/wiki/File:Budapest%2C_Hungary_%28explored%29_%2814995308504%29.jpg"
   },
@@ -965,12 +669,8 @@
     "country": "Iceland",
     "capital": "Reykjav\u00edk",
     "code": "is",
-    "distractors": [
-      "Pyongyang",
-      "Valletta",
-      "Montevideo",
-      "Vaduz"
-    ],
+    "region": "Europe",
+    "level": 1,
     "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cd/Reykjav%C3%ADk_5545_%28cropped%29.JPG/500px-Reykjav%C3%ADk_5545_%28cropped%29.JPG",
     "photoSource": "https://commons.wikimedia.org/wiki/File:Reykjav%C3%ADk_5545_%28cropped%29.JPG"
   },
@@ -978,12 +678,8 @@
     "country": "India",
     "capital": "New Delhi",
     "code": "in",
-    "distractors": [
-      "Amsterdam",
-      "Santo Domingo",
-      "Bucharest",
-      "Rabat"
-    ],
+    "region": "Asia",
+    "level": 1,
     "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bf/India_Gate_Legendary_Saga_Of_Supreme_Sacrifice.jpg/500px-India_Gate_Legendary_Saga_Of_Supreme_Sacrifice.jpg",
     "photoSource": "https://commons.wikimedia.org/wiki/File:India_Gate_Legendary_Saga_Of_Supreme_Sacrifice.jpg"
   },
@@ -991,12 +687,8 @@
     "country": "Indonesia",
     "capital": "Jakarta",
     "code": "id",
-    "distractors": [
-      "Wellington",
-      "Yaren",
-      "Vilnius",
-      "Riyadh"
-    ],
+    "region": "Asia",
+    "level": 1,
     "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/98/Jakarta.jpg/500px-Jakarta.jpg",
     "photoSource": "https://commons.wikimedia.org/wiki/File:Jakarta.jpg"
   },
@@ -1004,12 +696,8 @@
     "country": "Iran",
     "capital": "Tehran",
     "code": "ir",
-    "distractors": [
-      "Nairobi",
-      "Riyadh",
-      "Caracas",
-      "Sana'a"
-    ],
+    "region": "Asia",
+    "level": 1,
     "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6a/North_of_tehran.jpg/500px-North_of_tehran.jpg",
     "photoSource": "https://commons.wikimedia.org/wiki/File:North_of_tehran.jpg"
   },
@@ -1017,12 +705,8 @@
     "country": "Iraq",
     "capital": "Baghdad",
     "code": "iq",
-    "distractors": [
-      "Stockholm",
-      "Algiers",
-      "Ouagadougou",
-      "Skopje"
-    ],
+    "region": "Asia",
+    "level": 1,
     "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4b/5628442718_b10fc2c47f_o.jpg/500px-5628442718_b10fc2c47f_o.jpg",
     "photoSource": "https://commons.wikimedia.org/wiki/File:5628442718_b10fc2c47f_o.jpg"
   },
@@ -1030,12 +714,8 @@
     "country": "Ireland",
     "capital": "Dublin",
     "code": "ie",
-    "distractors": [
-      "Bandar Seri Begawan",
-      "Suva",
-      "Ashgabat",
-      "Banjul"
-    ],
+    "region": "Europe",
+    "level": 1,
     "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/92/Dublin_-_aerial_-_2025-07-07_01.jpg/500px-Dublin_-_aerial_-_2025-07-07_01.jpg",
     "photoSource": "https://commons.wikimedia.org/wiki/File:Dublin_-_aerial_-_2025-07-07_01.jpg"
   },
@@ -1043,12 +723,8 @@
     "country": "Israel",
     "capital": "Jerusalem",
     "code": "il",
-    "distractors": [
-      "Addis Ababa",
-      "Oslo",
-      "Reykjav\u00edk",
-      "Bras\u00edlia"
-    ],
+    "region": "Asia",
+    "level": 2,
     "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/86/Dome_of_the_Rock_seen_from_the_Mount_of_Olives_%2812395649153%29_%28cropped%29.jpg/500px-Dome_of_the_Rock_seen_from_the_Mount_of_Olives_%2812395649153%29_%28cropped%29.jpg",
     "photoSource": "https://commons.wikimedia.org/wiki/File:Dome_of_the_Rock_seen_from_the_Mount_of_Olives_%2812395649153%29_%28cropped%29.jpg"
   },
@@ -1056,12 +732,8 @@
     "country": "Italy",
     "capital": "Rome",
     "code": "it",
-    "distractors": [
-      "Naypyidaw",
-      "Bandar Seri Begawan",
-      "Bridgetown",
-      "Conakry"
-    ],
+    "region": "Europe",
+    "level": 1,
     "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f5/Rome_Skyline_%288012016319%29.jpg/500px-Rome_Skyline_%288012016319%29.jpg",
     "photoSource": "https://commons.wikimedia.org/wiki/File:Rome_Skyline_%288012016319%29.jpg"
   },
@@ -1069,12 +741,8 @@
     "country": "Jamaica",
     "capital": "Kingston",
     "code": "jm",
-    "distractors": [
-      "Paramaribo",
-      "Yaound\u00e9",
-      "Luanda",
-      "Riyadh"
-    ],
+    "region": "North America",
+    "level": 2,
     "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/PortofKingston.jpg/500px-PortofKingston.jpg",
     "photoSource": "https://commons.wikimedia.org/wiki/File:PortofKingston.jpg"
   },
@@ -1082,12 +750,8 @@
     "country": "Japan",
     "capital": "Tokyo",
     "code": "jp",
-    "distractors": [
-      "Funafuti",
-      "Athens",
-      "Amsterdam",
-      "Kingston"
-    ],
+    "region": "Asia",
+    "level": 1,
     "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/dc/Skyscrapers_of_Shinjuku_2009_January_%28revised%29.jpg/500px-Skyscrapers_of_Shinjuku_2009_January_%28revised%29.jpg",
     "photoSource": "https://commons.wikimedia.org/wiki/File:Skyscrapers_of_Shinjuku_2009_January_%28revised%29.jpg"
   },
@@ -1095,12 +759,8 @@
     "country": "Jordan",
     "capital": "Amman",
     "code": "jo",
-    "distractors": [
-      "Kathmandu",
-      "Oslo",
-      "Reykjav\u00edk",
-      "Jakarta"
-    ],
+    "region": "Asia",
+    "level": 2,
     "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/66/Amman.jpg/500px-Amman.jpg",
     "photoSource": "https://commons.wikimedia.org/wiki/File:Amman.jpg"
   },
@@ -1108,12 +768,8 @@
     "country": "Kazakhstan",
     "capital": "Astana",
     "code": "kz",
-    "distractors": [
-      "Rome",
-      "Sofia",
-      "Mal\u00e9",
-      "Taipei"
-    ],
+    "region": "Asia",
+    "level": 3,
     "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ee/Trip_to_Astana_%282015-10-24%29_01.jpg/500px-Trip_to_Astana_%282015-10-24%29_01.jpg",
     "photoSource": "https://commons.wikimedia.org/wiki/File:Trip_to_Astana_%282015-10-24%29_01.jpg"
   },
@@ -1121,12 +777,8 @@
     "country": "Kenya",
     "capital": "Nairobi",
     "code": "ke",
-    "distractors": [
-      "Baghdad",
-      "Hanoi",
-      "Nicosia",
-      "Mogadishu"
-    ],
+    "region": "Africa",
+    "level": 1,
     "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/08/Nairobi%2C_view_from_KICC.JPG/500px-Nairobi%2C_view_from_KICC.JPG",
     "photoSource": "https://commons.wikimedia.org/wiki/File:Nairobi%2C_view_from_KICC.JPG"
   },
@@ -1134,12 +786,8 @@
     "country": "Kiribati",
     "capital": "Tarawa",
     "code": "ki",
-    "distractors": [
-      "Dushanbe",
-      "Beirut",
-      "Baku",
-      "Lilongwe"
-    ],
+    "region": "Oceania",
+    "level": 4,
     "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b5/South_Tarawa_from_the_air.jpg/500px-South_Tarawa_from_the_air.jpg",
     "photoSource": "https://commons.wikimedia.org/wiki/File:South_Tarawa_from_the_air.jpg"
   },
@@ -1147,12 +795,8 @@
     "country": "Kuwait",
     "capital": "Kuwait City",
     "code": "kw",
-    "distractors": [
-      "Tirana",
-      "Victoria",
-      "Baku",
-      "Vatican City"
-    ],
+    "region": "Asia",
+    "level": 2,
     "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/da/LiberationTower.jpg/500px-LiberationTower.jpg",
     "photoSource": "https://commons.wikimedia.org/wiki/File:LiberationTower.jpg"
   },
@@ -1160,12 +804,8 @@
     "country": "Kyrgyzstan",
     "capital": "Bishkek",
     "code": "kg",
-    "distractors": [
-      "Mexico City",
-      "Amsterdam",
-      "Jerusalem",
-      "Sri Jayawardenepura Kotte"
-    ],
+    "region": "Asia",
+    "level": 4,
     "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/42/Bishkek_City%27s_business_center.jpg/500px-Bishkek_City%27s_business_center.jpg",
     "photoSource": "https://commons.wikimedia.org/wiki/File:Bishkek_City%27s_business_center.jpg"
   },
@@ -1173,12 +813,8 @@
     "country": "Laos",
     "capital": "Vientiane",
     "code": "la",
-    "distractors": [
-      "Paramaribo",
-      "Port Moresby",
-      "Asunci\u00f3n",
-      "Tashkent"
-    ],
+    "region": "Asia",
+    "level": 3,
     "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/28/20171118_Vientiane_3220_DxO.jpg/500px-20171118_Vientiane_3220_DxO.jpg",
     "photoSource": "https://commons.wikimedia.org/wiki/File:20171118_Vientiane_3220_DxO.jpg"
   },
@@ -1186,12 +822,8 @@
     "country": "Latvia",
     "capital": "Riga",
     "code": "lv",
-    "distractors": [
-      "Asmara",
-      "Montevideo",
-      "Monrovia",
-      "Port Moresby"
-    ],
+    "region": "Europe",
+    "level": 2,
     "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2b/Vistas_desde_la_iglesia_de_San_Pedro%2C_Riga%2C_Letonia%2C_2012-08-07%2C_DD_12.JPG/500px-Vistas_desde_la_iglesia_de_San_Pedro%2C_Riga%2C_Letonia%2C_2012-08-07%2C_DD_12.JPG",
     "photoSource": "https://commons.wikimedia.org/wiki/File:Vistas_desde_la_iglesia_de_San_Pedro%2C_Riga%2C_Letonia%2C_2012-08-07%2C_DD_12.JPG"
   },
@@ -1199,12 +831,8 @@
     "country": "Lebanon",
     "capital": "Beirut",
     "code": "lb",
-    "distractors": [
-      "Bridgetown",
-      "Kabul",
-      "Ankara",
-      "Tbilisi"
-    ],
+    "region": "Asia",
+    "level": 1,
     "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/db/Beirutcity.jpg/500px-Beirutcity.jpg",
     "photoSource": "https://commons.wikimedia.org/wiki/File:Beirutcity.jpg"
   },
@@ -1212,12 +840,8 @@
     "country": "Lesotho",
     "capital": "Maseru",
     "code": "ls",
-    "distractors": [
-      "Belgrade",
-      "Yaound\u00e9",
-      "Tokyo",
-      "Chi\u0219in\u0103u"
-    ],
+    "region": "Africa",
+    "level": 4,
     "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/09/Maseru_from_Parliament_Hill.jpg/500px-Maseru_from_Parliament_Hill.jpg",
     "photoSource": "https://commons.wikimedia.org/wiki/File:Maseru_from_Parliament_Hill.jpg"
   },
@@ -1225,12 +849,8 @@
     "country": "Liberia",
     "capital": "Monrovia",
     "code": "lr",
-    "distractors": [
-      "Nairobi",
-      "Dublin",
-      "Lusaka",
-      "Caracas"
-    ],
+    "region": "Africa",
+    "level": 3,
     "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/25/Liberia%2C_Africa_-_panoramio_%28256%29.jpg/500px-Liberia%2C_Africa_-_panoramio_%28256%29.jpg",
     "photoSource": "https://commons.wikimedia.org/wiki/File:Liberia%2C_Africa_-_panoramio_%28256%29.jpg"
   },
@@ -1238,12 +858,8 @@
     "country": "Libya",
     "capital": "Tripoli",
     "code": "ly",
-    "distractors": [
-      "Beirut",
-      "Valletta",
-      "Suva",
-      "Buenos Aires"
-    ],
+    "region": "Africa",
+    "level": 2,
     "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4e/Marcus_Aurelius_Arch_Tripoli_Libya.jpg/500px-Marcus_Aurelius_Arch_Tripoli_Libya.jpg",
     "photoSource": "https://commons.wikimedia.org/wiki/File:Marcus_Aurelius_Arch_Tripoli_Libya.jpg"
   },
@@ -1251,12 +867,8 @@
     "country": "Liechtenstein",
     "capital": "Vaduz",
     "code": "li",
-    "distractors": [
-      "Riga",
-      "Warsaw",
-      "Manila",
-      "Luxembourg"
-    ],
+    "region": "Europe",
+    "level": 4,
     "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9b/View_of_Vaduz.jpg/500px-View_of_Vaduz.jpg",
     "photoSource": "https://commons.wikimedia.org/wiki/File:View_of_Vaduz.jpg"
   },
@@ -1264,12 +876,8 @@
     "country": "Lithuania",
     "capital": "Vilnius",
     "code": "lt",
-    "distractors": [
-      "Tallinn",
-      "Manila",
-      "Yerevan",
-      "Brussels"
-    ],
+    "region": "Europe",
+    "level": 2,
     "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9d/Gedimino_pilis_by_Augustas_Didzgalvis.jpg/500px-Gedimino_pilis_by_Augustas_Didzgalvis.jpg",
     "photoSource": "https://commons.wikimedia.org/wiki/File:Gedimino_pilis_by_Augustas_Didzgalvis.jpg"
   },
@@ -1277,12 +885,8 @@
     "country": "Luxembourg",
     "capital": "Luxembourg",
     "code": "lu",
-    "distractors": [
-      "Buenos Aires",
-      "Maseru",
-      "Freetown",
-      "Manila"
-    ],
+    "region": "Europe",
+    "level": 2,
     "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e3/Luxembourg_City_Hall_%2854540726309%29.jpg/500px-Luxembourg_City_Hall_%2854540726309%29.jpg",
     "photoSource": "https://commons.wikimedia.org/wiki/File:Luxembourg_City_Hall_%2854540726309%29.jpg"
   },
@@ -1290,12 +894,8 @@
     "country": "Madagascar",
     "capital": "Antananarivo",
     "code": "mg",
-    "distractors": [
-      "Vatican City",
-      "Port-au-Prince",
-      "London",
-      "Moroni"
-    ],
+    "region": "Africa",
+    "level": 3,
     "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b5/Lake_Anosy%2C_Central_Antananarivo%2C_Capital_of_Madagascar%2C_Photo_by_Sascha_Grabow.jpg/500px-Lake_Anosy%2C_Central_Antananarivo%2C_Capital_of_Madagascar%2C_Photo_by_Sascha_Grabow.jpg",
     "photoSource": "https://commons.wikimedia.org/wiki/File:Lake_Anosy%2C_Central_Antananarivo%2C_Capital_of_Madagascar%2C_Photo_by_Sascha_Grabow.jpg"
   },
@@ -1303,12 +903,8 @@
     "country": "Malawi",
     "capital": "Lilongwe",
     "code": "mw",
-    "distractors": [
-      "Mbabane",
-      "Bras\u00edlia",
-      "Hanoi",
-      "Moscow"
-    ],
+    "region": "Africa",
+    "level": 4,
     "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Lilongwe_Area_2.jpg/500px-Lilongwe_Area_2.jpg",
     "photoSource": "https://commons.wikimedia.org/wiki/File:Lilongwe_Area_2.jpg"
   },
@@ -1316,12 +912,8 @@
     "country": "Malaysia",
     "capital": "Kuala Lumpur",
     "code": "my",
-    "distractors": [
-      "Basseterre",
-      "Bern",
-      "Victoria",
-      "Yaound\u00e9"
-    ],
+    "region": "Asia",
+    "level": 1,
     "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d0/Kl-skyline-at-night-2022.jpg/500px-Kl-skyline-at-night-2022.jpg",
     "photoSource": "https://commons.wikimedia.org/wiki/File:Kl-skyline-at-night-2022.jpg"
   },
@@ -1329,12 +921,8 @@
     "country": "Maldives",
     "capital": "Mal\u00e9",
     "code": "mv",
-    "distractors": [
-      "N'Djamena",
-      "Funafuti",
-      "Bishkek",
-      "Kingstown"
-    ],
+    "region": "Asia",
+    "level": 3,
     "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b4/Male-total.jpg/500px-Male-total.jpg",
     "photoSource": "https://commons.wikimedia.org/wiki/File:Male-total.jpg"
   },
@@ -1342,12 +930,8 @@
     "country": "Mali",
     "capital": "Bamako",
     "code": "ml",
-    "distractors": [
-      "Monaco",
-      "Victoria",
-      "Maseru",
-      "Dili"
-    ],
+    "region": "Africa",
+    "level": 3,
     "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e5/Bamako_ACI_2000_Aeriel.jpg/500px-Bamako_ACI_2000_Aeriel.jpg",
     "photoSource": "https://commons.wikimedia.org/wiki/File:Bamako_ACI_2000_Aeriel.jpg"
   },
@@ -1355,12 +939,8 @@
     "country": "Malta",
     "capital": "Valletta",
     "code": "mt",
-    "distractors": [
-      "Port Moresby",
-      "Baku",
-      "Riga",
-      "Lima"
-    ],
+    "region": "Europe",
+    "level": 2,
     "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/29/Malta%2C_2010_-_panoramio_-_Bengt_Nyman_%2823%29.jpg/500px-Malta%2C_2010_-_panoramio_-_Bengt_Nyman_%2823%29.jpg",
     "photoSource": "https://commons.wikimedia.org/wiki/File:Malta%2C_2010_-_panoramio_-_Bengt_Nyman_%2823%29.jpg"
   },
@@ -1368,12 +948,8 @@
     "country": "Marshall Islands",
     "capital": "Majuro",
     "code": "mh",
-    "distractors": [
-      "Beirut",
-      "New Delhi",
-      "Accra",
-      "Tripoli"
-    ],
+    "region": "Oceania",
+    "level": 4,
     "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/67/Majuro_main_road.jpg/500px-Majuro_main_road.jpg",
     "photoSource": "https://commons.wikimedia.org/wiki/File:Majuro_main_road.jpg"
   },
@@ -1381,12 +957,8 @@
     "country": "Mauritania",
     "capital": "Nouakchott",
     "code": "mr",
-    "distractors": [
-      "Abuja",
-      "Buenos Aires",
-      "Bridgetown",
-      "Damascus"
-    ],
+    "region": "Africa",
+    "level": 4,
     "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/83/15-Nouakchott-eH-R0058185.jpg/500px-15-Nouakchott-eH-R0058185.jpg",
     "photoSource": "https://commons.wikimedia.org/wiki/File:15-Nouakchott-eH-R0058185.jpg"
   },
@@ -1394,12 +966,8 @@
     "country": "Mauritius",
     "capital": "Port Louis",
     "code": "mu",
-    "distractors": [
-      "Abu Dhabi",
-      "Yaound\u00e9",
-      "Georgetown",
-      "Moscow"
-    ],
+    "region": "Africa",
+    "level": 3,
     "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8d/Mauritius_port_louis.jpg/500px-Mauritius_port_louis.jpg",
     "photoSource": "https://commons.wikimedia.org/wiki/File:Mauritius_port_louis.jpg"
   },
@@ -1407,12 +975,8 @@
     "country": "Mexico",
     "capital": "Mexico City",
     "code": "mx",
-    "distractors": [
-      "Mogadishu",
-      "Rabat",
-      "Dushanbe",
-      "San Salvador"
-    ],
+    "region": "North America",
+    "level": 1,
     "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/Sobrevuelos_CDMX_HJ2A5091_%2840386338731%29.jpg/500px-Sobrevuelos_CDMX_HJ2A5091_%2840386338731%29.jpg",
     "photoSource": "https://commons.wikimedia.org/wiki/File:Sobrevuelos_CDMX_HJ2A5091_%2840386338731%29.jpg"
   },
@@ -1420,12 +984,8 @@
     "country": "Micronesia",
     "capital": "Palikir",
     "code": "fm",
-    "distractors": [
-      "Panama City",
-      "Tirana",
-      "Kinshasa",
-      "Djibouti"
-    ],
+    "region": "Oceania",
+    "level": 4,
     "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1a/Palikir_Government_Buildings.jpg/500px-Palikir_Government_Buildings.jpg",
     "photoSource": "https://commons.wikimedia.org/wiki/File:Palikir_Government_Buildings.jpg"
   },
@@ -1433,12 +993,8 @@
     "country": "Moldova",
     "capital": "Chi\u0219in\u0103u",
     "code": "md",
-    "distractors": [
-      "Astana",
-      "Ouagadougou",
-      "Maseru",
-      "Managua"
-    ],
+    "region": "Europe",
+    "level": 3,
     "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/52/Arch_of_Triumph%2C_Chisinau%2C_Republic_of_Moldova_%2851160304626_cropped%29.jpg/500px-Arch_of_Triumph%2C_Chisinau%2C_Republic_of_Moldova_%2851160304626_cropped%29.jpg",
     "photoSource": "https://commons.wikimedia.org/wiki/File:Arch_of_Triumph%2C_Chisinau%2C_Republic_of_Moldova_%2851160304626_cropped%29.jpg"
   },
@@ -1446,12 +1002,8 @@
     "country": "Monaco",
     "capital": "Monaco",
     "code": "mc",
-    "distractors": [
-      "Damascus",
-      "Bras\u00edlia",
-      "Muscat",
-      "Yaren"
-    ],
+    "region": "Europe",
+    "level": 2,
     "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/da/Panorama_von_Monaco-La_Turbie.jpg/500px-Panorama_von_Monaco-La_Turbie.jpg",
     "photoSource": "https://commons.wikimedia.org/wiki/File:Panorama_von_Monaco-La_Turbie.jpg"
   },
@@ -1459,12 +1011,8 @@
     "country": "Mongolia",
     "capital": "Ulaanbaatar",
     "code": "mn",
-    "distractors": [
-      "Singapore",
-      "Rome",
-      "Dushanbe",
-      "Ashgabat"
-    ],
+    "region": "Asia",
+    "level": 2,
     "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c2/UB_downtown.jpg/500px-UB_downtown.jpg",
     "photoSource": "https://commons.wikimedia.org/wiki/File:UB_downtown.jpg"
   },
@@ -1472,12 +1020,8 @@
     "country": "Montenegro",
     "capital": "Podgorica",
     "code": "me",
-    "distractors": [
-      "Belmopan",
-      "Rabat",
-      "Tehran",
-      "Djibouti"
-    ],
+    "region": "Europe",
+    "level": 3,
     "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6d/Titograd.jpg/500px-Titograd.jpg",
     "photoSource": "https://commons.wikimedia.org/wiki/File:Titograd.jpg"
   },
@@ -1485,12 +1029,8 @@
     "country": "Morocco",
     "capital": "Rabat",
     "code": "ma",
-    "distractors": [
-      "Zagreb",
-      "N'Djamena",
-      "Mbabane",
-      "Dublin"
-    ],
+    "region": "Africa",
+    "level": 2,
     "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/85/Kasbah_des_Oudaias_P1060356.JPG/500px-Kasbah_des_Oudaias_P1060356.JPG",
     "photoSource": "https://commons.wikimedia.org/wiki/File:Kasbah_des_Oudaias_P1060356.JPG"
   },
@@ -1498,12 +1038,8 @@
     "country": "Mozambique",
     "capital": "Maputo",
     "code": "mz",
-    "distractors": [
-      "Kuala Lumpur",
-      "Ngerulmud",
-      "Algiers",
-      "Tokyo"
-    ],
+    "region": "Africa",
+    "level": 3,
     "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9f/Museu_de_Hist%C3%B3ria_Natural_%28cropped%29.jpg/500px-Museu_de_Hist%C3%B3ria_Natural_%28cropped%29.jpg",
     "photoSource": "https://commons.wikimedia.org/wiki/File:Museu_de_Hist%C3%B3ria_Natural_%28cropped%29.jpg"
   },
@@ -1511,12 +1047,8 @@
     "country": "Myanmar",
     "capital": "Naypyidaw",
     "code": "mm",
-    "distractors": [
-      "Georgetown",
-      "Taipei",
-      "Lusaka",
-      "Ottawa"
-    ],
+    "region": "Asia",
+    "level": 3,
     "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/19/Naypyidaw_--_Water_Fountain_Garden.JPG/500px-Naypyidaw_--_Water_Fountain_Garden.JPG",
     "photoSource": "https://commons.wikimedia.org/wiki/File:Naypyidaw_--_Water_Fountain_Garden.JPG"
   },
@@ -1524,12 +1056,8 @@
     "country": "Namibia",
     "capital": "Windhoek",
     "code": "na",
-    "distractors": [
-      "Hanoi",
-      "Antananarivo",
-      "Suva",
-      "Bern"
-    ],
+    "region": "Africa",
+    "level": 3,
     "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a1/Windhoek-Skyline.jpg/500px-Windhoek-Skyline.jpg",
     "photoSource": "https://commons.wikimedia.org/wiki/File:Windhoek-Skyline.jpg"
   },
@@ -1537,12 +1065,8 @@
     "country": "Nauru",
     "capital": "Yaren",
     "code": "nr",
-    "distractors": [
-      "Managua",
-      "Abuja",
-      "Paramaribo",
-      "Beijing"
-    ],
+    "region": "Oceania",
+    "level": 4,
     "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cc/Nauru-parliament.jpg/500px-Nauru-parliament.jpg",
     "photoSource": "https://commons.wikimedia.org/wiki/File:Nauru-parliament.jpg"
   },
@@ -1550,12 +1074,8 @@
     "country": "Nepal",
     "capital": "Kathmandu",
     "code": "np",
-    "distractors": [
-      "Kyiv",
-      "Doha",
-      "Maseru",
-      "Stockholm"
-    ],
+    "region": "Asia",
+    "level": 2,
     "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c8/Kathmandu_Avion_01.JPG/500px-Kathmandu_Avion_01.JPG",
     "photoSource": "https://commons.wikimedia.org/wiki/File:Kathmandu_Avion_01.JPG"
   },
@@ -1563,12 +1083,8 @@
     "country": "Netherlands",
     "capital": "Amsterdam",
     "code": "nl",
-    "distractors": [
-      "Islamabad",
-      "Port-au-Prince",
-      "Pretoria",
-      "Kingston"
-    ],
+    "region": "Europe",
+    "level": 1,
     "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/af/Amsterdam_airphoto.jpg/500px-Amsterdam_airphoto.jpg",
     "photoSource": "https://commons.wikimedia.org/wiki/File:Amsterdam_airphoto.jpg"
   },
@@ -1576,12 +1092,8 @@
     "country": "New Zealand",
     "capital": "Wellington",
     "code": "nz",
-    "distractors": [
-      "Nouakchott",
-      "Port-au-Prince",
-      "Ulaanbaatar",
-      "Conakry"
-    ],
+    "region": "Oceania",
+    "level": 2,
     "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5d/WellingtonPanorama.jpg/500px-WellingtonPanorama.jpg",
     "photoSource": "https://commons.wikimedia.org/wiki/File:WellingtonPanorama.jpg"
   },
@@ -1589,12 +1101,8 @@
     "country": "Nicaragua",
     "capital": "Managua",
     "code": "ni",
-    "distractors": [
-      "Tirana",
-      "Tehran",
-      "Lom\u00e9",
-      "Kingstown"
-    ],
+    "region": "North America",
+    "level": 3,
     "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3c/Managua_skyline.jpg/500px-Managua_skyline.jpg",
     "photoSource": "https://commons.wikimedia.org/wiki/File:Managua_skyline.jpg"
   },
@@ -1602,12 +1110,8 @@
     "country": "Niger",
     "capital": "Niamey",
     "code": "ne",
-    "distractors": [
-      "Honiara",
-      "Maputo",
-      "Paramaribo",
-      "Madrid"
-    ],
+    "region": "Africa",
+    "level": 4,
     "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/26/Niamey_from_grand_mosque_theatre_2006.jpg/500px-Niamey_from_grand_mosque_theatre_2006.jpg",
     "photoSource": "https://commons.wikimedia.org/wiki/File:Niamey_from_grand_mosque_theatre_2006.jpg"
   },
@@ -1615,12 +1119,8 @@
     "country": "Nigeria",
     "capital": "Abuja",
     "code": "ng",
-    "distractors": [
-      "Yaound\u00e9",
-      "Tarawa",
-      "Nicosia",
-      "Juba"
-    ],
+    "region": "Africa",
+    "level": 2,
     "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e4/The_National_Assembly_Globe.jpg/500px-The_National_Assembly_Globe.jpg",
     "photoSource": "https://commons.wikimedia.org/wiki/File:The_National_Assembly_Globe.jpg"
   },
@@ -1628,12 +1128,8 @@
     "country": "North Korea",
     "capital": "Pyongyang",
     "code": "kp",
-    "distractors": [
-      "Havana",
-      "Ulaanbaatar",
-      "Mal\u00e9",
-      "Tokyo"
-    ],
+    "region": "Asia",
+    "level": 1,
     "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5f/Panoramic_view_from_Juche_Tower.jpg/500px-Panoramic_view_from_Juche_Tower.jpg",
     "photoSource": "https://commons.wikimedia.org/wiki/File:Panoramic_view_from_Juche_Tower.jpg"
   },
@@ -1641,12 +1137,8 @@
     "country": "North Macedonia",
     "capital": "Skopje",
     "code": "mk",
-    "distractors": [
-      "Asmara",
-      "Budapest",
-      "Ankara",
-      "London"
-    ],
+    "region": "Europe",
+    "level": 3,
     "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0e/Stone_Bridge_Skopje_4.jpg/500px-Stone_Bridge_Skopje_4.jpg",
     "photoSource": "https://commons.wikimedia.org/wiki/File:Stone_Bridge_Skopje_4.jpg"
   },
@@ -1654,12 +1146,8 @@
     "country": "Norway",
     "capital": "Oslo",
     "code": "no",
-    "distractors": [
-      "Sarajevo",
-      "Bridgetown",
-      "Juba",
-      "Monaco"
-    ],
+    "region": "Europe",
+    "level": 1,
     "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Nationaltheatret_evening.jpg/500px-Nationaltheatret_evening.jpg",
     "photoSource": "https://commons.wikimedia.org/wiki/File:Nationaltheatret_evening.jpg"
   },
@@ -1667,12 +1155,8 @@
     "country": "Oman",
     "capital": "Muscat",
     "code": "om",
-    "distractors": [
-      "Yerevan",
-      "Bishkek",
-      "Conakry",
-      "Abuja"
-    ],
+    "region": "Asia",
+    "level": 2,
     "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1a/Old_city_of_Maskat.jpg/500px-Old_city_of_Maskat.jpg",
     "photoSource": "https://commons.wikimedia.org/wiki/File:Old_city_of_Maskat.jpg"
   },
@@ -1680,12 +1164,8 @@
     "country": "Pakistan",
     "capital": "Islamabad",
     "code": "pk",
-    "distractors": [
-      "Paramaribo",
-      "Tarawa",
-      "Minsk",
-      "Lima"
-    ],
+    "region": "Asia",
+    "level": 2,
     "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/73/King_Faisal_Mosque.jpg/500px-King_Faisal_Mosque.jpg",
     "photoSource": "https://commons.wikimedia.org/wiki/File:King_Faisal_Mosque.jpg"
   },
@@ -1693,23 +1173,15 @@
     "country": "Palau",
     "capital": "Ngerulmud",
     "code": "pw",
-    "distractors": [
-      "Castries",
-      "Doha",
-      "Chi\u0219in\u0103u",
-      "Georgetown"
-    ]
+    "region": "Oceania",
+    "level": 4
   },
   {
     "country": "Panama",
     "capital": "Panama City",
     "code": "pa",
-    "distractors": [
-      "Apia",
-      "Mbabane",
-      "Kingstown",
-      "Bamako"
-    ],
+    "region": "North America",
+    "level": 2,
     "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d1/Panama_City_Skyline_1.jpg/500px-Panama_City_Skyline_1.jpg",
     "photoSource": "https://commons.wikimedia.org/wiki/File:Panama_City_Skyline_1.jpg"
   },
@@ -1717,12 +1189,8 @@
     "country": "Papua New Guinea",
     "capital": "Port Moresby",
     "code": "pg",
-    "distractors": [
-      "Kyiv",
-      "New Delhi",
-      "Accra",
-      "Bogot\u00e1"
-    ],
+    "region": "Oceania",
+    "level": 3,
     "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6a/Port_Moresby_Town2_Mschlauch.jpg/500px-Port_Moresby_Town2_Mschlauch.jpg",
     "photoSource": "https://commons.wikimedia.org/wiki/File:Port_Moresby_Town2_Mschlauch.jpg"
   },
@@ -1730,12 +1198,8 @@
     "country": "Paraguay",
     "capital": "Asunci\u00f3n",
     "code": "py",
-    "distractors": [
-      "Minsk",
-      "Riga",
-      "Yaound\u00e9",
-      "Dushanbe"
-    ],
+    "region": "South America",
+    "level": 3,
     "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4b/Asunci%C3%B3n_Paraguay.jpg/500px-Asunci%C3%B3n_Paraguay.jpg",
     "photoSource": "https://commons.wikimedia.org/wiki/File:Asunci%C3%B3n_Paraguay.jpg"
   },
@@ -1743,12 +1207,8 @@
     "country": "Peru",
     "capital": "Lima",
     "code": "pe",
-    "distractors": [
-      "Dushanbe",
-      "Dhaka",
-      "Mal\u00e9",
-      "Baku"
-    ],
+    "region": "South America",
+    "level": 1,
     "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/54/Plaza_Mayor_de_Lima-1.jpg/500px-Plaza_Mayor_de_Lima-1.jpg",
     "photoSource": "https://commons.wikimedia.org/wiki/File:Plaza_Mayor_de_Lima-1.jpg"
   },
@@ -1756,12 +1216,8 @@
     "country": "Philippines",
     "capital": "Manila",
     "code": "ph",
-    "distractors": [
-      "N'Djamena",
-      "Kingstown",
-      "Jerusalem",
-      "Suva"
-    ],
+    "region": "Asia",
+    "level": 1,
     "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3a/Big_Manila.jpg/500px-Big_Manila.jpg",
     "photoSource": "https://commons.wikimedia.org/wiki/File:Big_Manila.jpg"
   },
@@ -1769,12 +1225,8 @@
     "country": "Poland",
     "capital": "Warsaw",
     "code": "pl",
-    "distractors": [
-      "Maseru",
-      "Libreville",
-      "Mal\u00e9",
-      "Paramaribo"
-    ],
+    "region": "Europe",
+    "level": 1,
     "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7a/Castle_Square_%2822346p%29.jpg/500px-Castle_Square_%2822346p%29.jpg",
     "photoSource": "https://commons.wikimedia.org/wiki/File:Castle_Square_%2822346p%29.jpg"
   },
@@ -1782,12 +1234,8 @@
     "country": "Portugal",
     "capital": "Lisbon",
     "code": "pt",
-    "distractors": [
-      "London",
-      "Kingstown",
-      "Tbilisi",
-      "Ljubljana"
-    ],
+    "region": "Europe",
+    "level": 1,
     "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f2/Lisboa_-_Portugal_%2852597836992%29.jpg/500px-Lisboa_-_Portugal_%2852597836992%29.jpg",
     "photoSource": "https://commons.wikimedia.org/wiki/File:Lisboa_-_Portugal_%2852597836992%29.jpg"
   },
@@ -1795,12 +1243,8 @@
     "country": "Qatar",
     "capital": "Doha",
     "code": "qa",
-    "distractors": [
-      "Santo Domingo",
-      "Castries",
-      "Rabat",
-      "Andorra la Vella"
-    ],
+    "region": "Asia",
+    "level": 1,
     "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/86/Doha_skyline_in_the_morning_%2812544910974%29.jpg/500px-Doha_skyline_in_the_morning_%2812544910974%29.jpg",
     "photoSource": "https://commons.wikimedia.org/wiki/File:Doha_skyline_in_the_morning_%2812544910974%29.jpg"
   },
@@ -1808,12 +1252,8 @@
     "country": "Republic of the Congo",
     "capital": "Brazzaville",
     "code": "cg",
-    "distractors": [
-      "Belmopan",
-      "Tbilisi",
-      "Podgorica",
-      "Nicosia"
-    ],
+    "region": "Africa",
+    "level": 3,
     "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2d/Brazzaville_%2850637%29.jpg/500px-Brazzaville_%2850637%29.jpg",
     "photoSource": "https://commons.wikimedia.org/wiki/File:Brazzaville_%2850637%29.jpg"
   },
@@ -1821,12 +1261,8 @@
     "country": "Romania",
     "capital": "Bucharest",
     "code": "ro",
-    "distractors": [
-      "Vatican City",
-      "Tripoli",
-      "Valletta",
-      "Manama"
-    ],
+    "region": "Europe",
+    "level": 2,
     "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d3/Bucharest-Skyline-01.jpg/500px-Bucharest-Skyline-01.jpg",
     "photoSource": "https://commons.wikimedia.org/wiki/File:Bucharest-Skyline-01.jpg"
   },
@@ -1834,12 +1270,8 @@
     "country": "Russia",
     "capital": "Moscow",
     "code": "ru",
-    "distractors": [
-      "Santiago",
-      "Monaco",
-      "Port Moresby",
-      "Ciudad de la Paz"
-    ],
+    "region": "Europe",
+    "level": 1,
     "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/85/Saint_Basil%27s_Cathedral_and_the_Red_Square.jpg/500px-Saint_Basil%27s_Cathedral_and_the_Red_Square.jpg",
     "photoSource": "https://commons.wikimedia.org/wiki/File:Saint_Basil%27s_Cathedral_and_the_Red_Square.jpg"
   },
@@ -1847,12 +1279,8 @@
     "country": "Rwanda",
     "capital": "Kigali",
     "code": "rw",
-    "distractors": [
-      "Nouakchott",
-      "Beirut",
-      "Jakarta",
-      "Algiers"
-    ],
+    "region": "Africa",
+    "level": 3,
     "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/83/Kigali2018Cropped.jpg/500px-Kigali2018Cropped.jpg",
     "photoSource": "https://commons.wikimedia.org/wiki/File:Kigali2018Cropped.jpg"
   },
@@ -1860,12 +1288,8 @@
     "country": "Saint Kitts and Nevis",
     "capital": "Basseterre",
     "code": "kn",
-    "distractors": [
-      "Kuala Lumpur",
-      "Vatican City",
-      "Bogot\u00e1",
-      "Sri Jayawardenepura Kotte"
-    ],
+    "region": "North America",
+    "level": 4,
     "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/06/Basseterre.jpeg/500px-Basseterre.jpeg",
     "photoSource": "https://commons.wikimedia.org/wiki/File:Basseterre.jpeg"
   },
@@ -1873,12 +1297,8 @@
     "country": "Saint Lucia",
     "capital": "Castries",
     "code": "lc",
-    "distractors": [
-      "Sarajevo",
-      "Reykjav\u00edk",
-      "Bangkok",
-      "Chi\u0219in\u0103u"
-    ],
+    "region": "North America",
+    "level": 4,
     "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ea/CastriesStLucia.JPG/500px-CastriesStLucia.JPG",
     "photoSource": "https://commons.wikimedia.org/wiki/File:CastriesStLucia.JPG"
   },
@@ -1886,12 +1306,8 @@
     "country": "Saint Vincent and the Grenadines",
     "capital": "Kingstown",
     "code": "vc",
-    "distractors": [
-      "Dhaka",
-      "Port of Spain",
-      "Skopje",
-      "Monaco"
-    ],
+    "region": "North America",
+    "level": 4,
     "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cb/St._Vincent%2C_Karibik_-_Kingstown_City_-_panoramio.jpg/500px-St._Vincent%2C_Karibik_-_Kingstown_City_-_panoramio.jpg",
     "photoSource": "https://commons.wikimedia.org/wiki/File:St._Vincent%2C_Karibik_-_Kingstown_City_-_panoramio.jpg"
   },
@@ -1899,12 +1315,8 @@
     "country": "Samoa",
     "capital": "Apia",
     "code": "ws",
-    "distractors": [
-      "Mbabane",
-      "Ashgabat",
-      "Manama",
-      "Minsk"
-    ],
+    "region": "Oceania",
+    "level": 3,
     "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Samoa_-_Apia_Govt_buildings.jpg/500px-Samoa_-_Apia_Govt_buildings.jpg",
     "photoSource": "https://commons.wikimedia.org/wiki/File:Samoa_-_Apia_Govt_buildings.jpg"
   },
@@ -1912,12 +1324,8 @@
     "country": "San Marino",
     "capital": "San Marino",
     "code": "sm",
-    "distractors": [
-      "Yerevan",
-      "Zagreb",
-      "Santo Domingo",
-      "Tashkent"
-    ],
+    "region": "Europe",
+    "level": 3,
     "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3d/View_of_Mount_Titano_-_San_Marino.jpg/500px-View_of_Mount_Titano_-_San_Marino.jpg",
     "photoSource": "https://commons.wikimedia.org/wiki/File:View_of_Mount_Titano_-_San_Marino.jpg"
   },
@@ -1925,12 +1333,8 @@
     "country": "S\u00e3o Tom\u00e9 and Pr\u00edncipe",
     "capital": "S\u00e3o Tom\u00e9",
     "code": "st",
-    "distractors": [
-      "Maseru",
-      "Hanoi",
-      "Lom\u00e9",
-      "Luanda"
-    ],
+    "region": "Africa",
+    "level": 3,
     "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6e/Org_4cd8129a56d8fa1d_1582100284000.jpg/500px-Org_4cd8129a56d8fa1d_1582100284000.jpg",
     "photoSource": "https://commons.wikimedia.org/wiki/File:Org_4cd8129a56d8fa1d_1582100284000.jpg"
   },
@@ -1938,12 +1342,8 @@
     "country": "Saudi Arabia",
     "capital": "Riyadh",
     "code": "sa",
-    "distractors": [
-      "Tallinn",
-      "Nassau",
-      "Santiago",
-      "Lima"
-    ],
+    "region": "Asia",
+    "level": 1,
     "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/Riyadh_Skyline.jpg/500px-Riyadh_Skyline.jpg",
     "photoSource": "https://commons.wikimedia.org/wiki/File:Riyadh_Skyline.jpg"
   },
@@ -1951,12 +1351,8 @@
     "country": "Senegal",
     "capital": "Dakar",
     "code": "sn",
-    "distractors": [
-      "Port Moresby",
-      "Tbilisi",
-      "Caracas",
-      "Lima"
-    ],
+    "region": "Africa",
+    "level": 2,
     "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0d/Pointe_des_Almadies_-_Senegal.jpg/500px-Pointe_des_Almadies_-_Senegal.jpg",
     "photoSource": "https://commons.wikimedia.org/wiki/File:Pointe_des_Almadies_-_Senegal.jpg"
   },
@@ -1964,12 +1360,8 @@
     "country": "Serbia",
     "capital": "Belgrade",
     "code": "rs",
-    "distractors": [
-      "Skopje",
-      "Tunis",
-      "Ciudad de la Paz",
-      "Havana"
-    ],
+    "region": "Europe",
+    "level": 2,
     "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/02/Beograd_collage.jpg/500px-Beograd_collage.jpg",
     "photoSource": "https://commons.wikimedia.org/wiki/File:Beograd_collage.jpg"
   },
@@ -1977,12 +1369,8 @@
     "country": "Seychelles",
     "capital": "Victoria",
     "code": "sc",
-    "distractors": [
-      "N'Djamena",
-      "Vilnius",
-      "Tegucigalpa",
-      "Damascus"
-    ],
+    "region": "Africa",
+    "level": 4,
     "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d2/Victoria_view_from_Bel_Eau_asv2024-09_img3.jpg/500px-Victoria_view_from_Bel_Eau_asv2024-09_img3.jpg",
     "photoSource": "https://commons.wikimedia.org/wiki/File:Victoria_view_from_Bel_Eau_asv2024-09_img3.jpg"
   },
@@ -1990,12 +1378,8 @@
     "country": "Sierra Leone",
     "capital": "Freetown",
     "code": "sl",
-    "distractors": [
-      "Bucharest",
-      "Dublin",
-      "Rabat",
-      "Port Louis"
-    ],
+    "region": "Africa",
+    "level": 3,
     "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/Freetown-aerialview.jpg/500px-Freetown-aerialview.jpg",
     "photoSource": "https://commons.wikimedia.org/wiki/File:Freetown-aerialview.jpg"
   },
@@ -2003,12 +1387,8 @@
     "country": "Singapore",
     "capital": "Singapore",
     "code": "sg",
-    "distractors": [
-      "Moscow",
-      "Nuku\u02bbalofa",
-      "N'Djamena",
-      "Ottawa"
-    ],
+    "region": "Asia",
+    "level": 1,
     "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/11/Raffles_Place.jpg/500px-Raffles_Place.jpg",
     "photoSource": "https://commons.wikimedia.org/wiki/File:Raffles_Place.jpg"
   },
@@ -2016,12 +1396,8 @@
     "country": "Slovakia",
     "capital": "Bratislava",
     "code": "sk",
-    "distractors": [
-      "Naypyidaw",
-      "Yerevan",
-      "Ashgabat",
-      "Vaduz"
-    ],
+    "region": "Europe",
+    "level": 2,
     "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/45/Hlavn%C3%A9_Namestie_%2835096533142%29.jpg/500px-Hlavn%C3%A9_Namestie_%2835096533142%29.jpg",
     "photoSource": "https://commons.wikimedia.org/wiki/File:Hlavn%C3%A9_Namestie_%2835096533142%29.jpg"
   },
@@ -2029,12 +1405,8 @@
     "country": "Slovenia",
     "capital": "Ljubljana",
     "code": "si",
-    "distractors": [
-      "Sarajevo",
-      "Nassau",
-      "Quito",
-      "Abu Dhabi"
-    ],
+    "region": "Europe",
+    "level": 3,
     "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f6/2021-07-28_Ljubljana-0881.jpg/500px-2021-07-28_Ljubljana-0881.jpg",
     "photoSource": "https://commons.wikimedia.org/wiki/File:2021-07-28_Ljubljana-0881.jpg"
   },
@@ -2042,12 +1414,8 @@
     "country": "Solomon Islands",
     "capital": "Honiara",
     "code": "sb",
-    "distractors": [
-      "Tallinn",
-      "Port Moresby",
-      "Maputo",
-      "Bangkok"
-    ],
+    "region": "Oceania",
+    "level": 4,
     "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8d/Honiara_aerial_crop.jpg/500px-Honiara_aerial_crop.jpg",
     "photoSource": "https://commons.wikimedia.org/wiki/File:Honiara_aerial_crop.jpg"
   },
@@ -2055,12 +1423,8 @@
     "country": "Somalia",
     "capital": "Mogadishu",
     "code": "so",
-    "distractors": [
-      "Singapore",
-      "St. George's",
-      "Gaborone",
-      "Apia"
-    ],
+    "region": "Africa",
+    "level": 2,
     "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/21/Pictures_from_an_armed_convoy_trip_in_Mogadishu.jpg/500px-Pictures_from_an_armed_convoy_trip_in_Mogadishu.jpg",
     "photoSource": "https://commons.wikimedia.org/wiki/File:Pictures_from_an_armed_convoy_trip_in_Mogadishu.jpg"
   },
@@ -2068,12 +1432,8 @@
     "country": "South Africa",
     "capital": "Pretoria",
     "code": "za",
-    "distractors": [
-      "Conakry",
-      "Bamako",
-      "Valletta",
-      "Bishkek"
-    ],
+    "region": "Africa",
+    "level": 2,
     "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/73/Pretoria_CBD1.jpg/500px-Pretoria_CBD1.jpg",
     "photoSource": "https://commons.wikimedia.org/wiki/File:Pretoria_CBD1.jpg"
   },
@@ -2081,12 +1441,8 @@
     "country": "South Korea",
     "capital": "Seoul",
     "code": "kr",
-    "distractors": [
-      "Phnom Penh",
-      "Cairo",
-      "Havana",
-      "Lusaka"
-    ],
+    "region": "Asia",
+    "level": 1,
     "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/88/%EB%8D%95%EC%88%98%EA%B6%81%EC%9D%98_%EA%B0%80%EC%9D%84.jpg/500px-%EB%8D%95%EC%88%98%EA%B6%81%EC%9D%98_%EA%B0%80%EC%9D%84.jpg",
     "photoSource": "https://commons.wikimedia.org/wiki/File:%EB%8D%95%EC%88%98%EA%B6%81%EC%9D%98_%EA%B0%80%EC%9D%84.jpg"
   },
@@ -2094,12 +1450,8 @@
     "country": "South Sudan",
     "capital": "Juba",
     "code": "ss",
-    "distractors": [
-      "St. George's",
-      "Stockholm",
-      "Thimphu",
-      "Zagreb"
-    ],
+    "region": "Africa",
+    "level": 3,
     "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a4/Juba_City.jpg/500px-Juba_City.jpg",
     "photoSource": "https://commons.wikimedia.org/wiki/File:Juba_City.jpg"
   },
@@ -2107,12 +1459,8 @@
     "country": "Spain",
     "capital": "Madrid",
     "code": "es",
-    "distractors": [
-      "Asmara",
-      "Conakry",
-      "Sofia",
-      "Riyadh"
-    ],
+    "region": "Europe",
+    "level": 1,
     "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/ce/Madrid_%2838624991251%29.jpg/500px-Madrid_%2838624991251%29.jpg",
     "photoSource": "https://commons.wikimedia.org/wiki/File:Madrid_%2838624991251%29.jpg"
   },
@@ -2120,12 +1468,8 @@
     "country": "Sri Lanka",
     "capital": "Sri Jayawardenepura Kotte",
     "code": "lk",
-    "distractors": [
-      "Yaound\u00e9",
-      "Moroni",
-      "Zagreb",
-      "Minsk"
-    ],
+    "region": "Asia",
+    "level": 3,
     "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/eb/Fountain_at_Diyatha_Uyana.JPG/500px-Fountain_at_Diyatha_Uyana.JPG",
     "photoSource": "https://commons.wikimedia.org/wiki/File:Fountain_at_Diyatha_Uyana.JPG"
   },
@@ -2133,12 +1477,8 @@
     "country": "Sudan",
     "capital": "Khartoum",
     "code": "sd",
-    "distractors": [
-      "Lima",
-      "Wellington",
-      "Asmara",
-      "Bishkek"
-    ],
+    "region": "Africa",
+    "level": 2,
     "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/df/Elmek_Nimir_Bridge.jpg/500px-Elmek_Nimir_Bridge.jpg",
     "photoSource": "https://commons.wikimedia.org/wiki/File:Elmek_Nimir_Bridge.jpg"
   },
@@ -2146,12 +1486,8 @@
     "country": "Suriname",
     "capital": "Paramaribo",
     "code": "sr",
-    "distractors": [
-      "Montevideo",
-      "Tokyo",
-      "Stockholm",
-      "Moroni"
-    ],
+    "region": "South America",
+    "level": 4,
     "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/Waterkant_Paramaribo_with_the_Unesco_Heritage_Buildings.jpg/500px-Waterkant_Paramaribo_with_the_Unesco_Heritage_Buildings.jpg",
     "photoSource": "https://commons.wikimedia.org/wiki/File:Waterkant_Paramaribo_with_the_Unesco_Heritage_Buildings.jpg"
   },
@@ -2159,12 +1495,8 @@
     "country": "Sweden",
     "capital": "Stockholm",
     "code": "se",
-    "distractors": [
-      "Gitega",
-      "Reykjav\u00edk",
-      "Berlin",
-      "Helsinki"
-    ],
+    "region": "Europe",
+    "level": 1,
     "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7b/Stockholm_gamlastan_etc.jpg/500px-Stockholm_gamlastan_etc.jpg",
     "photoSource": "https://commons.wikimedia.org/wiki/File:Stockholm_gamlastan_etc.jpg"
   },
@@ -2172,12 +1504,8 @@
     "country": "Switzerland",
     "capital": "Bern",
     "code": "ch",
-    "distractors": [
-      "Tunis",
-      "Suva",
-      "Mogadishu",
-      "San Jos\u00e9"
-    ],
+    "region": "Europe",
+    "level": 2,
     "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/45/Bundeshaus_Bern_2009%2C_Flooffy.jpg/500px-Bundeshaus_Bern_2009%2C_Flooffy.jpg",
     "photoSource": "https://commons.wikimedia.org/wiki/File:Bundeshaus_Bern_2009%2C_Flooffy.jpg"
   },
@@ -2185,12 +1513,8 @@
     "country": "Syria",
     "capital": "Damascus",
     "code": "sy",
-    "distractors": [
-      "Yaound\u00e9",
-      "Islamabad",
-      "Athens",
-      "Havana"
-    ],
+    "region": "Asia",
+    "level": 2,
     "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e5/Damascus_coll.jpg/500px-Damascus_coll.jpg",
     "photoSource": "https://commons.wikimedia.org/wiki/File:Damascus_coll.jpg"
   },
@@ -2198,12 +1522,8 @@
     "country": "Taiwan",
     "capital": "Taipei",
     "code": "tw",
-    "distractors": [
-      "Algiers",
-      "Antananarivo",
-      "Washington, D.C.",
-      "Bern"
-    ],
+    "region": "Asia",
+    "level": 2,
     "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/db/20260204_Taipei%2C_Taiwan_Skyline.jpg/500px-20260204_Taipei%2C_Taiwan_Skyline.jpg",
     "photoSource": "https://commons.wikimedia.org/wiki/File:20260204_Taipei%2C_Taiwan_Skyline.jpg"
   },
@@ -2211,12 +1531,8 @@
     "country": "Tajikistan",
     "capital": "Dushanbe",
     "code": "tj",
-    "distractors": [
-      "Damascus",
-      "Jerusalem",
-      "Tehran",
-      "Tarawa"
-    ],
+    "region": "Asia",
+    "level": 4,
     "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9c/Tehron_Street_Dushanbe.jpg/500px-Tehron_Street_Dushanbe.jpg",
     "photoSource": "https://commons.wikimedia.org/wiki/File:Tehron_Street_Dushanbe.jpg"
   },
@@ -2224,12 +1540,8 @@
     "country": "Tanzania",
     "capital": "Dodoma",
     "code": "tz",
-    "distractors": [
-      "Port Moresby",
-      "Nouakchott",
-      "Seoul",
-      "Lusaka"
-    ],
+    "region": "Africa",
+    "level": 3,
     "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/81/Scene_at_Nyerere_Square%2C_Dodoma_City.jpg/500px-Scene_at_Nyerere_Square%2C_Dodoma_City.jpg",
     "photoSource": "https://commons.wikimedia.org/wiki/File:Scene_at_Nyerere_Square%2C_Dodoma_City.jpg"
   },
@@ -2237,12 +1549,8 @@
     "country": "Thailand",
     "capital": "Bangkok",
     "code": "th",
-    "distractors": [
-      "Paris",
-      "Vienna",
-      "Chi\u0219in\u0103u",
-      "Damascus"
-    ],
+    "region": "Asia",
+    "level": 1,
     "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/Temple_of_the_Emerald_of_buddha_or_Wat_Phra_Kaew_%28cropped%29.jpg/500px-Temple_of_the_Emerald_of_buddha_or_Wat_Phra_Kaew_%28cropped%29.jpg",
     "photoSource": "https://commons.wikimedia.org/wiki/File:Temple_of_the_Emerald_of_buddha_or_Wat_Phra_Kaew_%28cropped%29.jpg"
   },
@@ -2250,12 +1558,8 @@
     "country": "Timor-Leste",
     "capital": "Dili",
     "code": "tl",
-    "distractors": [
-      "Wellington",
-      "Moroni",
-      "Tarawa",
-      "Warsaw"
-    ],
+    "region": "Asia",
+    "level": 4,
     "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/aa/Aussenministerium_und_Avenida_de_Portugal.jpg/500px-Aussenministerium_und_Avenida_de_Portugal.jpg",
     "photoSource": "https://commons.wikimedia.org/wiki/File:Aussenministerium_und_Avenida_de_Portugal.jpg"
   },
@@ -2263,12 +1567,8 @@
     "country": "Togo",
     "capital": "Lom\u00e9",
     "code": "tg",
-    "distractors": [
-      "Vientiane",
-      "Dakar",
-      "Havana",
-      "Kathmandu"
-    ],
+    "region": "Africa",
+    "level": 4,
     "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7e/Monuments_de_l%27ind%C3%A9pendance_et_Palais_des_congr%C3%A8s_de_Lom%C3%A9.jpg/500px-Monuments_de_l%27ind%C3%A9pendance_et_Palais_des_congr%C3%A8s_de_Lom%C3%A9.jpg",
     "photoSource": "https://commons.wikimedia.org/wiki/File:Monuments_de_l%27ind%C3%A9pendance_et_Palais_des_congr%C3%A8s_de_Lom%C3%A9.jpg"
   },
@@ -2276,12 +1576,8 @@
     "country": "Tonga",
     "capital": "Nuku\u02bbalofa",
     "code": "to",
-    "distractors": [
-      "Kathmandu",
-      "Bratislava",
-      "Roseau",
-      "Yaren"
-    ],
+    "region": "Oceania",
+    "level": 4,
     "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/94/Royal_Palace%2C_Nuku%27alofa%2C_Nov_18.jpg/500px-Royal_Palace%2C_Nuku%27alofa%2C_Nov_18.jpg",
     "photoSource": "https://commons.wikimedia.org/wiki/File:Royal_Palace%2C_Nuku%27alofa%2C_Nov_18.jpg"
   },
@@ -2289,12 +1585,8 @@
     "country": "Trinidad and Tobago",
     "capital": "Port of Spain",
     "code": "tt",
-    "distractors": [
-      "Chi\u0219in\u0103u",
-      "Belgrade",
-      "Dodoma",
-      "Riga"
-    ],
+    "region": "North America",
+    "level": 3,
     "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/96/POS_SKYLINE_2024_BEAUTIFUL_EVAN-P_2024_10-8.jpg/500px-POS_SKYLINE_2024_BEAUTIFUL_EVAN-P_2024_10-8.jpg",
     "photoSource": "https://commons.wikimedia.org/wiki/File:POS_SKYLINE_2024_BEAUTIFUL_EVAN-P_2024_10-8.jpg"
   },
@@ -2302,12 +1594,8 @@
     "country": "Tunisia",
     "capital": "Tunis",
     "code": "tn",
-    "distractors": [
-      "Harare",
-      "Bridgetown",
-      "Castries",
-      "Warsaw"
-    ],
+    "region": "Africa",
+    "level": 2,
     "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7e/Panoramique_du_centre_de_Tunis_%283197369985%29_%28cropped%29.jpg/500px-Panoramique_du_centre_de_Tunis_%283197369985%29_%28cropped%29.jpg",
     "photoSource": "https://commons.wikimedia.org/wiki/File:Panoramique_du_centre_de_Tunis_%283197369985%29_%28cropped%29.jpg"
   },
@@ -2315,12 +1603,8 @@
     "country": "Turkey",
     "capital": "Ankara",
     "code": "tr",
-    "distractors": [
-      "Luxembourg",
-      "Andorra la Vella",
-      "Asmara",
-      "Rabat"
-    ],
+    "region": "Asia",
+    "level": 2,
     "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e4/Ankara_%2816290014657%29.jpg/500px-Ankara_%2816290014657%29.jpg",
     "photoSource": "https://commons.wikimedia.org/wiki/File:Ankara_%2816290014657%29.jpg"
   },
@@ -2328,12 +1612,8 @@
     "country": "Turkmenistan",
     "capital": "Ashgabat",
     "code": "tm",
-    "distractors": [
-      "Stockholm",
-      "San Salvador",
-      "Dili",
-      "Kabul"
-    ],
+    "region": "Asia",
+    "level": 4,
     "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ea/Neutrality-Road-Ashgabat-2015.JPG/500px-Neutrality-Road-Ashgabat-2015.JPG",
     "photoSource": "https://commons.wikimedia.org/wiki/File:Neutrality-Road-Ashgabat-2015.JPG"
   },
@@ -2341,12 +1621,8 @@
     "country": "Tuvalu",
     "capital": "Funafuti",
     "code": "tv",
-    "distractors": [
-      "Antananarivo",
-      "Dushanbe",
-      "Skopje",
-      "Victoria"
-    ],
+    "region": "Oceania",
+    "level": 4,
     "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d4/Funafuti_township.jpg/500px-Funafuti_township.jpg",
     "photoSource": "https://commons.wikimedia.org/wiki/File:Funafuti_township.jpg"
   },
@@ -2354,12 +1630,8 @@
     "country": "Uganda",
     "capital": "Kampala",
     "code": "ug",
-    "distractors": [
-      "Dakar",
-      "Bras\u00edlia",
-      "Dublin",
-      "Santiago"
-    ],
+    "region": "Africa",
+    "level": 3,
     "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b5/View_from_7th_floor_on_Crane_Chambers_at_Kampala_road_-_panoramio.jpg/500px-View_from_7th_floor_on_Crane_Chambers_at_Kampala_road_-_panoramio.jpg",
     "photoSource": "https://commons.wikimedia.org/wiki/File:View_from_7th_floor_on_Crane_Chambers_at_Kampala_road_-_panoramio.jpg"
   },
@@ -2367,12 +1639,8 @@
     "country": "Ukraine",
     "capital": "Kyiv",
     "code": "ua",
-    "distractors": [
-      "Havana",
-      "Antananarivo",
-      "Monaco",
-      "Conakry"
-    ],
+    "region": "Europe",
+    "level": 1,
     "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/62/Kyiv_%28234807751%29.jpeg/500px-Kyiv_%28234807751%29.jpeg",
     "photoSource": "https://commons.wikimedia.org/wiki/File:Kyiv_%28234807751%29.jpeg"
   },
@@ -2380,12 +1648,8 @@
     "country": "United Arab Emirates",
     "capital": "Abu Dhabi",
     "code": "ae",
-    "distractors": [
-      "Tashkent",
-      "Lima",
-      "Vientiane",
-      "Baku"
-    ],
+    "region": "Asia",
+    "level": 2,
     "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/%D0%90%D0%B1%D1%83-%D0%94%D0%B0%D0%B1%D0%B8_%28Abu_Dhabi%29_-_panoramio_%281%29.jpg/500px-%D0%90%D0%B1%D1%83-%D0%94%D0%B0%D0%B1%D0%B8_%28Abu_Dhabi%29_-_panoramio_%281%29.jpg",
     "photoSource": "https://commons.wikimedia.org/wiki/File:%D0%90%D0%B1%D1%83-%D0%94%D0%B0%D0%B1%D0%B8_%28Abu_Dhabi%29_-_panoramio_%281%29.jpg"
   },
@@ -2393,12 +1657,8 @@
     "country": "United Kingdom",
     "capital": "London",
     "code": "gb",
-    "distractors": [
-      "Mexico City",
-      "Victoria",
-      "Yerevan",
-      "Djibouti"
-    ],
+    "region": "Europe",
+    "level": 1,
     "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/67/London_Skyline_%28125508655%29.jpeg/500px-London_Skyline_%28125508655%29.jpeg",
     "photoSource": "https://commons.wikimedia.org/wiki/File:London_Skyline_%28125508655%29.jpeg"
   },
@@ -2406,12 +1666,8 @@
     "country": "United States",
     "capital": "Washington, D.C.",
     "code": "us",
-    "distractors": [
-      "Gitega",
-      "Quito",
-      "Algiers",
-      "Georgetown"
-    ],
+    "region": "North America",
+    "level": 1,
     "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4b/Aerial_view_of_White_House_and_downtown%2C_Washington%2C_D.C_LCCN2010630891.jpg/500px-Aerial_view_of_White_House_and_downtown%2C_Washington%2C_D.C_LCCN2010630891.jpg",
     "photoSource": "https://commons.wikimedia.org/wiki/File:Aerial_view_of_White_House_and_downtown%2C_Washington%2C_D.C_LCCN2010630891.jpg"
   },
@@ -2419,12 +1675,8 @@
     "country": "Uruguay",
     "capital": "Montevideo",
     "code": "uy",
-    "distractors": [
-      "Belgrade",
-      "Port of Spain",
-      "Khartoum",
-      "Sri Jayawardenepura Kotte"
-    ],
+    "region": "South America",
+    "level": 2,
     "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/The_City_%28198895997%29.jpeg/500px-The_City_%28198895997%29.jpeg",
     "photoSource": "https://commons.wikimedia.org/wiki/File:The_City_%28198895997%29.jpeg"
   },
@@ -2432,12 +1684,8 @@
     "country": "Uzbekistan",
     "capital": "Tashkent",
     "code": "uz",
-    "distractors": [
-      "Quito",
-      "Sana'a",
-      "Athens",
-      "Freetown"
-    ],
+    "region": "Asia",
+    "level": 3,
     "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/08/Aerial_view_of_Tashkent%2C_Uzbekistan.JPG/500px-Aerial_view_of_Tashkent%2C_Uzbekistan.JPG",
     "photoSource": "https://commons.wikimedia.org/wiki/File:Aerial_view_of_Tashkent%2C_Uzbekistan.JPG"
   },
@@ -2445,12 +1693,8 @@
     "country": "Vanuatu",
     "capital": "Port Vila",
     "code": "vu",
-    "distractors": [
-      "Freetown",
-      "Yaound\u00e9",
-      "Dhaka",
-      "Muscat"
-    ],
+    "region": "Oceania",
+    "level": 4,
     "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e8/Port_Vila_aerial.jpg/500px-Port_Vila_aerial.jpg",
     "photoSource": "https://commons.wikimedia.org/wiki/File:Port_Vila_aerial.jpg"
   },
@@ -2458,12 +1702,8 @@
     "country": "Vatican City",
     "capital": "Vatican City",
     "code": "va",
-    "distractors": [
-      "Khartoum",
-      "Asmara",
-      "Stockholm",
-      "Kabul"
-    ],
+    "region": "Europe",
+    "level": 2,
     "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/50/0_Basilique_Saint-Pierre_-_Rome_%281%29.JPG/500px-0_Basilique_Saint-Pierre_-_Rome_%281%29.JPG",
     "photoSource": "https://commons.wikimedia.org/wiki/File:0_Basilique_Saint-Pierre_-_Rome_%281%29.JPG"
   },
@@ -2471,12 +1711,8 @@
     "country": "Venezuela",
     "capital": "Caracas",
     "code": "ve",
-    "distractors": [
-      "Windhoek",
-      "Khartoum",
-      "Sarajevo",
-      "Asunci\u00f3n"
-    ],
+    "region": "South America",
+    "level": 1,
     "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bd/Caracas_desde_el_%C3%A1vila.jpg/500px-Caracas_desde_el_%C3%A1vila.jpg",
     "photoSource": "https://commons.wikimedia.org/wiki/File:Caracas_desde_el_%C3%A1vila.jpg"
   },
@@ -2484,12 +1720,8 @@
     "country": "Vietnam",
     "capital": "Hanoi",
     "code": "vn",
-    "distractors": [
-      "Port Vila",
-      "Ulaanbaatar",
-      "San Jos\u00e9",
-      "Santiago"
-    ],
+    "region": "Asia",
+    "level": 1,
     "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/aa/Th%C3%A1p_R%C3%B9a_-_NKS.jpg/500px-Th%C3%A1p_R%C3%B9a_-_NKS.jpg",
     "photoSource": "https://commons.wikimedia.org/wiki/File:Th%C3%A1p_R%C3%B9a_-_NKS.jpg"
   },
@@ -2497,12 +1729,8 @@
     "country": "Yemen",
     "capital": "Sana'a",
     "code": "ye",
-    "distractors": [
-      "Nuku\u02bbalofa",
-      "Berlin",
-      "Vilnius",
-      "Algiers"
-    ],
+    "region": "Asia",
+    "level": 3,
     "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5c/San%27a03_flickr.jpg/500px-San%27a03_flickr.jpg",
     "photoSource": "https://commons.wikimedia.org/wiki/File:San%27a03_flickr.jpg"
   },
@@ -2510,12 +1738,8 @@
     "country": "Zambia",
     "capital": "Lusaka",
     "code": "zm",
-    "distractors": [
-      "Bucharest",
-      "Vaduz",
-      "Windhoek",
-      "Washington, D.C."
-    ],
+    "region": "Africa",
+    "level": 3,
     "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/15/Downtown_Lusaka.JPG/500px-Downtown_Lusaka.JPG",
     "photoSource": "https://commons.wikimedia.org/wiki/File:Downtown_Lusaka.JPG"
   },
@@ -2523,12 +1747,8 @@
     "country": "Zimbabwe",
     "capital": "Harare",
     "code": "zw",
-    "distractors": [
-      "Tirana",
-      "Astana",
-      "Santiago",
-      "Tashkent"
-    ],
+    "region": "Africa",
+    "level": 2,
     "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8c/Harare_skyline.jpg/500px-Harare_skyline.jpg",
     "photoSource": "https://commons.wikimedia.org/wiki/File:Harare_skyline.jpg"
   }
