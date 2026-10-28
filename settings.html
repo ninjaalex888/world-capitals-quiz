@@ -30,10 +30,14 @@
       <span>Country flag<small>Shown with each question</small></span>
       <input type="checkbox" class="switch" id="showFlag" role="switch">
     </label>
-    <label class="setting">
-      <span>Capital city photo<small>Shown after you answer, so it doesn't give the answer away</small></span>
-      <input type="checkbox" class="switch" id="showPhoto" role="switch">
-    </label>
+    <div class="setting stacked">
+      <span>Capital city photo<small>Show it before or after you answer. Before is a hint, and famous views can give the answer away</small></span>
+      <div class="segmented" role="radiogroup" aria-label="Capital city photo">
+        <label><input type="radio" name="photo" value="before"><span>Before</span></label>
+        <label><input type="radio" name="photo" value="after"><span>After</span></label>
+        <label><input type="radio" name="photo" value="off"><span>Off</span></label>
+      </div>
+    </div>
 
     <h2>Appearance</h2>
     <div class="segmented" role="radiogroup" aria-label="Theme">
