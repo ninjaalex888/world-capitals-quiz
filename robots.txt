@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://ninjaalex888.github.io/world-capitals-quiz/sitemap.xml
+Sitemap: https://worldcapitals.github.io/sitemap.xml
