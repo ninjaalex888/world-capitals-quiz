@@ -14,7 +14,21 @@ function writeJSON(key, value){
 
 // ---------------- SETTINGS ----------------
 // photo: 'before' | 'after' | 'off' – when to show the capital city photo
-const DEFAULT_SETTINGS = {showFlag:true, photo:'before', theme:'system'};
+const DEFAULT_SETTINGS = {difficulty:'medium', showFlag:true, photo:'before', theme:'system'};
+
+// Each country has a level 1–4; a difficulty includes every level up to maxLevel.
+// On the harder settings the wrong answers come from the same region.
+const DIFFICULTIES = {
+  easy:     {label:'Easy',      maxLevel:1, sameRegion:false, blurb:n => `${n} well-known countries`},
+  medium:   {label:'Medium',    maxLevel:2, sameRegion:false, blurb:n => `${n} countries`},
+  hard:     {label:'Hard',      maxLevel:3, sameRegion:true,  blurb:n => `${n} countries, with wrong answers from the same region`},
+  veryhard: {label:'Very hard', maxLevel:4, sameRegion:true,  blurb:n => `All ${n} countries, with wrong answers from the same region`},
+};
+function difficultyKey(){
+  const key = getSettings().difficulty;
+  return DIFFICULTIES[key] ? key : DEFAULT_SETTINGS.difficulty;
+}
+const getDifficulty = () => DIFFICULTIES[difficultyKey()];
 
 function getSettings(){
   const saved = readJSON('settings', {});
@@ -37,27 +51,50 @@ async function loadDB(){
   try{
     fullDB = await fetch('countries.json').then(r => r.json());
   }catch(err){
-    $('info').textContent = "Couldn't load the country list. If you opened the file directly, run start_dev_server.bat instead.";
+    if($('info')) $('info').textContent = "Couldn't load the country list. If you opened the file directly, run start_dev_server.bat instead.";
     throw err;
   }
   return fullDB;
 }
 
-function shuffle(a){
+const poolFor = (db, diff) => db.filter(c => c.level <= diff.maxLevel);
+
+function shuffle(a, rand = Math.random){
   for(let i = a.length - 1; i > 0; i--){
-    const j = Math.floor(Math.random() * (i + 1));
+    const j = Math.floor(rand() * (i + 1));
     [a[i], a[j]] = [a[j], a[i]];
   }
   return a;
 }
 
+// Small seeded random generator, so the Daily options are the same for everyone.
+function seededRandom(seed){
+  return () => {
+    seed = (seed + 0x6D2B79F5) | 0;
+    let t = Math.imul(seed ^ (seed >>> 15), 1 | seed);
+    t = (t + Math.imul(t ^ (t >>> 7), 61 | t)) ^ t;
+    return ((t ^ (t >>> 14)) >>> 0) / 4294967296;
+  };
+}
+
+// The right capital plus 4 wrong ones from the same pool (same region first if asked).
+function pickOptions(q, pool, sameRegion, rand = Math.random){
+  const others = pool.filter(c => c.capital !== q.capital);
+  const wrong = sameRegion ? shuffle(others.filter(c => c.region === q.region), rand).slice(0, 4) : [];
+  for(const c of shuffle(others.filter(c => !wrong.includes(c)), rand)){
+    if(wrong.length >= 4) break;
+    wrong.push(c);
+  }
+  return shuffle([q.capital, ...wrong.map(c => c.capital)], rand);
+}
+
 // ---------------- SCORES ----------------
-// One row per session, updated after each answer: {timestamp, mode, score, total}.
-let mode = '', score = 0, total = 0, sessionId = 0;
+// One row per session, updated after each answer: {timestamp, mode, score, total, difficulty}.
+let mode = '', score = 0, total = 0, sessionId = 0, difficulty = '';
 
 function saveScore(){
   const arr = readJSON('guestScores', []);
-  const row = {timestamp:sessionId, mode, score, total};
+  const row = {timestamp:sessionId, mode, score, total, difficulty};
   const i = arr.findIndex(r => r.timestamp === sessionId);
   if(i >= 0) arr[i] = row; else arr.push(row);
   writeJSON('guestScores', arr);
@@ -92,7 +129,7 @@ const QUIZ_HTML = `
   </figure>
   <div id="actions" class="actions"></div>`;
 
-function showQuestion(q, onAnswer){
+function showQuestion(q, options, onAnswer){
   const settings = getSettings();
   const box = $('quiz');
   box.innerHTML = QUIZ_HTML;
@@ -110,7 +147,7 @@ function showQuestion(q, onAnswer){
   name.textContent = q.country;
   $('question').append('What is the capital of ', name, '?');
 
-  shuffle([q.capital, ...q.distractors]).forEach(city => {
+  options.forEach(city => {
     const btn = document.createElement('button');
     btn.className = 'choice';
     btn.textContent = city;
@@ -178,20 +215,26 @@ function addAction(label, target, secondary = false){
 }
 
 // ---------------- DAILY ----------------
-// Everyone gets the same country on the same calendar date.
+// Everyone on the same difficulty gets the same country (and options) on the same calendar date.
 function todayKey(){
   const d = new Date();
   return `${d.getFullYear()}-${String(d.getMonth() + 1).padStart(2, '0')}-${String(d.getDate()).padStart(2, '0')}`;
 }
-function dailyIndex(key, n){
-  const day = Date.parse(key + 'T00:00:00Z') / 86400000; // whole days since 1970
-  return (day * 7919) % n; // 7919 is prime, so every country comes up before any repeats
-}
+const dayNumber = key => Date.parse(key + 'T00:00:00Z') / 86400000; // whole days since 1970
+const dailyIndex = (day, n) => (day * 7919) % n; // 7919 is prime, so every country comes up before any repeats
 
 async function startDaily(){
   const db = await loadDB();
-  const today = todayKey();
-  const q = db[dailyIndex(today, db.length)];
+  const diff = getDifficulty();
+  const pool = poolFor(db, diff);
+  const today = todayKey(), day = dayNumber(today);
+  const played = readJSON('dailyResult', null);
+  const playedToday = played && played.date === today;
+
+  // Already played today: show that question again, even if the difficulty has changed since.
+  const q = (playedToday && db.find(c => c.country === played.country)) || pool[dailyIndex(day, pool.length)];
+  const options = (playedToday && played.options) || pickOptions(q, pool, diff.sameRegion, seededRandom(day));
+  $('info').textContent = `Same country for everyone on ${diff.label} today. You get one try.`;
 
   const finish = () => {
     $('info').textContent = 'Come back tomorrow for a new country.';
@@ -199,18 +242,16 @@ async function startDaily(){
     addAction('Score history', 'scores.html', true);
   };
 
-  showQuestion(q, (correct, city) => {
-    mode = 'Daily'; sessionId = Date.now(); score = correct ? 1 : 0; total = 1;
-    writeJSON('dailyResult', {date:today, country:q.country, choice:city});
+  showQuestion(q, options, (correct, city) => {
+    mode = 'Daily'; difficulty = difficultyKey(); sessionId = Date.now(); score = correct ? 1 : 0; total = 1;
+    writeJSON('dailyResult', {date:today, country:q.country, choice:city, options});
     saveScore();
     finish();
   });
   $('label').textContent = new Date().toLocaleDateString(undefined, {weekday:'long', month:'long', day:'numeric'});
 
-  const played = readJSON('dailyResult', null);
-  if(played && played.date === today){
-    if(played.country === q.country) reveal(q, played.choice);
-    else document.querySelectorAll('.choice').forEach(b => b.disabled = true);
+  if(playedToday){
+    reveal(q, played.choice);
     finish();
   }
 }
@@ -218,13 +259,17 @@ async function startDaily(){
 // ---------------- PRACTICE -------------
 async function startPractice(){
   const db = await loadDB();
-  mode = 'Practice'; score = 0; total = 0; sessionId = Date.now();
-  let order = shuffle([...db]), i = 0;
+  const diff = getDifficulty();
+  const pool = poolFor(db, diff);
+  mode = 'Practice'; difficulty = difficultyKey(); score = 0; total = 0; sessionId = Date.now();
+  $('info').innerHTML = `${diff.label} · ${pool.length} countries · <a href="settings.html">change</a>`;
+  let order = shuffle([...pool]), i = 0;
 
   const next = () => {
-    if(i >= order.length){ order = shuffle([...db]); i = 0; }
+    if(i >= order.length){ order = shuffle([...pool]); i = 0; }
     const number = total + 1;
-    showQuestion(order[i++], correct => {
+    const q = order[i++];
+    showQuestion(q, pickOptions(q, pool, diff.sameRegion), correct => {
       total++;
       if(correct) score++;
       saveScore();
@@ -261,7 +306,8 @@ function buildScores(){
   }
   rows.forEach(r => {
     const tr = document.createElement('tr');
-    [new Date(r.timestamp).toLocaleString(undefined, {dateStyle:'medium', timeStyle:'short'}), r.mode, `${r.score} / ${r.total}`]
+    const modeText = DIFFICULTIES[r.difficulty] ? `${r.mode} · ${DIFFICULTIES[r.difficulty].label}` : r.mode;
+    [new Date(r.timestamp).toLocaleString(undefined, {dateStyle:'medium', timeStyle:'short'}), modeText, `${r.score} / ${r.total}`]
       .forEach((text, col) => {
         const td = document.createElement('td');
         td.textContent = text;
@@ -276,7 +322,7 @@ function buildScores(){
 function initSettings(){
   const s = getSettings();
   $('showFlag').checked = s.showFlag;
-  for(const name of ['photo', 'theme']){
+  for(const name of ['difficulty', 'photo', 'theme']){
     const input = document.querySelector(`input[name="${name}"][value="${s[name]}"]`)
       || document.querySelector(`input[name="${name}"][value="${DEFAULT_SETTINGS[name]}"]`);
     input.checked = true;
@@ -284,6 +330,7 @@ function initSettings(){
 
   document.querySelectorAll('#settingsForm input').forEach(input => input.addEventListener('change', () => {
     const next = {
+      difficulty:document.querySelector('input[name="difficulty"]:checked').value,
       showFlag:$('showFlag').checked,
       photo:document.querySelector('input[name="photo"]:checked').value,
       theme:document.querySelector('input[name="theme"]:checked').value,
@@ -292,4 +339,8 @@ function initSettings(){
     applyTheme(next.theme);
     $('saved').textContent = 'Saved ✓';
   }));
+
+  loadDB().then(db => {
+    for(const [key, diff] of Object.entries(DIFFICULTIES)) $(`blurb-${key}`).textContent = diff.blurb(poolFor(db, diff).length);
+  }).catch(() => { /* keep the default descriptions */ });
 }

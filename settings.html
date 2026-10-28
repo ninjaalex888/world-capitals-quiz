@@ -25,6 +25,14 @@
     <p class="muted">Changes save automatically in this browser.</p>
   </div>
   <form class="card settings" id="settingsForm" onsubmit="return false">
+    <h2>Difficulty</h2>
+    <div class="options" role="radiogroup" aria-label="Difficulty">
+      <label class="option"><input type="radio" name="difficulty" value="easy"><span>Easy<small id="blurb-easy">Well-known countries</small></span></label>
+      <label class="option"><input type="radio" name="difficulty" value="medium"><span>Medium<small id="blurb-medium">More countries</small></span></label>
+      <label class="option"><input type="radio" name="difficulty" value="hard"><span>Hard<small id="blurb-hard">Most countries, with wrong answers from the same region</small></span></label>
+      <label class="option"><input type="radio" name="difficulty" value="veryhard"><span>Very hard<small id="blurb-veryhard">Every country, with wrong answers from the same region</small></span></label>
+    </div>
+
     <h2>Quiz pictures</h2>
     <label class="setting">
       <span>Country flag<small>Shown with each question</small></span>
