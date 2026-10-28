@@ -1,79 +1,58 @@
 # 🌍 World Capitals Quiz
 
-A lightweight, single-page quiz that helps you learn the capitals of every country in the world.  
-Choose between:
+A lightweight quiz for learning the capital of every country: all 195 of them (the 193 UN members plus Vatican City and Taiwan).
 
-| Mode | Description |
-|------|-------------|
-| **Daily Challenge** | One question per day. You get **one** shot; result is saved as 1/1 or 0/1. |
-| **Practice** | Never-ending quiz that shuffles all countries. Score is updated after every answer. |
-| **Score History** | Browser-local table listing all of your attempts (date, mode, score). |
+**Play it here: https://ninjaalex888.github.io/world-capitals-quiz/**
+
+| Page | What it does |
+|------|--------------|
+| **Daily Challenge** | One country a day, the same one for everyone. You get one try. |
+| **Practice** | Endless questions covering every country, with a running score. |
+| **Score History** | Your results, saved in your browser. |
+| **Settings** | Turn the country flag and the capital city photo on or off, and pick a light, dark or system theme. |
+
+Each question shows the country's flag. After you answer, a photo of the capital appears. It only appears afterwards because a famous view such as the Eiffel Tower would give the answer away.
 
 ---
 
-## 🚀 Quick Start (Local)
+## 🚀 Run it locally
+
+The pages load `countries.json` with `fetch()`, which browsers block when you open the HTML file directly, so run a small local web server:
 
 ```bash
-# 1. Clone the repo
-git clone https://github.com/your-username/world-capitals-quiz.git
+git clone https://github.com/ninjaalex888/world-capitals-quiz.git
 cd world-capitals-quiz
-
-# 2. Start a tiny web server (Python ≥ 3.7)
-python -m http.server 8000
-# or: py -m http.server 8000   (on Windows)
-
-# 3. Open your browser
-http://localhost:8000/index.html        # Daily Challenge
-http://localhost:8000/practice.html     # Infinite Practice
+py -m http.server 8000        # Windows (or: python -m http.server 8000)
 ```
 
-> **Why run a server?**  
-> Loading `index.html` directly from the file system blocks the `fetch()` of `countries_200.json`.  
-> A local HTTP server solves that.
+Then open http://localhost:8000. On Windows you can also double-click `start_dev_server.bat`.
 
 ---
 
-## 🌐 Deploying to GitHub Pages
+## 🌐 Hosting (GitHub Pages)
 
-1. **Push** this repo to GitHub (`main` branch or any).  
-2. In **Repository → Settings → Pages**  
-   - Source: **Deploy from branch**  
-   - Branch: `main` (or `gh-pages`)  
-3. Save — GitHub will build and give you a **Live URL** like  
-   `https://your-username.github.io/world-capitals-quiz`
+The site is hosted for free on GitHub Pages and served straight from the `main` branch. There's no build step. Whatever is on `main` goes live within a minute or two of each push.
 
-Now anyone can play at that link:
-
-```
-https://your-username.github.io/world-capitals-quiz/
-```
-
-*(GitHub Pages serves static files automatically — no extra build step needed.)*
+To set it up on a fork: **Settings → Pages → Source: Deploy from a branch → `main` / root**.
 
 ---
 
-## 🔑 Features
-
-- **Dynamic UI** – elements are created on-the-fly; zero hard-coded markup dependencies.  
-- **Visual feedback** – green for correct, red for incorrect, plus skyline photo.  
-- **Country fact** – a brief fact (or default capital statement) after each answer.  
-- **Local persistence** – all scores live in `localStorage`; no backend required.  
-- **Mobile-friendly design** – responsive buttons & images.  
-
----
-
-## 📂 Project Structure
+## 📂 Project structure
 
 ```
-📁 world-capitals-quiz
-│
 ├─ index.html          # Daily Challenge
-├─ practice.html       # Infinite Practice
-├─ scores.html         # Score History
+├─ practice.html       # Endless practice
+├─ scores.html         # Score history
+├─ settings.html       # Flag / photo / theme settings
 ├─ script.js           # All quiz logic
-├─ style.css           # Styling (CSS variables)
-└─ countries_200.json  # Country dataset (capital, distractors, skyline URL)
+├─ style.css           # Styling (light + dark themes)
+├─ countries.json      # 195 countries: capital, 4 wrong answers, ISO code, photo link
+├─ flags/              # Flag images (xx.png, by ISO country code)
+├─ favicon.ico
+└─ start_dev_server.bat
 ```
+
+Everything is stored in the browser's `localStorage` (scores, today's daily result, settings). There's no backend and no accounts.
 
 ---
 
@@ -81,15 +60,17 @@ https://your-username.github.io/world-capitals-quiz/
 
 | Enhancement | Description |
 |-------------|-------------|
-| 🇺🇳 Flag icons | Flag CDN for quick SVGs or PNGs. |
 | ⏱ Timed mode | Countdown per question for extra pressure. |
 | 🔥 Streaks | Track consecutive daily wins. |
-| 🎉 Confetti | Animation on correct daily answer. |
-| 📈 Charts | Visualize progress with Chart.js. |
+| 🗺 Regions | Practise one continent at a time. |
+| 🎉 Confetti | Animation on a correct daily answer. |
+| 📈 Charts | Visualize progress over time. |
 
 ---
 
-## 🖋 License
+## 🖋 License & credits
 
-MIT – feel free to fork, remix, and learn.  
-Credits to Unsplash photographers for skyline images.
+Code: MIT. Feel free to fork, remix, and learn.
+
+- Flag images from [flagcdn.com](https://flagcdn.com) (Flagpedia).
+- City photos are loaded from [Wikimedia Commons](https://commons.wikimedia.org). Each photo links to its Commons page with the author and license.
