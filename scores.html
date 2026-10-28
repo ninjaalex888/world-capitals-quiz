@@ -1,16 +1,48 @@
-
-<!DOCTYPE html><html lang="en"><head>
+<!DOCTYPE html>
+<html lang="en">
+<head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width,initial-scale=1.0">
-<title>Score History</title><link rel="stylesheet" href="style.css"></head><body>
-<header class="topbar" onclick="location.href='index.html'">
-  <nav class="menu">
-    <a href="index.html">🏆 Daily Challenge</a>
-    <a href="practice.html">🎯 Practice</a>
-    <a href="scores.html">📊 Score History</a>
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Score History · World Capitals Quiz</title>
+<meta name="description" content="Learn the capital of every country with a daily challenge and endless practice.">
+<link rel="icon" href="favicon.ico">
+<link rel="stylesheet" href="style.css">
+<script>try{var t=JSON.parse(localStorage.getItem('settings')||'{}').theme;if(t==='light'||t==='dark')document.documentElement.dataset.theme=t}catch(e){}</script>
+</head>
+<body>
+<header class="site-header">
+  <a class="brand" href="index.html">🌍 World Capitals</a>
+  <nav class="nav">
+    <a href="index.html">Daily</a>
+    <a href="practice.html">Practice</a>
+    <a href="scores.html" aria-current="page">Scores</a>
+    <a href="settings.html">Settings</a>
   </nav>
 </header>
-<main><h2>Score History</h2><table id="scoreTable"></table></main>
+<main>
+  <div class="page-head">
+    <h1>Score History</h1>
+    <p class="muted">Saved in this browser only.</p>
+  </div>
+  <div class="stats">
+    <div class="card stat"><b id="statDaily">–</b><span>Daily correct</span></div>
+    <div class="card stat"><b id="statSessions">–</b><span>Practice sessions</span></div>
+    <div class="card stat"><b id="statAccuracy">–</b><span>Practice accuracy</span></div>
+  </div>
+  <section class="card table-card">
+    <div class="table-wrap">
+      <table id="scoreTable">
+        <thead><tr><th>Date</th><th>Mode</th><th class="num">Score</th></tr></thead>
+        <tbody id="scoreRows"></tbody>
+      </table>
+    </div>
+    <p class="empty" id="noScores" hidden>No scores yet. Try <a href="index.html">today's challenge</a>.</p>
+  </section>
+</main>
+<footer class="site-footer">
+  Made by ninjaalex888 · Flags from <a href="https://flagcdn.com">flagcdn.com</a> · City photos from <a href="https://commons.wikimedia.org">Wikimedia Commons</a> · <a href="https://github.com/ninjaalex888/world-capitals-quiz">Source</a>
+</footer>
 <script src="script.js"></script>
 <script>document.addEventListener('DOMContentLoaded',buildScores);</script>
-</body></html>
+</body>
+</html>
