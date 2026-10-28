@@ -2,7 +2,7 @@
 
 A lightweight quiz for learning the capital of every country: all 195 of them (the 193 UN members plus Vatican City and Taiwan).
 
-**Play it here: https://ninjaalex888.github.io/world-capitals-quiz/**
+**Play it here: https://worldcapitals.github.io/**
 
 <p align="center"><img src="docs/screenshot.png" alt="Practice mode: a photo of San Salvador with the flag of El Salvador, and five capitals to choose from" width="520"></p>
 
@@ -33,8 +33,8 @@ Each question shows the country's flag and a photo of its capital. A famous view
 The pages load `countries.json` with `fetch()`, which browsers block when you open the HTML file directly, so run a small local web server:
 
 ```bash
-git clone https://github.com/ninjaalex888/world-capitals-quiz.git
-cd world-capitals-quiz
+git clone https://github.com/worldcapitals/worldcapitals.github.io.git
+cd worldcapitals.github.io
 py -m http.server 8000        # Windows (or: python -m http.server 8000)
 ```
 
